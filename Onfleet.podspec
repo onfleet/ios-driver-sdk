@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.9.3'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.source       = { :git => "https://github.com/zendesk/messaging_sdk_ios.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/onfleet/ios-driver-sdk.git", :tag => s.version }
   s.vendored_frameworks = 'Onfleet.xcframework'
   s.preserve_paths = 'Onfleet.xcframework' #, 'Onfleet.dSYMs/*.dSYM'
   s.dependency 'AFNetworking'
