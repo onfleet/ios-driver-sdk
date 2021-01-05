@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "OnfleetSDK"
+  s.name         = "Onfleet"
   s.version      = "0.9.0"
   s.summary      = "Onfleet Driver SDK #{s.version.to_s}"
   s.homepage     = "https://docs.onfleet.com/"
