@@ -1,0 +1,10 @@
+framework module Onfleet {
+  umbrella header "Onfleet.h"
+  export *
+  module * { export * }
+}
+
+module Onfleet.Swift {
+    header "Onfleet-Swift.h"
+    requires objc
+}
