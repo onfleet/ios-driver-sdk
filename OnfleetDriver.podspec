@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   #s.source       = { :git => "https://github.com/onfleet/ios-driver-sdk.git", :tag => s.version }
-  s.source       = { :path => "./" }
+  s.source       = { :path => "." }
   s.vendored_frameworks = 'OnfleetDriver.xcframework'
   s.preserve_paths = 'OnfleetDriver.xcframework' #, 'OnfleetDriver.dSYMs/*.dSYM'
   s.dependency 'AFNetworking'
