@@ -2,6 +2,7 @@
 
 [![CocoaPods Compatible](https://img.shields.io/badge/pod-1.9.3-orange.svg?style=flat)](https://img.shields.io/badge/pod-1.9.3-orange.svg)
 [![Swift 5.3](https://img.shields.io/badge/Swift-5.3-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Platform iOS](https://img.shields.io/badge/platform-iOS-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/badge/License-Apache%202-blue.svg?logo=law)](https://github.com/twilio/twilio-verify-ios/blob/main/LICENSE)
 
 ## Table of Contents

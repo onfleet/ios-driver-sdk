@@ -428,6 +428,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSURL * _Nonnu
 enum Environment : NSInteger;
 @class UIApplication;
 
+/// This is a main class that should be probably renamed to something more user fiendsly, perhaps OnfleetDriver
 SWIFT_CLASS("_TtC13OnfleetDriver13DriverContext")
 @interface DriverContext : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriverContext * _Nonnull shared;)
@@ -435,8 +436,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriverContex
 @property (nonatomic, strong) Config * _Null_unspecified config;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// :nodoc:
 @property (nonatomic) enum Environment environment;
 @property (nonatomic, readonly) BOOL isInitialized;
+/// Must be called in will finish launching
+/// todo:
+/// find out if we can call this in init or it must be called in will finish launching
 - (void)initSDKWith:(Config * _Nonnull)config environment:(enum Environment)environment app:(UIApplication * _Nonnull)app SWIFT_METHOD_FAMILY(none);
 @end
 
@@ -1061,6 +1066,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSURL * _Nonnu
 enum Environment : NSInteger;
 @class UIApplication;
 
+/// This is a main class that should be probably renamed to something more user fiendsly, perhaps OnfleetDriver
 SWIFT_CLASS("_TtC13OnfleetDriver13DriverContext")
 @interface DriverContext : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriverContext * _Nonnull shared;)
@@ -1068,8 +1074,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriverContex
 @property (nonatomic, strong) Config * _Null_unspecified config;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// :nodoc:
 @property (nonatomic) enum Environment environment;
 @property (nonatomic, readonly) BOOL isInitialized;
+/// Must be called in will finish launching
+/// todo:
+/// find out if we can call this in init or it must be called in will finish launching
 - (void)initSDKWith:(Config * _Nonnull)config environment:(enum Environment)environment app:(UIApplication * _Nonnull)app SWIFT_METHOD_FAMILY(none);
 @end
 
