@@ -1,0 +1,10 @@
+# Mac OS
+.DS_Store
+
+# Cocoapods
+Pods
+
+# Project
+SampleApp.xcworkspace
+SampleApp.xcodeproj/project.xcworkspace/xcuserdata
+SampleApp.xcodeproj/xcuserdata
