@@ -1,4 +1,4 @@
-# Onfleet Driver SDK for iOS
+![Onfleet Driver SDK for iOS](https://user-images.githubusercontent.com/500145/104442724-bdef5980-5595-11eb-90f7-4ddf726a9979.png)
 
 [![CocoaPods Compatible](https://img.shields.io/badge/pod-1.9.3-orange.svg?style=flat)](https://img.shields.io/badge/pod-1.9.3-orange.svg)
 [![Swift 5.3](https://img.shields.io/badge/Swift-5.3-orange.svg?style=flat)](https://developer.apple.com/swift/)
