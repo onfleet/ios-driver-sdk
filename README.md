@@ -12,35 +12,38 @@
 * [Requirements](#Requirements)
 * [Documentation](#Documentation)
 * [Installation](#Installation)
-* [Usage](#Usage)
+* [Integration](#Integration)
 * [Sample app](#SampleApp)
 
 <a name='About'></a>
 
 ## About
-Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. TODO: Add description here.
+
+Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. Using this SDK 
 
 <a name='Dependencies'></a>
 
 ## Dependencies
+
 We currently use several dependencies. Our goal is to remove all of them in future releases of the SDK.
 
 - AFNetworking
 - SocketRocket
 - UICKeychainStore
-- RXSwift
+- RxSwift
   
 <a name='Requirements'></a>
 
 ## Requirements
-* iOS 11+
+* iOS 12+
 * Swift 5.3
 * Xcode 11.x
 
 <a name='Documentation'></a>
 
 ## Documentation
-[SDK API docs](https://twilio.github.io/twilio-verify-ios/latest/)
+
+This repository contains auto-generated documentation. See `/Docs/index.html`.
 
 <a name='Installation'></a>
 
@@ -54,19 +57,67 @@ We currently use several dependencies. Our goal is to remove all of them in futu
 pod 'OnfleetDriver', :git => 'https://github.com/onfleet/ios-driver-sdk.git'
 ```
 
-### Swift Package Manager
+### SPM & Manually
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+Unfortunatelly we don't currently support SPM or manual integration.
 
-Will be supported in near future
+<a name='Integration'></a>
 
+## Integration
 
-## Usage
+Apps powered by Onfleet SDK require collecting user location while the driver is on duty. Often iOS system kills backgrounded apps due to memory preassure so in case of background termination app must be woken up on the backgorund asap and continue collecting locations. This is achieved by combination of multiple techniques especially `background location updates`, `silent push notifications` and correct `location permissions` granted by user. 
 
-See [Quick Start Guide](https://www.onfleet.com) for a step-by-step guide to using this SDK.
+### 1. Background execution
+
+To achieve correct results pls enable in your Xcode project under your app schemes following background mode capabilities:
+1. Location Updates
+2. Remote Notifications
+
+### 2. Location permissions
+
+Following location permissions are required:
+1. Location -> Allow location access -> **Always**
+2. Precise Location -> **On**
+
+Following privacy description must be set in `Info.plist`
+```
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Onfleet only tracks your location when on-duty in order to provide analytics and dispatch work to you.</string>
+```
+
+Unfortunatelly, current iOS permissions policy does not wake up apps in the background if location access is set to **While in Use** or **Once**. This requires apps to ask location permission **Always**. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. 
+
+Good practice is to verify permissions before driver attempts to go on duty and present a screen with reasons why these permissions are required. Then app should request access *when in use*, then guide user to open Settings app and manually select location access **Always**. If precise location is off, simular flow should ask for precise location to be **on**.
+
+Here are reasons why Onfleet requires these location permissions:
+1. dispatchers can see drivers in real time on web Dashboard
+2. delivery recipients can see drivers in real time
+3. task delivery ETA is continually recalculated to provide better precisions to recipients
+4. locations are used for driver analytics, especially distance driven. Some drivers may be paid by according to this data so precision must be as accurate as possible.
+5. SDK never tracks driver location when off duty
+
+Protocol in `LocationManaging.swift` provides a conveniece wrapper for observing location permissions.
+
+### Push notifications
+
+When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working or will not work as expected.
 
 <a name='SampleApp'></a>
 
 ## Sample app
 
-Sample app with examples of usage of this SDK can be found in [separate git repository](https://github.com/onfleet/ios-driver-sdk.git).
+This repository contains `Sample App` project that integrates Driver SDK. It provides an overview to core features and guides on how to use them in code. Following features are currently supported:
+- Log in, log out, reset password
+- Accepting / rejecting invitations
+- Setting duty status
+- Fetching data and showing list of tasks
+- Tasks list
+- Task detail (claiming, starting, completing tasks)
+
+### Set up
+
+1. clone `onfleet/ios-driver-sdk` repository using  `git clone git@github.com:onfleet/ios-driver-sdk.git`
+2. open root directory and install pods using `pod install`
+3. open `SampleApp.xcworkspace` in Xcode
+4. build and run using `SampleApp` scheme
+

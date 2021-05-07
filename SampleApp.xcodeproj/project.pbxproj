@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2B693092B94779503D2E1217 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67C32793B40B549F2A97F5F /* Pods_SampleApp.framework */; };
+		61342C5025B0457800B4D0F9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61342C4F25B0457800B4D0F9 /* MainStoryboard.storyboard */; };
+		61342C5225B045DB00B4D0F9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61342C5125B045DB00B4D0F9 /* InitialViewController.swift */; };
+		61342C5625B0521300B4D0F9 /* DutyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61342C5525B0521300B4D0F9 /* DutyViewController.swift */; };
 		615D6EF2258B86BC00D11038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615D6EF1258B86BC00D11038 /* AppDelegate.swift */; };
-		615D6EF4258B86BC00D11038 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615D6EF3258B86BC00D11038 /* SceneDelegate.swift */; };
-		615D6EF6258B86BC00D11038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615D6EF5258B86BC00D11038 /* ContentView.swift */; };
 		615D6EF8258B86BD00D11038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 615D6EF7258B86BD00D11038 /* Assets.xcassets */; };
-		615D6EFB258B86BD00D11038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 615D6EFA258B86BD00D11038 /* Preview Assets.xcassets */; };
 		615D6EFE258B86BD00D11038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615D6EFC258B86BD00D11038 /* LaunchScreen.storyboard */; };
+		619B4FD625B0A63B00CC4C5F /* OffDutyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619B4FD525B0A63A00CC4C5F /* OffDutyViewController.swift */; };
+		619B4FD925B0B94600CC4C5F /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619B4FD725B0A64A00CC4C5F /* TasksViewController.swift */; };
+		61A066E3263AF931005D110C /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A066E2263AF931005D110C /* TaskViewController.swift */; };
+		61D10CD9263ABB9100D384A3 /* ActivityShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D10CD8263ABB9100D384A3 /* ActivityShowing.swift */; };
+		61D10D19263AD99800D384A3 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D10D18263AD99800D384A3 /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,14 +36,19 @@
 
 /* Begin PBXFileReference section */
 		5DEF903CE070E132E9C1B000 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		61342C4F25B0457800B4D0F9 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		61342C5125B045DB00B4D0F9 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		61342C5525B0521300B4D0F9 /* DutyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyViewController.swift; sourceTree = "<group>"; };
 		615D6EEE258B86BC00D11038 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		615D6EF1258B86BC00D11038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		615D6EF3258B86BC00D11038 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		615D6EF5258B86BC00D11038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		615D6EF7258B86BD00D11038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		615D6EFA258B86BD00D11038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		615D6EFD258B86BD00D11038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		615D6EFF258B86BD00D11038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619B4FD525B0A63A00CC4C5F /* OffDutyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDutyViewController.swift; sourceTree = "<group>"; };
+		619B4FD725B0A64A00CC4C5F /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		61A066E2263AF931005D110C /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		61D10CD8263ABB9100D384A3 /* ActivityShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityShowing.swift; sourceTree = "<group>"; };
+		61D10D18263AD99800D384A3 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		6DC60A8279C377CEDEE831E8 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A67C32793B40B549F2A97F5F /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,22 +104,43 @@
 			isa = PBXGroup;
 			children = (
 				615D6EF1258B86BC00D11038 /* AppDelegate.swift */,
-				615D6EF3258B86BC00D11038 /* SceneDelegate.swift */,
-				615D6EF5258B86BC00D11038 /* ContentView.swift */,
+				61342C5125B045DB00B4D0F9 /* InitialViewController.swift */,
+				61342C5525B0521300B4D0F9 /* DutyViewController.swift */,
+				619B4FD525B0A63A00CC4C5F /* OffDutyViewController.swift */,
+				61D10D17263AD97800D384A3 /* Tasks */,
+				61A066E1263AF91F005D110C /* Task */,
+				61D10CD7263ABB8500D384A3 /* Helpers */,
 				615D6EF7258B86BD00D11038 /* Assets.xcassets */,
+				61342C4F25B0457800B4D0F9 /* MainStoryboard.storyboard */,
 				615D6EFC258B86BD00D11038 /* LaunchScreen.storyboard */,
 				615D6EFF258B86BD00D11038 /* Info.plist */,
-				615D6EF9258B86BD00D11038 /* Preview Content */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
 		};
-		615D6EF9258B86BD00D11038 /* Preview Content */ = {
+		61A066E1263AF91F005D110C /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				615D6EFA258B86BD00D11038 /* Preview Assets.xcassets */,
+				61A066E2263AF931005D110C /* TaskViewController.swift */,
 			);
-			path = "Preview Content";
+			path = Task;
+			sourceTree = "<group>";
+		};
+		61D10CD7263ABB8500D384A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61D10CD8263ABB9100D384A3 /* ActivityShowing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		61D10D17263AD97800D384A3 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				619B4FD725B0A64A00CC4C5F /* TasksViewController.swift */,
+				61D10D18263AD99800D384A3 /* TaskTableViewCell.swift */,
+			);
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +174,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Onfleet Inc";
 				TargetAttributes = {
 					615D6EED258B86BC00D11038 = {
 						CreatedOnToolsVersion = 12.3;
@@ -172,8 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61342C5025B0457800B4D0F9 /* MainStoryboard.storyboard in Resources */,
 				615D6EFE258B86BD00D11038 /* LaunchScreen.storyboard in Resources */,
-				615D6EFB258B86BD00D11038 /* Preview Assets.xcassets in Resources */,
 				615D6EF8258B86BD00D11038 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,9 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D10D19263AD99800D384A3 /* TaskTableViewCell.swift in Sources */,
 				615D6EF2258B86BC00D11038 /* AppDelegate.swift in Sources */,
-				615D6EF4258B86BC00D11038 /* SceneDelegate.swift in Sources */,
-				615D6EF6258B86BC00D11038 /* ContentView.swift in Sources */,
+				61342C5225B045DB00B4D0F9 /* InitialViewController.swift in Sources */,
+				619B4FD925B0B94600CC4C5F /* TasksViewController.swift in Sources */,
+				619B4FD625B0A63B00CC4C5F /* OffDutyViewController.swift in Sources */,
+				61A066E3263AF931005D110C /* TaskViewController.swift in Sources */,
+				61D10CD9263ABB9100D384A3 /* ActivityShowing.swift in Sources */,
+				61342C5625B0521300B4D0F9 /* DutyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +407,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = K7BVV36H44;
 				ENABLE_BITCODE = NO;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,11 +430,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = K7BVV36H44;
 				ENABLE_BITCODE = NO;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -72,568 +72,120 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 53,
+      "line": 70,
       "symbol": "HTTPError",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 54,
+      "line": 71,
       "symbol": "HTTPError.localizedDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 68,
+      "line": 85,
       "symbol": "HTTPError",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/AuthorizeChatTask.swift",
-      "line": 15,
-      "symbol": "AuthorizeChatResult",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 15,
-      "symbol": "ChatContact",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 16,
-      "symbol": "ChatContact.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 17,
-      "symbol": "ChatContact.organization",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 18,
-      "symbol": "ChatContact.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 19,
-      "symbol": "ChatContact.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 20,
-      "symbol": "ChatContact.timeLastSeen",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/ChatContactsTask.swift",
-      "line": 23,
-      "symbol": "ChatContactsResult",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 11,
-      "symbol": "SignStaticImageDetails",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 13,
-      "symbol": "SignStaticImageDetails.latitude",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 14,
-      "symbol": "SignStaticImageDetails.longitude",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 15,
-      "symbol": "SignStaticImageDetails.size",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 16,
-      "symbol": "SignStaticImageDetails.scale",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 17,
-      "symbol": "SignStaticImageDetails.zoom",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 18,
-      "symbol": "SignStaticImageDetails.format",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 19,
-      "symbol": "SignStaticImageDetails.style",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 21,
-      "symbol": "SignStaticImageDetails.init(latitude:longitude:size:scale:zoom:format:style:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/Private Endpoints/SignStaticImageTask.swift",
-      "line": 51,
-      "symbol": "SignStaticImageResult",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 11,
-      "symbol": "Analytics",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 22,
-      "symbol": "Analytics",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 27,
-      "symbol": "Analytics.totalTasks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 31,
-      "symbol": "Analytics.totalHoursOnDuty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 35,
-      "symbol": "Analytics.timePerTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 39,
-      "symbol": "Analytics.distancePerTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 43,
-      "symbol": "Analytics.serviceTimePerTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 47,
-      "symbol": "Analytics.completedTasksByDelayTime",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 51,
-      "symbol": "Analytics.totalCompletedTasks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 55,
-      "symbol": "Analytics.totalMetersDriven",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 59,
-      "symbol": "Analytics.metersDrivenByActivityType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 63,
-      "symbol": "Analytics.hoursSpentByActivityType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/Analytics.swift",
-      "line": 69,
-      "symbol": "Analytics.init(rawData:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 12,
-      "symbol": "AnalyticsDataState",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 13,
-      "symbol": "AnalyticsDataState.isEmpty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 14,
-      "symbol": "AnalyticsDataState.isOutdated",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 15,
-      "symbol": "AnalyticsDataState.isLoading",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 16,
-      "symbol": "AnalyticsDataState.hasError",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 39,
-      "symbol": "AnalyticsController.enabledPeriods",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 46,
-      "symbol": "AnalyticsController.customPeriodMinDate",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 58,
-      "symbol": "AnalyticsController.period",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 67,
-      "symbol": "AnalyticsController.parameters",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 71,
-      "symbol": "AnalyticsController.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 75,
-      "symbol": "AnalyticsController.state",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 79,
-      "symbol": "AnalyticsController.loadingHandler",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 80,
-      "symbol": "AnalyticsController.dataChangedHandler",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsController.swift",
-      "line": 81,
-      "symbol": "AnalyticsController.periodChangedHandler",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 11,
-      "symbol": "AnalyticsRemoteLoaderError",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 14,
-      "symbol": "AnalyticsRemoteLoaderError.networkFailure(error:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 15,
-      "symbol": "AnalyticsRemoteLoaderError.other(error:body:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 18,
-      "symbol": "AnalyticsRemoteLoaderError.localizedDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 48,
-      "symbol": "AnalyticsRemoteLoaderError",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsLoader.swift",
-      "line": 76,
-      "symbol": "AnalyticsPeriodParameters",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 20,
-      "symbol": "AnalyticsPeriod",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 22,
-      "symbol": "AnalyticsPeriod.month",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 22,
-      "symbol": "AnalyticsPeriod.today",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 22,
-      "symbol": "AnalyticsPeriod.week",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 22,
-      "symbol": "AnalyticsPeriod.year",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 22,
-      "symbol": "AnalyticsPeriod.yesterday",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 23,
-      "symbol": "AnalyticsPeriod.custom(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 72,
-      "symbol": "AnalyticsPeriod",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 87,
-      "symbol": "AnalyticsPeriod",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 94,
-      "symbol": "AnalyticsPeriod",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 96,
+      "line": 97,
       "symbol": "AnalyticsPeriod.defaultPeriod",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 100,
+      "line": 101,
       "symbol": "AnalyticsPeriod.allSortedChronologically",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 104,
+      "line": 105,
       "symbol": "AnalyticsPeriod.upToMonthSortedChronologically",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 108,
+      "line": 109,
       "symbol": "AnalyticsPeriod.upToWeekSortedChronologically",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
-      "line": 112,
+      "line": 113,
       "symbol": "AnalyticsPeriod.daySortedChronologically",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 12,
+      "symbol": "AnalyticsStorgateFileName",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 18,
+      "symbol": "AnalyticsStorgateFileName.init(period:sandboxId:appendPathExtension:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 24,
+      "symbol": "AnalyticsStorgateFileName.createFileName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
       "line": 11,
-      "symbol": "ImagePreparationResult",
+      "symbol": "AnalyticsTaskError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 12,
-      "symbol": "ImagePreparationResult.success(uploadId:imageLocation:)",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
+      "line": 15,
+      "symbol": "AnalyticsTaskError.http(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 13,
-      "symbol": "ImagePreparationResult.failure(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 16,
-      "symbol": "AttachmentsDelegate",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 17,
-      "symbol": "AttachmentsDelegate.attachmentsDidStartUploading(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 18,
-      "symbol": "AttachmentsDelegate.attachments(_:didUpdateProgress:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 19,
-      "symbol": "AttachmentsDelegate.attachmentsDidFinishUploading(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 22,
-      "symbol": "AttachmentsManaging",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 23,
-      "symbol": "AttachmentsManaging.isUploadingInProgress",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 24,
-      "symbol": "AttachmentsManaging.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
       "line": 27,
-      "symbol": "AttachmentsManaging.preparePhotoAttachment(imageUrl:taskShortId:)",
+      "symbol": "AnalyticsTaskError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
+      "line": 49,
+      "symbol": "AttachmentsDelegate.attachments(_:didStartUploadOperationWith:type:taskId:fileSize:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 28,
-      "symbol": "AttachmentsManaging.prepareSignatureAttachment(imageUrl:taskShortId:)",
+      "line": 50,
+      "symbol": "AttachmentsDelegate.attachments(_:didFinishUploadOperationWith:type:taskId:fileSize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
+      "line": 51,
+      "symbol": "AttachmentsDelegate.attachments(_:didFailUploadOperationWith:type:taskId:fileSize:error:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -989,16 +541,9 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 126,
+      "line": 130,
       "symbol": "CompletedTask.ComputedContainer",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 128,
-      "symbol": "CompletedTask.ComputedContainer.isAvailable",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1010,42 +555,49 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 131,
-      "symbol": "CompletedTask.ComputedContainer.distance",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
       "line": 132,
-      "symbol": "CompletedTask.ComputedContainer.duration",
+      "symbol": "CompletedTask.ComputedContainer.isAvailable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
       "line": 135,
+      "symbol": "CompletedTask.ComputedContainer.distance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
+      "line": 136,
+      "symbol": "CompletedTask.ComputedContainer.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
+      "line": 139,
       "symbol": "CompletedTask.Attachment",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 136,
+      "line": 140,
       "symbol": "CompletedTask.Attachment.attachmentType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 137,
+      "line": 141,
       "symbol": "CompletedTask.Attachment.attachmentId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTask.swift",
-      "line": 138,
+      "line": 142,
       "symbol": "CompletedTask.Attachment.status",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -1076,62 +628,6 @@
       "line": 202,
       "symbol": "CompletedTask.Attachment",
       "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 12,
-      "symbol": "CompletedTasksHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 14,
-      "symbol": "CompletedTasksProviding",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 15,
-      "symbol": "CompletedTasksProviding.loading$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 16,
-      "symbol": "CompletedTasksProviding.isLoading",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 17,
-      "symbol": "CompletedTasksProviding.outdated$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 18,
-      "symbol": "CompletedTasksProviding.isOutdated",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 19,
-      "symbol": "CompletedTasksProviding.error",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/CompletedTasksProviding.swift",
-      "line": 24,
-      "symbol": "CompletedTasksProviding.loadTasks(from:forceRefetch:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -1199,596 +695,232 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 11,
-      "symbol": "DriverLicense",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 25,
+      "line": 30,
       "symbol": "DriverLicense.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 26,
+      "line": 31,
       "symbol": "DriverLicense.documentType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 27,
+      "line": 32,
       "symbol": "DriverLicense.issuingCountry",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 28,
+      "line": 33,
       "symbol": "DriverLicense.dob",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 29,
+      "line": 34,
       "symbol": "DriverLicense.dateIssued",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 30,
+      "line": 35,
       "symbol": "DriverLicense.expirationDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 31,
+      "line": 36,
       "symbol": "DriverLicense.firstName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 32,
+      "line": 37,
       "symbol": "DriverLicense.middleName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 33,
+      "line": 38,
       "symbol": "DriverLicense.lastName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 35,
+      "line": 40,
       "symbol": "DriverLicense.init(id:documentType:issuingCountry:dob:dateIssued:expirationDate:firstName:middleName:lastName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 47,
+      "line": 52,
       "symbol": "DriverLicense.dateOfBirth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
-      "line": 51,
+      "line": 56,
       "symbol": "DriverLicense.stringToDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 11,
-      "symbol": "ImageAttachment",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 12,
+      "line": 23,
       "symbol": "ImageAttachment.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 13,
+      "line": 24,
       "symbol": "ImageAttachment.location",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 14,
-      "symbol": "ImageAttachment.init(id:location:)",
+      "line": 25,
+      "symbol": "ImageAttachment.phAssetLocalIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 26,
+      "symbol": "ImageAttachment.init(id:location:phAssetLocalIdentifier:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 20,
-      "symbol": "PhotoAttachments",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 21,
+      "line": 40,
       "symbol": "PhotoAttachments.images",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 22,
+      "line": 41,
       "symbol": "PhotoAttachments.urls",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 26,
+      "line": 45,
       "symbol": "PhotoAttachments.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 31,
-      "symbol": "SignatureAttachment",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 32,
+      "line": 57,
       "symbol": "SignatureAttachment.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 33,
+      "line": 58,
       "symbol": "SignatureAttachment.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 34,
+      "line": 59,
       "symbol": "SignatureAttachment.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 37,
+      "line": 62,
       "symbol": "SignatureAttachment.init(name:image:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 43,
-      "symbol": "TaskCompletionDetails",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 45,
-      "symbol": "TaskCompletionDetails.AgeVerification",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 46,
+      "line": 79,
       "symbol": "TaskCompletionDetails.AgeVerification.dateOfBirth(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 47,
+      "line": 80,
       "symbol": "TaskCompletionDetails.AgeVerification.driverLicense(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 50,
-      "symbol": "TaskCompletionDetails.Result",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 51,
-      "symbol": "TaskCompletionDetails.Result.success",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 52,
-      "symbol": "TaskCompletionDetails.Result.failure(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 62,
-      "symbol": "TaskCompletionDetails.result",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 63,
-      "symbol": "TaskCompletionDetails.notes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 64,
-      "symbol": "TaskCompletionDetails.barcodes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 65,
-      "symbol": "TaskCompletionDetails.signatureAttachment",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 66,
-      "symbol": "TaskCompletionDetails.photoAttachments",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 67,
-      "symbol": "TaskCompletionDetails.ageVerification",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 69,
+      "line": 137,
       "symbol": "TaskCompletionDetails.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 141,
-      "symbol": "TaskCompletionDetails.attachmentIds",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
+      "line": 11,
+      "symbol": "DutyStatusError",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
+      "line": 13,
+      "symbol": "DutyStatusError.locationPermissionsDenied(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
       "line": 14,
-      "symbol": "Notification.Name.driverDidGoOnDuty",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "DutyStatusError.activeTaskInOtherAccount(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
       "line": 15,
-      "symbol": "Notification.Name.driverDidGoOffDuty",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "DutyStatusError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 16,
-      "symbol": "Notification.Name.driverDidGoOffDutyForced",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 17,
-      "symbol": "Notification.Name.driverDidStartTask",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
       "line": 18,
-      "symbol": "Notification.Name.driverDidCompleteTask",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "DutyStatusError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 19,
-      "symbol": "Notification.Name.driverDidSelfAssignTask",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 25,
-      "symbol": "DutyStatusHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
       "line": 26,
-      "symbol": "UpdateProfileHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 27,
-      "symbol": "StartTaskHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 28,
-      "symbol": "CompleteTaskHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 29,
-      "symbol": "SelfAssignTaskHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 46,
-      "symbol": "DriverManaging.isOnDuty",
+      "symbol": "DutyStatusError.isLocationPermissionsDeniedError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 47,
-      "symbol": "DriverManaging.onDuty$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 49,
-      "symbol": "DriverManaging.driver",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 50,
-      "symbol": "DriverManaging.driverAvailable$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 52,
-      "symbol": "DriverManaging.isSelfAssignmentEnabled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 60,
-      "symbol": "DriverManaging.setDutyStatus(goOnDuty:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 62,
-      "symbol": "DriverManaging.uploadProfileImage(imageUrl:progress:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 63,
-      "symbol": "DriverManaging.updateProfile(details:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 67,
-      "symbol": "DriverManaging.isBarcodeScanningRequired(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 68,
-      "symbol": "DriverManaging.isBarcodeScanningEnabled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 70,
-      "symbol": "DriverManaging.isAgeVerificationRequired(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 71,
-      "symbol": "DriverManaging.isAgeVerificationEnabled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 75,
-      "symbol": "DriverManaging.isPhotoLibraryEnabled(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 76,
-      "symbol": "DriverManaging.isNotesOnCompletionEnabled(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 77,
-      "symbol": "DriverManaging.isNotesOnCompletionRequired(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 78,
-      "symbol": "DriverManaging.isPhotoAttachmentOnCompletionEnabled(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 79,
-      "symbol": "DriverManaging.isPhotoAttachmentOnCompletionRequired(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 80,
-      "symbol": "DriverManaging.isSignatureAttachmentOnCompletionEnabled(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 81,
-      "symbol": "DriverManaging.isSignatureAttachmentOnCompletionRequired(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 83,
-      "symbol": "DriverManaging.shouldWarnIfTaskStartedBeforeCompleteAfter(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 84,
-      "symbol": "DriverManaging.shouldWarnOnOptionalNotesAttachment(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 85,
-      "symbol": "DriverManaging.shouldWarnOnOptionalPhotoAttachment(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 86,
-      "symbol": "DriverManaging.shouldWarnOnOptionalSignatureAttachment(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 90,
-      "symbol": "DriverManaging.activeTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 91,
-      "symbol": "DriverManaging.tasksTouched$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 93,
-      "symbol": "DriverManaging.start(task:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 94,
-      "symbol": "DriverManaging.complete(task:completionDetails:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 95,
-      "symbol": "DriverManaging.selfAssign(task:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 96,
-      "symbol": "DriverManaging.selfAssignableTasks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 98,
-      "symbol": "DriverManaging.completedTasks(from:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 102,
-      "symbol": "DriverManaging.isChatEnabled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 103,
-      "symbol": "DriverManaging.isZendriveEnabled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
-      "line": 104,
-      "symbol": "DriverManaging.zendriveKey",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStatusTask.swift",
+      "line": 33,
+      "symbol": "DutyStatusError.httpError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -1874,55 +1006,6 @@
       "line": 57,
       "symbol": "SelfAssignTaskError",
       "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 11,
-      "symbol": "DutyStatusError",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 13,
-      "symbol": "DutyStatusError.locationPermissionsDenied(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 14,
-      "symbol": "DutyStatusError.activeTaskInOtherAccount(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 15,
-      "symbol": "DutyStatusError.http(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 18,
-      "symbol": "DutyStatusError.localizedDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 26,
-      "symbol": "DutyStatusError.isLocationPermissionsDeniedError",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Driver/Set Duty Status/SetDutyStatusTask.swift",
-      "line": 33,
-      "symbol": "DutyStatusError.httpError",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -2192,62 +1275,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 28,
-      "symbol": "LocationManaging.lastLocation$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 29,
-      "symbol": "LocationManaging.lastLocation",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 31,
-      "symbol": "LocationManaging.isFullyAuthorized$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 32,
-      "symbol": "LocationManaging.isFullyAuthorized",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 34,
-      "symbol": "LocationManaging.isFullAccuracyGranted$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 35,
-      "symbol": "LocationManaging.isFullAccuracyGranted",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 37,
-      "symbol": "LocationManaging.isAuthorizedAlways$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/LocationManaging.swift",
-      "line": 38,
-      "symbol": "LocationManaging.isAuthorizedAlways",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
       "line": 32,
       "symbol": "LocationService.registeredRegions",
@@ -2286,20 +1313,6 @@
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
       "line": 37,
       "symbol": "LocationService.performPeriodicalHousekeeping()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Regions Monitoring/RegionsMonitoringNotifier.swift",
-      "line": 12,
-      "symbol": "RegionMonitoringNotifier",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Regions Monitoring/RegionsMonitoringNotifier.swift",
-      "line": 13,
-      "symbol": "RegionMonitoringNotifier.notifyOnExit(region:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -2381,99 +1394,78 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Barcode.swift",
-      "line": 18,
-      "symbol": "Barcode.symbology",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Barcode.swift",
-      "line": 19,
-      "symbol": "Barcode.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Barcode.swift",
-      "line": 20,
-      "symbol": "Barcode.wasRequested",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "Destination",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 36,
+      "line": 35,
       "symbol": "Destination.location",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 37,
+      "line": 36,
       "symbol": "Destination.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 38,
+      "line": 37,
       "symbol": "Destination.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 39,
+      "line": 38,
       "symbol": "Destination.wasGeocoded",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 40,
+      "line": 39,
       "symbol": "Destination.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 139,
+      "line": 138,
       "symbol": "Destination.getLocation()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 143,
+      "line": 142,
       "symbol": "Destination.getAddress()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 147,
+      "line": 146,
       "symbol": "Destination.getNotes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 151,
+      "line": 150,
       "symbol": "Destination.getWasGeocoded()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Destination.swift",
-      "line": 155,
+      "line": 154,
       "symbol": "Destination.getMatadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -2634,427 +1626,294 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 24,
-      "symbol": "ModelProperty.setValue(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
       "line": 30,
-      "symbol": "ModelProperty.getChangeObservable()",
+      "symbol": "ModelProperty.observable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
+      "line": 34,
+      "symbol": "ModelProperty.subscribe(onChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 38,
+      "line": 42,
       "symbol": "ModelProperty.dispose()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 47,
+      "line": 51,
       "symbol": "EquatableModelProperty",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 52,
-      "symbol": "EquatableModelProperty.setValue(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 61,
+      "line": 65,
       "symbol": "EquatableOptionalModelProperty",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 66,
-      "symbol": "EquatableOptionalModelProperty.setValue(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 75,
-      "symbol": "StringDictionaryModelProperty",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 80,
-      "symbol": "StringDictionaryModelProperty.setValue(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 95,
+      "line": 101,
       "symbol": "Model",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 102,
+      "line": 108,
       "symbol": "Model.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 103,
+      "line": 109,
       "symbol": "Model.timeLastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 104,
+      "line": 110,
       "symbol": "Model.timeCreated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 175,
-      "symbol": "Model.getChangeObservable(watchChildren:)",
+      "line": 181,
+      "symbol": "Model.changeObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
+      "line": 185,
+      "symbol": "Model.subscribeOnChange(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 183,
-      "symbol": "Model.getDeleteObservable()",
+      "line": 189,
+      "symbol": "Model.changeObservableWithChildren",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
+      "line": 193,
+      "symbol": "Model.subscribeOnChangeWithChildren(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 243,
-      "symbol": "ModelArray",
+      "line": 197,
+      "symbol": "Model.deleteObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
+      "line": 201,
+      "symbol": "Model.subscribeOnDelete(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
+      "line": 354,
+      "symbol": "ArrayModelProperty",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 262,
-      "symbol": "ModelArray.setArray(array:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 294,
-      "symbol": "ModelArray.getChangeObservable(watchChildren:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 335,
-      "symbol": "ModelArrayModelProperty",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Model.swift",
-      "line": 340,
-      "symbol": "ModelArrayModelProperty.setValue(value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 22,
-      "symbol": "DataState",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 31,
-      "symbol": "DataState",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 44,
-      "symbol": "DataState",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 46,
-      "symbol": "==(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 59,
-      "symbol": "FetchingState",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 60,
-      "symbol": "FetchingState.idle",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 61,
-      "symbol": "FetchingState.fetching(byUser:reason:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 64,
-      "symbol": "FetchingState",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 75,
-      "symbol": "FetchingState",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 77,
-      "symbol": "==(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 90,
-      "symbol": "Notification.Name.modelManagerDidFetchCollectionsNotification",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 138,
-      "symbol": "ModelManager",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 145,
-      "symbol": "ModelManager.sharedInstance",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/ModelManager.swift",
-      "line": 180,
-      "symbol": "ModelManager.applyDiffUpdate(_:)",
+      "line": 359,
+      "symbol": "ArrayModelProperty.setValue(value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 20,
-      "symbol": "Organization",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "Organization.Billing",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 24,
+      "line": 26,
       "symbol": "Organization.Billing.legacyPlan",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 25,
+      "line": 27,
       "symbol": "Organization.Billing.testMode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "Organization.Billing.analyticsPeriodDuration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 34,
+      "line": 36,
       "symbol": "Organization.Billing.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 50,
+      "line": 52,
       "symbol": "Organization.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 51,
+      "line": 53,
       "symbol": "Organization.country",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 52,
+      "line": 54,
       "symbol": "Organization.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 53,
+      "line": 55,
       "symbol": "Organization.config",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 54,
+      "line": 56,
       "symbol": "Organization.driverAppConfig",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 55,
+      "line": 57,
       "symbol": "Organization.enabledFeatures",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 56,
+      "line": 58,
       "symbol": "Organization.billing",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 172,
+      "line": 174,
       "symbol": "Organization.getName()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 176,
+      "line": 178,
       "symbol": "Organization.getCountry()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 180,
+      "line": 182,
       "symbol": "Organization.getImage()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 184,
+      "line": 186,
       "symbol": "Organization.getOrgConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 188,
+      "line": 190,
       "symbol": "Organization.getAppConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 192,
+      "line": 194,
       "symbol": "Organization.getEnabledFeatures()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 196,
+      "line": 198,
       "symbol": "Organization.getBilling()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 348,
+      "line": 354,
       "symbol": "UnitSystem",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 349,
+      "line": 355,
       "symbol": "UnitSystem.metric",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 350,
+      "line": 356,
       "symbol": "UnitSystem.imperial",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 352,
+      "line": 358,
       "symbol": "UnitSystem.isMetric",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 360,
-      "symbol": "Organization",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 362,
+      "line": 368,
       "symbol": "Organization.getOrgConfigProperty(_:key:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Organization.swift",
-      "line": 369,
+      "line": 375,
       "symbol": "Organization.getOrgConfigPreferredUnitType()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -3159,357 +2018,210 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 23,
-      "symbol": "Task",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 27,
-      "symbol": "Task",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 29,
-      "symbol": "Task.Requirements",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 31,
-      "symbol": "Task.Requirements.signature",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 32,
-      "symbol": "Task.Requirements.notes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 33,
-      "symbol": "Task.Requirements.photo",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 34,
-      "symbol": "Task.Requirements.minimumAge",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 43,
+      "line": 60,
       "symbol": "Task.Requirements.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 58,
-      "symbol": "Task.notes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 59,
-      "symbol": "Task.shortId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 60,
-      "symbol": "Task.completeAfter",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 61,
-      "symbol": "Task.completeBefore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 62,
-      "symbol": "Task.destination",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 63,
-      "symbol": "Task.recipients",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 64,
-      "symbol": "Task.isActive",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 65,
-      "symbol": "Task.pickupTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 66,
-      "symbol": "Task.commConfig",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 67,
-      "symbol": "Task.requirements",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 68,
-      "symbol": "Task.overrides",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 69,
-      "symbol": "Task.requestedBarcodes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 70,
+      "line": 126,
       "symbol": "Task.isFulfilled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 78,
-      "symbol": "Task.quantity",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 80,
-      "symbol": "Task.metadata",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 120,
+      "line": 179,
       "symbol": "Task.empty()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 409,
+      "line": 468,
       "symbol": "Task.getDestination()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 413,
+      "line": 472,
       "symbol": "Task.getRecipients()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 417,
+      "line": 476,
       "symbol": "Task.hasRecipients",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 421,
+      "line": 480,
       "symbol": "Task.getNotes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 425,
+      "line": 484,
       "symbol": "Task.getShortId()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 429,
+      "line": 488,
       "symbol": "Task.getCompleteBefore()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 433,
+      "line": 492,
       "symbol": "Task.getCompleteAfter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 437,
+      "line": 496,
       "symbol": "Task.getIsActive()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 441,
+      "line": 500,
       "symbol": "Task.getPickupTask()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 445,
+      "line": 504,
       "symbol": "Task.getCommConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 449,
+      "line": 508,
       "symbol": "Task.getOverrides()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 453,
+      "line": 512,
       "symbol": "Task.getRequestedBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 457,
+      "line": 516,
       "symbol": "Task.hasAttachedBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 461,
+      "line": 520,
       "symbol": "Task.attachedBarcodesCount()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 465,
+      "line": 524,
       "symbol": "Task.getIsFulfilled()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 469,
+      "line": 528,
       "symbol": "Task.getScanOnlyRequiredBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 473,
+      "line": 532,
       "symbol": "Task.getIsSameOrgAsCreator()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 477,
+      "line": 536,
       "symbol": "Task.getQuantity()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 481,
+      "line": 540,
       "symbol": "Task.getRequirements()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 485,
+      "line": 544,
       "symbol": "Task.getMetadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 489,
+      "line": 548,
       "symbol": "Task.getIsSelfAssignable()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 493,
+      "line": 552,
       "symbol": "Task.getIsSelfAssigned()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 536,
+      "line": 595,
       "symbol": "Task.getPhoneNumberForPreferredRecipient(mode:onlyProxy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 540,
+      "line": 599,
       "symbol": "Task.getPhoneNumberForRecipient(index:mode:onlyProxy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 565,
+      "line": 624,
       "symbol": "Task.getHasRecipientMetadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 569,
+      "line": 628,
       "symbol": "Task.getHasRecipientSignature()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Task.swift",
-      "line": 573,
+      "line": 632,
       "symbol": "Task.beginVoiceCallForRecipient(index:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -3558,820 +2270,281 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 20,
-      "symbol": "Vehicle",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 21,
+      "line": 25,
       "symbol": "Vehicle.vehicleDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 22,
+      "line": 26,
       "symbol": "Vehicle.licensePlate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 23,
+      "line": 27,
       "symbol": "Vehicle.color",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 24,
+      "line": 28,
       "symbol": "Vehicle.vehicleType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 104,
+      "line": 108,
       "symbol": "Vehicle.getDescription()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 108,
+      "line": 112,
       "symbol": "Vehicle.getLicensePlate()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 112,
+      "line": 116,
       "symbol": "Vehicle.getColor()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Vehicle.swift",
-      "line": 116,
+      "line": 120,
       "symbol": "Vehicle.getVehicleType()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 14,
-      "symbol": "ObservableModel",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 15,
+      "line": 23,
       "symbol": "ObservableModel.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 16,
+      "line": 24,
       "symbol": "ObservableModel.timeLastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 17,
+      "line": 25,
       "symbol": "ObservableModel.timeCreated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 19,
-      "symbol": "ObservableModel.getChangeObservable(watchChildren:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 20,
-      "symbol": "ObservableModel.getDeleteObservable()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 23,
-      "symbol": "Driver",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 24,
-      "symbol": "Driver.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 25,
-      "symbol": "Driver.name$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
       "line": 27,
-      "symbol": "Driver.phone",
+      "symbol": "ObservableModel.changeObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
       "line": 28,
-      "symbol": "Driver.phone$",
+      "symbol": "ObservableModel.changeObservableWithChildren",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 30,
-      "symbol": "Driver.image",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 31,
-      "symbol": "Driver.image$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 33,
-      "symbol": "Driver.onDuty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 34,
-      "symbol": "Driver.onDuty$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 36,
-      "symbol": "Driver.activeTask",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 37,
-      "symbol": "Driver.activeTask$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 39,
-      "symbol": "Driver.tasks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 40,
-      "symbol": "Driver.tasks$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 42,
-      "symbol": "Driver.vehicle",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 43,
-      "symbol": "Driver.vehicle$",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 45,
-      "symbol": "Driver.organization",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model/Worker.swift",
-      "line": 46,
-      "symbol": "Driver.organization$",
+      "line": 29,
+      "symbol": "ObservableModel.deleteObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
-      "line": 14,
-      "symbol": "AuthStatus",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Login/Login.swift",
       "line": 11,
-      "symbol": "Password",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Login/Login.swift",
-      "line": 15,
-      "symbol": "PhoneNumber",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Login/Login.swift",
-      "line": 17,
-      "symbol": "PhoneNumber.E164Formatted",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Login/Login.swift",
-      "line": 18,
-      "symbol": "PhoneNumber.prettyPrinted",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Login/Login.swift",
-      "line": 20,
-      "symbol": "PhoneNumber.init(E164:pretty:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 12,
-      "symbol": "Account",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 14,
-      "symbol": "Account.CodingKeys",
+      "symbol": "LoginError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
+      "line": 12,
+      "symbol": "LoginError.accountUnaccessible(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
+      "line": 13,
+      "symbol": "LoginError.invalidCredentials(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
+      "line": 14,
+      "symbol": "LoginError.noAccountsAvailable(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
       "line": 15,
-      "symbol": "Account.CodingKeys.status",
+      "symbol": "LoginError.noOrganizations(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
       "line": 16,
-      "symbol": "Account.CodingKeys.organizationId",
+      "symbol": "LoginError.invalidVerificationCode(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 16,
-      "symbol": "Account.CodingKeys.organizationImage",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 16,
-      "symbol": "Account.CodingKeys.organizationName",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
       "line": 17,
-      "symbol": "Account.CodingKeys.userId",
+      "symbol": "LoginError.tooManyAttempts(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 17,
-      "symbol": "Account.CodingKeys.userOnDuty",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 17,
-      "symbol": "Account.CodingKeys.userPhoneNumber",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
       "line": 18,
-      "symbol": "Account.CodingKeys.accessToken",
+      "symbol": "LoginError.badDeviceTime(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 18,
-      "symbol": "Account.CodingKeys.refreshToken",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
+      "line": 19,
+      "symbol": "LoginError.passwordUpdate(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 21,
-      "symbol": "Account.organizationId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
+      "line": 20,
+      "symbol": "LoginError.other(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Auth.swift",
       "line": 22,
-      "symbol": "Account.organizationName",
+      "symbol": "LoginError.localizedDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 25,
-      "symbol": "Account.userId",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Reset Password/ResetPasswordTask.swift",
+      "line": 11,
+      "symbol": "ResetPasswordError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Reset Password/ResetPasswordTask.swift",
+      "line": 13,
+      "symbol": "ResetPasswordError.invalidPhoneNumber(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Reset Password/ResetPasswordTask.swift",
+      "line": 14,
+      "symbol": "ResetPasswordError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Reset Password/ResetPasswordTask.swift",
+      "line": 16,
+      "symbol": "ResetPasswordError.isInvalidPhoneNumberError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 26,
-      "symbol": "Account.userPhoneNumber",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 27,
-      "symbol": "Account.userOnDuty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 29,
-      "symbol": "Account.accessToken",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 30,
-      "symbol": "Account.refreshToken",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Auth/Reset Password/ResetPasswordTask.swift",
+      "line": 23,
+      "symbol": "ResetPasswordError.localizedDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
       "line": 32,
-      "symbol": "Account.status",
+      "symbol": "Account.organizationId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 34,
-      "symbol": "Account.isPending",
+      "line": 33,
+      "symbol": "Account.organizationName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 38,
-      "symbol": "Account.isAccepted",
+      "line": 36,
+      "symbol": "Account.userId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
+      "line": 37,
+      "symbol": "Account.userPhoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 42,
+      "symbol": "Credentials.phoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
       "line": 43,
-      "symbol": "Account.isRejected",
+      "symbol": "Credentials.password",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/Account.swift",
-      "line": 48,
-      "symbol": "Account.organizationImageUrl",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 45,
+      "symbol": "Credentials.usedAutoFill",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountInvitationTask.swift",
-      "line": 11,
-      "symbol": "AccountInvitationResult",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 12,
-      "symbol": "LogoutReason",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 14,
-      "symbol": "LogoutReason.userInitiated",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 15,
-      "symbol": "LogoutReason.userInitiatedByForce",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 16,
-      "symbol": "LogoutReason.rejectedAccountInvitation",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 17,
-      "symbol": "LogoutReason.invalidAuthentication",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 18,
-      "symbol": "LogoutReason.noDriver",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 19,
-      "symbol": "LogoutReason.noOrganization",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 20,
-      "symbol": "LogoutReason.accountRemoved",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 21,
-      "symbol": "LogoutReason.organizationSuspended",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 22,
-      "symbol": "LogoutReason.activityOnOtherDevice",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 24,
-      "symbol": "LogoutReason.isForced",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 48,
-      "symbol": "LogoutReason",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 72,
-      "symbol": "InvitationResponse",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 73,
-      "symbol": "InvitationResponse.accept",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 73,
-      "symbol": "InvitationResponse.reject",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 75,
-      "symbol": "InvitationResponse.isAccepted",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 82,
-      "symbol": "AccountsController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 85,
-      "symbol": "AccountsController.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 106,
-      "symbol": "AccountsController.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 112,
-      "symbol": "AccountsController.forceImmediateLogout(reason:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 125,
-      "symbol": "AccountsController.setAccessToken(_:on:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 150,
-      "symbol": "AccountsController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 152,
-      "symbol": "AccountsController.respondToInvitation(account:response:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 211,
-      "symbol": "AccountsController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 239,
-      "symbol": "AccountsController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 241,
-      "symbol": "AccountsController.login(phoneNumber:password:success:progress:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 304,
-      "symbol": "AccountsController.logout(force:started:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/Controller/AccountsController.swift",
-      "line": 380,
-      "symbol": "AccountsController.resetPassword(phoneNumber:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
-      "line": 13,
-      "symbol": "Notification.Name.sessionDidChangeActiveAccount",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
-      "line": 17,
-      "symbol": "LogoutCompletionHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
-      "line": 38,
-      "symbol": "SessionManaging.login(phoneNumber:password:success:progress:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
-      "line": 41,
-      "symbol": "SessionManaging.logout(force:started:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
-      "line": 44,
-      "symbol": "SessionManaging.resetPassword(phoneNumber:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
       "line": 47,
-      "symbol": "SessionManaging.respondToInvitation(account:response:success:failure:)",
+      "symbol": "Credentials.init(phoneNumber:password:usedAutoFill:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 12,
-      "symbol": "Config",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 13,
-      "symbol": "Config.appKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 14,
-      "symbol": "Config.appVersion",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 15,
-      "symbol": "Config.appName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 17,
-      "symbol": "Config.init(appKey:appVersion:appName:)",
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 94,
+      "symbol": "PhoneNumber.init(E164:pretty:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
       "line": 30,
-      "symbol": "DriverContext.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 71,
-      "symbol": "DriverContext.config",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 102,
-      "symbol": "DriverContext.isInitialized",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 247,
-      "symbol": "DriverContext.session",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 251,
-      "symbol": "DriverContext.driverManager",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 255,
-      "symbol": "DriverContext.location",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 259,
-      "symbol": "DriverContext.attachments",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 263,
-      "symbol": "DriverContext.completedTasks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 267,
-      "symbol": "DriverContext.deviceId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 276,
-      "symbol": "DriverContext.setRemoteNotificationsDeviceToken(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 300,
-      "symbol": "DriverContext.isDataStale",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 304,
-      "symbol": "DriverContext.dataState",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 308,
-      "symbol": "DriverContext.fetchingState",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 313,
-      "symbol": "DriverContext.RefetchDataHandler",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 315,
-      "symbol": "DriverContext.RefetchData",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 319,
-      "symbol": "DriverContext.refetchData(completion:)",
+      "symbol": "Config.init(appKey:appVersion:appName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

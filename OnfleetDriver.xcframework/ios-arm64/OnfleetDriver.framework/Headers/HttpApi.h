@@ -28,12 +28,6 @@ typedef NS_CLOSED_ENUM(NSUInteger, WorkerAnalyticsPeriod) {
     WorkerAnalyticsPeriodYear
 };
 
-typedef NS_CLOSED_ENUM(NSUInteger, AnalyticsPeriodDuration) {
-    AnalyticsPeriodDurationDay,
-    AnalyticsPeriodDurationWeek,
-    AnalyticsPeriodDurationMonth
-};
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HttpApi : NSObject {
@@ -59,8 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)collectionWithName:(NSString *)name parameters: (nullable NSDictionary *)parameters onComplete:(AsyncOperationComplete)onComplete;
 
 - (void)completedTasksInTimeframe:(NSDictionary*)timeframe successBlock:(HttpSuccessBlock)successBlock errorBlock:(HttpErrorBlock)errorBlock;
-
-- (void)analyticsForCustomPeriodWithStart:(NSDate *)startDate end:(NSDate *)endDate periodDuration: (AnalyticsPeriodDuration)period successBlock:(HttpSuccessBlock)successBlock errorBlock:(HttpErrorBlock)errorBlock;
 
 - (void)uploadImageAttachmentData:(NSData *)imageData attachmentId:(NSString *)attachmentId type:(NSString *)type onComplete:(AsyncOperationComplete)onComplete;
 
