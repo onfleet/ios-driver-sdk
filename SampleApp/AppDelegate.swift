@@ -17,11 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let config = Config(appKey: "7bfc78f26d129129bc04ff53fa777f65", appVersion: "1.0", appName: "Sample App")
-        driver.initSDK(with: config, environment: .staging, app: application, loggers: [OSLogDestination(logSeverity: .warning)])
+        #warning("insert app ID here")
+        let config = Config(appKey: "{app-id}", appVersion: "1.0", appName: "Sample App")
+        driver.initSDK(with: config, environment: .production, app: application, loggers: [OSLogDestination(logSeverity: .warning)])
         return true
     }
-    
-    
 }
 
