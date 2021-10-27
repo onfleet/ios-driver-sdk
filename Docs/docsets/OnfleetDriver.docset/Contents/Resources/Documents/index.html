@@ -220,10 +220,13 @@
             <a class="nav-group-name-link" href="Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/DataState.html">DataState</a>
@@ -241,10 +244,19 @@
                 <a class="nav-group-task-link" href="Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -253,7 +265,7 @@
                 <a class="nav-group-task-link" href="Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/StartTaskError.html">StartTaskError</a>
@@ -273,6 +285,9 @@
             <a class="nav-group-name-link" href="Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -283,9 +298,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -303,6 +315,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/Metadata.html">Metadata</a>
@@ -343,7 +358,7 @@
 <p><a name='About'></a></p>
 <h2 id='about' class='heading'>About</h2>
 
-<p>Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. Using this SDK </p>
+<p>Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. </p>
 
 <p><a name='Dependencies'></a></p>
 <h2 id='dependencies' class='heading'>Dependencies</h2>
@@ -351,7 +366,6 @@
 <p>We currently use several dependencies. Our goal is to remove all of them in future releases of the SDK.</p>
 
 <ul>
-<li>AFNetworking</li>
 <li>SocketRocket</li>
 <li>UICKeychainStore</li>
 <li>RxSwift</li>
@@ -363,21 +377,35 @@
 <ul>
 <li>iOS 12+</li>
 <li>Swift 5.3</li>
-<li>Xcode 11.x</li>
+<li>Xcode 12.5+</li>
 </ul>
 
 <p><a name='Documentation'></a></p>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
-<p>This repository contains auto-generated documentation. See <code>/Docs/index.html</code>.</p>
+<p>This repository contains auto-generated documentation. See <code>onfleet-driver-sdk/Docs/index.html</code>.</p>
 
 <p><a name='Installation'></a></p>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
-<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Onfleet Driver SDK into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. </p>
+
+<p>To integrate Onfleet Driver SDK into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'OnfleetDriver'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/onfleet/ios-driver-sdk.git'</span>
+
+<span class="nb">puts</span> <span class="s2">"********** PODS POST INSTALLATION HOOK **********"</span>
+  <span class="n">post_install</span> <span class="k">do</span> <span class="o">|</span><span class="n">pi</span><span class="o">|</span>
+      <span class="n">pi</span><span class="p">.</span><span class="nf">pods_project</span><span class="p">.</span><span class="nf">targets</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">target</span><span class="o">|</span>
+        <span class="n">target</span><span class="p">.</span><span class="nf">build_configurations</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+          <span class="n">config</span><span class="p">.</span><span class="nf">build_settings</span><span class="p">[</span><span class="s1">'IPHONEOS_DEPLOYMENT_TARGET'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'12.0'</span>
+          <span class="n">config</span><span class="p">.</span><span class="nf">build_settings</span><span class="p">[</span><span class="s1">'BUILD_LIBRARY_FOR_DISTRIBUTION'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'YES'</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+  <span class="k">end</span>
 </code></pre>
+
+<p>Please note that post installation hook is required at the moment to make sure that dependencies have target iOS 12 and to assure smooth linking during runtime library evolution must be enforced on all libraries. See <a href="https://github.com/CocoaPods/CocoaPods/issues/9775">https://github.com/CocoaPods/CocoaPods/issues/9775</a>.</p>
 <h3 id='spm-amp-manually' class='heading'>SPM &amp; Manually</h3>
 
 <p>Unfortunatelly we don&rsquo;t currently support SPM or manual integration.</p>
@@ -400,7 +428,8 @@
 
 <ol>
 <li>Location -&gt; Allow location access -&gt; <strong>Always</strong></li>
-<li>Precise Location -&gt; <strong>On</strong></li>
+<li>Precise Location -&gt; <strong>On</strong>
+This will be referred as <em>full location permissions</em> going forward.</li>
 </ol>
 
 <p>Following privacy description must be set in <code>Info.plist</code></p>
@@ -408,24 +437,32 @@
 &lt;string&gt;Onfleet only tracks your location when on-duty in order to provide analytics and dispatch work to you.&lt;/string&gt;
 </code></pre>
 
-<p>Unfortunatelly, current iOS permissions policy does not wake up apps in the background if location access is set to <strong>While in Use</strong> or <strong>Once</strong>. This requires apps to ask location permission <strong>Always</strong>. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. </p>
+<p>Unfortunatelly, current iOS permissions policy does not open apps in the background if location access is set to <strong>While in Use</strong> or <strong>Once</strong>. This requires apps to ask <em>full location permissions</em>. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. </p>
 
-<p>Good practice is to verify permissions before driver attempts to go on duty and present a screen with reasons why these permissions are required. Then app should request access <em>when in use</em>, then guide user to open Settings app and manually select location access <strong>Always</strong>. If precise location is off, simular flow should ask for precise location to be <strong>on</strong>.</p>
+<p>Please follow these rules when implementing your own flow:</p>
 
-<p>Here are reasons why Onfleet requires these location permissions:</p>
+<ol>
+<li>enforce &ldquo;Always&rdquo; no sooner than when going on duty. Don&rsquo;t allow going on duty unless <em>full location permissions</em> are granted.</li>
+<li>if driver revokes <em>full location permissions</em> while on duty make sure she goes either off duty or grants <em>full location permissions</em>.<br></li>
+</ol>
+
+<p>Good practice is to verify permissions before driver attempts to go on duty and present a screen with reasons why these permissions are required. Then app should request access <em>when in use</em> or <em>always</em>, then guide user to open Settings app and manually select location access <strong>Always</strong>. If precise location is off, similar flow should ask for precise location to be <strong>on</strong>.</p>
+
+<p>Here are reasons why Onfleet requires <em>full location permissions</em>:</p>
 
 <ol>
 <li>dispatchers can see drivers in real time on web Dashboard</li>
 <li>delivery recipients can see drivers in real time</li>
 <li>task delivery ETA is continually recalculated to provide better precisions to recipients</li>
 <li>locations are used for driver analytics, especially distance driven. Some drivers may be paid by according to this data so precision must be as accurate as possible.</li>
-<li>SDK never tracks driver location when off duty</li>
+<li>SDK never tracks driver&rsquo;s location when off duty</li>
+<li>system can open suspended application on background so it can continue sending locations to our server</li>
 </ol>
 
-<p>Protocol in <code>LocationManaging.swift</code> provides a conveniece wrapper for observing location permissions.</p>
+<p>Protocol in <code>LocationManaging.swift</code> provides a conveniece wrapper for observing location permissions. Our Sample app contains an example flow.  </p>
 <h3 id='push-notifications' class='heading'>Push notifications</h3>
 
-<p>When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in <code><a href="Classes/DriverContext.html">DriverContext</a></code> class. If push notifications will not be forwarded several features will stop working or will not work as expected.</p>
+<p>When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in <code><a href="Classes/DriverContext.html">DriverContext</a></code> class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.</p>
 
 <p><a name='SampleApp'></a></p>
 <h2 id='sample-app' class='heading'>Sample app</h2>
@@ -436,7 +473,7 @@
 <li>Log in, log out, reset password</li>
 <li>Accepting / rejecting invitations</li>
 <li>Setting duty status</li>
-<li>Fetching data and showing list of tasks</li>
+<li>Fetching data</li>
 <li>Tasks list</li>
 <li>Task detail (claiming, starting, completing tasks)</li>
 </ul>
@@ -446,6 +483,8 @@
 <li>clone <code>onfleet/ios-driver-sdk</code> repository using  <code>git clone git@github.com:onfleet/ios-driver-sdk.git</code></li>
 <li>open root directory and install pods using <code>pod install</code></li>
 <li>open <code>SampleApp.xcworkspace</code> in Xcode</li>
+<li>in <code>AppDelegate.swift</code> file add your Onfleet <strong>application_id</strong></li>
+<li>in target&rsquo;s Signing &amp; Capabilities update bundle identifier and team</li>
 <li>build and run using <code>SampleApp</code> scheme</li>
 </ol>
 

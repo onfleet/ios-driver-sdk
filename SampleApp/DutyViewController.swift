@@ -9,6 +9,7 @@ import UIKit
 import OnfleetDriver
 import RxSwift
 import RxCocoa
+import CoreLocation
 
 protocol DutyViewControllerDelegate {
     func dutyViewController(_ controller: DutyViewController, shouldLogOut sender: Any)
@@ -21,6 +22,7 @@ final class DutyViewController : UIViewController, ActivityShowing {
     
     private let session = DriverContext.shared.session
     private let driverManager = DriverContext.shared.driverManager
+    private let location = DriverContext.shared.location
     private let bag = DisposeBag()
     
     override func viewDidLoad() {
@@ -29,9 +31,11 @@ final class DutyViewController : UIViewController, ActivityShowing {
         dutySwitch.addTarget(self, action: #selector(dutySwitchValueChanged(sender:)), for: .valueChanged)
         
         let dutyStatusDriver = driverManager.onDuty$.observable.asDriver(onErrorJustReturn: false)
+        
         dutyStatusDriver.filter({ $0 == true }).drive(onNext: { [weak self] _ in
             self?.updateInterfaceOnDuty()
         }).disposed(by: bag)
+        
         dutyStatusDriver.filter({ $0 == false }).drive(onNext: { [weak self] _ in
             self?.updateInterfaceOffDuty()
         }).disposed(by: bag)
@@ -39,17 +43,47 @@ final class DutyViewController : UIViewController, ActivityShowing {
         driverManager.onDuty$.observable.asDriver(onErrorJustReturn: false)
             .drive(self.dutySwitch.rx.isOn)
             .disposed(by: bag)
+        
+        location.isFullyAuthorized$.observable.filter({ $0 == false }).subscribe(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            guard self.driverManager.isOnDuty else { return }
+            print("going off duty due to insufficient location permissions...")
+            self.driverManager.setDutyStatus(goOnDuty: false) { result in
+                print("duty status result: \(result)")
+                self.hideActivityIfNeeded() {
+                    if case Result.failure(let error) = result {
+                        self.dutySwitch.isOn = false
+                        self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                    } else {
+                        self.showAlert(title: "Off Duty", message: "You went off duty due to insufficient location permissions", animated: true)
+                    }
+                }
+            }
+        }).disposed(by: bag)
     }
     
     @objc private func dutySwitchValueChanged(sender: UISwitch) {
-        print("chaning duty status...")
-        showActivity("Going \(sender.isOn ? "on" : "off") duty...", animated: true)
-        driverManager.setDutyStatus(goOnDuty: dutySwitch.isOn) { [weak self] (result) in
+        
+        if location.isFullyAuthorized == false && sender.isOn {
+            CLLocationManager().requestAlwaysAuthorization()
+        }
+        
+        print("chaning duty status due to user action...")
+        self.showActivity("Going \(sender.isOn ? "on" : "off") duty...", animated: true)
+        self.driverManager.setDutyStatus(goOnDuty: self.dutySwitch.isOn) { result in
             print("duty status result: \(result)")
-            self?.hideActivity() {
+            self.hideActivityIfNeeded() {
                 if case Result.failure(let error) = result {
                     sender.isOn = !sender.isOn
-                    self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                    switch error {
+                    case .locationPermissionsDenied:
+                        self.showAlert(title: "Insufficient Location Access", message: "Our app requires Location Access 'Always' and Precise Location 'On' in order to work properly.", animated: true, okTitle: "Open Settings") { _ in
+                            let settingsUrl = URL(string: UIApplication.openSettingsURLString)!
+                            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+                        }
+                    default:
+                        self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                    }
                 }
             }
         }
@@ -77,7 +111,6 @@ extension DutyViewController {
     }
     
     private func updateInterfaceOnDuty() {
-        //dutySwitch.isOn = true
         offDutyViewController.view.isHidden = true
         tasksViewController.view.isHidden = false
         tasksViewController.view.frame = view.bounds
@@ -85,7 +118,6 @@ extension DutyViewController {
     }
     
     private func updateInterfaceOffDuty() {
-        //dutySwitch.isOn = false
         tasksViewController.view.isHidden = true
         offDutyViewController.view.isHidden = false
         offDutyViewController.view.frame = view.bounds

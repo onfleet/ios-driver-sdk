@@ -221,10 +221,13 @@
             <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/DataState.html">DataState</a>
@@ -242,10 +245,19 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -254,7 +266,7 @@
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/StartTaskError.html">StartTaskError</a>
@@ -274,6 +286,9 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -284,9 +299,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -304,6 +316,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Metadata.html">Metadata</a>
@@ -609,12 +624,14 @@ observable. See <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriv
                       <div class="abstract">
                         <p>Upload driver&rsquo;s profile photo.</p>
 
-<p>Please note that changing profile image consists of 2 steps:</p>
+<p>Please note that changing profile image consists of 3 steps:</p>
 
 <ol>
-<li>calling this method will upload image and return uploadId.</li>
-<li>this upload is must be added to <code><a href="../Structs/DriverProfileDetails.html#/s:13OnfleetDriver0B14ProfileDetailsV5imageSSSgvp">DriverProfileDetails.image</a></code> and
-<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionyAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:completion:)</a></code> must be called. When change is registered on
+<li>calling this method will upload image and return <code>uploadId</code>.</li>
+<li>(optional) the <code>uploadId</code> can be used along with <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF">DriverManaging.urlForTemporaryProfileImage(for:)</a></code>
+to downlaod the image from server if neede to be displayed in the UI.</li>
+<li>when the profile si done editing the <code>uploadId</code> must be added to <code><a href="../Structs/DriverProfileDetails.html#/s:13OnfleetDriver0B14ProfileDetailsV5imageAC5ValueOy_SSSgGvp">DriverProfileDetails.image</a></code> and
+<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionAA8WorkTask_pAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:completion:)</a></code> must be called. When change is registered on
 server <code><a href="../Protocols/Driver.html#/s:13OnfleetDriver0B0P6image$AA30EquatableOptionalModelPropertyCySSGvp">Driver.image$</a></code> observable property will be changed.</li>
 </ol>
 
@@ -665,8 +682,8 @@ from 0 to 1.</p>
                               <td>
                                 <div>
                                   <p>closure will be called once uploading is done. If success, closure will return
-string of uploadId. This string must be added to <code><a href="../Structs/DriverProfileDetails.html#/s:13OnfleetDriver0B14ProfileDetailsV5imageSSSgvp">DriverProfileDetails.image</a></code> and
-<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionyAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:completion:)</a></code> must be called.</p>
+string of uploadId. This string must be added to <code><a href="../Structs/DriverProfileDetails.html#/s:13OnfleetDriver0B14ProfileDetailsV5imageAC5ValueOy_SSSgGvp">DriverProfileDetails.image</a></code> and
+<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionAA8WorkTask_pAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:completion:)</a></code> must be called.</p>
                                 </div>
                               </td>
                             </tr>
@@ -679,9 +696,39 @@ string of uploadId. This string must be added to <code><a href="../Structs/Drive
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionyAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF"></a>
+                    <a name="/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/urlForTemporaryProfileImage(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF">urlForTemporaryProfileImage(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs an url for profile image with provided <code>uploadId</code>. Use this url to download profile image
+before the profile image is updated.</p>
+
+<p>This is a convenient way to show profile image in the UI before the profile update is sent to server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">urlForTemporaryProfileImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">uploadId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionAA8WorkTask_pAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF"></a>
                     <a name="//apple_ref/swift/Method/updateProfile(details:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionyAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionAA8WorkTask_pAA0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -698,7 +745,7 @@ string of uploadId. This string must be added to <code><a href="../Structs/Drive
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateProfile</span><span class="p">(</span><span class="nv">details</span><span class="p">:</span> <span class="kt"><a href="../Structs/DriverProfileDetails.html">DriverProfileDetails</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">UpdateProfileHandler</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateProfile</span><span class="p">(</span><span class="nv">details</span><span class="p">:</span> <span class="kt"><a href="../Structs/DriverProfileDetails.html">DriverProfileDetails</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">UpdateProfileHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">WorkTask</span></code></pre>
 
                         </div>
                       </div>
@@ -732,6 +779,10 @@ string of uploadId. This string must be added to <code><a href="../Structs/Drive
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an instance of <code>WorkTask</code>. Note that in order to fire the work <code>resume()</code> function must be called.</p>
                       </div>
                     </section>
                   </div>
@@ -1629,7 +1680,7 @@ it&rsquo;s only to warn drivers.</p>
 <p>When this feature is enabled by organization driver can self assign (claim) tasks. These tasks are
 first shared among all drivers in team and can be claimed by individual drivers on first comes first
 serves bases. When a task is self-assign it will appear in list of tasks under <code><a href="../Protocols/Driver.html">Driver</a></code>&lsquo;s tasks
-property. To self assign a task see <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfeH5ErrorOGctF">selfAssign(task:completion:)</a></code>.</p>
+property. To self assign a task see <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfE5ErrorOGctF">selfAssign(task:completion:)</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1658,7 +1709,7 @@ property. To self assign a task see <code><a href="../Protocols/DriverManaging.h
                       <div class="abstract">
                         <p>A list of tasks that are available for self-assignment.</p>
 
-<p>To self assign a task see <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfeH5ErrorOGctF">selfAssign(task:completion:)</a></code>.</p>
+<p>To self assign a task see <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfE5ErrorOGctF">selfAssign(task:completion:)</a></code>.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Self-assignable tasks may not always be updated in real time.
@@ -1680,9 +1731,9 @@ property. To self assign a task see <code><a href="../Protocols/DriverManaging.h
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfeH5ErrorOGctF"></a>
+                    <a name="/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfE5ErrorOGctF"></a>
                     <a name="//apple_ref/swift/Method/selfAssign(task:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfeH5ErrorOGctF">selfAssign(task:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP10selfAssign4task10completionyAA4TaskC_ys6ResultOyytAA04SelfE5ErrorOGctF">selfAssign(task:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">

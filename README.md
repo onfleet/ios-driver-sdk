@@ -19,7 +19,7 @@
 
 ## About
 
-Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. Using this SDK 
+Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. 
 
 <a name='Dependencies'></a>
 
@@ -27,7 +27,6 @@ Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. 
 
 We currently use several dependencies. Our goal is to remove all of them in future releases of the SDK.
 
-- AFNetworking
 - SocketRocket
 - UICKeychainStore
 - RxSwift
@@ -37,13 +36,13 @@ We currently use several dependencies. Our goal is to remove all of them in futu
 ## Requirements
 * iOS 12+
 * Swift 5.3
-* Xcode 11.x
+* Xcode 12.5+
 
 <a name='Documentation'></a>
 
 ## Documentation
 
-This repository contains auto-generated documentation. See `/Docs/index.html`.
+This repository contains auto-generated documentation. See `onfleet-driver-sdk/Docs/index.html`.
 
 <a name='Installation'></a>
 
@@ -51,11 +50,25 @@ This repository contains auto-generated documentation. See `/Docs/index.html`.
 
 ### CocoaPods
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Onfleet Driver SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. 
+
+To integrate Onfleet Driver SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'OnfleetDriver', :git => 'https://github.com/onfleet/ios-driver-sdk.git'
+
+puts "********** PODS POST INSTALLATION HOOK **********"
+  post_install do |pi|
+      pi.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+        end
+      end
+  end
 ```
+
+Please note that post installation hook is required at the moment to make sure that dependencies have target iOS 12 and to assure smooth linking during runtime library evolution must be enforced on all libraries. See https://github.com/CocoaPods/CocoaPods/issues/9775.
 
 ### SPM & Manually
 
@@ -78,6 +91,7 @@ To achieve correct results pls enable in your Xcode project under your app schem
 Following location permissions are required:
 1. Location -> Allow location access -> **Always**
 2. Precise Location -> **On**
+This will be referred as _full location permissions_ going forward.
 
 Following privacy description must be set in `Info.plist`
 ```
@@ -85,22 +99,27 @@ Following privacy description must be set in `Info.plist`
 <string>Onfleet only tracks your location when on-duty in order to provide analytics and dispatch work to you.</string>
 ```
 
-Unfortunatelly, current iOS permissions policy does not wake up apps in the background if location access is set to **While in Use** or **Once**. This requires apps to ask location permission **Always**. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. 
+Unfortunatelly, current iOS permissions policy does not open apps in the background if location access is set to **While in Use** or **Once**. This requires apps to ask _full location permissions_. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. 
 
-Good practice is to verify permissions before driver attempts to go on duty and present a screen with reasons why these permissions are required. Then app should request access *when in use*, then guide user to open Settings app and manually select location access **Always**. If precise location is off, simular flow should ask for precise location to be **on**.
+Please follow these rules when implementing your own flow:
+1. enforce "Always" no sooner than when going on duty. Don't allow going on duty unless _full location permissions_ are granted. 
+2. if driver revokes _full location permissions_ while on duty make sure she goes either off duty or grants _full location permissions_.   
 
-Here are reasons why Onfleet requires these location permissions:
+Good practice is to verify permissions before driver attempts to go on duty and present a screen with reasons why these permissions are required. Then app should request access *when in use* or *always*, then guide user to open Settings app and manually select location access **Always**. If precise location is off, similar flow should ask for precise location to be **on**.
+
+Here are reasons why Onfleet requires _full location permissions_:
 1. dispatchers can see drivers in real time on web Dashboard
 2. delivery recipients can see drivers in real time
 3. task delivery ETA is continually recalculated to provide better precisions to recipients
 4. locations are used for driver analytics, especially distance driven. Some drivers may be paid by according to this data so precision must be as accurate as possible.
-5. SDK never tracks driver location when off duty
+5. SDK never tracks driver's location when off duty
+6. system can open suspended application on background so it can continue sending locations to our server
 
-Protocol in `LocationManaging.swift` provides a conveniece wrapper for observing location permissions.
+Protocol in `LocationManaging.swift` provides a conveniece wrapper for observing location permissions. Our Sample app contains an example flow.  
 
 ### Push notifications
 
-When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working or will not work as expected.
+When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.
 
 <a name='SampleApp'></a>
 
@@ -110,7 +129,7 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 - Log in, log out, reset password
 - Accepting / rejecting invitations
 - Setting duty status
-- Fetching data and showing list of tasks
+- Fetching data
 - Tasks list
 - Task detail (claiming, starting, completing tasks)
 
@@ -119,5 +138,6 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 1. clone `onfleet/ios-driver-sdk` repository using  `git clone git@github.com:onfleet/ios-driver-sdk.git`
 2. open root directory and install pods using `pod install`
 3. open `SampleApp.xcworkspace` in Xcode
-4. build and run using `SampleApp` scheme
-
+4. in `AppDelegate.swift` file add your Onfleet **application_id**
+5. in target's Signing & Capabilities update bundle identifier and team 
+6. build and run using `SampleApp` scheme

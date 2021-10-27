@@ -211,7 +211,7 @@ class TaskViewController : UITableViewController, ActivityShowing {
         showActivity("Claiming...", animated: true)
         driverManager.selfAssign(task: task) { [weak self] result in
             print("self assignment result: \(result)")
-            self?.hideActivity() {
+            self?.hideActivityIfNeeded() {
                 if case Result.failure(let error) = result {
                     self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
                 }
@@ -229,7 +229,7 @@ class TaskViewController : UITableViewController, ActivityShowing {
         showActivity("Starting...", animated: true)
         driverManager.start(task: task) { [weak self] result in
             print("start task result: \(result)")
-            self?.hideActivity() {
+            self?.hideActivityIfNeeded() {
                 if case Result.failure(let error) = result {
                     self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
                 }
@@ -241,7 +241,7 @@ class TaskViewController : UITableViewController, ActivityShowing {
         showActivity("Completing...", animated: true)
         driverManager.complete(task: task, completionDetails: TaskCompletionDetails()) { [weak self] result in
             print("complete task result: \(result)")
-            self?.hideActivity() {
+            self?.hideActivityIfNeeded() {
                 switch result {
                 case .success:
                     self?.showAlert(title: "Task Completed", message: nil, animated: true) { _ in

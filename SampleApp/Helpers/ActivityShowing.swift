@@ -18,12 +18,16 @@ extension ActivityShowing {
             activityAlert = UIAlertController(title: nil, message: title, preferredStyle: .alert)
         }
         if let alert = activityAlert, alert.presentingViewController == nil {
-            present(alert, animated: animated, completion: nil)
+            if let modal = self.presentedViewController {
+                modal.present(alert, animated: animated, completion: nil)
+            } else {
+                self.present(alert, animated: animated, completion: nil)
+            }
         }
         activityAlert?.message = title
     }
     
-    func hideActivity(completion: (()->Void)? = nil) {
+    func hideActivityIfNeeded(completion: (()->Void)? = nil) {
         if let alert = activityAlert {
             alert.dismiss(animated: false, completion: completion)
         }
@@ -32,21 +36,27 @@ extension ActivityShowing {
         }
     }
     
-    func showAlert(title: String?, message: String?, animated: Bool, okHandler: ((UIAlertAction) -> Void)? = nil) {
-        hideActivity { [weak self] in
+    func showAlert(title: String?, message: String?, animated: Bool, okTitle: String = "OK", okHandler: ((UIAlertAction) -> Void)? = nil) {
+        hideActivityIfNeeded { [weak self] in
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: okHandler))
+            alert.addAction(UIAlertAction(title: okTitle, style: .cancel, handler: okHandler))
             self?.present(alert, animated: animated, completion: nil)
         }
     }
     
     func showAlertPrompt(title: String?, message: String?, action: UIAlertAction, cancel: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil), animated: Bool) {
-        hideActivity { [weak self] in
+        hideActivityIfNeeded { [weak self] in
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addAction(cancel)
             alert.addAction(action)
             alert.preferredAction = action
-            self?.present(alert, animated: animated, completion: nil)
+            if let self = self {
+                if let modal = self.presentedViewController {
+                    modal.present(alert, animated: animated, completion: nil)
+                } else {
+                    self.present(alert, animated: animated, completion: nil)
+                }
+            }
         }
     }
 }

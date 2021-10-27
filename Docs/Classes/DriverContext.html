@@ -221,10 +221,13 @@
             <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/DataState.html">DataState</a>
@@ -242,10 +245,19 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -254,7 +266,7 @@
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/StartTaskError.html">StartTaskError</a>
@@ -274,6 +286,9 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -284,9 +299,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -304,6 +316,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Metadata.html">Metadata</a>
@@ -326,17 +341,16 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
-<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DriverContext</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DriverContext</span></code></pre>
 
                 </div>
               </div>
             <p>Main SDK object that provides access to all services.</p>
 
-<p>Access shared instance using <code><a href="../Classes/DriverContext.html#/c:@M@OnfleetDriver@objc(cs)DriverContext(cpy)shared">DriverContext.shared</a></code>. Before host app starts using <code>shared</code> it
+<p>Access shared instance using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC6sharedACvpZ">DriverContext.shared</a></code>. Before host app starts using <code>shared</code> it
 must intitate SDK early at application launching sequence. See
-<code><a href="../Classes/DriverContext.html#/c:@M@OnfleetDriver@objc(cs)DriverContext(im)initSDKWith:environment:app:loggers:">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
-check <code><a href="../Classes/DriverContext.html#/c:@M@OnfleetDriver@objc(cs)DriverContext(py)isInitialized">DriverContext.isInitialized</a></code> property.</p>
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA6ConfigC_AA11EnvironmentOSo13UIApplicationCSaySo17LoggerDestination_pGtF">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
+check <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC13isInitializedSbvp">DriverContext.isInitialized</a></code> property.</p>
 
 <p>DriverContext provides access to following core services:</p>
 
@@ -360,14 +374,14 @@ and update UI accordingly. See <code><a href="../Protocols/AttachmentsManaging.h
 <li><strong>data fetching and observing</strong> -
 While SDK synchronizes data automatically on the background, sometimes there is a need to allow users
 to refetch data, for example if there is an error or lost of connection. Also data fetching event can be observed
-and updated UI accordingly. See <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyyts5Error_pGcSg_tF">DriverContext.refetchData(completion:)</a></code> and methods
+and updated UI accordingly. See <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF">DriverContext.refetchData(completion:)</a></code> and methods
 in dedicated section below for more info.</li>
 <li><strong>push notifications</strong> -
 Onfleet SDK uses push notfications to present important events in UI such as new tasks assigned or to
 sync some data on the background. It is responsibility of host app to check in app delegate if incoming
-push notification is owned by Onfleet using <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)canHandleRemoteNotification:">DriverContext.canHandleRemoteNotification(_:)</a></code> and if yes it
-must be forwarded to the SDK using <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)handleRemoteNotificationWithUserInfo:">DriverContext.handleRemoteNotification(userInfo:)</a></code>. Please don&rsquo;t forget to forward
-also APN device token using <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)setRemoteNotificationsDeviceToken:">DriverContext.setRemoteNotificationsDeviceToken(_:)</a></code>
+push notification is owned by Onfleet using <code>DriverContext.canHandleRemoteNotification(_:)</code> and if yes it
+must be forwarded to the SDK using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF">DriverContext.handleRemoteNotification(userInfo:)</a></code>. Please don&rsquo;t forget to forward
+also APN device token using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF">DriverContext.setRemoteNotificationsDeviceToken(_:)</a></code>
 See methods in dedicated section below for more info.</li>
 </ol>
 
@@ -381,9 +395,9 @@ See methods in dedicated section below for more info.</li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@objc(cs)DriverContext(cpy)shared"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC6sharedACvpZ"></a>
                     <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@objc(cs)DriverContext(cpy)shared">shared</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -398,8 +412,7 @@ See methods in dedicated section below for more info.</li>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">DriverContext</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">DriverContext</span></code></pre>
 
                         </div>
                       </div>
@@ -409,9 +422,9 @@ See methods in dedicated section below for more info.</li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@objc(cs)DriverContext(py)config"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC6configAA6ConfigCSgvp"></a>
                     <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@objc(cs)DriverContext(py)config">config</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC6configAA6ConfigCSgvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -437,9 +450,9 @@ See methods in dedicated section below for more info.</li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@objc(cs)DriverContext(py)isInitialized"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC13isInitializedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isInitialized" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@objc(cs)DriverContext(py)isInitialized">isInitialized</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC13isInitializedSbvp">isInitialized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -465,9 +478,9 @@ See methods in dedicated section below for more info.</li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@objc(cs)DriverContext(im)initSDKWith:environment:app:loggers:"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA6ConfigC_AA11EnvironmentOSo13UIApplicationCSaySo17LoggerDestination_pGtF"></a>
                     <a name="//apple_ref/swift/Method/initSDK(with:environment:app:loggers:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@objc(cs)DriverContext(im)initSDKWith:environment:app:loggers:">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA6ConfigC_AA11EnvironmentOSo13UIApplicationCSaySo17LoggerDestination_pGtF">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -677,9 +690,9 @@ logger.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@OnfleetDriver@objc(cs)DriverContext(py)deviceId"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC8deviceIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/deviceId" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@OnfleetDriver@objc(cs)DriverContext(py)deviceId">deviceId</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC8deviceIdSSvp">deviceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -717,9 +730,9 @@ logger.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)setRemoteNotificationsDeviceToken:"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF"></a>
                     <a name="//apple_ref/swift/Method/setRemoteNotificationsDeviceToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)setRemoteNotificationsDeviceToken:">setRemoteNotificationsDeviceToken(_:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF">setRemoteNotificationsDeviceToken(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -744,9 +757,9 @@ logger.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)canHandleRemoteNotification:"></a>
-                    <a name="//apple_ref/swift/Method/canHandleRemoteNotification(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)canHandleRemoteNotification:">canHandleRemoteNotification(_:<wbr>)</a>
+                    <a name="/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF"></a>
+                    <a name="//apple_ref/swift/Method/canHandleRemoteNotification(userInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">canHandleRemoteNotification(userInfo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -754,19 +767,38 @@ logger.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This can be used to determine if the notification will be handeled by SDK.</p>
+                        <p>Determines if the notification will be handeled by the SDK.</p>
 
 <p>When a push notification is received you should use this method to determine wether it should be
-passed to SDK via <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)handleRemoteNotificationWithUserInfo:">DriverContext.handleRemoteNotification(userInfo:)</a></code> or not.</p>
+passed to SDK using dedicated functions.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">canHandleRemoteNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">canHandleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification&rsquo;s userInfo dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                       <div>
                         <h4>Return Value</h4>
@@ -778,9 +810,9 @@ passed to SDK via <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDri
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)handleRemoteNotificationWithUserInfo:"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF"></a>
                     <a name="//apple_ref/swift/Method/handleRemoteNotification(userInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)handleRemoteNotificationWithUserInfo:">handleRemoteNotification(userInfo:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF">handleRemoteNotification(userInfo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -788,16 +820,11 @@ passed to SDK via <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDri
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Handle remote notification passed from app delegate.</p>
+                        <p>Handle remote notifications passed from app delegate.</p>
 
 <p>You can verify if SDK is capable of handling a push notification using
-<code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(im)canHandleRemoteNotification:">DriverContext.canHandleRemoteNotification(_:)</a></code>. If that method returns true you
-don&rsquo;t have to pass push notification to SDK.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    This method uses old non-closure API.
-
-</div>
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
+don&rsquo;t have to pass push notification to the SDK.</p>
 
                       </div>
                       <div class="declaration">
@@ -805,6 +832,39 @@ don&rsquo;t have to pass push notification to SDK.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver0B7ContextC24handleRemoteNotification_17completionHandlerySo14UNNotificationC_ySo0I19PresentationOptionsVctF"></a>
+                    <a name="//apple_ref/swift/Method/handleRemoteNotification(_:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification_17completionHandlerySo14UNNotificationC_ySo0I19PresentationOptionsVctF">handleRemoteNotification(_:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle remote notifications passed from <code>UNUserNotificationCenterDelegate</code>.</p>
+
+<p>SDK must for certain notifications determine whether the banner/alert should be shown or hidden.</p>
+
+<p>You can verify if SDK is capable of handling a push notification using
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
+don&rsquo;t have to pass remote notification to the SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -827,9 +887,9 @@ don&rsquo;t have to pass push notification to SDK.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@OnfleetDriver@objc(cs)DriverContext(py)isDataStale"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp"></a>
                     <a name="//apple_ref/swift/Property/isDataStale" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@OnfleetDriver@objc(cs)DriverContext(py)isDataStale">isDataStale</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp">isDataStale</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -908,9 +968,9 @@ don&rsquo;t have to pass push notification to SDK.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyyts5Error_pGcSg_tF"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF"></a>
                     <a name="//apple_ref/swift/Method/refetchData(completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyyts5Error_pGcSg_tF">refetchData(completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF">refetchData(completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -918,14 +978,14 @@ don&rsquo;t have to pass push notification to SDK.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Fetches data from remote server.</p>
+                        <p>Fetches all data from remote server.</p>
 
 <p>Data fetching works semi-automatically. SDK fetches data from remove server as needed and there is no need
 to do any custom data fetching logic except when there is an error or data becomes stale. Host app can
 implement manual fetching mechanism like pull to refresh or similar, see
 <code>DriverContext.refetchData(completion:)</code> to refetch data any time .</p>
 
-<p>After some time data can become stale, for example if there is no internet for a while. See <code><a href="../Classes/DriverContext.html#/c:@CM@OnfleetDriver@objc(cs)DriverContext(py)isDataStale">isDataStale</a></code>
+<p>After some time data can become stale, for example if there is no internet for a while. See <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp">isDataStale</a></code>
 or observe <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC9dataStateAA22EquatableModelPropertyCyAA04DataE0OGvp">dataState</a></code> for changes. SDK can fetch data any time and if you wish to observe this event
 you can subscribe to <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC13fetchingStateAA22EquatableModelPropertyCyAA08FetchingE0OGvp">fetchingState</a></code>. It is a good practice to show in UI that data is stale, failed
 fetching or being fetched.</p>
@@ -935,7 +995,7 @@ fetching or being fetched.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refetchData</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">RefetchDataHandler</span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refetchData</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">FetchDataHandler</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>

@@ -5,8 +5,9 @@ inhibit_all_warnings!
 use_frameworks! 
 
 target 'SampleApp' do 
-  pod 'OnfleetDriver', :git => 'https://github.com/onfleet/ios-driver-sdk.git'
-  
+  pod 'OnfleetDriver', :path => '.' 
+  pod 'RxCocoa'
+
   puts "********** PODS POST INSTALLATION HOOK **********"
   post_install do |pi|
       pi.pods_project.targets.each do |target|

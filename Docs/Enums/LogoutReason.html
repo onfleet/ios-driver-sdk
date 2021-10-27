@@ -221,10 +221,13 @@
             <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/DataState.html">DataState</a>
@@ -242,10 +245,19 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -254,7 +266,7 @@
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/StartTaskError.html">StartTaskError</a>
@@ -274,6 +286,9 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -284,9 +299,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -304,6 +316,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Metadata.html">Metadata</a>
@@ -326,8 +341,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LogoutReason</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Error</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LogoutReason</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Error</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">LogoutReason</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                 </div>
@@ -351,9 +365,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonUserInitiated"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO13userInitiatedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/userInitiated" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonUserInitiated">userInitiated</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO13userInitiatedyA2CmF">userInitiated</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -378,9 +392,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonUserInitiatedByForce"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO20userInitiatedByForceyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/userInitiatedByForce" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonUserInitiatedByForce">userInitiatedByForce</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO20userInitiatedByForceyA2CmF">userInitiatedByForce</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -405,9 +419,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonRejectedAccountInvitation"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO25rejectedAccountInvitationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/rejectedAccountInvitation" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonRejectedAccountInvitation">rejectedAccountInvitation</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO25rejectedAccountInvitationyA2CmF">rejectedAccountInvitation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -432,9 +446,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonInvalidAuthentication"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO21invalidAuthenticationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/invalidAuthentication" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonInvalidAuthentication">invalidAuthentication</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO21invalidAuthenticationyA2CmF">invalidAuthentication</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -459,9 +473,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonNoDriver"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO02noB0yA2CmF"></a>
                     <a name="//apple_ref/swift/Element/noDriver" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonNoDriver">noDriver</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO02noB0yA2CmF">noDriver</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -486,9 +500,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonNoOrganization"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO14noOrganizationyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/noOrganization" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonNoOrganization">noOrganization</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO14noOrganizationyA2CmF">noOrganization</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -513,9 +527,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonAccountRemoved"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO14accountRemovedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/accountRemoved" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonAccountRemoved">accountRemoved</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO14accountRemovedyA2CmF">accountRemoved</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -541,9 +555,9 @@ as active.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonOrganizationSuspended"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO21organizationSuspendedyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/organizationSuspended" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonOrganizationSuspended">organizationSuspended</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO21organizationSuspendedyA2CmF">organizationSuspended</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -568,9 +582,9 @@ as active.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonActivityOnOtherDevice"></a>
+                    <a name="/s:13OnfleetDriver12LogoutReasonO21activityOnOtherDeviceyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/activityOnOtherDevice" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@OnfleetDriver@E@LogoutReason@LogoutReasonActivityOnOtherDevice">activityOnOtherDevice</a>
+                    <a class="token" href="#/s:13OnfleetDriver12LogoutReasonO21activityOnOtherDeviceyA2CmF">activityOnOtherDevice</a>
                     </code>
                   </div>
                   <div class="height-container">

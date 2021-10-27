@@ -221,10 +221,13 @@
             <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/DataState.html">DataState</a>
@@ -242,10 +245,19 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -254,7 +266,7 @@
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/StartTaskError.html">StartTaskError</a>
@@ -274,6 +286,9 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -284,9 +299,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -304,6 +316,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Metadata.html">Metadata</a>
@@ -327,6 +342,7 @@
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">DutyStatusError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DutyStatusError</span> <span class="p">:</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
 
                 </div>
               </div>
@@ -369,9 +385,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver15DutyStatusErrorO24activeTaskInOtherAccountyAcA8APIErrorVcACmF"></a>
+                    <a name="/s:13OnfleetDriver15DutyStatusErrorO24activeTaskInOtherAccountyAcA7HttpApiO0lE0VcACmF"></a>
                     <a name="//apple_ref/swift/Element/activeTaskInOtherAccount(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO24activeTaskInOtherAccountyAcA8APIErrorVcACmF">activeTaskInOtherAccount(_:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO24activeTaskInOtherAccountyAcA7HttpApiO0lE0VcACmF">activeTaskInOtherAccount(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -386,7 +402,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">activeTaskInOtherAccount</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Structs/APIError.html">APIError</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">activeTaskInOtherAccount</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -396,9 +412,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver15DutyStatusErrorO4httpyAcA9HTTPErrorOyAA8APIErrorVGcACmF"></a>
+                    <a name="/s:13OnfleetDriver15DutyStatusErrorO4httpyAcA9HTTPErrorOyAA7HttpApiO0iE0VGcACmF"></a>
                     <a name="//apple_ref/swift/Element/http(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO4httpyAcA9HTTPErrorOyAA8APIErrorVGcACmF">http(_:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO4httpyAcA9HTTPErrorOyAA7HttpApiO0iE0VGcACmF">http(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,7 +429,34 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">http</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPError.html">HTTPError</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/APIError.html">APIError</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">http</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPError.html">HTTPError</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver15DutyStatusErrorO5otheryACs0E0_pcACmF"></a>
+                    <a name="//apple_ref/swift/Element/other(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO5otheryACs0E0_pcACmF">other(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">other</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -477,9 +520,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver15DutyStatusErrorO04httpE0AA9HTTPErrorOyAA8APIErrorVGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/httpError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO04httpE0AA9HTTPErrorOyAA8APIErrorVGSgvp">httpError</a>
+                    <a name="/s:13OnfleetDriver15DutyStatusErrorO03apiE0AA7HttpApiO0hE0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/apiError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO03apiE0AA7HttpApiO0hE0VSgvp">apiError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -494,7 +537,60 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">httpError</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPError.html">HTTPError</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/APIError.html">APIError</a></span><span class="o">&gt;</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">apiError</span><span class="p">:</span> <span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver15DutyStatusErrorO04httpE0AA9HTTPErrorOyAA7HttpApiO0iE0VGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/httpError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver15DutyStatusErrorO04httpE0AA9HTTPErrorOyAA7HttpApiO0iE0VGSgvp">httpError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">httpError</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPError.html">HTTPError</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span><span class="o">&gt;</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/debugDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp">debugDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">debugDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

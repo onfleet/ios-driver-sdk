@@ -74,13 +74,13 @@ final class InitialViewController : UIViewController, ActivityShowing {
     }
     
     private func showMainApplicationFlow() {
-        hideActivity { [weak self] in
+        hideActivityIfNeeded { [weak self] in
             self?.performSegue(withIdentifier: "DutyViewControllerSegueId", sender: self)
         }
     }
     
     private func showAuthenticationFlow() {
-        hideActivity { [weak self] in
+        hideActivityIfNeeded { [weak self] in
             self?.presentedViewController?.dismiss(animated: true, completion: nil)
         }
     }
@@ -100,7 +100,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
                 self?.showActivity("Authenticating...", animated: true)
             case .idle:
                 print("doing no work or waiting for user input")
-                self?.hideActivity()
+                self?.hideActivityIfNeeded()
             case .waiting:
                 print("waiting for admin verification")
                 self?.showActivity("Waiting for admin verification. This may take some time.", animated: true)
@@ -113,7 +113,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
                 
             case .failure(let error):
                 print("login failed: \(error.localizedDescription)")
-                self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                self?.showAlert(title: "Login Failed", message: error.localizedDescription, animated: true)
             }
         }
     }
@@ -125,7 +125,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
         } completion: { [weak self] (result) in
             print("logout result: \(result)")
             if case Result.failure(let error) = result {
-                self?.showAlertPrompt(title: "Failed", message: error.localizedDescription, action: UIAlertAction(title: "Logout Anyway", style: .destructive, handler: { _ in
+                self?.showAlertPrompt(title: "Logout Failed", message: error.localizedDescription, action: UIAlertAction(title: "Logout Anyway", style: .destructive, handler: { _ in
                     self?.logOut(force: true)
                 }), animated: false)
             }
@@ -135,7 +135,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
     @IBAction private func resetPassword() {
         
         guard let phoneNumber = phoneNumberField.text, !phoneNumber.isEmpty else {
-            showAlert(title: "Failed", message: "Enter phone number into the field and try again.", animated: true)
+            showAlert(title: "Password Reset Failed", message: "Enter phone number into the field and try again.", animated: true)
             return
         }
         showActivity("Resetting Password...", animated: true)
@@ -145,7 +145,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
             case .success:
                 self?.showAlert(title: "Password Reset", message: "You will receive SMS with new temp password. Use it to log in and you will be prompted for new password.", animated: true)
             case .failure(let error):
-                self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                self?.showAlert(title: "Password Reset Failed", message: error.localizedDescription, animated: true)
             }
         }
     }

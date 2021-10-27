@@ -221,10 +221,13 @@
             <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnalyticsTaskError.html">AnalyticsTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/AnalyticsError.html">AnalyticsError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CompleteTaskError.html">CompleteTaskError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CompletedTasksError.html">CompletedTasksError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/DataState.html">DataState</a>
@@ -242,10 +245,19 @@
                 <a class="nav-group-task-link" href="../Enums/HTTPError.html">HTTPError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi.html">HttpApi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HttpApi/ApiError.html">– ApiError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginError.html">LoginError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
@@ -254,7 +266,7 @@
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/SelfAssignTaskError.html">SelfAssignTaskError</a>
+                <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/StartTaskError.html">StartTaskError</a>
@@ -274,6 +286,9 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -284,9 +299,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/APIError.html">APIError</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
               </li>
@@ -304,6 +316,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Vehicle.html">– Vehicle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DriverProfileDetails/Value.html">– Value</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/Metadata.html">Metadata</a>
@@ -511,9 +526,9 @@ an effective password that was set by user if temp password used. For login erro
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyyts5Error_pGcSgtF"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyytAA11LogoutErrorOGcSgtF"></a>
                     <a name="//apple_ref/swift/Method/logout(force:started:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyyts5Error_pGcSgtF">logout(force:<wbr>started:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyytAA11LogoutErrorOGcSgtF">logout(force:<wbr>started:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -676,7 +691,7 @@ Driver can use this temp password to log in again. The login operation will ask 
                         <p>Gets an array of accounts. Each account represents an organization in which the driver is assigned.</p>
 
 <p>This list contains also accounts that have pending invitation. It is developer&rsquo;s responsibility to check
-these accounts and respond using <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA8APIErrorVGGctF">respondToInvitation(account:response:completion:)</a></code>
+these accounts and respond using <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF">respondToInvitation(account:response:completion:)</a></code>
 See also <code><a href="../Classes/Account.html#/c:@M@OnfleetDriver@objc(cs)Account(py)isPending">Account.isPending</a></code>.</p>
 
                       </div>
@@ -786,9 +801,9 @@ this operation will also refetch fresh data for new account.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA8APIErrorVGGctF"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF"></a>
                     <a name="//apple_ref/swift/Method/respondToInvitation(account:response:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA8APIErrorVGGctF">respondToInvitation(account:<wbr>response:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF">respondToInvitation(account:<wbr>response:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
