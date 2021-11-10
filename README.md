@@ -37,6 +37,7 @@ We currently use several dependencies. Our goal is to remove all of them in futu
 * iOS 12+
 * Swift 5.3
 * Xcode 12.5+
+* Onfleet application key
 
 <a name='Documentation'></a>
 
@@ -78,15 +79,88 @@ Unfortunatelly we don't currently support SPM or manual integration.
 
 ## Integration
 
+### 1. Initialization
+
+Import SDK into the source code where needed
+
+```swift
+import OnfleetDriver
+```
+
+Onfleet SDK should be initialized at the earliest convenience, ideally in `application(_:didFinishLaunchingWithOptions:)` function. 
+
+For example in your app delegate file:
+
+```swift
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //initiate SDK
+        let config = Config(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
+        driver.initSDK(with: config, environment: .production, app: application, loggers: [OSLogDestination(logSeverity: .warning)])
+        
+        return true
+    }
+
+``` 
+
+### 2. Push notifications
+
+When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.
+
+For example in your app delegate file update code below initialization like this:
+ 
+```swift
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //initiate SDK
+            
+        //enable push notification
+        UNUserNotificationCenter.current().delegate = self
+        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+            print("user notification alerts and sound: \(granted ? "granted" : "denied")")
+        }
+        
+        return true
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        //forward device token into SDK
+        driver.setRemoteNotificationsDeviceToken(deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        //forward push notification userInfo into SDK if possible 
+        if driver.canHandleRemoteNotification(userInfo: userInfo) {
+            driver.handleRemoteNotification(userInfo: userInfo)
+        } else {
+            // process non-onfleet notifications
+        }
+    }
+    
+    // please note that also user notifications (alerts/banners) must be forwarded into SDK from UNUserNotificationCenterDelegate's method
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        if driver.canHandleRemoteNotification(userInfo: notification.request.content.userInfo) {
+            driver.handleRemoteNotification(notification, completionHandler: completionHandler)
+        } else {
+            // provide logic for non-onfleet banners
+            completionHandler([.alert, .sound])
+        }
+    }
+```
+
+Please refer to Sample app for full integration example.
+
+### 3. Background execution
+
 Apps powered by Onfleet SDK require collecting user location while the driver is on duty. Often iOS system kills backgrounded apps due to memory preassure so in case of background termination app must be woken up on the backgorund asap and continue collecting locations. This is achieved by combination of multiple techniques especially `background location updates`, `silent push notifications` and correct `location permissions` granted by user. 
 
-### 1. Background execution
-
 To achieve correct results pls enable in your Xcode project under your app schemes following background mode capabilities:
+
 1. Location Updates
 2. Remote Notifications
+3. Background Fetch
 
-### 2. Location permissions
+### 4. Location permissions
 
 Following location permissions are required:
 1. Location -> Allow location access -> **Always**
@@ -117,11 +191,9 @@ Here are reasons why Onfleet requires _full location permissions_:
 
 Protocol in `LocationManaging.swift` provides a conveniece wrapper for observing location permissions. Our Sample app contains an example flow.  
 
-### Push notifications
-
-When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.
-
 <a name='SampleApp'></a>
+
+Please refer to Sample app for full integration example.
 
 ## Sample app
 
@@ -139,5 +211,5 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 2. open root directory and install pods using `pod install`
 3. open `SampleApp.xcworkspace` in Xcode
 4. in `AppDelegate.swift` file add your Onfleet **application_id**
-5. in target's Signing & Capabilities update bundle identifier and team 
+5. in target's Signing & Capabilities update bundle identifier and team, please make sure that push notifications work
 6. build and run using `SampleApp` scheme
