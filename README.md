@@ -13,6 +13,11 @@
 * [Documentation](#Documentation)
 * [Installation](#Installation)
 * [Integration](#Integration)
+	* [Initialization](#Initialization)
+	* [Push notifications](#PushNotifications)
+	* [Background execution](#BackgroundExecution)
+	* [Location permissions](#LocationPermissions)
+* [Device Verification](#Provision)
 * [Sample app](#SampleApp)
 
 <a name='About'></a>
@@ -79,6 +84,8 @@ Unfortunatelly we don't currently support SPM or manual integration.
 
 ## Integration
 
+<a name='Initialization'></a>
+
 ### 1. Initialization
 
 Import SDK into the source code where needed
@@ -102,6 +109,8 @@ For example in your app delegate file:
     }
 
 ``` 
+
+<a name='PushNotifications'></a>
 
 ### 2. Push notifications
 
@@ -191,9 +200,28 @@ Here are reasons why Onfleet requires _full location permissions_:
 
 Protocol in `LocationManaging.swift` provides a conveniece wrapper for observing location permissions. Our Sample app contains an example flow.  
 
-<a name='SampleApp'></a>
-
 Please refer to Sample app for full integration example.
+
+<a name='Provision'></a>
+
+## Device Verification
+
+Due to security reasons each device must be verified. Verification is performed only once and the process is done automatically first time the driver logs in. Please note, that push notifications are used to deliver tokens securely therefore [push notifications must be set up properly](#PushNotifications).
+
+Because of push notifications don't work in iOS simulators we must bypass apn servers and deliver tokens manually. This can be done exclusively on iOS simulators using `provision.sh` script. Please consult the documentation of the script for more details simply by running the script in Terminal.
+
+Please note that bypassing apn servers with the provision script will work only for `test accounts`. These are Onfleet organizations with special flag. The following criteria must be met before an org can be flagged as test account:
+- Test drivers must exist in a single organization for which the sdk/application id
+above is provisioned.
+- If an account is test account and the driver is added
+to multiple organizations, the account no longer qualifies as a test account.
+- Similarly, if an account is a test account and the driver is removed from that
+organization, the account no longer qualifies as a test account.
+
+If you meet the criteria above and you wish to flag your driver account as test
+account, please contact Onfleet support at [support@onfleet.com](mailto:support@onfleet.com).
+
+<a name='SampleApp'></a>
 
 ## Sample app
 

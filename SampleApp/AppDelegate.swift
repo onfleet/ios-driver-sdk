@@ -23,9 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #error("insert your application_id here")
         let applicationId = "YOUR_APP_ID_HERE"
         let logLevel = ONLogLevel.warning
+        let environment = Environment.production
         
         let config = Config(appKey: applicationId, appVersion: "1.0", appName: "Sample App")
-        driver.initSDK(with: config, environment: .staging, app: application, loggers: [OSLogDestination(logSeverity: logLevel)])
+        driver.initSDK(with: config, environment: environment, app: application, loggers: [OSLogDestination(logSeverity: logLevel)])
         
         center.delegate = self
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in

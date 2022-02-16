@@ -95,13 +95,19 @@ final class InitialViewController : UIViewController, ActivityShowing {
         let credentials = Credentials(phoneNumber: PhoneNumber(E164: phoneNumber, pretty: phoneNumber), password: password, usedAutoFill: false)
         session.login(credentials: credentials) { [weak self] (status) in
             switch status {
-            case .busy:
+            case .busy(let operation):
                 print("doing actual work")
-                self?.showActivity("Authenticating...", animated: true)
+                switch operation {
+                case .loggingIn:
+                    self?.showActivity("Authenticating...", animated: true)
+                case .provisioning(let maxDuration):
+                    self?.showActivity("Verifying Device...", "This operation can take up to \(seconds: Int(maxDuration), allowedUnits: [.second, .minute]).", animated: true)
+                }
+                
             case .idle:
                 print("doing no work or waiting for user input")
                 self?.hideActivityIfNeeded()
-            case .waiting:
+            case .waitingForAdminVerification:
                 print("waiting for admin verification")
                 self?.showActivity("Waiting for admin verification. This may take some time.", animated: true)
             }

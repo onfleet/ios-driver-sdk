@@ -257,6 +257,9 @@
                 <a class="nav-group-task-link" href="../Enums/LoginStatus.html">LoginStatus</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoginStatus/LoginOperationType.html">– LoginOperationType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
@@ -341,7 +344,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LoginStatus</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LoginStatus</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
@@ -357,6 +360,15 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:13OnfleetDriver11LoginStatusO0C13OperationTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/LoginOperationType" class="dashAnchor"></a>
+                    <a class="direct-link" href="../Enums/LoginStatus/LoginOperationType.html">LoginOperationType</a>
+                    </code>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:13OnfleetDriver11LoginStatusO4idleyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/idle" class="dashAnchor"></a>
                     <a class="token" href="#/s:13OnfleetDriver11LoginStatusO4idleyA2CmF">idle</a>
@@ -367,7 +379,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Should hide activity spinner</p>
+                        <p>When idle all activity indication in UI should be removed.</p>
 
                       </div>
                       <div class="declaration">
@@ -384,9 +396,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver11LoginStatusO4busyyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/busy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver11LoginStatusO4busyyA2CmF">busy</a>
+                    <a name="/s:13OnfleetDriver11LoginStatusO4busyyA2C0C13OperationTypeOcACmF"></a>
+                    <a name="//apple_ref/swift/Element/busy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver11LoginStatusO4busyyA2C0C13OperationTypeOcACmF">busy(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -394,14 +406,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Should show activity spinner</p>
+                        <p>Should inform user that login operation is being performed.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">busy</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">busy</span><span class="p">(</span><span class="kt"><a href="../Enums/LoginStatus/LoginOperationType.html">LoginOperationType</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -411,9 +423,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver11LoginStatusO7waitingyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/waiting" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver11LoginStatusO7waitingyA2CmF">waiting</a>
+                    <a name="/s:13OnfleetDriver11LoginStatusO27waitingForAdminVerificationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/waitingForAdminVerification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver11LoginStatusO27waitingForAdminVerificationyA2CmF">waitingForAdminVerification</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -429,7 +441,7 @@ returned.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">waiting</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">waitingForAdminVerification</span></code></pre>
 
                         </div>
                       </div>
@@ -444,7 +456,7 @@ returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>© 2021 Onfleet, Inc.</p>
+      <p>© 2022 Onfleet, Inc.</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

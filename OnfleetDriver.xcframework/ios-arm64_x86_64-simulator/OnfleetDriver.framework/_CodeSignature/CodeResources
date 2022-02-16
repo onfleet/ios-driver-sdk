@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/OnfleetDriver-Swift.h</key>
 		<data>
-		aCCq3V4NclH/szg7p1ygYXQg3V8=
+		asFY01CDzkXqiXYg+p/4n85nCq8=
 		</data>
 		<key>Headers/OnfleetDriver.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bndWkUpt2mhfm3YK25Ar+/SJc9g=
+		mtc8MU9DZ14t5ZDFRwxS+Bn4Dig=
 		</data>
 		<key>Model.momd/Model v10.mom</key>
 		<data>
@@ -82,51 +82,51 @@
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CZPRch9G7VL16+PfTlWm1t7FVd4=
+		JytL91xAUIeIu5WQQ3cuZX588Ks=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		k02rnW3wCvxUAvd64fVWKkxlJnk=
+		12lXTKaE3sMPLGs3uBSHBBysimk=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		X3bRnvYJQtvuSwu1IQ+hxocdYYI=
+		qTQZ3kjsluihGyDtVpJ9ZCSYlX8=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		CZPRch9G7VL16+PfTlWm1t7FVd4=
+		JytL91xAUIeIu5WQQ3cuZX588Ks=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		k02rnW3wCvxUAvd64fVWKkxlJnk=
+		12lXTKaE3sMPLGs3uBSHBBysimk=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		X3bRnvYJQtvuSwu1IQ+hxocdYYI=
+		qTQZ3kjsluihGyDtVpJ9ZCSYlX8=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zC2eg0keSoa77Br4Z6oVHDO+L98=
+		VFq+ORkTw04NeZEChO4H01sKOmM=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aiCAn1pYY4arybkg7cbouSMCzCQ=
+		ESuDchMYgGCjTtPVMhUh8u2F784=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1DfOe3xm/FV5NfLmYZuYTMfsfXw=
+		ZE9MfXbw3jt3AFUCwWb0Nej6KR4=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		zC2eg0keSoa77Br4Z6oVHDO+L98=
+		VFq+ORkTw04NeZEChO4H01sKOmM=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		aiCAn1pYY4arybkg7cbouSMCzCQ=
+		ESuDchMYgGCjTtPVMhUh8u2F784=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		1DfOe3xm/FV5NfLmYZuYTMfsfXw=
+		ZE9MfXbw3jt3AFUCwWb0Nej6KR4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K5rdXQZPk1Zmhzrsr5AcY+RVmPCOe1VWcwnI2wrJbD4=
+			r1LkgKiDA9WrvVwqKOhQlX+XepcPlBxASL3Mwqjystc=
 			</data>
 		</dict>
 		<key>Headers/OnfleetDriver.h</key>
@@ -265,84 +265,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXhSZbrHm7san5qDV1KqhbfjgZol/Uj1GY0vlLXaHkk=
+			TSDqKTs69zcLPSyctc1Q98lmlngm/ME4OOlSfZKWAXQ=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+G8W66NNb2D2g92BzzhCC6dho8FPv3dJP1qdmRqiXoY=
+			yjju1iyAUVaMo8fBY4bKppEGiwKUAzK0nstEuOK/P58=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+xGNljPGtABFW/akWhuwNisGUGwVJgo8UHbR8Ot06Q=
+			FSZCs5CKMsoT4J2l3GoQ2/ka5SfTuLrJYPLULsShDik=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXhSZbrHm7san5qDV1KqhbfjgZol/Uj1GY0vlLXaHkk=
+			TSDqKTs69zcLPSyctc1Q98lmlngm/ME4OOlSfZKWAXQ=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+G8W66NNb2D2g92BzzhCC6dho8FPv3dJP1qdmRqiXoY=
+			yjju1iyAUVaMo8fBY4bKppEGiwKUAzK0nstEuOK/P58=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+xGNljPGtABFW/akWhuwNisGUGwVJgo8UHbR8Ot06Q=
+			FSZCs5CKMsoT4J2l3GoQ2/ka5SfTuLrJYPLULsShDik=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xv4GS77gda9MWIEYqswhu8tT/Mduzc4hNzqlEUPi138=
+			zLjE+NLdlQJsSNv6UG1D/SUbeR+cIf+gF+vxGlxtOJg=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lb0blat5ilPLonu6JtxJXB8zL8B3X4yszR+SQiko3k=
+			fs6McPC5bftIURwQ9QgOHPO1QHP55yKrnP0UiTMOuvk=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J0DRyw1HHVqi/jpmw9HCXWeznpcipc95eb9AvEvbtgk=
+			eyj32EI4bAprypP++04RNJBNfgUg76O1shP2dDlduQg=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xv4GS77gda9MWIEYqswhu8tT/Mduzc4hNzqlEUPi138=
+			zLjE+NLdlQJsSNv6UG1D/SUbeR+cIf+gF+vxGlxtOJg=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lb0blat5ilPLonu6JtxJXB8zL8B3X4yszR+SQiko3k=
+			fs6McPC5bftIURwQ9QgOHPO1QHP55yKrnP0UiTMOuvk=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J0DRyw1HHVqi/jpmw9HCXWeznpcipc95eb9AvEvbtgk=
+			eyj32EI4bAprypP++04RNJBNfgUg76O1shP2dDlduQg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

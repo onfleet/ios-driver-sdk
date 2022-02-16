@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OnfleetDriver
 import CommonCrypto
 import CoreData
@@ -74,8 +74,22 @@ extension OnfleetDriver.FetchingState : Swift.CustomStringConvertible {
 extension OnfleetDriver.FetchingState : Swift.Equatable {
 }
 public func == (a: OnfleetDriver.FetchingState, b: OnfleetDriver.FetchingState) -> Swift.Bool
-public enum FetchDataError : Swift.Error {
-  case failed(_: Swift.Error)
+public enum FetchDataError : Swift.Error, Swift.CustomDebugStringConvertible {
+  case http(OnfleetDriver.HTTPError<OnfleetDriver.HttpApi.ApiError>)
+  case cancelled
+  case other(Swift.Error)
+  public var isCancelled: Swift.Bool {
+    get
+  }
+  public var isConnectionError: Swift.Bool {
+    get
+  }
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 open class BlockBasedAsynchronousOperation<Model, Error> : OnfleetDriver.AsynchronousOperation {
   public typealias Result = OnfleetDriver.AnynchronousOperationResult<Model, Error>
@@ -99,7 +113,6 @@ extension CoreLocation.CLAuthorizationStatus : Swift.CustomStringConvertible {
   @objc deinit
 }
 open class BlockWorkTask : OnfleetDriver.WorkTask {
-  @objc deinit
   public var debugDescription: Swift.String {
     get
   }
@@ -121,6 +134,7 @@ open class BlockWorkTask : OnfleetDriver.WorkTask {
   public init(block: @escaping (_ task: OnfleetDriver.BlockWorkTask) -> Swift.Void)
   public func resume()
   public func cancel()
+  @objc deinit
 }
 public enum DutyStatusError : Swift.Error {
   case locationPermissionsDenied(_: Swift.Error)
@@ -178,6 +192,7 @@ extension OnfleetDriver.LogoutReason : Swift.CustomStringConvertible {
 public struct LoginDetails {
   public let usedAutoFill: Swift.Bool
   public let usedProvision: Swift.Bool
+  public let provisionDuration: Foundation.TimeInterval
   public let isLegacy: Swift.Bool
 }
 public enum WorkTaskConditionResult {
@@ -576,7 +591,17 @@ extension OnfleetDriver.AccountsSubscriber {
     @objc get
     @objc set
   }
-  @objc public var organizationImageUrl: Foundation.URL? {
+  @objc @available(*, deprecated, message: "use one of the properties defining image size")
+  public var organizationImageUrl: Foundation.URL? {
+    @objc get
+  }
+  @objc public var organizationImageUrlExtraSmall: Foundation.URL? {
+    @objc get
+  }
+  @objc public var organizationImageUrlSmall: Foundation.URL? {
+    @objc get
+  }
+  @objc public var organizationImageUrlMedium: Foundation.URL? {
     @objc get
   }
   required public init(from decoder: Swift.Decoder) throws
@@ -875,13 +900,11 @@ public struct BarcodeRequest : Swift.Equatable {
 }
 @_hasMissingDesignatedInitializers final public class DriverContext {
   public static let shared: OnfleetDriver.DriverContext
-  final public var coreOutput: OnfleetDriver.CoreOutput!
-  @objc final public var config: OnfleetDriver.Config!
-  final public func installIntegrations(_ integrations: [OnfleetDriver.Integration])
   @objc final public var environment: OnfleetDriver.Environment {
     @objc get
     @objc set
   }
+  @objc final public var config: OnfleetDriver.Config!
   @objc final public var isInitialized: Swift.Bool {
     get
   }
@@ -1018,6 +1041,11 @@ extension Foundation.URL {
   public func getName() -> Swift.String
   public func getCountry() -> Swift.String
   public func getImage() -> Swift.String?
+  @available(*, deprecated, message: "use of the properties with image size below")
+  public func getImageUrl() -> Foundation.URL?
+  public func getImageUrlExtraSmall() -> Foundation.URL?
+  public func getImageUrlSmall() -> Foundation.URL?
+  public func getImageUrlMedium() -> Foundation.URL?
   public func getOrgConfig() -> Swift.Dictionary<Swift.String, Swift.String>
   public func getAppConfig() -> Swift.Dictionary<Swift.String, Swift.String>
   public func getEnabledFeatures() -> Swift.Dictionary<Swift.String, Swift.String>
@@ -1044,7 +1072,7 @@ extension OnfleetDriver.Organization {
 }
 public enum DataState {
   case unavailable
-  case error
+  case failed(OnfleetDriver.FetchDataError)
   case valid(Foundation.Date)
 }
 extension OnfleetDriver.DataState : Swift.CustomStringConvertible {
@@ -1348,15 +1376,16 @@ public enum LoginError : Swift.Error {
     get
   }
 }
-public enum LoginStatus {
-  case idle
-  case busy
-  case waiting
-  public static func == (a: OnfleetDriver.LoginStatus, b: OnfleetDriver.LoginStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
+public enum LoginStatus : Swift.Equatable {
+  public enum LoginOperationType : Swift.Equatable {
+    case provisioning(maxDuration: Foundation.TimeInterval)
+    case loggingIn
+    public static func == (a: OnfleetDriver.LoginStatus.LoginOperationType, b: OnfleetDriver.LoginStatus.LoginOperationType) -> Swift.Bool
   }
+  case idle
+  case busy(OnfleetDriver.LoginStatus.LoginOperationType)
+  case waitingForAdminVerification
+  public static func == (a: OnfleetDriver.LoginStatus, b: OnfleetDriver.LoginStatus) -> Swift.Bool
 }
 extension Foundation.Data {
   public var hexString: Swift.String {
@@ -1464,6 +1493,7 @@ public protocol DriverSubscriber : AnyObject {
   func driverProvider(_ provider: OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
   func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: Swift.Error)
   func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: OnfleetDriver.Driver)
+  func driverProviderDriverDidNotBecomeAvailable(_ provider: OnfleetDriver.DriverProvider)
   func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidUpdate driver: OnfleetDriver.Driver)
   func driverProviderDidUpdateProfile(_ provider: OnfleetDriver.DriverProvider)
 }
@@ -1471,6 +1501,7 @@ extension OnfleetDriver.DriverSubscriber {
   public func driverProvider(_ provider: OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
   public func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: Swift.Error)
   public func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: OnfleetDriver.Driver)
+  public func driverProviderDriverDidNotBecomeAvailable(_ provider: OnfleetDriver.DriverProvider)
   public func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidUpdate driver: OnfleetDriver.Driver)
   public func driverProviderDidUpdateProfile(_ provider: OnfleetDriver.DriverProvider)
 }
@@ -1688,7 +1719,7 @@ public protocol RemoteNotificationsProcessor : AnyObject {
   func canProcess(remoteNotification userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   func process(remoteNotification userInfo: [Swift.AnyHashable : Any])
   func willPresent(notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
-  func didOpen(notification: UserNotifications.UNNotification, completionHandler: () -> Swift.Void)
+  func didOpen(notification: UserNotifications.UNNotification, completionHandler: @escaping () -> Swift.Void)
 }
 public struct HmacSignature {
   public enum Algorithm {
@@ -1969,9 +2000,6 @@ public protocol AttachmentsDelegate : AnyObject {
   func attachmentsDidStartUploading(_ attachments: OnfleetDriver.AttachmentsManaging)
   func attachments(_ attachments: OnfleetDriver.AttachmentsManaging, didUpdateProgress progress: Swift.Float)
   func attachmentsDidFinishUploading(_ attachments: OnfleetDriver.AttachmentsManaging)
-  func attachments(_ attachments: OnfleetDriver.AttachmentsManaging, didStartUploadOperationWith id: Swift.String, type: Swift.String, taskId: Swift.String, fileSize: Swift.Int)
-  func attachments(_ attachments: OnfleetDriver.AttachmentsManaging, didFinishUploadOperationWith id: Swift.String, type: Swift.String, taskId: Swift.String, fileSize: Swift.Int)
-  func attachments(_ attachments: OnfleetDriver.AttachmentsManaging, didFailUploadOperationWith id: Swift.String, type: Swift.String, taskId: Swift.String, fileSize: Swift.Int, error: Swift.String)
 }
 public protocol AttachmentsManaging : AnyObject {
   var isUploadingInProgress: Swift.Bool { get }
@@ -2006,8 +2034,6 @@ extension OnfleetDriver.Metadata.Visibility : Swift.Hashable {}
 extension OnfleetDriver.Metadata.Visibility : Swift.RawRepresentable {}
 extension OnfleetDriver.UnitSystem : Swift.Equatable {}
 extension OnfleetDriver.UnitSystem : Swift.Hashable {}
-extension OnfleetDriver.LoginStatus : Swift.Equatable {}
-extension OnfleetDriver.LoginStatus : Swift.Hashable {}
 extension OnfleetDriver.VehicleType : Swift.Equatable {}
 extension OnfleetDriver.VehicleType : Swift.Hashable {}
 extension OnfleetDriver.VehicleType : Swift.RawRepresentable {}

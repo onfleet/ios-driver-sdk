@@ -114,7 +114,7 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
-      "line": 53,
+      "line": 56,
       "symbol": "HttpApi.ApiError",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -194,27 +194,6 @@
       "line": 26,
       "symbol": "AnalyticsError",
       "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 49,
-      "symbol": "AttachmentsDelegate.attachments(_:didStartUploadOperationWith:type:taskId:fileSize:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 50,
-      "symbol": "AttachmentsDelegate.attachments(_:didFinishUploadOperationWith:type:taskId:fileSize:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Attachments/AttachmentsManaging.swift",
-      "line": 51,
-      "symbol": "AttachmentsDelegate.attachments(_:didFailUploadOperationWith:type:taskId:fileSize:error:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -1955,84 +1934,112 @@
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 211,
-      "symbol": "Organization.getOrgConfig()",
+      "line": 213,
+      "symbol": "Organization.getImageUrl()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 215,
-      "symbol": "Organization.getAppConfig()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 219,
-      "symbol": "Organization.getEnabledFeatures()",
+      "line": 218,
+      "symbol": "Organization.getImageUrlExtraSmall()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
       "line": 223,
+      "symbol": "Organization.getImageUrlSmall()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 228,
+      "symbol": "Organization.getImageUrlMedium()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 233,
+      "symbol": "Organization.getOrgConfig()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 237,
+      "symbol": "Organization.getAppConfig()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 241,
+      "symbol": "Organization.getEnabledFeatures()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 245,
       "symbol": "Organization.getBilling()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 227,
+      "line": 249,
       "symbol": "Organization.getEmail()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 231,
+      "line": 253,
       "symbol": "Organization.getDriverSupportEmail()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 387,
+      "line": 409,
       "symbol": "UnitSystem",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 388,
+      "line": 410,
       "symbol": "UnitSystem.metric",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 389,
+      "line": 411,
       "symbol": "UnitSystem.imperial",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 391,
+      "line": 413,
       "symbol": "UnitSystem.isMetric",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 401,
+      "line": 423,
       "symbol": "Organization.getOrgConfigProperty(_:key:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
-      "line": 408,
+      "line": 430,
       "symbol": "Organization.getOrgConfigPreferredUnitType()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -2651,6 +2658,13 @@
       "line": 31,
       "symbol": "Config.init(appKey:appVersion:appName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/peterstajger/git/onfleet/onfleet-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
+      "line": 88,
+      "symbol": "DriverContext.environment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],

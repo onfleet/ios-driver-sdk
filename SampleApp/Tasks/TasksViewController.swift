@@ -68,8 +68,8 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     private func observeDataState(disposeBy bag: DisposeBag) {
         driverContext.dataState.subscribe(onChange: { [weak self] (dataState) in
             print("data state: \(dataState)")
-            if case DataState.error = dataState {
-                self?.showAlertPrompt(title: "Data Failed", message: "Something went wrong with data fetch", action: UIAlertAction(title: "Refetch", style: .default, handler: { (_) in
+            if case .failed(let error) = dataState {
+                self?.showAlertPrompt(title: "Data Fetch Failed", message: error.localizedDescription, action: UIAlertAction(title: "Refetch", style: .default, handler: { (_) in
                     self?.refetchData()
                 }), animated: true)
             }

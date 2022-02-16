@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OnfleetDriver"
-  s.version = "0.9.3"
+  s.version = "0.10"
   s.summary = "Onfleet Driver SDK"
   s.homepage = "https://github.com/onfleet/ios-driver-sdk"
   s.license = {
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     :text => <<-LICENSE
     Onfleet Driver SDK
     Created by Onfleet on  01/05/2021
-    Copyright (c) 2021 Onfleet. All rights reserved.
+    Copyright (c) 2022 Onfleet. All rights reserved.
     LICENSE
   }
   s.author = 'Onfleet, Inc.'

@@ -13,9 +13,9 @@ protocol ActivityShowing : UIViewController {
 
 extension ActivityShowing {
     
-    func showActivity(_ title: String, animated: Bool) {
+    func showActivity(_ title: String, _ message: String? = nil, animated: Bool) {
         if activityAlert == nil {
-            activityAlert = UIAlertController(title: nil, message: title, preferredStyle: .alert)
+            activityAlert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         }
         if let alert = activityAlert, alert.presentingViewController == nil {
             if let modal = self.presentedViewController {
@@ -24,7 +24,8 @@ extension ActivityShowing {
                 self.present(alert, animated: animated, completion: nil)
             }
         }
-        activityAlert?.message = title
+        activityAlert?.title = title
+        activityAlert?.message = message
     }
     
     func hideActivityIfNeeded(completion: (()->Void)? = nil) {

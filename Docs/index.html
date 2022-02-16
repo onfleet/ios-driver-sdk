@@ -256,6 +256,9 @@
                 <a class="nav-group-task-link" href="Enums/LoginStatus.html">LoginStatus</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/LoginStatus/LoginOperationType.html">– LoginOperationType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
@@ -351,7 +354,15 @@
 <li><a href="#Requirements">Requirements</a></li>
 <li><a href="#Documentation">Documentation</a></li>
 <li><a href="#Installation">Installation</a></li>
-<li><a href="#Integration">Integration</a></li>
+<li><a href="#Integration">Integration</a>
+
+<ul>
+<li><a href="#Initialization">Initialization</a></li>
+<li><a href="#PushNotifications">Push notifications</a></li>
+<li><a href="#BackgroundExecution">Background execution</a></li>
+<li><a href="#LocationPermissions">Location permissions</a></li>
+</ul></li>
+<li><a href="#Provision">Device Verification</a></li>
 <li><a href="#SampleApp">Sample app</a></li>
 </ul>
 
@@ -378,6 +389,7 @@
 <li>iOS 12+</li>
 <li>Swift 5.3</li>
 <li>Xcode 12.5+</li>
+<li>Onfleet application key</li>
 </ul>
 
 <p><a name='Documentation'></a></p>
@@ -413,16 +425,84 @@
 <p><a name='Integration'></a></p>
 <h2 id='integration' class='heading'>Integration</h2>
 
+<p><a name='Initialization'></a></p>
+<h3 id='1-initialization' class='heading'>1. Initialization</h3>
+
+<p>Import SDK into the source code where needed</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">OnfleetDriver</span>
+</code></pre>
+
+<p>Onfleet SDK should be initialized at the earliest convenience, ideally in <code>application(_:didFinishLaunchingWithOptions:)</code> function. </p>
+
+<p>For example in your app delegate file:</p>
+<pre class="highlight swift"><code>    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+
+        <span class="c1">//initiate SDK</span>
+        <span class="k">let</span> <span class="nv">config</span> <span class="o">=</span> <span class="kt">Config</span><span class="p">(</span><span class="nv">appKey</span><span class="p">:</span> <span class="s">"&lt;#app key here#&gt;"</span><span class="p">,</span> <span class="nv">appVersion</span><span class="p">:</span> <span class="s">"&lt;#App version here#&gt;"</span><span class="p">,</span> <span class="nv">appName</span><span class="p">:</span> <span class="s">"&lt;#App name here#&gt;"</span><span class="p">)</span>
+        <span class="n">driver</span><span class="o">.</span><span class="nf">initSDK</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">config</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="n">production</span><span class="p">,</span> <span class="nv">app</span><span class="p">:</span> <span class="n">application</span><span class="p">,</span> <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">OSLogDestination</span><span class="p">(</span><span class="nv">logSeverity</span><span class="p">:</span> <span class="o">.</span><span class="n">warning</span><span class="p">)])</span>
+
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+
+</code></pre>
+
+<p><a name='PushNotifications'></a></p>
+<h3 id='2-push-notifications' class='heading'>2. Push notifications</h3>
+
+<p>When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in <code><a href="Classes/DriverContext.html">DriverContext</a></code> class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.</p>
+
+<p>For example in your app delegate file update code below initialization like this:</p>
+<pre class="highlight swift"><code>    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+
+        <span class="c1">//initiate SDK</span>
+
+        <span class="c1">//enable push notification</span>
+        <span class="kt">UNUserNotificationCenter</span><span class="o">.</span><span class="nf">current</span><span class="p">()</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+        <span class="n">center</span><span class="o">.</span><span class="nf">requestAuthorization</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">alert</span><span class="p">,</span> <span class="o">.</span><span class="n">sound</span><span class="p">])</span> <span class="p">{</span> <span class="n">granted</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"user notification alerts and sound: </span><span class="se">\(</span><span class="n">granted</span> <span class="p">?</span> <span class="s">"granted"</span> <span class="p">:</span> <span class="s">"denied"</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//forward device token into SDK</span>
+        <span class="n">driver</span><span class="o">.</span><span class="nf">setRemoteNotificationsDeviceToken</span><span class="p">(</span><span class="n">deviceToken</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">//forward push notification userInfo into SDK if possible </span>
+        <span class="k">if</span> <span class="n">driver</span><span class="o">.</span><span class="nf">canHandleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">driver</span><span class="o">.</span><span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// process non-onfleet notifications</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// please note that also user notifications (alerts/banners) must be forwarded into SDK from UNUserNotificationCenterDelegate's method</span>
+    <span class="kd">func</span> <span class="nf">userNotificationCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span><span class="p">,</span> <span class="n">willPresent</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="n">driver</span><span class="o">.</span><span class="nf">canHandleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="n">notification</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">userInfo</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">driver</span><span class="o">.</span><span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="n">notification</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="n">completionHandler</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// provide logic for non-onfleet banners</span>
+            <span class="nf">completionHandler</span><span class="p">([</span><span class="o">.</span><span class="n">alert</span><span class="p">,</span> <span class="o">.</span><span class="n">sound</span><span class="p">])</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre>
+
+<p>Please refer to Sample app for full integration example.</p>
+<h3 id='3-background-execution' class='heading'>3. Background execution</h3>
+
 <p>Apps powered by Onfleet SDK require collecting user location while the driver is on duty. Often iOS system kills backgrounded apps due to memory preassure so in case of background termination app must be woken up on the backgorund asap and continue collecting locations. This is achieved by combination of multiple techniques especially <code>background location updates</code>, <code>silent push notifications</code> and correct <code>location permissions</code> granted by user. </p>
-<h3 id='1-background-execution' class='heading'>1. Background execution</h3>
 
 <p>To achieve correct results pls enable in your Xcode project under your app schemes following background mode capabilities:</p>
 
 <ol>
 <li>Location Updates</li>
 <li>Remote Notifications</li>
+<li>Background Fetch</li>
 </ol>
-<h3 id='2-location-permissions' class='heading'>2. Location permissions</h3>
+<h3 id='4-location-permissions' class='heading'>4. Location permissions</h3>
 
 <p>Following location permissions are required:</p>
 
@@ -460,9 +540,29 @@ This will be referred as <em>full location permissions</em> going forward.</li>
 </ol>
 
 <p>Protocol in <code>LocationManaging.swift</code> provides a conveniece wrapper for observing location permissions. Our Sample app contains an example flow.  </p>
-<h3 id='push-notifications' class='heading'>Push notifications</h3>
 
-<p>When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in <code><a href="Classes/DriverContext.html">DriverContext</a></code> class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.</p>
+<p>Please refer to Sample app for full integration example.</p>
+
+<p><a name='Provision'></a></p>
+<h2 id='device-verification' class='heading'>Device Verification</h2>
+
+<p>Due to security reasons each device must be verified. Verification is performed only once and the process is done automatically first time the driver logs in. Please note, that push notifications are used to deliver tokens securely therefore <a href="#PushNotifications">push notifications must be set up properly</a>.</p>
+
+<p>Because of push notifications don&rsquo;t work in iOS simulators we must bypass apn servers and deliver tokens manually. This can be done exclusively on iOS simulators using <code>provision.sh</code> script. Please consult the documentation of the script for more details simply by running the script in Terminal.</p>
+
+<p>Please note that bypassing apn servers with the provision script will work only for <code>test accounts</code>. These are Onfleet organizations with special flag. The following criteria must be met before an org can be flagged as test account:</p>
+
+<ul>
+<li>Test drivers must exist in a single organization for which the sdk/application id
+above is provisioned.</li>
+<li>If an account is test account and the driver is added
+to multiple organizations, the account no longer qualifies as a test account.</li>
+<li>Similarly, if an account is a test account and the driver is removed from that
+organization, the account no longer qualifies as a test account.</li>
+</ul>
+
+<p>If you meet the criteria above and you wish to flag your driver account as test
+account, please contact Onfleet support at <a href="mailto:support@onfleet.com">support@onfleet.com</a>.</p>
 
 <p><a name='SampleApp'></a></p>
 <h2 id='sample-app' class='heading'>Sample app</h2>
@@ -484,7 +584,7 @@ This will be referred as <em>full location permissions</em> going forward.</li>
 <li>open root directory and install pods using <code>pod install</code></li>
 <li>open <code>SampleApp.xcworkspace</code> in Xcode</li>
 <li>in <code>AppDelegate.swift</code> file add your Onfleet <strong>application_id</strong></li>
-<li>in target&rsquo;s Signing &amp; Capabilities update bundle identifier and team</li>
+<li>in target&rsquo;s Signing &amp; Capabilities update bundle identifier and team, please make sure that push notifications work</li>
 <li>build and run using <code>SampleApp</code> scheme</li>
 </ol>
 
@@ -495,7 +595,7 @@ This will be referred as <em>full location permissions</em> going forward.</li>
       </article>
     </div>
     <section class="footer">
-      <p>© 2021 Onfleet, Inc.</p>
+      <p>© 2022 Onfleet, Inc.</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
