@@ -8,7 +8,6 @@
 ## Table of Contents
 
 * [About](#About)
-* [Dependencies](#Dependencies)
 * [Requirements](#Requirements)
 * [Documentation](#Documentation)
 * [Installation](#Installation)
@@ -25,22 +24,12 @@
 ## About
 
 Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app. 
-
-<a name='Dependencies'></a>
-
-## Dependencies
-
-We currently use several dependencies. Our goal is to remove all of them in future releases of the SDK.
-
-- SocketRocket
-- UICKeychainStore
-- RxSwift
   
 <a name='Requirements'></a>
 
 ## Requirements
-* iOS 12+
-* Swift 5.3
+* iOS 13+
+* Swift 5
 * Xcode 12.5+
 * Onfleet application key
 
@@ -62,23 +51,15 @@ To integrate Onfleet Driver SDK into your Xcode project using CocoaPods, specify
 
 ```ruby
 pod 'OnfleetDriver', :git => 'https://github.com/onfleet/ios-driver-sdk.git'
-
-puts "********** PODS POST INSTALLATION HOOK **********"
-  post_install do |pi|
-      pi.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
-          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-        end
-      end
-  end
 ```
 
-Please note that post installation hook is required at the moment to make sure that dependencies have target iOS 12 and to assure smooth linking during runtime library evolution must be enforced on all libraries. See https://github.com/CocoaPods/CocoaPods/issues/9775.
+### Manually
 
-### SPM & Manually
+Simply drag and drop `OnfleetDriver.xcframework` into your project and make sure it's linked and embeded with signing into your application's target.
 
-Unfortunatelly we don't currently support SPM or manual integration.
+### SPM & Carthage
+
+Unfortunatelly we don't currently support SPM or Carthage, but we will do so in the near future.
 
 <a name='Integration'></a>
 
@@ -114,7 +95,7 @@ For example in your app delegate file:
 
 ### 2. Push notifications
 
-When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working (including device provisioning) or will not work as expected.
+When SDK is initialized it automatically registers for remote notifications. Host app is however responsible for managing push notifications and delivering them to the SDK through methods defined in `DriverContext` class. If push notifications will not be forwarded several features will stop working (including [device verification](#Provision)) or will not work as expected.
 
 For example in your app delegate file update code below initialization like this:
  
@@ -159,6 +140,8 @@ For example in your app delegate file update code below initialization like this
 
 Please refer to Sample app for full integration example.
 
+<a name='BackgroundExecution'></a>
+
 ### 3. Background execution
 
 Apps powered by Onfleet SDK require collecting user location while the driver is on duty. Often iOS system kills backgrounded apps due to memory preassure so in case of background termination app must be woken up on the backgorund asap and continue collecting locations. This is achieved by combination of multiple techniques especially `background location updates`, `silent push notifications` and correct `location permissions` granted by user. 
@@ -168,6 +151,8 @@ To achieve correct results pls enable in your Xcode project under your app schem
 1. Location Updates
 2. Remote Notifications
 3. Background Fetch
+
+<a name='LocationPermissions'></a>
 
 ### 4. Location permissions
 
@@ -241,3 +226,4 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 4. in `AppDelegate.swift` file add your Onfleet **application_id**
 5. in target's Signing & Capabilities update bundle identifier and team, please make sure that push notifications work
 6. build and run using `SampleApp` scheme
+7. when logging in for the first time please perform the [Device Verification](#Provision).

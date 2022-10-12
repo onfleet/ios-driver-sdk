@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OnfleetDriver"
-  s.version = "0.10"
+  s.version = "0.11"
   s.summary = "Onfleet Driver SDK"
   s.homepage = "https://github.com/onfleet/ios-driver-sdk"
   s.license = {
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.author = 'Onfleet, Inc.'
-  s.platform = :ios, '12.0'
+  s.platform = :ios, '13.0'
   s.requires_arc = true
   s.swift_version = '5.3'
   s.cocoapods_version = '>= 1.10.1'
@@ -21,7 +21,4 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/onfleet/ios-driver-sdk.git' }
   s.vendored_frameworks = 'OnfleetDriver.xcframework'
   s.preserve_paths = 'OnfleetDriver.xcframework'
-  s.dependency 'SocketRocket'
-  s.dependency 'UICKeyChainStore', '~> 2.2.1'
-  s.dependency 'RxSwift', '~> 5.1.1'
 end

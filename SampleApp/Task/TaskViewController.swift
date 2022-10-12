@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
+
 import OnfleetDriver
 
 class TaskViewController : UITableViewController, ActivityShowing {
@@ -15,7 +14,8 @@ class TaskViewController : UITableViewController, ActivityShowing {
     var driverManager: DriverManaging!
     var task: Task!
     
-    private var bag = DisposeBag()
+    private var bag = OnfleetDriver.DisposeBag()
+    
     var activityAlert: UIAlertController?
     
     @IBOutlet weak var stateActiveLabel: UILabel!
@@ -45,165 +45,194 @@ class TaskViewController : UITableViewController, ActivityShowing {
         super.viewDidLoad()
         
         task.changeObservableWithChildren
-            .debug("task changed with children", trimOutput: false)
-            .subscribe()
+            .observe(on: .main)
+            .subscribe { _ in print("task changed with children") }
             .disposed(by: bag)
         
         task.changeObservable
-            .debug("task changed", trimOutput: false)
-            .subscribe()
+            .observe(on: .main)
+            .subscribe { _ in print("task changed") }
             .disposed(by: bag)
         
         // when task is deleted or unassigned by a dispatcher
         task.deleteObservable
-            .debug("task deleted or unassigned", trimOutput: false)
-            .subscribe(onNext: { [weak self] _ in
-            self?.showAlert(title: "Task Deleted or Unassinged", message: nil, animated: true, okHandler: { _ in
-                self?.navigationController?.popViewController(animated: true)
-            })
-        }).disposed(by: bag)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in
+                print("task deleted or unassigned")
+                self?.showAlert(title: "Task Deleted or Unassinged", message: nil, animated: true, okHandler: { _ in
+                    self?.navigationController?.popViewController(animated: true)
+                })
+            }).disposed(by: bag)
 
         // when set off duty for some reason
-        driverManager.onDuty$.observable.filter({ $0 == false })
-            .debug("driver went off duty", trimOutput: true)
-            .subscribe(onNext: { [weak self] _ in
+        driverManager.onDuty$.filter({ $0 == false })
+            //.debug("driver went off duty", trimOutput: true)
+            .subscribe({ [weak self] _ in
             self?.showAlert(title: "Driver Off Duty", message: nil, animated: true, okHandler: { _ in
                 self?.navigationController?.popViewController(animated: true)
             })
         }).disposed(by: bag)
         
         // title is task's short id
-        task.shortId.observable
+        task.shortId
             .map({ "#\($0)" })
-            .bind(to: self.navigationItem.rx.title)
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.navigationItem.title = value })
             .disposed(by: bag)
 
         // update action button according to task state (start, complete, claim).
-        RxSwift.Observable.combineLatest(
-            task.isActive.observable,
-            task.isSelfAssignable.observable,
+        Observable.combineLatest(
+            task.isActive,
+            task.isSelfAssignable,
             resultSelector: { return ($0, $1) })
-        .subscribe(onNext: { [weak self] isActive, isSelfAssignable in
-            let eligibleForActivation = !isActive && !isSelfAssignable
-            let eligibleForSelfAssignment = isSelfAssignable && !isActive
-            let eligibleForCompletion = isActive
-            if eligibleForActivation {
-                self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .done, target: self, action: #selector(TaskViewController.startTask(sender:)))
-            } else if eligibleForSelfAssignment {
-                self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Claim", style: .done, target: self, action: #selector(TaskViewController.selfAssignTask(sender:)))
-            } else if eligibleForCompletion {
-                self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Complete", style: .done, target: self, action: #selector(TaskViewController.completeTask(sender:)))
-            }
-        }).disposed(by: bag)
+            .observe(on: .main)
+            .subscribe({ [weak self] isActive, isSelfAssignable in
+                let eligibleForActivation = !isActive && !isSelfAssignable
+                let eligibleForSelfAssignment = isSelfAssignable && !isActive
+                let eligibleForCompletion = isActive
+                if eligibleForActivation {
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .done, target: self, action: #selector(TaskViewController.startTask(sender:)))
+                } else if eligibleForSelfAssignment {
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Claim", style: .done, target: self, action: #selector(TaskViewController.selfAssignTask(sender:)))
+                } else if eligibleForCompletion {
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Complete", style: .done, target: self, action: #selector(TaskViewController.completeTask(sender:)))
+                }
+            }).disposed(by: bag)
         
         // when task is started
-        task.isActive.observable
+        task.isActive
             .map({ $0 == true ? "active" : "inactive"  })
-            .bind(to: self.stateActiveLabel.rx.text)
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.stateActiveLabel.text = value })
             .disposed(by: bag)
         
         // when task is started
-        task.isActive.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.stateActiveLabel, animated: true)
+        task.isActive
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.stateActiveLabel, animated: true)
         }).disposed(by: bag)
         
         // when task is assigned or unassigned to a team, instead of the driver we flash background
-        task.isSelfAssignable.observable
+        task.isSelfAssignable
             .map({ String(describing: $0) })
-            .bind(to: self.stateSelfAssignmentLabel.rx.text)
+            .subscribe({ [weak self] value in self?.stateSelfAssignmentLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.isSelfAssignable.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.stateSelfAssignmentLabel, animated: true)
+        task.isSelfAssignable
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.stateSelfAssignmentLabel, animated: true)
         }).disposed(by: bag)
         
         // when a task is self-assigned by the driver
-        task.isSelfAssigned.observable
+        task.isSelfAssigned
             .map({ String(describing: $0) })
-            .bind(to: self.stateSelfAssignedLabel.rx.text)
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.stateSelfAssignedLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.isSelfAssigned.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.stateSelfAssignedLabel, animated: true)
+        task.isSelfAssigned
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.stateSelfAssignedLabel, animated: true)
         }).disposed(by: bag)
         
         // destination address
-        task.destination.observable
+        task.destination
             .map({ $0.getAddress().formattedShortAddress })
-            .bind(to: self.destinationAddressLabel.rx.text)
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.destinationAddressLabel.text = value })
             .disposed(by: bag)
         
         // destination address
-        task.destination.observable
-            .map({ $0.getLocation().formattedLocation })
-            .bind(to: self.destinationLocationLabel.rx.text)
+        task.destination
+            .map({ String(describing: $0.getLocation().formattedLocation) })
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.destinationLocationLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.destination.observable.skip(1).subscribe(onNext: { [weak self] _ in
+        task.destination
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in
             self?.highlightView(self!.destinationLocationLabel, animated: true)
             self?.highlightView(self!.destinationAddressLabel, animated: true)
         }).disposed(by: bag)
   
         // observe recipient name & phone
         //TODO: this does not work
-        task.recipients.subscribe(onChange: { [weak self] recipients in
+        task.recipients
+            .observe(on: .main)
+            .subscribe({ [weak self] recipients in
             self?.recipientNameLabel.text = recipients.models.first?.getName() ?? "No Recipient"
             self?.recipientPhoneLabel.text = recipients.models.first?.getPhone() ?? "No Phone"
         }).disposed(by: bag)
         
         // we can only observe requirements as a whole, not each property individually
-        task.requirements.subscribe(onChange: { [weak self] requirements in
+        task.requirements
+            .observe(on: .main)
+            .subscribe({ [weak self] requirements in
             self?.requirementsSigntureLabel.text = requirements.signature ? "required" : "optional"
             self?.requirementsPhotoLabel.text = requirements.photo ? "required" : "optional"
             self?.requirementsNotesLabel.text = requirements.notes ? "required" : "optional"
             self?.requirementsMinimumAgeLabel.text = requirements.minimumAge != nil ? "\(requirements.minimumAge!)+" : "none"
         }).disposed(by: bag)
         
-        // when task is assigned or unassigned to a team, instead of the driver we flash background
-        task.quantity.observable
+        // quantity cell on change
+        task.quantity
             .map({ $0.formattedDecimal() })
-            .bind(to: self.detailsQuantityLabel.rx.text)
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.detailsQuantityLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.quantity.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.detailsQuantityLabel, animated: true)
+        task.quantity
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.detailsQuantityLabel, animated: true)
         }).disposed(by: bag)
         
         // pickup or dropoff task type
-        task.pickupTask.observable
+        task.pickupTask
             .map({ $0 == true ? "Pickup" : "Dropoff" })
-            .bind(to: self.detailsTaskTypeLabel.rx.text)
+            .subscribe({ [weak self] value in self?.detailsTaskTypeLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.pickupTask.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.detailsTaskTypeLabel, animated: true)
+        task.pickupTask
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.detailsTaskTypeLabel, animated: true)
         }).disposed(by: bag)
         
         // complete before
-        task.completeBefore.observable
+        task.completeBefore
             .map({ $0.formattedShortDateAndTime() })
-            .bind(to: self.detailsCompleteBeforeLabel.rx.text)
+            .subscribe({ [weak self] value in self?.detailsCompleteBeforeLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.completeBefore.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.detailsCompleteBeforeLabel, animated: true)
+        task.completeBefore
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.detailsCompleteBeforeLabel, animated: true)
         }).disposed(by: bag)
         
         // complete after
-        task.completeAfter.observable
+        task.completeAfter
             .map({ $0.formattedShortDateAndTime() })
-            .bind(to: self.detailsCompleteAfterLabel.rx.text)
+            .subscribe({ [weak self] value in self?.detailsCompleteAfterLabel.text = value })
             .disposed(by: bag)
         
         // highlight cell on change
-        task.completeAfter.observable.skip(1).subscribe(onNext: { [weak self] _ in
-            self?.highlightView(self!.detailsCompleteAfterLabel, animated: true)
+        task.completeAfter
+            .skip(1)
+            .observe(on: .main)
+            .subscribe({ [weak self] _ in self?.highlightView(self!.detailsCompleteAfterLabel, animated: true)
         }).disposed(by: bag)
     }
     
@@ -239,7 +268,7 @@ class TaskViewController : UITableViewController, ActivityShowing {
     
     @objc private func completeTask(sender: Any) {
         showActivity("Completing...", animated: true)
-        driverManager.complete(task: task, completionDetails: TaskCompletionDetails()) { [weak self] result in
+        driverManager.complete(task: task, completionDetails: TaskCompletionDetails()) { [weak self] stats, result in
             print("complete task result: \(result)")
             self?.hideActivityIfNeeded() {
                 switch result {
@@ -266,20 +295,20 @@ class TaskViewController : UITableViewController, ActivityShowing {
 
 import CoreLocation
 
-extension CLLocation {
+extension CLLocationCoordinate2D {
     
-    var latitude: String {
-        let (degrees, minutes, seconds) = coordinate.latitude.dms
+    var formattedLatitude: String {
+        let (degrees, minutes, seconds) = latitude.dms
         return String(format: "%d°%d'%d\"%@", abs(degrees), minutes, seconds, degrees >= 0 ? "N" : "S")
     }
     
-    var longitude: String {
-        let (degrees, minutes, seconds) = coordinate.longitude.dms
+    var formattedLongitude: String {
+        let (degrees, minutes, seconds) = longitude.dms
         return String(format: "%d°%d'%d\"%@", abs(degrees), minutes, seconds, degrees >= 0 ? "E" : "W")
     }
     
     var formattedLocation: String {
-        latitude + " " + longitude
+        formattedLatitude + " " + formattedLongitude
     }
 }
 

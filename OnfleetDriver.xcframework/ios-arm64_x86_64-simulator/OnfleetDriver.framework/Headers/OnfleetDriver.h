@@ -14,11 +14,7 @@ FOUNDATION_EXPORT double OnfleetDriverSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char OnfleetDriverSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OnfleetDriverSDK/PublicHeader.h>
-
-#import <OnfleetDriver/ONLogger.h>
-#import <OnfleetDriver/WebSocketApi.h>
-#import <OnfleetDriver/LegacyAuthInfo.h>
-
+//TODO: remove these from here and add them to Swift
 extern NSString* const OnfleetErrorDomain;
 extern const NSInteger OnfleetErrorCodeOperationNotDetermined;
 extern const NSInteger OnfleetErrorCodeOperationCancelled;

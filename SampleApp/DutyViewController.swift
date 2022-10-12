@@ -6,10 +6,9 @@
 //
 
 import UIKit
-import OnfleetDriver
-import RxSwift
-import RxCocoa
 import CoreLocation
+
+import OnfleetDriver
 
 protocol DutyViewControllerDelegate {
     func dutyViewController(_ controller: DutyViewController, shouldLogOut sender: Any)
@@ -23,43 +22,46 @@ final class DutyViewController : UIViewController, ActivityShowing {
     private let session = DriverContext.shared.session
     private let driverManager = DriverContext.shared.driverManager
     private let location = DriverContext.shared.location
-    private let bag = DisposeBag()
+    private let bag = OnfleetDriver.DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = driverManager.driver?.organization.getName()
         dutySwitch.addTarget(self, action: #selector(dutySwitchValueChanged(sender:)), for: .valueChanged)
         
-        let dutyStatusDriver = driverManager.onDuty$.observable.asDriver(onErrorJustReturn: false)
+        let dutyStatusDriver = driverManager.onDuty$.observe(on: .main)
         
-        dutyStatusDriver.filter({ $0 == true }).drive(onNext: { [weak self] _ in
+        dutyStatusDriver.filter({ $0 == true }).subscribe({ [weak self] _ in
             self?.updateInterfaceOnDuty()
         }).disposed(by: bag)
         
-        dutyStatusDriver.filter({ $0 == false }).drive(onNext: { [weak self] _ in
+        dutyStatusDriver.filter({ $0 == false }).subscribe({ [weak self] _ in
             self?.updateInterfaceOffDuty()
         }).disposed(by: bag)
         
-        driverManager.onDuty$.observable.asDriver(onErrorJustReturn: false)
-            .drive(self.dutySwitch.rx.isOn)
+        driverManager.onDuty$
+            .observe(on: .main)
+            .subscribe({ [weak self] value in self?.dutySwitch.isOn = value })
             .disposed(by: bag)
         
-        location.isFullyAuthorized$.observable.filter({ $0 == false }).subscribe(onNext: { [weak self] _ in
-            guard let self = self else { return }
-            guard self.driverManager.isOnDuty else { return }
-            print("going off duty due to insufficient location permissions...")
-            self.driverManager.setDutyStatus(goOnDuty: false) { result in
-                print("duty status result: \(result)")
-                self.hideActivityIfNeeded() {
-                    if case Result.failure(let error) = result {
-                        self.dutySwitch.isOn = false
-                        self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
-                    } else {
-                        self.showAlert(title: "Off Duty", message: "You went off duty due to insufficient location permissions", animated: true)
+        location.isFullyAuthorized$
+            .filter({ $0 == false })
+            .subscribe({ [weak self] _ in
+                guard let self = self else { return }
+                guard self.driverManager.isOnDuty else { return }
+                print("going off duty due to insufficient location permissions...")
+                self.driverManager.setDutyStatus(goOnDuty: false) { result in
+                    print("duty status result: \(result)")
+                    self.hideActivityIfNeeded() {
+                        if case Result.failure(let error) = result {
+                            self.dutySwitch.isOn = false
+                            self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                        } else {
+                            self.showAlert(title: "Off Duty", message: "You went off duty due to insufficient location permissions", animated: true)
+                        }
                     }
                 }
-            }
-        }).disposed(by: bag)
+            }).disposed(by: bag)
     }
     
     @objc private func dutySwitchValueChanged(sender: UISwitch) {

@@ -3,8 +3,3 @@ framework module OnfleetDriver {
   export *
   module * { export * }
 }
-
-module OnfleetDriver.Swift {
-    header "OnfleetDriver-Swift.h"
-    requires objc
-}

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RxSwift
+
 import OnfleetDriver
 
 final class InitialViewController : UIViewController, ActivityShowing {
@@ -17,7 +17,6 @@ final class InitialViewController : UIViewController, ActivityShowing {
     @IBOutlet private weak var passwordField: UITextField!
     
     private let session = DriverContext.shared.session
-    private let bag = DisposeBag()
     
     private var sdkLogoutToken: NSObjectProtocol?
     private var appLogoutToken: NSObjectProtocol?

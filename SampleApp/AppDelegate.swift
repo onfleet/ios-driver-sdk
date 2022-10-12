@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         #error("insert your application_id here")
         let applicationId = "YOUR_APP_ID_HERE"
-        let logLevel = ONLogLevel.warning
+        let logLevel = ONLogger.LogLevel.warning
         let environment = Environment.production
         
         let config = Config(appKey: applicationId, appVersion: "1.0", appName: "Sample App")

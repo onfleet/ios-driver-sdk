@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import RxSwift
+
 import OnfleetDriver
 
 final class TasksViewController : UITableViewController, ActivityShowing {
@@ -36,7 +36,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     }
     
     private func observeData() {
-        let bag = DisposeBag()
+        let bag = OnfleetDriver.DisposeBag()
         observeDataFetchingState(disposeBy: bag)
         observeDataState(disposeBy: bag)
         observeDriverChanges(disposeBy: bag)
@@ -52,8 +52,8 @@ final class TasksViewController : UITableViewController, ActivityShowing {
         self.bag = nil
     }
     
-    private func observeDataFetchingState(disposeBy bag: DisposeBag) {
-        driverContext.fetchingState.subscribe(onChange: { [weak self] (fetchingState) in
+    private func observeDataFetchingState(disposeBy bag: OnfleetDriver.DisposeBag) {
+        driverContext.fetchingState.subscribe({ [weak self] (fetchingState) in
             print("fetching state: \(fetchingState)")
             switch fetchingState {
             case .fetching:
@@ -65,8 +65,8 @@ final class TasksViewController : UITableViewController, ActivityShowing {
         }).disposed(by: bag)
     }
     
-    private func observeDataState(disposeBy bag: DisposeBag) {
-        driverContext.dataState.subscribe(onChange: { [weak self] (dataState) in
+    private func observeDataState(disposeBy bag: OnfleetDriver.DisposeBag) {
+        driverContext.dataState.subscribe({ [weak self] (dataState) in
             print("data state: \(dataState)")
             if case .failed(let error) = dataState {
                 self?.showAlertPrompt(title: "Data Fetch Failed", message: error.localizedDescription, action: UIAlertAction(title: "Refetch", style: .default, handler: { (_) in
@@ -76,7 +76,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
         }).disposed(by: bag)
     }
     
-    private func observeDriverChanges(disposeBy bag: DisposeBag) {
+    private func observeDriverChanges(disposeBy bag: OnfleetDriver.DisposeBag) {
         
         func observeDriver() {
             driverManager.driver?.subscribeOnChangeWithChildren({ [weak self] in
@@ -89,7 +89,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
             observeDriver()
         }
         else {
-            driverManager.driverAvailable$.subscribe(onChange: { _ in
+            driverManager.driverAvailable$.subscribe({ _ in
                 observeDriver()
             }).disposed(by: bag)
         }

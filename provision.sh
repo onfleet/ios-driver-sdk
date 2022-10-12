@@ -14,8 +14,8 @@ failed: one or more parameters are missing
 
 Completes the provisioning process on iOS simulators.
 
-The script should be used when a driver is logging in using the simulator and
-this output is printed into debug console:
+The script should be used when a driver is logging in for the first time using
+the simulator. This output is printed into debug console:
 
 PLEASE INSERT PRIVATE KEY WITHIN NEXT XY SECONDS
 
@@ -48,9 +48,8 @@ If you meet the criteria above and you wish to flag your driver account as test
 account, please contact Onfleet support at support@onfleet.com.
 
 Note:
-	If you encounter error ResourceNotFound (1402) while executing the provision script
-	it most likely means that your account is not flagged as test account.
-
+    If you encounter error ResourceNotFound (1402) while executing the provision script
+    it most likely means that your account is not flagged as test account.
 EOM
     exit 1
 fi
