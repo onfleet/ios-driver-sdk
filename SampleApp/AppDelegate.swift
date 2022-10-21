@@ -20,10 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        //We must determine wether to use sandbox or not based on DEBUG directive.
+        //Please make sure that it's enabled for your Debug configuration under
+        //Swift Compiler - Custom flags.
+#if DEBUG
+        let useApnSandbox = true
+#else
+        let useApnSandbox = false
+#endif
+        
         #error("insert your application_id here")
         let applicationId = "YOUR_APP_ID_HERE"
         let logLevel = ONLogger.LogLevel.warning
-        let environment = Environment.production
+        let environment = Environment.production(useApnSandbox: useApnSandbox)
         
         let config = Config(appKey: applicationId, appVersion: "1.0", appName: "Sample App")
         driver.initSDK(with: config, environment: environment, app: application, loggers: [OSLogDestination(logSeverity: logLevel)])

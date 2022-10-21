@@ -291,14 +291,12 @@ extension OnfleetDriver.ObservableType {
 extension OnfleetDriver.ObservableType {
   public func subscribe(_ on: @escaping (Self.Element) -> Swift.Void) -> OnfleetDriver.Disposable
 }
-@objc @frozen public enum Environment : Swift.Int {
-  case production = 100
-  public var key: Swift.String {
+@frozen public enum Environment {
+  case production(useApnSandbox: Swift.Bool)
+  public var isUsingApnSandbox: Swift.Bool {
     get
   }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public var key: Swift.String {
     get
   }
 }
@@ -1406,8 +1404,8 @@ public struct AnalyticsDataState {
   @objc public static var versionShort: Swift.String {
     @objc get
   }
-  @objc public static func httpBaseURL(for environment: OnfleetDriver.Environment) -> Foundation.URL
-  @objc public static func wsBaseURL(for environment: OnfleetDriver.Environment) -> Foundation.URL
+  public static func httpBaseURL(for environment: OnfleetDriver.Environment) -> Foundation.URL
+  public static func wsBaseURL(for environment: OnfleetDriver.Environment) -> Foundation.URL
   @objc public static var appGroupId: Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -1550,16 +1548,8 @@ final public class Keychain : OnfleetDriver.KeychainStoreProtocol {
   final public func removeAllStrings() throws
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class EnvInfo : ObjectiveC.NSObject {
-  @objc public static var currentEnvironment: OnfleetDriver.Environment
-  @objc public static var currentURLForAPI: Foundation.URL {
-    @objc get
-  }
-  @objc public static var currentURLForWebsockets: Foundation.URL {
-    @objc get
-  }
-  @objc override dynamic public init()
-  @objc deinit
+public enum EnvInfo {
+  public static var currentEnvironment: OnfleetDriver.Environment
 }
 public protocol ObservableModel : AnyObject {
   var id: Swift.String { get }
@@ -2295,9 +2285,6 @@ extension OnfleetDriver.RemoveAccountsContext : Swift.Hashable {}
 extension OnfleetDriver.RemoveAccountsContext : Swift.Sendable {}
 extension OnfleetDriver.WorkTaskConditionResult : Swift.Sendable {}
 extension OnfleetDriver.WorkTaskResult : Swift.Sendable {}
-extension OnfleetDriver.Environment : Swift.Equatable {}
-extension OnfleetDriver.Environment : Swift.Hashable {}
-extension OnfleetDriver.Environment : Swift.RawRepresentable {}
 extension OnfleetDriver.Environment : Swift.Sendable {}
 extension OnfleetDriver.HttpApi : Swift.Sendable {}
 extension OnfleetDriver.InvitationResponse : Swift.Equatable {}

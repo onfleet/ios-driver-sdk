@@ -7067,13 +7067,33 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OnfleetDriver.Environment.Type) -> OnfleetDriver.Environment",
+                "printedName": "(OnfleetDriver.Environment.Type) -> (Swift.Bool) -> OnfleetDriver.Environment",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> OnfleetDriver.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "OnfleetDriver.Environment",
+                        "usr": "s:13OnfleetDriver11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(useApnSandbox: Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "kind": "TypeNominal",
@@ -7084,7 +7104,7 @@
                         "kind": "TypeNominal",
                         "name": "Environment",
                         "printedName": "OnfleetDriver.Environment",
-                        "usr": "c:@M@OnfleetDriver@E@Environment"
+                        "usr": "s:13OnfleetDriver11EnvironmentO"
                       }
                     ]
                   }
@@ -7092,13 +7112,50 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@OnfleetDriver@E@Environment@EnvironmentProduction",
-            "mangledName": "$s13OnfleetDriver11EnvironmentO10productionyA2CmF",
+            "usr": "s:13OnfleetDriver11EnvironmentO10productionyACSb_tcACmF",
+            "mangledName": "$s13OnfleetDriver11EnvironmentO10productionyACSb_tcACmF",
+            "moduleName": "OnfleetDriver",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "isUsingApnSandbox",
+            "printedName": "isUsingApnSandbox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13OnfleetDriver11EnvironmentO17isUsingApnSandboxSbvp",
+            "mangledName": "$s13OnfleetDriver11EnvironmentO17isUsingApnSandboxSbvp",
             "moduleName": "OnfleetDriver",
             "declAttributes": [
-              "ObjC"
+              "AccessControl"
             ],
-            "fixedbinaryorder": 0
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13OnfleetDriver11EnvironmentO17isUsingApnSandboxSbvg",
+                "mangledName": "$s13OnfleetDriver11EnvironmentO17isUsingApnSandboxSbvg",
+                "moduleName": "OnfleetDriver",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -7136,78 +7193,6 @@
                 "usr": "s:13OnfleetDriver11EnvironmentO3keySSvg",
                 "mangledName": "$s13OnfleetDriver11EnvironmentO3keySSvg",
                 "moduleName": "OnfleetDriver",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "OnfleetDriver.Environment?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13OnfleetDriver11EnvironmentO8rawValueACSgSi_tcfc",
-            "mangledName": "$s13OnfleetDriver11EnvironmentO8rawValueACSgSi_tcfc",
-            "moduleName": "OnfleetDriver",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13OnfleetDriver11EnvironmentO8rawValueSivp",
-            "mangledName": "$s13OnfleetDriver11EnvironmentO8rawValueSivp",
-            "moduleName": "OnfleetDriver",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13OnfleetDriver11EnvironmentO8rawValueSivg",
-                "mangledName": "$s13OnfleetDriver11EnvironmentO8rawValueSivg",
-                "moduleName": "OnfleetDriver",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -7256,52 +7241,21 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "c:@M@OnfleetDriver@E@Environment",
+        "usr": "s:13OnfleetDriver11EnvironmentO",
         "mangledName": "$s13OnfleetDriver11EnvironmentO",
         "moduleName": "OnfleetDriver",
         "declAttributes": [
           "AccessControl",
-          "Frozen",
-          "ObjC"
+          "Frozen"
         ],
-        "enumRawTypeName": "Int",
         "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -7309,13 +7263,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -30211,7 +30158,7 @@
                 "kind": "TypeNominal",
                 "name": "Environment",
                 "printedName": "OnfleetDriver.Environment",
-                "usr": "c:@M@OnfleetDriver@E@Environment"
+                "usr": "s:13OnfleetDriver11EnvironmentO"
               }
             ],
             "declKind": "Var",
@@ -30232,7 +30179,7 @@
                     "kind": "TypeNominal",
                     "name": "Environment",
                     "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
+                    "usr": "s:13OnfleetDriver11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
@@ -30258,7 +30205,7 @@
                     "kind": "TypeNominal",
                     "name": "Environment",
                     "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
+                    "usr": "s:13OnfleetDriver11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
@@ -30484,7 +30431,7 @@
                 "kind": "TypeNominal",
                 "name": "Environment",
                 "printedName": "OnfleetDriver.Environment",
-                "usr": "c:@M@OnfleetDriver@E@Environment"
+                "usr": "s:13OnfleetDriver11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -41355,18 +41302,17 @@
                 "kind": "TypeNominal",
                 "name": "Environment",
                 "printedName": "OnfleetDriver.Environment",
-                "usr": "c:@M@OnfleetDriver@E@Environment"
+                "usr": "s:13OnfleetDriver11EnvironmentO"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@OnfleetDriver@objc(cs)FrameworkInfo(cm)httpBaseURLFor:",
+            "usr": "s:13OnfleetDriver13FrameworkInfoC11httpBaseURL3for10Foundation0G0VAA11EnvironmentO_tFZ",
             "mangledName": "$s13OnfleetDriver13FrameworkInfoC11httpBaseURL3for10Foundation0G0VAA11EnvironmentO_tFZ",
             "moduleName": "OnfleetDriver",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -41385,18 +41331,17 @@
                 "kind": "TypeNominal",
                 "name": "Environment",
                 "printedName": "OnfleetDriver.Environment",
-                "usr": "c:@M@OnfleetDriver@E@Environment"
+                "usr": "s:13OnfleetDriver11EnvironmentO"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@OnfleetDriver@objc(cs)FrameworkInfo(cm)wsBaseURLFor:",
+            "usr": "s:13OnfleetDriver13FrameworkInfoC9wsBaseURL3for10Foundation0G0VAA11EnvironmentO_tFZ",
             "mangledName": "$s13OnfleetDriver13FrameworkInfoC9wsBaseURL3for10Foundation0G0VAA11EnvironmentO_tFZ",
             "moduleName": "OnfleetDriver",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -46596,20 +46541,18 @@
                 "kind": "TypeNominal",
                 "name": "Environment",
                 "printedName": "OnfleetDriver.Environment",
-                "usr": "c:@M@OnfleetDriver@E@Environment"
+                "usr": "s:13OnfleetDriver11EnvironmentO"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cpy)currentEnvironment",
-            "mangledName": "$s13OnfleetDriver7EnvInfoC18currentEnvironmentAA0F0OvpZ",
+            "usr": "s:13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvpZ",
+            "mangledName": "$s13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvpZ",
             "moduleName": "OnfleetDriver",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -46622,19 +46565,15 @@
                     "kind": "TypeNominal",
                     "name": "Environment",
                     "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
+                    "usr": "s:13OnfleetDriver11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cm)currentEnvironment",
-                "mangledName": "$s13OnfleetDriver7EnvInfoC18currentEnvironmentAA0F0OvgZ",
+                "usr": "s:13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvgZ",
+                "mangledName": "$s13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvgZ",
                 "moduleName": "OnfleetDriver",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -46651,19 +46590,15 @@
                     "kind": "TypeNominal",
                     "name": "Environment",
                     "printedName": "OnfleetDriver.Environment",
-                    "usr": "c:@M@OnfleetDriver@E@Environment"
+                    "usr": "s:13OnfleetDriver11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cm)setCurrentEnvironment:",
-                "mangledName": "$s13OnfleetDriver7EnvInfoC18currentEnvironmentAA0F0OvsZ",
+                "usr": "s:13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvsZ",
+                "mangledName": "$s13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvsZ",
                 "moduleName": "OnfleetDriver",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -46678,206 +46613,22 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13OnfleetDriver7EnvInfoC18currentEnvironmentAA0F0OvMZ",
-                "mangledName": "$s13OnfleetDriver7EnvInfoC18currentEnvironmentAA0F0OvMZ",
+                "usr": "s:13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvMZ",
+                "mangledName": "$s13OnfleetDriver7EnvInfoO18currentEnvironmentAA0F0OvMZ",
                 "moduleName": "OnfleetDriver",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "currentURLForAPI",
-            "printedName": "currentURLForAPI",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cpy)currentURLForAPI",
-            "mangledName": "$s13OnfleetDriver7EnvInfoC16currentURLForAPI10Foundation3URLVvpZ",
-            "moduleName": "OnfleetDriver",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cm)currentURLForAPI",
-                "mangledName": "$s13OnfleetDriver7EnvInfoC16currentURLForAPI10Foundation3URLVvgZ",
-                "moduleName": "OnfleetDriver",
-                "static": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "currentURLForWebsockets",
-            "printedName": "currentURLForWebsockets",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cpy)currentURLForWebsockets",
-            "mangledName": "$s13OnfleetDriver7EnvInfoC23currentURLForWebsockets10Foundation3URLVvpZ",
-            "moduleName": "OnfleetDriver",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(cm)currentURLForWebsockets",
-                "mangledName": "$s13OnfleetDriver7EnvInfoC23currentURLForWebsockets10Foundation3URLVvgZ",
-                "moduleName": "OnfleetDriver",
-                "static": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EnvInfo",
-                "printedName": "OnfleetDriver.EnvInfo",
-                "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo(im)init",
-            "mangledName": "$s13OnfleetDriver7EnvInfoCACycfc",
-            "moduleName": "OnfleetDriver",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OnfleetDriver@objc(cs)EnvInfo",
-        "mangledName": "$s13OnfleetDriver7EnvInfoC",
+        "declKind": "Enum",
+        "usr": "s:13OnfleetDriver7EnvInfoO",
+        "mangledName": "$s13OnfleetDriver7EnvInfoO",
         "moduleName": "OnfleetDriver",
         "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
+          "AccessControl"
         ]
       },
       {
@@ -78246,20 +77997,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Info\/Environment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 242,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Info\/Environment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 242,
-      "length": 3,
-      "value": "100"
-    },
-    {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Model Data Manager\/Model Manager\/Model\/Address.swift",
       "kind": "StringLiteral",
       "offset": 1086,
@@ -79298,42 +79035,42 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "IntegerLiteral",
-      "offset": 6160,
+      "offset": 6229,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "StringLiteral",
-      "offset": 6872,
+      "offset": 6941,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "Array",
-      "offset": 7408,
+      "offset": 7477,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 7426,
+      "offset": 7495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 7657,
+      "offset": 7726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/DriverContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 8571,
+      "offset": 8681,
       "length": 5,
       "value": "false"
     },
@@ -80185,6 +79922,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Info\/EnvInfo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 265,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Model Data Manager\/Model Manager\/ObjectGraph\/Collections.swift",
       "kind": "StringLiteral",
       "offset": 1270,
@@ -80593,70 +80337,70 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 7939,
+      "offset": 7935,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 7965,
+      "offset": 7961,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 8379,
+      "offset": 8375,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 8405,
+      "offset": 8401,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 8745,
+      "offset": 8741,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 8771,
+      "offset": 8767,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 9111,
+      "offset": 9107,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 9137,
+      "offset": 9133,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 10273,
+      "offset": 10269,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Foundation\/Logger\/Logger+Swift.swift",
       "kind": "StringLiteral",
-      "offset": 10299,
+      "offset": 10295,
       "length": 4,
       "value": "\"\n\""
     },

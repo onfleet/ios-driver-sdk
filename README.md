@@ -84,7 +84,7 @@ For example in your app delegate file:
         
         //initiate SDK
         let config = Config(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
-        driver.initSDK(with: config, environment: .production, app: application, loggers: [OSLogDestination(logSeverity: .warning)])
+        driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
         
         return true
     }
