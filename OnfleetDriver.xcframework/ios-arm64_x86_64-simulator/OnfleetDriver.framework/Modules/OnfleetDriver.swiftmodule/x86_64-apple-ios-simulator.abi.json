@@ -33627,7 +33627,8 @@
                     "declKind": "EnumElement",
                     "usr": "s:13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7successyA2GmF",
                     "mangledName": "$s13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7successyA2GmF",
-                    "moduleName": "OnfleetDriver"
+                    "moduleName": "OnfleetDriver",
+                    "fixedbinaryorder": 0
                   },
                   {
                     "kind": "Var",
@@ -33664,44 +33665,8 @@
                     "declKind": "EnumElement",
                     "usr": "s:13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7failureyA2GmF",
                     "mangledName": "$s13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7failureyA2GmF",
-                    "moduleName": "OnfleetDriver"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "unknown",
-                    "printedName": "unknown",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OnfleetDriver.Organization.CompletionReason.Status.Type) -> OnfleetDriver.Organization.CompletionReason.Status",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OnfleetDriver.Organization.CompletionReason.Status",
-                            "usr": "s:13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OnfleetDriver.Organization.CompletionReason.Status.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Status",
-                                "printedName": "OnfleetDriver.Organization.CompletionReason.Status",
-                                "usr": "s:13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7unknownyA2GmF",
-                    "mangledName": "$s13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO7unknownyA2GmF",
-                    "moduleName": "OnfleetDriver"
+                    "moduleName": "OnfleetDriver",
+                    "fixedbinaryorder": 1
                   },
                   {
                     "kind": "Constructor",
@@ -33781,9 +33746,11 @@
                 "mangledName": "$s13OnfleetDriver12OrganizationC16CompletionReasonV6StatusO",
                 "moduleName": "OnfleetDriver",
                 "declAttributes": [
-                  "AccessControl"
+                  "AccessControl",
+                  "Frozen"
                 ],
                 "enumRawTypeName": "String",
+                "isEnumExhaustive": true,
                 "conformances": [
                   {
                     "kind": "Conformance",
@@ -33820,6 +33787,13 @@
                     ],
                     "usr": "s:SY",
                     "mangledName": "$sSY"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
                   }
                 ]
               },
@@ -60582,13 +60556,34 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(OnfleetDriver.TaskCompletionDetails.Result.Type) -> OnfleetDriver.TaskCompletionDetails.Result",
+                    "printedName": "(OnfleetDriver.TaskCompletionDetails.Result.Type) -> (Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
                     "children": [
                       {
-                        "kind": "TypeNominal",
-                        "name": "Result",
-                        "printedName": "OnfleetDriver.TaskCompletionDetails.Result",
-                        "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO"
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Result",
+                            "printedName": "OnfleetDriver.TaskCompletionDetails.Result",
+                            "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeNominal",
@@ -60607,8 +60602,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO7successyA2EmF",
-                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO7successyA2EmF",
+                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO7successyAESSSgcAEmF",
+                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO7successyAESSSgcAEmF",
                 "moduleName": "OnfleetDriver",
                 "declAttributes": [
                   "RawDocComment"
@@ -60623,12 +60618,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(OnfleetDriver.TaskCompletionDetails.Result.Type) -> (Swift.String, Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
+                    "printedName": "(OnfleetDriver.TaskCompletionDetails.Result.Type) -> (Swift.String?, Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String, Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
+                        "printedName": "(Swift.String?, Swift.String?) -> OnfleetDriver.TaskCompletionDetails.Result",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -60639,13 +60634,21 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.String, Swift.String?)",
+                            "printedName": "(Swift.String?, Swift.String?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -60682,8 +60685,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO7failureyAESS_SSSgtcAEmF",
-                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO7failureyAESS_SSSgtcAEmF",
+                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO7failureyAESSSg_AGtcAEmF",
+                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO7failureyAESSSg_AGtcAEmF",
                 "moduleName": "OnfleetDriver",
                 "declAttributes": [
                   "RawDocComment"
@@ -60733,8 +60736,8 @@
               },
               {
                 "kind": "Var",
-                "name": "failureNotes",
-                "printedName": "failureNotes",
+                "name": "successReason",
+                "printedName": "successReason",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -60752,8 +60755,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvp",
-                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvp",
+                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO13successReasonSSSgvp",
+                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO13successReasonSSSgvp",
                 "moduleName": "OnfleetDriver",
                 "declAttributes": [
                   "AccessControl",
@@ -60781,8 +60784,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvg",
-                    "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvg",
+                    "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO13successReasonSSSgvg",
+                    "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO13successReasonSSSgvg",
                     "moduleName": "OnfleetDriver",
                     "accessorKind": "get"
                   }
@@ -60840,6 +60843,63 @@
                     "declKind": "Accessor",
                     "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO13failureReasonSSSgvg",
                     "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO13failureReasonSSSgvg",
+                    "moduleName": "OnfleetDriver",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "failureNotes",
+                "printedName": "failureNotes",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvp",
+                "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvp",
+                "moduleName": "OnfleetDriver",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvg",
+                    "mangledName": "$s13OnfleetDriver21TaskCompletionDetailsV6ResultO12failureNotesSSSgvg",
                     "moduleName": "OnfleetDriver",
                     "accessorKind": "get"
                   }
@@ -68210,6 +68270,116 @@
                     "declKind": "Accessor",
                     "usr": "s:13OnfleetDriver13CompletedTaskV17CompletionDetailsV13failureReasonSSvM",
                     "mangledName": "$s13OnfleetDriver13CompletedTaskV17CompletionDetailsV13failureReasonSSvM",
+                    "moduleName": "OnfleetDriver",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "successReason",
+                "printedName": "successReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvp",
+                "mangledName": "$s13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvp",
+                "moduleName": "OnfleetDriver",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvg",
+                    "mangledName": "$s13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvg",
+                    "moduleName": "OnfleetDriver",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvs",
+                    "mangledName": "$s13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvs",
+                    "moduleName": "OnfleetDriver",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvM",
+                    "mangledName": "$s13OnfleetDriver13CompletedTaskV17CompletionDetailsV13successReasonSSSgvM",
                     "moduleName": "OnfleetDriver",
                     "implicit": true,
                     "accessorKind": "_modify"
@@ -78328,7 +78498,7 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Session\/Auth\/Provision\/Provision.swift",
       "kind": "StringLiteral",
-      "offset": 2433,
+      "offset": 2405,
       "length": 11,
       "value": "\"Provision\""
     },
@@ -79336,7 +79506,7 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Model Data Manager\/Model Manager\/Model\/Organization.swift",
       "kind": "BooleanLiteral",
-      "offset": 8954,
+      "offset": 9284,
       "length": 5,
       "value": "false"
     },
@@ -79574,7 +79744,7 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Remote Notifications\/Device Token\/ApnDeviceTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 341,
+      "offset": 405,
       "length": 5,
       "value": "false"
     },

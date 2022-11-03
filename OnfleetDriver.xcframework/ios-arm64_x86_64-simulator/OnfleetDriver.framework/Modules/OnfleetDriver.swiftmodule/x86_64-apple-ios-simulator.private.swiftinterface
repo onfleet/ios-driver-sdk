@@ -1154,9 +1154,8 @@ extension Foundation.URL {
     public static func == (a: OnfleetDriver.Organization.Billing, b: OnfleetDriver.Organization.Billing) -> Swift.Bool
   }
   public struct CompletionReason : OnfleetDriver.Identifiable, Swift.Equatable {
-    public enum Status : Swift.String {
+    @frozen public enum Status : Swift.String {
       case success, failure
-      case unknown
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
@@ -2036,15 +2035,18 @@ public struct TaskCompletionDetails {
     case driverLicense(OnfleetDriver.DriverLicense)
   }
   @frozen public enum Result {
-    case success
-    case failure(_: Swift.String, _: Swift.String?)
+    case success(_: Swift.String?)
+    case failure(_: Swift.String?, _: Swift.String?)
     public var isSuccess: Swift.Bool {
       get
     }
-    public var failureNotes: Swift.String? {
+    public var successReason: Swift.String? {
       get
     }
     public var failureReason: Swift.String? {
+      get
+    }
+    public var failureNotes: Swift.String? {
       get
     }
   }
@@ -2220,6 +2222,7 @@ public struct CompletedTask : Swift.Hashable {
     public var success: Swift.Bool
     public var notes: Swift.String
     public var failureReason: Swift.String
+    public var successReason: Swift.String?
     public var time: Foundation.TimeInterval
     public var events: [OnfleetDriver.CompletedTask.CompletionDetails.Event]
     public var hasFailureReason: Swift.Bool {
@@ -2323,6 +2326,7 @@ extension OnfleetDriver.Metadata.Visibility : Swift.Sendable {}
 extension OnfleetDriver.Organization.CompletionReason.Status : Swift.Equatable {}
 extension OnfleetDriver.Organization.CompletionReason.Status : Swift.Hashable {}
 extension OnfleetDriver.Organization.CompletionReason.Status : Swift.RawRepresentable {}
+extension OnfleetDriver.Organization.CompletionReason.Status : Swift.Sendable {}
 extension OnfleetDriver.UnitSystem : Swift.Equatable {}
 extension OnfleetDriver.UnitSystem : Swift.Hashable {}
 extension OnfleetDriver.UnitSystem : Swift.Sendable {}
