@@ -3342,6 +3342,243 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ValueProvidingResult",
+        "printedName": "ValueProvidingResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error> (OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type) -> (τ_0_0) -> OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueProvidingResult",
+                        "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(value: τ_0_0)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueProvidingResult",
+                        "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver20ValueProvidingResultO7successyACyxq_Gx_tcAEms5ErrorR_r0_lF",
+            "mangledName": "$s13OnfleetDriver20ValueProvidingResultO7successyACyxq_Gx_tcAEms5ErrorR_r0_lF",
+            "moduleName": "OnfleetDriver"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error> (OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type) -> (τ_0_1) -> OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_1) -> OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueProvidingResult",
+                        "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: τ_0_1)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueProvidingResult",
+                        "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver20ValueProvidingResultO7failureyACyxq_Gq__tcAEms5ErrorR_r0_lF",
+            "mangledName": "$s13OnfleetDriver20ValueProvidingResultO7failureyACyxq_Gq__tcAEms5ErrorR_r0_lF",
+            "moduleName": "OnfleetDriver"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error> (OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type) -> OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueProvidingResult",
+                    "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueProvidingResult",
+                        "printedName": "OnfleetDriver.ValueProvidingResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:13OnfleetDriver20ValueProvidingResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver20ValueProvidingResultO9cancelledyACyxq_GAEms5ErrorR_r0_lF",
+            "mangledName": "$s13OnfleetDriver20ValueProvidingResultO9cancelledyACyxq_GAEms5ErrorR_r0_lF",
+            "moduleName": "OnfleetDriver"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13OnfleetDriver20ValueProvidingResultO",
+        "mangledName": "$s13OnfleetDriver20ValueProvidingResultO",
+        "moduleName": "OnfleetDriver",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error>",
+        "sugared_genericSig": "<Value, Error where Error : Swift.Error>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5531,16 +5768,6 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "OnfleetDriver"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OnfleetDriver",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -8815,54 +9042,9 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "prettyPrinted",
-            "printedName": "prettyPrinted",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13OnfleetDriver11PhoneNumberV13prettyPrintedSSvp",
-            "mangledName": "$s13OnfleetDriver11PhoneNumberV13prettyPrintedSSvp",
-            "moduleName": "OnfleetDriver",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13OnfleetDriver11PhoneNumberV13prettyPrintedSSvg",
-                "mangledName": "$s13OnfleetDriver11PhoneNumberV13prettyPrintedSSvg",
-                "moduleName": "OnfleetDriver",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(E164:pretty:)",
+            "printedName": "init(E164:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8875,17 +9057,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13OnfleetDriver11PhoneNumberV4E1646prettyACSS_SStcfc",
-            "mangledName": "$s13OnfleetDriver11PhoneNumberV4E1646prettyACSS_SStcfc",
+            "usr": "s:13OnfleetDriver11PhoneNumberV4E164ACSS_tcfc",
+            "mangledName": "$s13OnfleetDriver11PhoneNumberV4E164ACSS_tcfc",
             "moduleName": "OnfleetDriver",
             "declAttributes": [
               "AccessControl"
@@ -9016,7 +9192,7 @@
           {
             "kind": "Function",
             "name": "login",
-            "printedName": "login(credentials:activityStatus:completion:)",
+            "printedName": "login(credentials:newPasswordProvider:SMSVerificationCodeProvider:activityStatus:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9028,6 +9204,74 @@
                 "name": "Credentials",
                 "printedName": "OnfleetDriver.Credentials",
                 "usr": "s:13OnfleetDriver11CredentialsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(@escaping (OnfleetDriver.NewPasswordResult) -> ()) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OnfleetDriver.NewPasswordResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NewPasswordResult",
+                        "printedName": "OnfleetDriver.NewPasswordResult",
+                        "usr": "s:13OnfleetDriver17NewPasswordResultO"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((@escaping (OnfleetDriver.SMSCodeVerificationResult) -> ()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(@escaping (OnfleetDriver.SMSCodeVerificationResult) -> ()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(OnfleetDriver.SMSCodeVerificationResult) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SMSCodeVerificationResult",
+                            "printedName": "OnfleetDriver.SMSCodeVerificationResult",
+                            "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -9081,8 +9325,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13OnfleetDriver15SessionManagingP5login11credentials14activityStatus10completionyAA11CredentialsV_yAA05LoginH0Ocys6ResultOySSAA0K5ErrorOGctF",
-            "mangledName": "$s13OnfleetDriver15SessionManagingP5login11credentials14activityStatus10completionyAA11CredentialsV_yAA05LoginH0Ocys6ResultOySSAA0K5ErrorOGctF",
+            "usr": "s:13OnfleetDriver15SessionManagingP5login11credentials19newPasswordProvider019SMSVerificationCodeI014activityStatus10completionyAA11CredentialsV_yyAA03NewH6ResultOccyyAA019SMSCodeVerificationQ0OccSgyAA05LoginM0Ocys0Q0OySSAA0T5ErrorOGctF",
+            "mangledName": "$s13OnfleetDriver15SessionManagingP5login11credentials19newPasswordProvider019SMSVerificationCodeI014activityStatus10completionyAA11CredentialsV_yyAA03NewH6ResultOccyyAA019SMSCodeVerificationQ0OccSgyAA05LoginM0Ocys0Q0OySSAA0T5ErrorOGctF",
             "moduleName": "OnfleetDriver",
             "genericSig": "<τ_0_0 where τ_0_0 : OnfleetDriver.SessionManaging>",
             "sugared_genericSig": "<Self where Self : OnfleetDriver.SessionManaging>",
@@ -11907,6 +12151,107 @@
         "moduleName": "OnfleetDriver",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SMSCodeVerificationResult",
+        "printedName": "SMSCodeVerificationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OnfleetDriver.SMSCodeVerificationResult.Type) -> (Swift.String) -> OnfleetDriver.SMSCodeVerificationResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OnfleetDriver.SMSCodeVerificationResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SMSCodeVerificationResult",
+                        "printedName": "OnfleetDriver.SMSCodeVerificationResult",
+                        "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.SMSCodeVerificationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SMSCodeVerificationResult",
+                        "printedName": "OnfleetDriver.SMSCodeVerificationResult",
+                        "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO4codeyACSScACmF",
+            "mangledName": "$s13OnfleetDriver25SMSCodeVerificationResultO4codeyACSScACmF",
+            "moduleName": "OnfleetDriver"
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OnfleetDriver.SMSCodeVerificationResult.Type) -> OnfleetDriver.SMSCodeVerificationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SMSCodeVerificationResult",
+                    "printedName": "OnfleetDriver.SMSCodeVerificationResult",
+                    "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.SMSCodeVerificationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SMSCodeVerificationResult",
+                        "printedName": "OnfleetDriver.SMSCodeVerificationResult",
+                        "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO6cancelyA2CmF",
+            "mangledName": "$s13OnfleetDriver25SMSCodeVerificationResultO6cancelyA2CmF",
+            "moduleName": "OnfleetDriver"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13OnfleetDriver25SMSCodeVerificationResultO",
+        "mangledName": "$s13OnfleetDriver25SMSCodeVerificationResultO",
+        "moduleName": "OnfleetDriver",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -46181,6 +46526,113 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NewPasswordResult",
+        "printedName": "NewPasswordResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "password",
+            "printedName": "password",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OnfleetDriver.NewPasswordResult.Type) -> (Swift.String) -> OnfleetDriver.NewPasswordResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OnfleetDriver.NewPasswordResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NewPasswordResult",
+                        "printedName": "OnfleetDriver.NewPasswordResult",
+                        "usr": "s:13OnfleetDriver17NewPasswordResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.NewPasswordResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NewPasswordResult",
+                        "printedName": "OnfleetDriver.NewPasswordResult",
+                        "usr": "s:13OnfleetDriver17NewPasswordResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver17NewPasswordResultO8passwordyACSScACmF",
+            "mangledName": "$s13OnfleetDriver17NewPasswordResultO8passwordyACSScACmF",
+            "moduleName": "OnfleetDriver",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OnfleetDriver.NewPasswordResult.Type) -> OnfleetDriver.NewPasswordResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NewPasswordResult",
+                    "printedName": "OnfleetDriver.NewPasswordResult",
+                    "usr": "s:13OnfleetDriver17NewPasswordResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OnfleetDriver.NewPasswordResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NewPasswordResult",
+                        "printedName": "OnfleetDriver.NewPasswordResult",
+                        "usr": "s:13OnfleetDriver17NewPasswordResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13OnfleetDriver17NewPasswordResultO6cancelyA2CmF",
+            "mangledName": "$s13OnfleetDriver17NewPasswordResultO6cancelyA2CmF",
+            "moduleName": "OnfleetDriver",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13OnfleetDriver17NewPasswordResultO",
+        "mangledName": "$s13OnfleetDriver17NewPasswordResultO",
+        "moduleName": "OnfleetDriver",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -73627,13 +74079,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -78160,13 +78605,6 @@
       "value": "\"travelMonitoringLocationServiceId\""
     },
     {
-      "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/_temporary\/_GlobalAlertController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 815,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Model Data Manager\/Model Manager\/Model\/Address.swift",
       "kind": "StringLiteral",
       "offset": 1086,
@@ -78498,7 +78936,7 @@
     {
       "filePath": "\/Users\/peterstajger\/git\/onfleet\/onfleet-driver\/OnfleetDriverSDK\/Classes\/Core\/Session\/Auth\/Provision\/Provision.swift",
       "kind": "StringLiteral",
-      "offset": 2405,
+      "offset": 2412,
       "length": 11,
       "value": "\"Provision\""
     },

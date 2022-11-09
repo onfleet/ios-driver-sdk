@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OnfleetDriver
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -162,6 +162,11 @@ extension OnfleetDriver.DutyStatusError : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
+}
+public enum ValueProvidingResult<Value, Error> where Error : Swift.Error {
+  case success(value: Value)
+  case failure(error: Error)
+  case cancelled
 }
 @frozen public enum LogoutReason : Swift.Int, Swift.Error {
   case userInitiated
@@ -328,6 +333,8 @@ public typealias LogoutCompletionHandler = (Swift.Result<Swift.Void, OnfleetDriv
 public typealias ActiveAccountChangeHandler = () -> Swift.Void
 public typealias AccountInvitationHandler = (OnfleetDriver.AccountInvitationResult) -> Swift.Void
 public typealias ResetPasswordHandler = (Swift.Result<Swift.Void, OnfleetDriver.ResetPasswordError>) -> Swift.Void
+public typealias NewPasswordProvider = (@escaping (OnfleetDriver.NewPasswordResult) -> Swift.Void) -> Swift.Void
+public typealias SMSCodeProvider = (@escaping (OnfleetDriver.SMSCodeVerificationResult) -> Swift.Void) -> Swift.Void
 public struct Credentials {
   public let phoneNumber: OnfleetDriver.PhoneNumber
   public let password: OnfleetDriver.Password
@@ -348,13 +355,12 @@ public struct Credentials {
 }
 public struct PhoneNumber {
   public let E164Formatted: Swift.String
-  public let prettyPrinted: Swift.String
-  public init(E164: Swift.String, pretty: Swift.String)
+  public init(E164: Swift.String)
 }
 public protocol SessionManaging : AnyObject {
   var isAuthenticated: Swift.Bool { get }
   var authenticated$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
-  func login(credentials: OnfleetDriver.Credentials, activityStatus: @escaping (OnfleetDriver.LoginStatus) -> Swift.Void, completion: @escaping OnfleetDriver.LoginCompletionHandler)
+  func login(credentials: OnfleetDriver.Credentials, newPasswordProvider: @escaping OnfleetDriver.NewPasswordProvider, SMSVerificationCodeProvider: OnfleetDriver.SMSCodeProvider?, activityStatus: @escaping (OnfleetDriver.LoginStatus) -> Swift.Void, completion: @escaping OnfleetDriver.LoginCompletionHandler)
   func logout(force: Swift.Bool, started: (() -> Swift.Void)?, completion: OnfleetDriver.LogoutCompletionHandler?)
   func resetPassword(for phoneNumber: OnfleetDriver.PhoneNumber, completion: @escaping OnfleetDriver.ResetPasswordHandler)
   var accounts: [OnfleetDriver.Account] { get }
@@ -467,6 +473,10 @@ extension OnfleetDriver.HTTPError : Swift.CustomDebugStringConvertible where E =
   public var debugDescription: Swift.String {
     get
   }
+}
+public enum SMSCodeVerificationResult {
+  case code(OnfleetDriver.SMSCode)
+  case cancel
 }
 extension CoreLocation.CLLocationCoordinate2D : Swift.Equatable {
   public static func == (lhs: CoreLocation.CLLocationCoordinate2D, rhs: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
@@ -605,6 +615,7 @@ public protocol UserConsentEnabledIntegration : OnfleetDriver.Integration {
   func integrationWasDenied()
   func requestUserConsent(grantedHandler: @escaping (_ granted: Swift.Bool) -> Swift.Void)
 }
+public typealias SMSCode = Swift.String
 public protocol AccountsSubscriber : AnyObject {
   var accountsProvider: OnfleetDriver.AccountsProvider? { get set }
   func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didRemove accounts: [OnfleetDriver.Account], context: OnfleetDriver.RemoveAccountsContext)
@@ -1528,6 +1539,10 @@ final public class CodableStorage {
   case busy(OnfleetDriver.LoginStatus.LoginOperationType)
   case waitingForAdminVerification
   public static func == (a: OnfleetDriver.LoginStatus, b: OnfleetDriver.LoginStatus) -> Swift.Bool
+}
+public enum NewPasswordResult {
+  case password(OnfleetDriver.Password)
+  case cancel
 }
 extension Swift.Array where Element == (key: Swift.String, value: Any) {
   public func stringified() -> Swift.String

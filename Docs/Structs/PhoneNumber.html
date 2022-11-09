@@ -260,6 +260,9 @@
                 <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NewPasswordResult.html">NewPasswordResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
               </li>
               <li class="nav-group-task">
@@ -267,6 +270,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SMSCodeVerificationResult.html">SMSCodeVerificationResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
@@ -279,6 +285,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/UpdateProfileError.html">UpdateProfileError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValueProvidingResult.html">ValueProvidingResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/VehicleType.html">VehicleType</a>
@@ -391,6 +400,17 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases/NewPasswordProvider.html">NewPasswordProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases/SMSCode.html">SMSCode</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -399,9 +419,6 @@
           <div class="section-content top-matter">
             <h1>PhoneNumber</h1>
             <p>Representation of a phone number.</p>
-
-<p>Note that number consists of 2 values. E164 is formatted according to E.164 standard (+1555&hellip;) and
-<code>pretty</code> is any kind of formatted string that is used in UI (e.g. +1 (5) 555-111&hellip;).</p>
 
           </div>
         </section>
@@ -426,7 +443,7 @@
                         <p>E.164 formatted international phone number (example +14155552671).</p>
 
 <p>This string is used in business logic. Please note that Driver SDK does not do any validation of
-E.164 phone numbers. Incorrect format will be however refused by server emitting an error.</p>
+E.164 phone numbers. Incorrect format will be however refused by server by emitting an error.</p>
 
                       </div>
                     </section>
@@ -436,31 +453,8 @@ E.164 phone numbers. Incorrect format will be however refused by server emitting
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/prettyPrinted" class="dashAnchor"></a>
-                    <a class="token" href="#/">prettyPrinted</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Pretty formated phone number.</p>
-
-<p>This string is solely used in UI. Current SDK implementation shows UI elements to pick
-SMS codes or new passwords and does not allow clients to provide their own UI. This will change in
-future.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/init(E164:pretty:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">init(E164:<wbr>pretty:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/init(E164:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">init(E164:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">

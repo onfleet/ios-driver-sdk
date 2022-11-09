@@ -260,6 +260,9 @@
                 <a class="nav-group-task-link" href="../Enums/LogoutError.html">LogoutError</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/NewPasswordResult.html">NewPasswordResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/RecipientContactMode.html">RecipientContactMode</a>
               </li>
               <li class="nav-group-task">
@@ -267,6 +270,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/ResetPasswordError.html">ResetPasswordError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SMSCodeVerificationResult.html">SMSCodeVerificationResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/SelfAssignError.html">SelfAssignError</a>
@@ -279,6 +285,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/UpdateProfileError.html">UpdateProfileError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ValueProvidingResult.html">ValueProvidingResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/VehicleType.html">VehicleType</a>
@@ -391,6 +400,17 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases/NewPasswordProvider.html">NewPasswordProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases/SMSCode.html">SMSCode</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -476,8 +496,8 @@ driver from org or if there is an unrecoverable auth failure. Observing this pro
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/login(credentials:activityStatus:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">login(credentials:<wbr>activityStatus:<wbr>completion:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/login(credentials:newPasswordProvider:SMSVerificationCodeProvider:activityStatus:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">login(credentials:<wbr>newPasswordProvider:<wbr>SMSVerificationCodeProvider:<wbr>activityStatus:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -491,7 +511,9 @@ driver from org or if there is an unrecoverable auth failure. Observing this pro
 multiple times each time the status value changed.</p>
 
 <p>There are various steps that logion operation performs and sometimes the flow can be interrupted and
-driver can be asked for SMS verification code or a new password. This is all managed by login operation.</p>
+driver can be asked for SMS verification code or a new password. Currently SMS verification is managed
+automatically by SDK byt the new password must be managed by client application. Use
+<code>newPasswordProvider</code> closure to obtain new password from user and pass it to the SDK.</p>
 
 <p>When login operation completes:</p>
 

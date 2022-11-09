@@ -91,27 +91,56 @@ final class InitialViewController : UIViewController, ActivityShowing {
             return
         }
         
-        let credentials = Credentials(phoneNumber: PhoneNumber(E164: phoneNumber, pretty: phoneNumber), password: password, usedAutoFill: false)
-        session.login(credentials: credentials) { [weak self] (status) in
+        let credentials = Credentials(phoneNumber: PhoneNumber(E164: phoneNumber), password: password, usedAutoFill: false)
+        session.login(credentials: credentials, newPasswordProvider: { [weak self] provider in
+            print("prompting user for new password")
+            self?.showNewPasswordPrompt(username: phoneNumber) { text, isCancelled in
+                if let text = text, text.isEmpty == false {
+                    print("new password entered")
+                    provider(.password(text))
+                } else {
+                    print("new password skipped")
+                    provider(.cancel)
+                }
+            }
+            
+        }, SMSVerificationCodeProvider: { [weak self] provider in
+            self?.showSMSVerificationPrompt { text, isCancelled in
+                if let SMS = text, SMS.isEmpty == false {
+                    print("SMS verification code entered")
+                    provider(.code(SMS))
+                } else {
+                    print("SMS verification skipped")
+                    provider(.cancel)
+                }
+            }
+            
+        }, activityStatus: { [weak self] status in
             switch status {
+            
             case .busy(let operation):
                 print("doing actual work")
                 switch operation {
+                
                 case .loggingIn:
                     self?.showActivity("Authenticating...", animated: true)
+                
                 case .provisioning(let maxDuration):
                     self?.showActivity("Verifying Device...", "This operation can take up to \(seconds: Int(maxDuration), allowedUnits: [.second, .minute]).", animated: true)
                 }
-                
+            
             case .idle:
                 print("doing no work or waiting for user input")
                 self?.hideActivityIfNeeded()
+            
             case .waitingForAdminVerification:
                 print("waiting for admin verification")
                 self?.showActivity("Waiting for admin verification. This may take some time.", animated: true)
             }
-        } completion: { [weak self] (result) in
+            
+        }, completion: { [weak self] result in
             switch result {
+            
             case .success:
                 print("login successful")
                 self?.verifyAuthentication()
@@ -120,7 +149,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
                 print("login failed: \(error.localizedDescription)")
                 self?.showAlert(title: "Login Failed", message: error.localizedDescription, animated: true)
             }
-        }
+        })
     }
     
     private func logOut(force: Bool) {
@@ -144,7 +173,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
             return
         }
         showActivity("Resetting Password...", animated: true)
-        session.resetPassword(for: PhoneNumber(E164: phoneNumber, pretty: phoneNumber)) { [weak self] result in
+        session.resetPassword(for: PhoneNumber(E164: phoneNumber)) { [weak self] result in
             print("reset password result: \(result)")
             switch result {
             case .success:
