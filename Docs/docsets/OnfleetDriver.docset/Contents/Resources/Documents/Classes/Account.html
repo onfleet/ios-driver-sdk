@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,6 +375,13 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>Account</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Account</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
             <p>A model representing an organization account in <code><a href="../Protocols/SessionManaging.html">SessionManaging</a></code>.</p>
 
 <p>Account can have multiple states. If driver is invited into an org, account is in INVITED state and
@@ -436,9 +400,9 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
                     <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">==(_:<wbr>_:<wbr>)</a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:<wbr>_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -448,15 +412,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                       <div class="abstract">
                         
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Account</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Account</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC14organizationIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/organizationId" class="dashAnchor"></a>
-                    <a class="token" href="#/">organizationId</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC14organizationIdSSvp">organizationId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -464,7 +436,16 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">organizationId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -472,9 +453,9 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC16organizationNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/organizationName" class="dashAnchor"></a>
-                    <a class="token" href="#/">organizationName</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC16organizationNameSSvp">organizationName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -482,7 +463,16 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">organizationName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -490,9 +480,9 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC6userIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/userId" class="dashAnchor"></a>
-                    <a class="token" href="#/">userId</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC6userIdSSvp">userId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -500,7 +490,16 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -508,9 +507,9 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC15userPhoneNumberSSvp"></a>
                     <a name="//apple_ref/swift/Property/userPhoneNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/">userPhoneNumber</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC15userPhoneNumberSSvp">userPhoneNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -518,7 +517,16 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userPhoneNumber</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -526,9 +534,9 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC6statusSSvp"></a>
                     <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
-                    <a class="token" href="#/">status</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC6statusSSvp">status</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -539,15 +547,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Status of the account. Possible values (INVITED, ACCEPTED, DECLINED)</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC9isPendingSbvp"></a>
                     <a name="//apple_ref/swift/Property/isPending" class="dashAnchor"></a>
-                    <a class="token" href="#/">isPending</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC9isPendingSbvp">isPending</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -558,15 +574,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Returns true if account is invited but user has not accepted or rejected yet; false otherwise.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isPending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC10isAcceptedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isAccepted" class="dashAnchor"></a>
-                    <a class="token" href="#/">isAccepted</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC10isAcceptedSbvp">isAccepted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -577,15 +601,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Returns true if account is accepted.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isAccepted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC10isRejectedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isRejected" class="dashAnchor"></a>
-                    <a class="token" href="#/">isRejected</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC10isRejectedSbvp">isRejected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -596,15 +628,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Returns true if account is rejected.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isRejected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC30organizationImageUrlExtraSmall10Foundation3URLVSgvp"></a>
                     <a name="//apple_ref/swift/Property/organizationImageUrlExtraSmall" class="dashAnchor"></a>
-                    <a class="token" href="#/">organizationImageUrlExtraSmall</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC30organizationImageUrlExtraSmall10Foundation3URLVSgvp">organizationImageUrlExtraSmall</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -615,15 +655,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Returns an url of org&rsquo;s image with size 294px; nil if org has no image.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">organizationImageUrlExtraSmall</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC25organizationImageUrlSmall10Foundation3URLVSgvp"></a>
                     <a name="//apple_ref/swift/Property/organizationImageUrlSmall" class="dashAnchor"></a>
-                    <a class="token" href="#/">organizationImageUrlSmall</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC25organizationImageUrlSmall10Foundation3URLVSgvp">organizationImageUrlSmall</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -634,15 +682,23 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                         <p>Returns an url of org&rsquo;s image with size 580px; nil if org has no image.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">organizationImageUrlSmall</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver7AccountC26organizationImageUrlMedium10Foundation3URLVSgvp"></a>
                     <a name="//apple_ref/swift/Property/organizationImageUrlMedium" class="dashAnchor"></a>
-                    <a class="token" href="#/">organizationImageUrlMedium</a>
+                    <a class="token" href="#/s:13OnfleetDriver7AccountC26organizationImageUrlMedium10Foundation3URLVSgvp">organizationImageUrlMedium</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -652,6 +708,14 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
                       <div class="abstract">
                         <p>Returns an url of org&rsquo;s image with size 800px; nil if org has no image.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">organizationImageUrlMedium</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -665,7 +729,7 @@ respectively. Pending or rejected accounts can&rsquo;t go on duty, start tasks, 
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

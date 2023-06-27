@@ -25,7 +25,7 @@ class TaskTableViewCell : UITableViewCell {
 extension TaskTableViewCell {
     func update(with task: Task?) {
         if let task = task {
-            self.titleLabel.text = task.getDestination().getAddress().formattedShortAddress
+            self.titleLabel.text = task.getDestination().address.formattedShortAddress
             self.subtitleLabel.text = task.getNameForPreferredRecipient() ?? "No recipient"
             self.circleView.backgroundColor = colorForTaskState(of: task)
         }

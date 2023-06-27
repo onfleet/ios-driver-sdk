@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,11 +375,18 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>AttachmentsManaging</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AttachmentsManaging</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
             <p>Assigns image or signature attachments to an active task and provides access to uploading progress.</p>
 
 <p>Each active task can be supplemented with mutliple photo or single signature attachment. These can be
-collected from Driver any time and registered here using <code><a href="../Protocols/AttachmentsManaging.html#/preparePhotoAttachment(imageUrl:taskShortId:)">AttachmentsManaging.preparePhotoAttachment(imageUrl:taskShortId:)</a></code>
-respectively <code><a href="../Protocols/AttachmentsManaging.html#/prepareSignatureAttachment(imageUrl:taskShortId:)">AttachmentsManaging.prepareSignatureAttachment(imageUrl:taskShortId:)</a></code>. When an active task
+collected from Driver any time and registered here using <code><a href="../Protocols/AttachmentsManaging.html#/s:13OnfleetDriver19AttachmentsManagingP22preparePhotoAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF">AttachmentsManaging.preparePhotoAttachment(imageUrl:taskShortId:)</a></code>
+respectively <code><a href="../Protocols/AttachmentsManaging.html#/s:13OnfleetDriver19AttachmentsManagingP26prepareSignatureAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF">AttachmentsManaging.prepareSignatureAttachment(imageUrl:taskShortId:)</a></code>. When an active task
 is completed these will be automatically uploaded on background and cleaned up for you. If you decide
 to no use registered photos you can remove them from disk using values in <code><a href="../Enums/ImagePreparationResult.html">ImagePreparationResult</a></code>.</p>
 
@@ -438,9 +402,9 @@ to no use registered photos you can remove them from disk using values in <code>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver19AttachmentsManagingP21isUploadingInProgressSbvp"></a>
                     <a name="//apple_ref/swift/Property/isUploadingInProgress" class="dashAnchor"></a>
-                    <a class="token" href="#/">isUploadingInProgress</a>
+                    <a class="token" href="#/s:13OnfleetDriver19AttachmentsManagingP21isUploadingInProgressSbvp">isUploadingInProgress</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -451,15 +415,23 @@ to no use registered photos you can remove them from disk using values in <code>
                         <p>Returns true if there is currently an uploading in progress; false otherwise.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUploadingInProgress</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver19AttachmentsManagingP8delegateAA0C8Delegate_pSgvp"></a>
                     <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
-                    <a class="token" href="#/">delegate</a>
+                    <a class="token" href="#/s:13OnfleetDriver19AttachmentsManagingP8delegateAA0C8Delegate_pSgvp">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -470,15 +442,23 @@ to no use registered photos you can remove them from disk using values in <code>
                         <p>A delegate that can be  used to track details of uploading operations.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AttachmentsDelegate.html">AttachmentsDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver19AttachmentsManagingP22preparePhotoAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF"></a>
                     <a name="//apple_ref/swift/Method/preparePhotoAttachment(imageUrl:taskShortId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">preparePhotoAttachment(imageUrl:<wbr>taskShortId:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver19AttachmentsManagingP22preparePhotoAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF">preparePhotoAttachment(imageUrl:<wbr>taskShortId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -491,15 +471,60 @@ to no use registered photos you can remove them from disk using values in <code>
 <p>Please note that there must be an active task before you call this method.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">preparePhotoAttachment</span><span class="p">(</span><span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">taskShortId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ImagePreparationResult.html">ImagePreparationResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A file URL of the image that should be uploaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>taskShortId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A short id of currently active task.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A preparation result. If success, you can keep the value and if user decides to remove
+the attachment you can simply remove the image from disk. When an active task is completed, SDK
+will clean up this file for you.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver19AttachmentsManagingP26prepareSignatureAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF"></a>
                     <a name="//apple_ref/swift/Method/prepareSignatureAttachment(imageUrl:taskShortId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">prepareSignatureAttachment(imageUrl:<wbr>taskShortId:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver19AttachmentsManagingP26prepareSignatureAttachment8imageUrl11taskShortIdAA22ImagePreparationResultO10Foundation3URLV_SStF">prepareSignatureAttachment(imageUrl:<wbr>taskShortId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -511,6 +536,51 @@ to no use registered photos you can remove them from disk using values in <code>
 
 <p>Please note that there must be an active task before you call this method.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">prepareSignatureAttachment</span><span class="p">(</span><span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">taskShortId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ImagePreparationResult.html">ImagePreparationResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A file URL of the image that should be uploaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>taskShortId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A short id of currently active task.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A preparation result. If success, you can keep the value and if user decides to remove
+the attachment you can simply remove the image from disk. When an active task is completed, SDK
+will clean up this file for you.</p>
                       </div>
                     </section>
                   </div>
@@ -524,7 +594,7 @@ to no use registered photos you can remove them from disk using values in <code>
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

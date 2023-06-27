@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,6 +375,13 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>LocationManaging</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LocationManaging</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
             <p>Tracks driver&rsquo;s gps location and authorization status when driver is on duty.</p>
 
 <p>This API provides several readable and observable
@@ -436,9 +400,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP04lastC0So10CLLocationCSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastLocation" class="dashAnchor"></a>
-                    <a class="token" href="#/">lastLocation</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP04lastC0So10CLLocationCSgvp">lastLocation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -448,9 +412,17 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                       <div class="abstract">
                         <p>Last tracked CLLocation.</p>
 
-<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/lastLocation$">lastLocation$</a></code> or subscribing to
-<code><a href="../Extensions/Notification/Name.html#/lastLocationChanged">Notification.Name.lastLocationChanged</a></code> notification.</p>
+<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP13lastLocation$AA13ModelPropertyCySo10CLLocationCSgGvp">lastLocation$</a></code> or subscribing to
+<code><a href="../Extensions/Notification/Name.html#/s:So18NSNotificationNamea13OnfleetDriverE19lastLocationChangedABvpZ">Notification.Name.lastLocationChanged</a></code> notification.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lastLocation</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -458,9 +430,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP13lastLocation$AA13ModelPropertyCySo10CLLocationCSgGvp"></a>
                     <a name="//apple_ref/swift/Property/lastLocation$" class="dashAnchor"></a>
-                    <a class="token" href="#/">lastLocation$</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP13lastLocation$AA13ModelPropertyCySo10CLLocationCSgGvp">lastLocation$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -468,8 +440,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/lastLocation">lastLocation</a></code>.</p>
+                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP04lastC0So10CLLocationCSgvp">lastLocation</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lastLocation</span><span class="err">$</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">CLLocation</span><span class="p">?</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -477,9 +457,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP17isFullyAuthorizedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isFullyAuthorized" class="dashAnchor"></a>
-                    <a class="token" href="#/">isFullyAuthorized</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP17isFullyAuthorizedSbvp">isFullyAuthorized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -489,8 +469,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                       <div class="abstract">
                         <p>Returns true if location permission is granted for &ldquo;Always&rdquo; and precise location tracking is &ldquo;Enabled&rdquo;.</p>
 
-<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/isFullyAuthorized$">isFullyAuthorized$</a></code>.</p>
+<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP18isFullyAuthorized$AA13ModelPropertyCySbGvp">isFullyAuthorized$</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFullyAuthorized</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -498,9 +486,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP18isFullyAuthorized$AA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isFullyAuthorized$" class="dashAnchor"></a>
-                    <a class="token" href="#/">isFullyAuthorized$</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP18isFullyAuthorized$AA13ModelPropertyCySbGvp">isFullyAuthorized$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -508,8 +496,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/isFullyAuthorized">isFullyAuthorized</a></code>.</p>
+                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP17isFullyAuthorizedSbvp">isFullyAuthorized</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFullyAuthorized</span><span class="err">$</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -517,9 +513,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP21isFullAccuracyGrantedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isFullAccuracyGranted" class="dashAnchor"></a>
-                    <a class="token" href="#/">isFullAccuracyGranted</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP21isFullAccuracyGrantedSbvp">isFullAccuracyGranted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -529,8 +525,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                       <div class="abstract">
                         <p>Returns true if precise location tracking is &ldquo;Enabled&rdquo;.</p>
 
-<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/isFullAccuracyGranted$">isFullAccuracyGranted$</a></code>.</p>
+<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP22isFullAccuracyGranted$AA13ModelPropertyCySbGvp">isFullAccuracyGranted$</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFullAccuracyGranted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -538,9 +542,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP22isFullAccuracyGranted$AA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isFullAccuracyGranted$" class="dashAnchor"></a>
-                    <a class="token" href="#/">isFullAccuracyGranted$</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP22isFullAccuracyGranted$AA13ModelPropertyCySbGvp">isFullAccuracyGranted$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -548,8 +552,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/isFullAccuracyGranted">isFullAccuracyGranted</a></code>.</p>
+                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP21isFullAccuracyGrantedSbvp">isFullAccuracyGranted</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFullAccuracyGranted</span><span class="err">$</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -557,9 +569,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP18isAuthorizedAlwaysSbvp"></a>
                     <a name="//apple_ref/swift/Property/isAuthorizedAlways" class="dashAnchor"></a>
-                    <a class="token" href="#/">isAuthorizedAlways</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP18isAuthorizedAlwaysSbvp">isAuthorizedAlways</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -569,8 +581,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                       <div class="abstract">
                         <p>Returns true of location permission is granted for &ldquo;Always&rdquo;; false otherwise.</p>
 
-<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/isFullAccuracyGranted$">isFullAccuracyGranted$</a></code>.</p>
+<p>Changes of this value can be observed using <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP22isFullAccuracyGranted$AA13ModelPropertyCySbGvp">isFullAccuracyGranted$</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isAuthorizedAlways</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -578,9 +598,9 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver16LocationManagingP19isAuthorizedAlways$AA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isAuthorizedAlways$" class="dashAnchor"></a>
-                    <a class="token" href="#/">isAuthorizedAlways$</a>
+                    <a class="token" href="#/s:13OnfleetDriver16LocationManagingP19isAuthorizedAlways$AA13ModelPropertyCySbGvp">isAuthorizedAlways$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -588,8 +608,16 @@ as well as to the customer, continually re-compute ETA, and more.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/isAuthorizedAlways">isAuthorizedAlways</a></code>.</p>
+                        <p>Subscribe to changes of <code><a href="../Protocols/LocationManaging.html#/s:13OnfleetDriver16LocationManagingP18isAuthorizedAlwaysSbvp">isAuthorizedAlways</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isAuthorizedAlways</span><span class="err">$</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -603,7 +631,7 @@ as well as to the customer, continually re-compute ETA, and more.</p>
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

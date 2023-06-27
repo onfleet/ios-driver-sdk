@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let logLevel = ONLogger.LogLevel.warning
         let environment = Environment.production(useApnSandbox: useApnSandbox)
         
-        let config = Config(appKey: applicationId, appVersion: "1.0", appName: "Sample App")
+        let config = AppConfig(appKey: applicationId, appVersion: "1.0", appName: "Sample App", appGroup: nil)
         driver.initSDK(with: config, environment: environment, app: application, loggers: [OSLogDestination(logSeverity: logLevel)])
         
         center.delegate = self

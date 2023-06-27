@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,13 +375,20 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>SessionManaging</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SessionManaging</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
             <p>Session is used for authentication and actions associated with driver&rsquo;s accounts.</p>
 
 <p>A driver&rsquo;s phone number can be associated with multiple organizations. When user logs in using phone
 number and password accounts property will be filled with list of accounts. Each accounts represents
 an org in which the driver is included. There is always an active account. If driver is included in a single
 org this account will be always returned. For multiple orgs you can use
-<code><a href="../Protocols/SessionManaging.html#/changeActiveAccount(to:completion:)">SessionManaging.changeActiveAccount(to:completion:)</a></code> to switch to different account.
+<code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP19changeActiveAccount2to10completionyAA0G0C_yycSgtF">SessionManaging.changeActiveAccount(to:completion:)</a></code> to switch to different account.
 Host app should observe values in <code><a href="../Protocols/DriverManaging.html">DriverManaging</a></code> and accomodate UI to this change.</p>
 
           </div>
@@ -446,9 +410,9 @@ Host app should observe values in <code><a href="../Protocols/DriverManaging.htm
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP15isAuthenticatedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isAuthenticated" class="dashAnchor"></a>
-                    <a class="token" href="#/">isAuthenticated</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP15isAuthenticatedSbvp">isAuthenticated</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -458,8 +422,16 @@ Host app should observe values in <code><a href="../Protocols/DriverManaging.htm
                       <div class="abstract">
                         <p>Returns true if driver is authenticated; false otherwise.</p>
 
-<p>Changes of this value can be observed using <code><a href="../Protocols/SessionManaging.html#/authenticated$">authenticated$</a></code>.</p>
+<p>Changes of this value can be observed using <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP14authenticated$AA10ObservableCySbGvp">authenticated$</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isAuthenticated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -467,9 +439,9 @@ Host app should observe values in <code><a href="../Protocols/DriverManaging.htm
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP14authenticated$AA10ObservableCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/authenticated$" class="dashAnchor"></a>
-                    <a class="token" href="#/">authenticated$</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP14authenticated$AA10ObservableCySbGvp">authenticated$</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -477,7 +449,7 @@ Host app should observe values in <code><a href="../Protocols/DriverManaging.htm
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Subscribe to changes of <code><a href="../Protocols/SessionManaging.html#/isAuthenticated">isAuthenticated</a></code>.</p>
+                        <p>Subscribe to changes of <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP15isAuthenticatedSbvp">isAuthenticated</a></code>.</p>
 
 <p>Host app can observe changes of value of this property and update UI accordingly. If value returns
 false a login UI should be displayed; main app flows otherwise.</p>
@@ -489,15 +461,23 @@ driver from org or if there is an unrecoverable auth failure. Observing this pro
 </div>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authenticated</span><span class="err">$</span><span class="p">:</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP5login11credentials19newPasswordProvider019SMSVerificationCodeI014activityStatus10completionyAA11CredentialsV_yyAA03NewH6ResultOccyyAA019SMSCodeVerificationQ0OccSgyAA05LoginM0Ocys0Q0OySSAA0T5ErrorOGctF"></a>
                     <a name="//apple_ref/swift/Method/login(credentials:newPasswordProvider:SMSVerificationCodeProvider:activityStatus:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">login(credentials:<wbr>newPasswordProvider:<wbr>SMSVerificationCodeProvider:<wbr>activityStatus:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP5login11credentials19newPasswordProvider019SMSVerificationCodeI014activityStatus10completionyAA11CredentialsV_yyAA03NewH6ResultOccyyAA019SMSCodeVerificationQ0OccSgyAA05LoginM0Ocys0Q0OySSAA0T5ErrorOGctF">login(credentials:<wbr>newPasswordProvider:<wbr>SMSVerificationCodeProvider:<wbr>activityStatus:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -519,11 +499,83 @@ automatically by SDK byt the new password must be managed by client application.
 
 <ul>
 <li>the completion closure will be called</li>
-<li><code><a href="../Protocols/SessionManaging.html#/isAuthenticated">isAuthenticated</a></code> value will change to true</li>
-<li><code><a href="../Protocols/SessionManaging.html#/accounts">accounts</a></code> value will fill with list of <code><a href="../Classes/Account.html">Account</a></code> objects.</li>
-<li><p><code><a href="../Protocols/SessionManaging.html#/activeAccount">activeAccount</a></code> will be set</p></li>
+<li><code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP15isAuthenticatedSbvp">isAuthenticated</a></code> value will change to true</li>
+<li><code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP8accountsSayAA7AccountCGvp">accounts</a></code> value will fill with list of <code><a href="../Classes/Account.html">Account</a></code> objects.</li>
+<li><p><code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP13activeAccountAA0F0CSgvp">activeAccount</a></code> will be set</p></li>
 </ul>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">credentials</span><span class="p">:</span> <span class="kt"><a href="../Structs/Credentials.html">Credentials</a></span><span class="p">,</span>
+           <span class="nv">newPasswordProvider</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases/NewPasswordProvider.html">NewPasswordProvider</a></span><span class="p">,</span>
+           <span class="kt">SMSVerificationCodeProvider</span><span class="p">:</span> <span class="kt">SMSCodeProvider</span><span class="p">?,</span>
+           <span class="nv">activityStatus</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/LoginStatus.html">LoginStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+           <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">LoginCompletionHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>credentials</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object with phone number and password.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPasswordProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure may be called if SDK detects that driver uses temporary
+password. Use the closure to retrieve new password and pass it back to the SDK to complete
+the login process. You may defer the operation for later too.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>activityStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure will be called each time there is a change is status. UI can show
+and hide an activity indicator based on status values. See <code><a href="../Enums/LoginStatus.html">LoginStatus</a></code> for more details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Will be called when operation is finished. Result can contain
+an effective password that was set by user if temp password used. For login error codes see
+<code><a href="../Enums/LoginError.html">LoginError</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -531,9 +583,9 @@ automatically by SDK byt the new password must be managed by client application.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyytAA11LogoutErrorOGcSgtF"></a>
                     <a name="//apple_ref/swift/Method/logout(force:started:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">logout(force:<wbr>started:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP6logout5force7started10completionySb_yycSgys6ResultOyytAA11LogoutErrorOGcSgtF">logout(force:<wbr>started:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -545,11 +597,63 @@ automatically by SDK byt the new password must be managed by client application.
 
 <p>All data will be removed from disk. If driver was on duty this operation will put driver off duty. This
 operation can however fail due to various reasons (see
-<code><a href="../Protocols/DriverManaging.html#/setDutyStatus(goOnDuty:completion:)">DriverManaging.setDutyStatus(goOnDuty:completion:)</a></code> for list of conditions) and log
+<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13setDutyStatus04goOnE010completionySb_ys6ResultOyytAA0eF5ErrorOGctF">DriverManaging.setDutyStatus(goOnDuty:completion:)</a></code> for list of conditions) and log
 out operation will be cancelled. If you wish to ignore this you can specify <code>force</code> to true. Please note,
 that if you force logout the server may not register this and tokens will not be invalidated. Use this
 with caution.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">logout</span><span class="p">(</span><span class="nv">force</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">started</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt">LogoutCompletionHandler</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>force</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>to ignore errors set to true</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>started</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be called when logout operation starts. This closure can be used to present
+a progress view in UI.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be called when operation is finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -557,9 +661,9 @@ with caution.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP13resetPassword3for10completionyAA11PhoneNumberV_ys6ResultOyytAA05ResetF5ErrorOGctF"></a>
                     <a name="//apple_ref/swift/Method/resetPassword(for:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">resetPassword(for:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP13resetPassword3for10completionyAA11PhoneNumberV_ys6ResultOyytAA05ResetF5ErrorOGctF">resetPassword(for:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -572,6 +676,45 @@ with caution.</p>
 <p>When password is reset a new temp password will be sent to the driver via SMS.
 Driver can use this temp password to log in again. The login operation will ask to set new password.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resetPassword</span><span class="p">(</span><span class="k">for</span> <span class="nv">phoneNumber</span><span class="p">:</span> <span class="kt"><a href="../Structs/PhoneNumber.html">PhoneNumber</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">ResetPasswordHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phoneNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a phone number object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be called when operation is finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -592,9 +735,9 @@ Driver can use this temp password to log in again. The login operation will ask 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP8accountsSayAA7AccountCGvp"></a>
                     <a name="//apple_ref/swift/Property/accounts" class="dashAnchor"></a>
-                    <a class="token" href="#/">accounts</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP8accountsSayAA7AccountCGvp">accounts</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -605,9 +748,17 @@ Driver can use this temp password to log in again. The login operation will ask 
                         <p>Gets an array of accounts. Each account represents an organization in which the driver is assigned.</p>
 
 <p>This list contains also accounts that have pending invitation. It is developer&rsquo;s responsibility to check
-these accounts and respond using <code><a href="../Protocols/SessionManaging.html#/respondToInvitation(account:response:completion:)">respondToInvitation(account:response:completion:)</a></code>
-See also <code><a href="../Classes/Account.html#/isPending">Account.isPending</a></code>.</p>
+these accounts and respond using <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF">respondToInvitation(account:response:completion:)</a></code>
+See also <code><a href="../Classes/Account.html#/s:13OnfleetDriver7AccountC9isPendingSbvp">Account.isPending</a></code>.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">accounts</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -615,9 +766,9 @@ See also <code><a href="../Classes/Account.html#/isPending">Account.isPending</a
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP13activeAccountAA0F0CSgvp"></a>
                     <a name="//apple_ref/swift/Property/activeAccount" class="dashAnchor"></a>
-                    <a class="token" href="#/">activeAccount</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP13activeAccountAA0F0CSgvp">activeAccount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -629,8 +780,16 @@ See also <code><a href="../Classes/Account.html#/isPending">Account.isPending</a
 
 <p>Driver SDK automatically manages <code>activeAccount</code>. When driver logs in this value will be set to
 to last know active account, first that is on duty or first account in list. Active account can be changed
-any time using <code><a href="../Protocols/SessionManaging.html#/changeActiveAccount(to:completion:)">changeActiveAccount(to:completion:)</a></code></p>
+any time using <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP19changeActiveAccount2to10completionyAA0G0C_yycSgtF">changeActiveAccount(to:completion:)</a></code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">activeAccount</span><span class="p">:</span> <span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -638,9 +797,9 @@ any time using <code><a href="../Protocols/SessionManaging.html#/changeActiveAcc
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP19changeActiveAccount2to10completionyAA0G0C_yycSgtF"></a>
                     <a name="//apple_ref/swift/Method/changeActiveAccount(to:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">changeActiveAccount(to:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP19changeActiveAccount2to10completionyAA0G0C_yycSgtF">changeActiveAccount(to:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -654,15 +813,54 @@ any time using <code><a href="../Protocols/SessionManaging.html#/changeActiveAcc
 this operation will also refetch fresh data for new account.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changeActiveAccount</span><span class="p">(</span><span class="n">to</span> <span class="nv">account</span><span class="p">:</span> <span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt">ActiveAccountChangeHandler</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>new account to be set as active.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be called when operation finishes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF"></a>
                     <a name="//apple_ref/swift/Method/respondToInvitation(account:response:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">respondToInvitation(account:<wbr>response:<wbr>completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver15SessionManagingP19respondToInvitation7account8response10completionyAA7AccountC_AA0G8ResponseOys6ResultOyytAA9HTTPErrorOyAA7HttpApiO0P5ErrorVGGctF">respondToInvitation(account:<wbr>response:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -672,6 +870,57 @@ this operation will also refetch fresh data for new account.</p>
                       <div class="abstract">
                         <p>Accepts or rejects invitation to new organizations.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">respondToInvitation</span><span class="p">(</span><span class="nv">account</span><span class="p">:</span> <span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">,</span> <span class="nv">response</span><span class="p">:</span> <span class="kt"><a href="../Enums/InvitationResponse.html">InvitationResponse</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt">AccountInvitationHandler</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>account to be accepted or rejected. Needs to be in INVITED state. See <code><a href="../Classes/Account.html#/s:13OnfleetDriver7AccountC9isPendingSbvp">Account.isPending</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>accept or reject invitation. See <code><a href="../Enums/InvitationResponse.html">InvitationResponse</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be called when operation finishes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -703,7 +952,7 @@ this operation will also refetch fresh data for new account.</p>
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

@@ -83,7 +83,7 @@ For example in your app delegate file:
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //initiate SDK
-        let config = Config(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
+        let config = AppConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
         driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
         
         return true
@@ -189,11 +189,11 @@ Please refer to Sample app for full integration example.
 
 <a name='Provision'></a>
 
-## Device Verification
+## Device Provision
 
-Due to security reasons each device must be verified. Verification is performed only once and the process is done automatically first time the driver logs in. Please note, that push notifications are used to deliver tokens securely therefore [push notifications must be set up properly](#PushNotifications).
+Due to security reasons each device must be verified. Device Provision is performed only once and the process is done automatically first time the driver logs in. Please note, that push notifications are used to deliver tokens securely therefore [push notifications must be set up properly](#PushNotifications).
 
-Because of push notifications don't work in iOS simulators we must bypass apn servers and deliver tokens manually. This can be done exclusively on iOS simulators using `provision.sh` script. Please consult the documentation of the script for more details simply by running the script in Terminal.
+Because of push notifications don't work in iOS simulators (not true starting macos Ventura) we must bypass apn servers and deliver tokens manually. This can be done exclusively on iOS simulators using `provision.sh` script. Please consult the documentation of the script for more details simply by running the script in Terminal.
 
 Please note that bypassing apn servers with the provision script will work only for `test accounts`. These are Onfleet organizations with special flag. The following criteria must be met before an org can be flagged as test account:
 - Test drivers must exist in a single organization for which the sdk/application id
@@ -226,4 +226,4 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 4. in `AppDelegate.swift` file add your Onfleet **application_id**
 5. in target's Signing & Capabilities update bundle identifier and team, please make sure that push notifications work
 6. build and run using `SampleApp` scheme
-7. when logging in for the first time please perform the [Device Verification](#Provision).
+7. when logging in for the first time please perform the [Device Provision](#Provision).

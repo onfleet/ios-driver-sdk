@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -421,10 +378,14 @@
               <div class="declaration">
                 <div class="language">
                   
-                  
+                  <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HTTPError</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">LocalizedError</span> <span class="k">where</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HTTPError</span> <span class="p">:</span> <span class="kt">CustomDebugStringConvertible</span> <span class="k">where</span> <span class="kt">E</span> <span class="o">==</span> <span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span></code></pre>
+
                 </div>
               </div>
-            
+            <p>Undocumented</p>
+
           </div>
         </section>
 
@@ -435,9 +396,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver9HTTPErrorO3apiyACyxGxcAEms5ErrorRzlF"></a>
                     <a name="//apple_ref/swift/Element/api(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">api(_:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorO3apiyACyxGxcAEms5ErrorRzlF">api(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -445,98 +406,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Element/http(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">http(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Element/parsing(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">parsing(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/apiError" class="dashAnchor"></a>
-                    <a class="token" href="#/">apiError</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/isInvalidAuthError" class="dashAnchor"></a>
-                    <a class="token" href="#/">isInvalidAuthError</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Initiated by platform due to un-recoverable authentication state</p>
+                        <p>Undocumented</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/isBadRequestError" class="dashAnchor"></a>
-                    <a class="token" href="#/">isBadRequestError</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">api</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">E</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -544,9 +423,63 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver9HTTPErrorO4httpyACyxGSo7NSErrorCcAEms5ErrorRzlF"></a>
+                    <a name="//apple_ref/swift/Element/http(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorO4httpyACyxGSo7NSErrorCcAEms5ErrorRzlF">http(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">http</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver9HTTPErrorO7parsingyACyxGs5Error_pcAEmsAFRzlF"></a>
+                    <a name="//apple_ref/swift/Element/parsing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorO7parsingyACyxGs5Error_pcAEmsAFRzlF">parsing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">parsing</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver9HTTPErrorO17isConnectionErrorSbvp"></a>
                     <a name="//apple_ref/swift/Property/isConnectionError" class="dashAnchor"></a>
-                    <a class="token" href="#/">isConnectionError</a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorO17isConnectionErrorSbvp">isConnectionError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -554,17 +487,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isConnectionError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60E%60%20%3D%3D%20%60HttpApi.ApiError%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `E` == `HttpApi.ApiError`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60E%60%20%3D%3D%20%60HttpApi.ApiError%60"></a>
+                  <h3 class="section-name"><span>Available where <code>E</code> == <code><a href="../Enums/HttpApi/ApiError.html">HttpApi.ApiError</a></code></span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/localizedDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/">localizedDescription</a>
+                    <a name="/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE03apiF0AGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/apiError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE03apiF0AGSgvp">apiError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -572,7 +527,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">apiError</span><span class="p">:</span> <span class="kt"><a href="../Enums/HttpApi.html">HttpApi</a></span><span class="o">.</span><span class="kt">ApiError</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -580,9 +544,90 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE013isInvalidAuthF0Sbvp"></a>
+                    <a name="//apple_ref/swift/Property/isInvalidAuthError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE013isInvalidAuthF0Sbvp">isInvalidAuthError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isInvalidAuthError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE012isBadRequestF0Sbvp"></a>
+                    <a name="//apple_ref/swift/Property/isBadRequestError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE012isBadRequestF0Sbvp">isBadRequestError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isBadRequestError</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver9HTTPErrorOA2A7HttpApiO0E5ErrorVRszrlE16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp"></a>
                     <a name="//apple_ref/swift/Property/debugDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/">debugDescription</a>
+                    <a class="token" href="#/s:s28CustomDebugStringConvertibleP16debugDescriptionSSvp">debugDescription</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -591,6 +636,14 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">debugDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -604,7 +657,7 @@
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

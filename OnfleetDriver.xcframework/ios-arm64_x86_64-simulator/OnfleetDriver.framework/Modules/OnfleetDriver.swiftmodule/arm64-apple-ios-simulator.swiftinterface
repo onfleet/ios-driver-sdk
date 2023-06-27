@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OnfleetDriver
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -19,7 +19,7 @@ import _StringProcessing
 import os.log
 import os
 @frozen public enum CompleteTaskError : Swift.Error {
-  case taskNotActive(_: Swift.Error)
+  case taskNotActive(_: any Swift.Error)
   case taskAlreadyCompleted(_: OnfleetDriver.HttpApi.ApiError)
   case missingProperties(_: OnfleetDriver.HttpApi.ApiError)
   case invalidValues(_: OnfleetDriver.HttpApi.ApiError)
@@ -55,7 +55,7 @@ public struct ChatContact : Swift.Decodable {
   public let type: Swift.String
   public let name: Swift.String
   public let timeLastSeen: Foundation.Date?
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public typealias ChatContactsResult = Swift.Result<[OnfleetDriver.ChatContact], OnfleetDriver.HTTPError<OnfleetDriver.HttpApi.ApiError>>
 @frozen public enum FetchingState {
@@ -73,7 +73,7 @@ public func == (a: OnfleetDriver.FetchingState, b: OnfleetDriver.FetchingState) 
 @frozen public enum FetchDataError : Swift.Error, Swift.CustomDebugStringConvertible {
   case http(OnfleetDriver.HTTPError<OnfleetDriver.HttpApi.ApiError>)
   case cancelled
-  case other(Swift.Error)
+  case other(any Swift.Error)
   public var isCancelled: Swift.Bool {
     get
   }
@@ -124,7 +124,7 @@ open class BlockWorkTask : OnfleetDriver.WorkTask {
   public var isFinished: OnfleetDriver.Observable<Swift.Bool> {
     get
   }
-  public var error: Swift.Error? {
+  public var error: (any Swift.Error)? {
     get
   }
   public init(block: @escaping (_ task: OnfleetDriver.BlockWorkTask) -> Swift.Void)
@@ -133,10 +133,10 @@ open class BlockWorkTask : OnfleetDriver.WorkTask {
   @objc deinit
 }
 @frozen public enum DutyStatusError : Swift.Error {
-  case locationPermissionsDenied(_: Swift.Error)
+  case locationPermissionsDenied(_: any Swift.Error)
   case activeTaskInOtherAccount(_: OnfleetDriver.HttpApi.ApiError)
   case http(_: OnfleetDriver.HTTPError<OnfleetDriver.HttpApi.ApiError>)
-  case other(_: Swift.Error)
+  case other(_: any Swift.Error)
   public var localizedDescription: Swift.String {
     get
   }
@@ -215,14 +215,14 @@ public struct LoginDetails {
 }
 @frozen public enum WorkTaskConditionResult {
   case accepted
-  case cancelled(reason: Swift.Error)
+  case cancelled(reason: any Swift.Error)
 }
 @frozen public enum WorkTaskResult {
   case succeeded
-  case failed(reason: Swift.Error)
+  case failed(reason: any Swift.Error)
 }
 public protocol WorkTaskCondition : AnyObject, Swift.CustomDebugStringConvertible {
-  func beforeWork(completion: @escaping (_ result: OnfleetDriver.WorkTaskConditionResult) -> Swift.Void) -> OnfleetDriver.WorkTask
+  func beforeWork(completion: @escaping (_ result: OnfleetDriver.WorkTaskConditionResult) -> Swift.Void) -> any OnfleetDriver.WorkTask
   func afterWork(result: OnfleetDriver.WorkTaskResult)
 }
 open class ConditionalWorkTask : OnfleetDriver.WorkTask {
@@ -241,10 +241,10 @@ open class ConditionalWorkTask : OnfleetDriver.WorkTask {
   public var isFinished: OnfleetDriver.Observable<Swift.Bool> {
     get
   }
-  public var error: Swift.Error? {
+  public var error: (any Swift.Error)? {
     get
   }
-  public init(task: OnfleetDriver.WorkTask, conditions: [OnfleetDriver.WorkTaskCondition], completion: @escaping (OnfleetDriver.WorkTaskConditionResult) -> Swift.Void)
+  public init(task: any OnfleetDriver.WorkTask, conditions: [any OnfleetDriver.WorkTaskCondition], completion: @escaping (OnfleetDriver.WorkTaskConditionResult) -> Swift.Void)
   public func resume()
   public func cancel()
   @objc deinit
@@ -272,7 +272,7 @@ final public class DisposeBag : OnfleetDriver.Disposable {
   }
   public init()
   @objc deinit
-  final public func insert(_ disposable: OnfleetDriver.Disposable)
+  final public func insert(_ disposable: any OnfleetDriver.Disposable)
   final public func dispose()
 }
 extension OnfleetDriver.Disposable {
@@ -283,18 +283,18 @@ public protocol ObservableConvertibleType {
   func asObservable() -> OnfleetDriver.Observable<Self.Element>
 }
 public protocol ObservableType : OnfleetDriver.ObservableConvertibleType {
-  func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where Observer : OnfleetDriver.ObserverType, Self.Element == Observer.Element
+  func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Observer : OnfleetDriver.ObserverType, Self.Element == Observer.Element
 }
 extension OnfleetDriver.ObservableType {
   public func asObservable() -> OnfleetDriver.Observable<Self.Element>
 }
 @_hasMissingDesignatedInitializers public class Observable<Element> : OnfleetDriver.ObservableType {
-  public func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
   public func asObservable() -> OnfleetDriver.Observable<Element>
   @objc deinit
 }
 extension OnfleetDriver.ObservableType {
-  public func subscribe(_ on: @escaping (Self.Element) -> Swift.Void) -> OnfleetDriver.Disposable
+  public func subscribe(_ on: @escaping (Self.Element) -> Swift.Void) -> any OnfleetDriver.Disposable
 }
 @frozen public enum Environment {
   case production(useApnSandbox: Swift.Bool)
@@ -359,7 +359,7 @@ public struct PhoneNumber {
 }
 public protocol SessionManaging : AnyObject {
   var isAuthenticated: Swift.Bool { get }
-  var authenticated$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
+  var authenticated$: OnfleetDriver.Observable<Swift.Bool> { get }
   func login(credentials: OnfleetDriver.Credentials, newPasswordProvider: @escaping OnfleetDriver.NewPasswordProvider, SMSVerificationCodeProvider: OnfleetDriver.SMSCodeProvider?, activityStatus: @escaping (OnfleetDriver.LoginStatus) -> Swift.Void, completion: @escaping OnfleetDriver.LoginCompletionHandler)
   func logout(force: Swift.Bool, started: (() -> Swift.Void)?, completion: OnfleetDriver.LogoutCompletionHandler?)
   func resetPassword(for phoneNumber: OnfleetDriver.PhoneNumber, completion: @escaping OnfleetDriver.ResetPasswordHandler)
@@ -400,6 +400,7 @@ extension OnfleetDriver.AnynchronousOperationResult : Swift.CustomDebugStringCon
 final public class GenericPasswordKeychain {
   @frozen public enum Errors : Swift.Error {
     case operationFailed
+    case missingEntitlement
     case unexpectedDataType
     public static func == (a: OnfleetDriver.GenericPasswordKeychain.Errors, b: OnfleetDriver.GenericPasswordKeychain.Errors) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -435,7 +436,9 @@ final public class GenericPasswordKeychain {
   final public func removeValue(for key: Swift.String) throws
   final public func valueExists(for key: Swift.String) throws -> Swift.Bool
   final public func value(for key: Swift.String) throws -> Swift.String?
+  final public func value(for key: Swift.String) throws -> Foundation.Data?
   final public func set(value: Swift.String, for key: Swift.String) throws
+  final public func set(value: Foundation.Data, for key: Swift.String) throws
   @objc deinit
 }
 extension Swift.Collection {
@@ -443,10 +446,10 @@ extension Swift.Collection {
     get
   }
 }
-@frozen public enum HTTPError<E> : Swift.Error where E : Swift.Error {
+@frozen public enum HTTPError<E> : Foundation.LocalizedError where E : Swift.Error {
   case api(_: E)
   case http(_: Foundation.NSError)
-  case parsing(_: Swift.Error)
+  case parsing(_: any Swift.Error)
 }
 extension OnfleetDriver.HTTPError where E == OnfleetDriver.HttpApi.ApiError {
   public var apiError: OnfleetDriver.HttpApi.ApiError? {
@@ -465,7 +468,7 @@ extension OnfleetDriver.HTTPError {
   }
 }
 extension OnfleetDriver.HTTPError where E == OnfleetDriver.HttpApi.ApiError {
-  public var localizedDescription: Swift.String {
+  public var errorDescription: Swift.String? {
     get
   }
 }
@@ -536,20 +539,20 @@ public protocol Identifiable {
   var id: OnfleetDriver.UniqueId { get }
 }
 @frozen public enum CompletedTasksError : Swift.Error {
-  case other(_: Swift.Error)
+  case other(_: any Swift.Error)
 }
 final public class OnLogoutSensitiveFilesRemover : OnfleetDriver.AccountsSubscriber {
-  final public var accountsProvider: OnfleetDriver.AccountsProvider?
+  final public var accountsProvider: (any OnfleetDriver.AccountsProvider)?
   public init(remover: OnfleetDriver.SensitiveFilesRemover)
-  final public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
+  final public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
   @objc deinit
 }
 open class SingleWorkTaskProcessor<C, S> {
   public var completion: ((C) -> Swift.Void)!
   public func append(subscriber: @escaping (S) -> Swift.Void)
   public init()
-  open func createTask() -> OnfleetDriver.WorkTask
-  public func createWorkTaskIfNeeded() -> OnfleetDriver.WorkTask
+  open func createTask() -> any OnfleetDriver.WorkTask
+  public func createWorkTaskIfNeeded() -> any OnfleetDriver.WorkTask
   public func workFinished(_ completionResult: C, subscribersResult: S)
   @objc deinit
 }
@@ -562,10 +565,13 @@ extension OnfleetDriver.AnalyticsError : Swift.CustomDebugStringConvertible {
     get
   }
 }
-@frozen public enum SelfAssignError : Swift.Error {
+@frozen public enum SelfAssignError : Foundation.LocalizedError {
   case taskAlreadySelfAssigned(_: OnfleetDriver.HttpApi.ApiError)
   case http(_: OnfleetDriver.HTTPError<OnfleetDriver.HttpApi.ApiError>)
-  public var localizedDescription: Swift.String {
+  public var isTaskAlreadySelfAssignedError: Swift.Bool {
+    get
+  }
+  public var errorDescription: Swift.String? {
     get
   }
   public var apiError: OnfleetDriver.HttpApi.ApiError? {
@@ -617,21 +623,21 @@ public protocol UserConsentEnabledIntegration : OnfleetDriver.Integration {
 }
 public typealias SMSCode = Swift.String
 public protocol AccountsSubscriber : AnyObject {
-  var accountsProvider: OnfleetDriver.AccountsProvider? { get set }
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didRemove accounts: [OnfleetDriver.Account], context: OnfleetDriver.RemoveAccountsContext)
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didFailRemovingAccountsWith error: OnfleetDriver.RemoveAccountError, context: OnfleetDriver.RemoveAccountsContext)
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didLogIn details: OnfleetDriver.LoginDetails)
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didFailLoggingInWith error: OnfleetDriver.LoginError, isLegacy: Swift.Bool)
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
-  func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didChangePreferredAccount old: OnfleetDriver.Account?, new: OnfleetDriver.Account)
+  var accountsProvider: (any OnfleetDriver.AccountsProvider)? { get set }
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didRemove accounts: [OnfleetDriver.Account], context: OnfleetDriver.RemoveAccountsContext)
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didFailRemovingAccountsWith error: OnfleetDriver.RemoveAccountError, context: OnfleetDriver.RemoveAccountsContext)
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didLogIn details: OnfleetDriver.LoginDetails)
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didFailLoggingInWith error: OnfleetDriver.LoginError, isLegacy: Swift.Bool)
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
+  func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didChangePreferredAccount old: OnfleetDriver.Account?, new: OnfleetDriver.Account)
 }
 extension OnfleetDriver.AccountsSubscriber {
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didRemove accounts: [OnfleetDriver.Account], context: OnfleetDriver.RemoveAccountsContext)
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didFailRemovingAccountsWith error: OnfleetDriver.RemoveAccountError, context: OnfleetDriver.RemoveAccountsContext)
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didLogIn details: OnfleetDriver.LoginDetails)
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didFailLoggingInWith error: OnfleetDriver.LoginError, isLegacy: Swift.Bool)
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
-  public func accountsProvider(_ provider: OnfleetDriver.AccountsProvider, didChangePreferredAccount old: OnfleetDriver.Account?, new: OnfleetDriver.Account)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didRemove accounts: [OnfleetDriver.Account], context: OnfleetDriver.RemoveAccountsContext)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didFailRemovingAccountsWith error: OnfleetDriver.RemoveAccountError, context: OnfleetDriver.RemoveAccountsContext)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didLogIn details: OnfleetDriver.LoginDetails)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didFailLoggingInWith error: OnfleetDriver.LoginError, isLegacy: Swift.Bool)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didLogOut reason: OnfleetDriver.LogoutReason)
+  public func accountsProvider(_ provider: any OnfleetDriver.AccountsProvider, didChangePreferredAccount old: OnfleetDriver.Account?, new: OnfleetDriver.Account)
 }
 @_hasMissingDesignatedInitializers public class ModelArray<T> where T : OnfleetDriver.Model {
   public var models: [T] {
@@ -680,10 +686,6 @@ extension OnfleetDriver.AccountsSubscriber {
     get
     set
   }
-  @available(*, deprecated, message: "use one of the properties defining image size")
-  public var organizationImageUrl: Foundation.URL? {
-    get
-  }
   public var organizationImageUrlExtraSmall: Foundation.URL? {
     get
   }
@@ -693,8 +695,8 @@ extension OnfleetDriver.AccountsSubscriber {
   public var organizationImageUrlMedium: Foundation.URL? {
     get
   }
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 @frozen public enum RecipientContactMode {
@@ -715,28 +717,30 @@ extension OnfleetDriver.AccountsSubscriber {
     @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
     @objc deinit
   }
-  public var notes: OnfleetDriver.ModelProperty<Swift.String?>
-  public var shortId: OnfleetDriver.ModelProperty<Swift.String>
-  public var completeAfter: OnfleetDriver.ModelProperty<Foundation.Date?>
-  public var completeBefore: OnfleetDriver.ModelProperty<Foundation.Date?>
-  public var destination: OnfleetDriver.ModelProperty<OnfleetDriver.Destination>
-  public var recipients: OnfleetDriver.ModelProperty<OnfleetDriver.ModelArray<OnfleetDriver.Recipient>>
-  public var isActive: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var pickupTask: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var commConfig: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
-  public var requirements: OnfleetDriver.ModelProperty<OnfleetDriver.Task.Requirements>
-  public var overrides: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
-  public var requestedBarcodes: OnfleetDriver.ModelProperty<[OnfleetDriver.BarcodeRequest]?>
-  public var isFulfilled: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var organization: OnfleetDriver.ModelProperty<Swift.String>
-  public var executor: OnfleetDriver.ModelProperty<Swift.String>
-  public var quantity: OnfleetDriver.ModelProperty<Swift.Float?>
-  public var metadata: OnfleetDriver.ModelProperty<[OnfleetDriver.Metadata]>
-  public var isSelfAssignable: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var isSelfAssigned: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var scanOnlyRequiredBarcodes: OnfleetDriver.ModelProperty<Swift.Bool>
-  public var hasRecipientSignature: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let notes: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let shortId: OnfleetDriver.ModelProperty<Swift.String>
+  final public let completeAfter: OnfleetDriver.ModelProperty<Foundation.Date?>
+  final public let completeBefore: OnfleetDriver.ModelProperty<Foundation.Date?>
+  final public let destination: OnfleetDriver.ModelProperty<OnfleetDriver.Destination>
+  final public let recipients: OnfleetDriver.ModelProperty<OnfleetDriver.ModelArray<OnfleetDriver.Recipient>>
+  final public let isActive: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let pickupTask: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let commConfig: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
+  final public let requirements: OnfleetDriver.ModelProperty<OnfleetDriver.Task.Requirements>
+  final public let overrides: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
+  final public let requestedBarcodes: OnfleetDriver.ModelProperty<[OnfleetDriver.BarcodeRequest]?>
+  final public let isFulfilled: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let organization: OnfleetDriver.ModelProperty<Swift.String>
+  final public let executor: OnfleetDriver.ModelProperty<Swift.String>
+  final public let quantity: OnfleetDriver.ModelProperty<Swift.Float?>
+  final public let metadata: OnfleetDriver.ModelProperty<[OnfleetDriver.Metadata]>
+  final public let isSelfAssignable: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let isSelfAssigned: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let scanOnlyRequiredBarcodes: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let hasRecipientSignature: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let dependencies: OnfleetDriver.ModelProperty<[Swift.String]>
   public static func empty() -> OnfleetDriver.Task
+  public func getDependencies() -> [Swift.String]
   public func getDestination() -> OnfleetDriver.Destination
   public func getRecipients() -> Swift.Array<OnfleetDriver.Recipient>
   public var hasRecipients: Swift.Bool {
@@ -801,20 +805,34 @@ final public class DispatchTimer {
   final public func restart()
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Destination : OnfleetDriver.Model {
-  final public let location: OnfleetDriver.ModelProperty<CoreLocation.CLLocationCoordinate2D>
-  final public let address: OnfleetDriver.ModelProperty<OnfleetDriver.Address>
-  final public let notes: OnfleetDriver.ModelProperty<Swift.String?>
-  final public let wasGeocoded: OnfleetDriver.ModelProperty<Swift.Bool>
-  final public let useGps: OnfleetDriver.ModelProperty<Swift.Bool>
-  final public let metadata: OnfleetDriver.ModelProperty<[OnfleetDriver.Metadata]>
-  final public let googlePlaceId: OnfleetDriver.ModelProperty<Swift.String?>
-  public func getLocation() -> CoreLocation.CLLocationCoordinate2D
-  public func getAddress() -> OnfleetDriver.Address
-  public func getNotes() -> Swift.String?
-  public func getWasGeocoded() -> Swift.Bool
-  public func getUseGps() -> Swift.Bool
-  public func getMatadata() -> [OnfleetDriver.Metadata]
-  public func getGooglePlaceId() -> Swift.String?
+  final public let location$: OnfleetDriver.ModelProperty<CoreLocation.CLLocationCoordinate2D>
+  final public let address$: OnfleetDriver.ModelProperty<OnfleetDriver.Address>
+  final public let notes$: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let wasGeocoded$: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let useGps$: OnfleetDriver.ModelProperty<Swift.Bool>
+  final public let metadata$: OnfleetDriver.ModelProperty<[OnfleetDriver.Metadata]>
+  final public let googlePlaceId$: OnfleetDriver.ModelProperty<Swift.String?>
+  public var location: CoreLocation.CLLocationCoordinate2D {
+    get
+  }
+  public var address: OnfleetDriver.Address {
+    get
+  }
+  public var notes: Swift.String? {
+    get
+  }
+  public var wasGeocoded: Swift.Bool {
+    get
+  }
+  public var useGps: Swift.Bool {
+    get
+  }
+  public var metadata: [OnfleetDriver.Metadata] {
+    get
+  }
+  public var googlePlaceId: Swift.String? {
+    get
+  }
   @objc deinit
 }
 extension OnfleetDriver.ObservableType {
@@ -855,7 +873,7 @@ extension OnfleetDriver.StartTaskError : Swift.CustomDebugStringConvertible {
 }
 final public class SensitiveFilesRemover {
   public init()
-  final public func register(subjects: [OnfleetDriver.SensitiveFilesManaging])
+  final public func register(subjects: [any OnfleetDriver.SensitiveFilesManaging])
   final public func removeAllSensitiveFiles()
   @objc deinit
 }
@@ -866,8 +884,9 @@ extension Foundation.NSNotification.Name {
   public static let deviceStateDidChangeThermalState: Foundation.NSNotification.Name
 }
 public protocol DeviceStateObserving : AnyObject {
-  var deviceState: OnfleetDriver.DeviceStateManaging? { get set }
+  var deviceState: (any OnfleetDriver.DeviceStateManaging)? { get set }
   func didStartMonitoring()
+  func didStopMonitoring()
   func didChangePowerSavingMode(isEnabled: Swift.Bool)
   func didChangeCharging(isChargingOrCharged: Swift.Bool)
   func didChangeThermalState(isOptimal: Swift.Bool)
@@ -875,6 +894,7 @@ public protocol DeviceStateObserving : AnyObject {
 }
 extension OnfleetDriver.DeviceStateObserving {
   public func didStartMonitoring()
+  public func didStopMonitoring()
   public func didChangePowerSavingMode(isEnabled: Swift.Bool)
   public func didChangeCharging(isChargingOrCharged: Swift.Bool)
   public func didChangeThermalState(isOptimal: Swift.Bool)
@@ -885,12 +905,24 @@ public protocol DeviceStateManaging : AnyObject {
   var isChargingOrCharged: Swift.Bool { get }
   var isThermalStateOptimal: Swift.Bool { get }
   var batteryLevel: Swift.Float { get }
-  func add(_ observer: OnfleetDriver.DeviceStateObserving)
-  func remove(_ observer: OnfleetDriver.DeviceStateObserving)
+  func add(_ observer: any OnfleetDriver.DeviceStateObserving)
+  func remove(_ observer: any OnfleetDriver.DeviceStateObserving)
 }
 @_hasMissingDesignatedInitializers public class SHA256Hasher {
   public class func hash(string: Swift.String, salt: Swift.String?) -> Swift.String?
   @objc deinit
+}
+final public class KeychainPreferredOrgIdStorage {
+  final public var preferredOrgId: Swift.String? {
+    get
+    set
+  }
+  public init(keychain: any OnfleetDriver.KeychainStoreProtocol)
+  @objc deinit
+}
+extension OnfleetDriver.ObservableType {
+  public func nwise(_ n: Swift.Int) -> OnfleetDriver.Observable<[Self.Element]>
+  public func pairwise() -> OnfleetDriver.Observable<(Self.Element, Self.Element)>
 }
 extension OnfleetDriver.ContentsOfDirectoryRemover : OnfleetDriver.SensitiveFilesManaging {
   final public func removeAllSensitiveFiles()
@@ -899,7 +931,10 @@ extension OnfleetDriver.DirectoryOrFileRemover : OnfleetDriver.SensitiveFilesMan
   final public func removeAllSensitiveFiles()
 }
 extension OnfleetDriver.HttpApi {
-  public struct ApiError : Swift.Error {
+  public struct ApiError : Foundation.LocalizedError {
+    public var errorDescription: Swift.String? {
+      get
+    }
   }
 }
 extension OnfleetDriver.HttpApi.ApiError : Swift.CustomDebugStringConvertible {
@@ -950,12 +985,12 @@ public struct DriverProfileDetails : Swift.Encodable {
     public static func car(description: Swift.String?, plate: Swift.String?, color: Swift.String?) -> OnfleetDriver.DriverProfileDetails.Vehicle
     public static func truck(description: Swift.String?, plate: Swift.String?, color: Swift.String?) -> OnfleetDriver.DriverProfileDetails.Vehicle
     public static func motorcycle(description: Swift.String?, plate: Swift.String?, color: Swift.String?) -> OnfleetDriver.DriverProfileDetails.Vehicle
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
   }
   @frozen public enum Value<T> : Swift.Encodable where T : Swift.Encodable {
     case update(_: T)
     case ignore
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
   }
   public var name: OnfleetDriver.DriverProfileDetails.Value<Swift.String>
   public var displayName: OnfleetDriver.DriverProfileDetails.Value<Swift.String?>
@@ -964,7 +999,7 @@ public struct DriverProfileDetails : Swift.Encodable {
   public var capacity: OnfleetDriver.DriverProfileDetails.Value<Swift.Int?>
   public var vehicle: OnfleetDriver.DriverProfileDetails.Value<OnfleetDriver.DriverProfileDetails.Vehicle>
   public init()
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct Metadata : Swift.Hashable {
   @frozen public enum ValueType : Swift.String {
@@ -1004,36 +1039,33 @@ public struct BarcodeRequest : Swift.Equatable {
   public var blockCompletion: Swift.Bool?
   public static func == (a: OnfleetDriver.BarcodeRequest, b: OnfleetDriver.BarcodeRequest) -> Swift.Bool
 }
-public struct Config {
+public struct AppConfig {
   public let appKey: Swift.String
   public let appVersion: Swift.String
   public let appName: Swift.String
-  public init(appKey: Swift.String, appVersion: Swift.String, appName: Swift.String)
+  public let appGroup: Swift.String?
+  public let keychainSharing: OnfleetDriver.Keychain.AccessGroup?
+  public init(appKey: Swift.String, appVersion: Swift.String, appName: Swift.String, appGroup: Swift.String? = nil, keychainSharing: OnfleetDriver.Keychain.AccessGroup? = nil)
 }
 @_hasMissingDesignatedInitializers final public class DriverContext {
   public static let shared: OnfleetDriver.DriverContext
-  final public var environment: OnfleetDriver.Environment {
-    get
-    set
-  }
-  final public var config: OnfleetDriver.Config!
   final public var isInitialized: Swift.Bool {
     get
   }
-  final public func initSDK(with config: OnfleetDriver.Config, environment: OnfleetDriver.Environment, app: UIKit.UIApplication, loggers: [OnfleetDriver.ONLoggerDestination])
+  final public func initSDK(with appConfig: OnfleetDriver.AppConfig, environment: OnfleetDriver.Environment, app: UIKit.UIApplication, loggers: [any OnfleetDriver.ONLoggerDestination])
   @objc deinit
 }
 extension OnfleetDriver.DriverContext {
-  final public var session: OnfleetDriver.SessionManaging {
+  final public var session: any OnfleetDriver.SessionManaging {
     get
   }
-  final public var driverManager: OnfleetDriver.DriverManaging {
+  final public var driverManager: any OnfleetDriver.DriverManaging {
     get
   }
-  final public var location: OnfleetDriver.LocationManaging {
+  final public var location: any OnfleetDriver.LocationManaging {
     get
   }
-  final public var attachments: OnfleetDriver.AttachmentsManaging {
+  final public var attachments: any OnfleetDriver.AttachmentsManaging {
     get
   }
   final public var deviceId: Swift.String {
@@ -1057,8 +1089,6 @@ extension OnfleetDriver.DriverContext {
     get
   }
   public typealias FetchDataHandler = (Swift.Result<Swift.Void, OnfleetDriver.FetchDataError>) -> Swift.Void
-  @available(*, unavailable, renamed: "FetchDataHandler")
-  public typealias RefetchDataHandler = (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void
   final public func refetchData(completion: OnfleetDriver.DriverContext.FetchDataHandler?)
 }
 public protocol WorkTask : AnyObject, Swift.CustomDebugStringConvertible {
@@ -1066,7 +1096,7 @@ public protocol WorkTask : AnyObject, Swift.CustomDebugStringConvertible {
   var isResumed: OnfleetDriver.Observable<Swift.Bool> { get }
   var isCancelled: OnfleetDriver.Observable<Swift.Bool> { get }
   var isFinished: OnfleetDriver.Observable<Swift.Bool> { get }
-  var error: Swift.Error? { get }
+  var error: (any Swift.Error)? { get }
   func resume()
   func cancel()
 }
@@ -1083,11 +1113,11 @@ final public class CombinedWorkTask : OnfleetDriver.WorkTask {
   final public var isFinished: OnfleetDriver.Observable<Swift.Bool> {
     get
   }
-  final public var error: Swift.Error? {
+  final public var error: (any Swift.Error)? {
     get
   }
-  final public let tasks: [OnfleetDriver.WorkTask]
-  public init(tasks: [OnfleetDriver.WorkTask])
+  final public let tasks: [any OnfleetDriver.WorkTask]
+  public init(tasks: [any OnfleetDriver.WorkTask])
   final public func resume()
   final public func cancel()
   final public var debugDescription: Swift.String {
@@ -1096,7 +1126,7 @@ final public class CombinedWorkTask : OnfleetDriver.WorkTask {
   @objc deinit
 }
 final public class ContentsOfDirectoryRemover {
-  public init(directoryUrl: Foundation.URL)
+  public init(directoryUrl: Foundation.URL, fileManager: Foundation.FileManager)
   final public func remove()
   @objc deinit
 }
@@ -1180,21 +1210,19 @@ extension Foundation.URL {
     public let requiresNotes: Swift.Bool
     public static func == (a: OnfleetDriver.Organization.CompletionReason, b: OnfleetDriver.Organization.CompletionReason) -> Swift.Bool
   }
-  public var name: OnfleetDriver.ModelProperty<Swift.String>
-  public var country: OnfleetDriver.ModelProperty<Swift.String>
-  public var image: OnfleetDriver.ModelProperty<Swift.String?>
-  public var config: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
-  public var driverAppConfig: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
-  public var enabledFeatures: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
-  public var billing: OnfleetDriver.ModelProperty<OnfleetDriver.Organization.Billing>
-  public var email: OnfleetDriver.ModelProperty<Swift.String>
-  public var driverSupportEmail: OnfleetDriver.ModelProperty<Swift.String>
-  public var taskCompletionReasons: OnfleetDriver.ModelProperty<[OnfleetDriver.Organization.CompletionReason]>
+  final public let name: OnfleetDriver.ModelProperty<Swift.String>
+  final public let country: OnfleetDriver.ModelProperty<Swift.String>
+  final public let image: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let config: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
+  final public let driverAppConfig: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
+  final public let enabledFeatures: OnfleetDriver.ModelProperty<[Swift.String : Swift.String]>
+  final public let billing: OnfleetDriver.ModelProperty<OnfleetDriver.Organization.Billing>
+  final public let email: OnfleetDriver.ModelProperty<Swift.String>
+  final public let driverSupportEmail: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let taskCompletionReasons: OnfleetDriver.ModelProperty<[OnfleetDriver.Organization.CompletionReason]>
   public func getName() -> Swift.String
   public func getCountry() -> Swift.String
   public func getImage() -> Swift.String?
-  @available(*, deprecated, message: "use of the properties with image size below")
-  public func getImageUrl() -> Foundation.URL?
   public func getImageUrlExtraSmall() -> Foundation.URL?
   public func getImageUrlSmall() -> Foundation.URL?
   public func getImageUrlMedium() -> Foundation.URL?
@@ -1203,7 +1231,7 @@ extension Foundation.URL {
   public func getEnabledFeatures() -> Swift.Dictionary<Swift.String, Swift.String>
   public func getBilling() -> OnfleetDriver.Organization.Billing
   public func getEmail() -> Swift.String
-  public func getDriverSupportEmail() -> Swift.String
+  public func getDriverSupportEmail() -> Swift.String?
   public func getTaskCompletionReasons() -> [OnfleetDriver.Organization.CompletionReason]
   @objc deinit
 }
@@ -1241,8 +1269,8 @@ public func == (a: OnfleetDriver.DataState, b: OnfleetDriver.DataState) -> Swift
   public var debugDescription: Swift.String {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @_inheritsConvenienceInitializers open class AsynchronousOperation : Foundation.Operation {
   public var stateFinished: Swift.Bool {
@@ -1356,15 +1384,15 @@ public typealias Password = Swift.String
   public static var temporaryURL: Foundation.URL {
     get
   }
-  public static func sharedContainerURL(for appGroupId: Swift.String) -> Foundation.URL
-  public static func excludeFromBackup(forItemAt url: Foundation.URL) throws
+  public static func sharedContainerURL(for appGroupId: Swift.String, fileManager: Foundation.FileManager) -> Foundation.URL
+  public static func excludeFromBackup(forItemAt url: Foundation.URL, fileManager: Foundation.FileManager) throws
   @objc deinit
 }
 public struct AnalyticsDataState {
   public var isEmpty: Swift.Bool
   public var isOutdated: Swift.Bool
   public var isLoading: Swift.Bool
-  public var hasError: Swift.Error?
+  public var hasError: (any Swift.Error)?
 }
 @_hasMissingDesignatedInitializers final public class AnalyticsController {
   @objc deinit
@@ -1426,7 +1454,7 @@ public protocol CompletedTasksProviding : AnyObject {
   var loading$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
   var isOutdated: Swift.Bool { get }
   var outdated$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
-  var error: Swift.Error? { get }
+  var error: (any Swift.Error)? { get }
   var tasks: [OnfleetDriver.CompletedTask] { get }
   func loadTasks(from: Foundation.Date, forceRefetch: Swift.Bool, completion: @escaping OnfleetDriver.CompletedTasksHandler)
 }
@@ -1434,13 +1462,13 @@ public protocol AccountsProvider : AnyObject {
   var isAuthenticated: Swift.Bool { get }
   var accounts: [OnfleetDriver.Account] { get }
   var preferred: OnfleetDriver.Account? { get }
-  func subscribeTo(accountsProvider subscriber: OnfleetDriver.AccountsSubscriber)
-  func removeSubscriberFrom(accountsProvider subscriber: OnfleetDriver.AccountsSubscriber)
+  func subscribeTo(accountsProvider subscriber: any OnfleetDriver.AccountsSubscriber)
+  func removeSubscriberFrom(accountsProvider subscriber: any OnfleetDriver.AccountsSubscriber)
 }
 @_inheritsConvenienceInitializers open class BlockBasedAsynchronousSerialOperationQueue<Model, Error> : OnfleetDriver.BlockBasedAsynchronousOperation<Model, Error> {
-  public func addOperations(_ operations: [Foundation.Operation])
-  override public func completeOperation(with result: OnfleetDriver.BlockBasedAsynchronousSerialOperationQueue<Model, Error>.Result)
-  @objc override dynamic public func cancel()
+  open func addOperations(_ operations: [Foundation.Operation])
+  override open func completeOperation(with result: OnfleetDriver.BlockBasedAsynchronousSerialOperationQueue<Model, Error>.Result)
+  @objc override dynamic open func cancel()
   override public init(completion: OnfleetDriver.BlockBasedAsynchronousOperation<Model, Error>.Completion?)
   @objc deinit
 }
@@ -1453,9 +1481,17 @@ public struct SignStaticImageDetails : Swift.Encodable {
   public let format: Swift.String
   public let style: Swift.String
   public init(latitude: Swift.Double, longitude: Swift.Double, size: CoreFoundation.CGSize, scale: Swift.Double, zoom: Swift.Int, format: Swift.String, style: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
-public typealias SignStaticImageResult = Swift.Result<Foundation.URL, Swift.Error>
+public typealias SignStaticImageResult = Swift.Result<Foundation.URL, any Swift.Error>
+extension OnfleetDriver.ObservableType where Self.Element : Swift.Equatable {
+  public func distinctUntilChanged() -> OnfleetDriver.Observable<Self.Element>
+}
+extension OnfleetDriver.ObservableType {
+  public func distinctUntilChanged<Key>(_ keySelector: @escaping (Self.Element) -> Key) -> OnfleetDriver.Observable<Self.Element> where Key : Swift.Equatable
+  public func distinctUntilChanged(_ comparer: @escaping (Self.Element, Self.Element) -> Swift.Bool) -> OnfleetDriver.Observable<Self.Element>
+  public func distinctUntilChanged<K>(_ keySelector: @escaping (Self.Element) -> K, comparer: @escaping (K, K) -> Swift.Bool) -> OnfleetDriver.Observable<Self.Element>
+}
 public class Observation : Swift.Hashable {
   public init(invalidationBlock: @escaping (OnfleetDriver.Observation) -> Swift.Void)
   @objc deinit
@@ -1506,25 +1542,25 @@ final public class CodableStorage {
   @objc deinit
   final public var excludeFromBackup: Swift.Bool
   public init(storage: OnfleetDriver.DataStorage, completionQueue: Dispatch.DispatchQueue = .main)
-  final public func store<T>(model: T, for identifier: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?) where T : Swift.Encodable
+  final public func store<T>(model: T, for identifier: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)?) where T : Swift.Encodable
   final public func syncStore<T>(model: T, for identifier: Swift.String) throws where T : Swift.Encodable
-  final public func load<T>(type: T.Type, for identifier: Swift.String, completion: @escaping (T?, Swift.Error?) -> Swift.Void) where T : Swift.Decodable
+  final public func load<T>(type: T.Type, for identifier: Swift.String, completion: @escaping (T?, (any Swift.Error)?) -> Swift.Void) where T : Swift.Decodable
   final public func syncLoad<T>(type: T.Type, for identifier: Swift.String) throws -> T? where T : Swift.Decodable
-  final public func remove(for identifier: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?)
+  final public func remove(for identifier: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)?)
   final public func syncRemove(for identifier: Swift.String) throws
-  final public func removeAll(completion: ((Swift.Error?) -> Swift.Void)?)
-  final public func removeAll(but identifier: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?)
+  final public func removeAll(completion: (((any Swift.Error)?) -> Swift.Void)?)
+  final public func removeAll(but identifier: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)?)
 }
 @frozen public enum LoginError : Swift.Error {
-  case accountUnaccessible(_: Swift.Error)
-  case invalidCredentials(_: Swift.Error)
-  case noAccountsAvailable(_: Swift.Error)
-  case noOrganizations(_: Swift.Error)
-  case invalidVerificationCode(_: Swift.Error)
-  case tooManyAttempts(_: Swift.Error)
-  case badDeviceTime(_: Swift.Error)
-  case passwordUpdate(_: Swift.Error)
-  case other(_: Swift.Error)
+  case accountUnaccessible(_: any Swift.Error)
+  case invalidCredentials(_: any Swift.Error)
+  case noAccountsAvailable(_: any Swift.Error)
+  case noOrganizations(_: any Swift.Error)
+  case invalidVerificationCode(_: any Swift.Error)
+  case tooManyAttempts(_: any Swift.Error)
+  case badDeviceTime(_: any Swift.Error)
+  case passwordUpdate(_: any Swift.Error)
+  case other(_: any Swift.Error)
   public var localizedDescription: Swift.String {
     get
   }
@@ -1547,20 +1583,36 @@ public enum NewPasswordResult {
 extension Swift.Array where Element == (key: Swift.String, value: Any) {
   public func stringified() -> Swift.String
 }
+extension OnfleetDriver.ObservableType {
+  public func debounce(_ dueTime: Foundation.TimeInterval, on queue: Dispatch.DispatchQueue) -> OnfleetDriver.Observable<Self.Element>
+}
 extension Foundation.Data {
   public var hexString: Swift.String {
     get
   }
 }
 final public class Keychain : OnfleetDriver.KeychainStoreProtocol {
+  public enum AccessGroup {
+    case appGroup(Swift.String)
+    case keychainGroup(teamId: Swift.String, group: Swift.String)
+  }
   final public var service: Swift.String {
     get
   }
-  public init(service: Swift.String, accessibility: OnfleetDriver.GenericPasswordKeychain.Accessiblity = .afterFirstUnlockThisDeviceOnly)
+  public init(service: Swift.String, accessibility: OnfleetDriver.GenericPasswordKeychain.Accessiblity = .afterFirstUnlockThisDeviceOnly, accessGroup: OnfleetDriver.Keychain.AccessGroup? = nil)
+  final public func allValues() throws -> [Swift.String]
+  final public func allKeys() throws -> [Swift.String]
   final public func setString(_ value: Swift.String?, for forKey: Swift.String) throws
   final public func string(for key: Swift.String) throws -> Swift.String?
-  final public func removeAllStrings() throws
+  final public func setData(_ value: Foundation.Data?, for forKey: Swift.String) throws
+  final public func data(for key: Swift.String) throws -> Foundation.Data?
+  final public func removeAll() throws
   @objc deinit
+}
+extension OnfleetDriver.Keychain : Swift.CustomDebugStringConvertible {
+  final public var debugDescription: Swift.String {
+    get
+  }
 }
 public enum EnvInfo {
   public static var currentEnvironment: OnfleetDriver.Environment
@@ -1572,9 +1624,9 @@ public protocol ObservableModel : AnyObject {
   var changeObservable: OnfleetDriver.Observable<Swift.String> { get }
   var changeObservableWithChildren: OnfleetDriver.Observable<Swift.String> { get }
   var deleteObservable: OnfleetDriver.Observable<Swift.Void> { get }
-  func subscribeOnChange(_ change: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
-  func subscribeOnChangeWithChildren(_ change: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
-  func subscribeOnDelete(_ delete: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
+  func subscribeOnChange(_ change: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
+  func subscribeOnChangeWithChildren(_ change: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
+  func subscribeOnDelete(_ delete: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Recipient : OnfleetDriver.Model {
   final public let name: OnfleetDriver.ModelProperty<Swift.String>
@@ -1612,7 +1664,7 @@ public struct ONLogger {
       get
     }
   }
-  public static func add(_ destination: OnfleetDriver.ONLoggerDestination)
+  public static func add(_ destination: any OnfleetDriver.ONLoggerDestination)
 }
 @frozen public enum LogoutError : Swift.Error {
   case dutyStatusFailed(_: OnfleetDriver.DutyStatusError)
@@ -1624,6 +1676,9 @@ public struct ONLogger {
 extension Dispatch.DispatchQueue {
   public func async(after delay: Foundation.TimeInterval, work: @escaping () -> Swift.Void)
   public func once(token: Swift.String, work: () -> Swift.Void)
+}
+extension OnfleetDriver.ObservableType {
+  public func take(_ count: Swift.Int) -> OnfleetDriver.Observable<Self.Element>
 }
 extension Swift.Array where Element == OnfleetDriver.NotificationToken {
   @discardableResult
@@ -1647,15 +1702,15 @@ public struct DriverLicense : Swift.Codable {
     get
   }
   public func stringToDate(date: Swift.String?) -> Foundation.Date?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 final public class SingleAssignmentDisposable : OnfleetDriver.Disposable {
   final public var isDisposed: Swift.Bool {
     get
   }
   public init()
-  final public func set(disposable: OnfleetDriver.Disposable)
+  final public func set(disposable: any OnfleetDriver.Disposable)
   final public func dispose()
   @objc deinit
 }
@@ -1674,43 +1729,43 @@ public struct AnalyticsStorgateFileName {
   public func createFileName() -> Swift.String
 }
 public protocol DriverProvider : AnyObject {
-  var driver: OnfleetDriver.Driver? { get }
+  var driver: (any OnfleetDriver.Driver)? { get }
   var isOnDuty: Swift.Bool { get }
-  func subscribeToDriverProvider(_ subscriber: OnfleetDriver.DriverSubscriber)
-  func removeSubscriberFrom(ownWorkerProvider subscriber: OnfleetDriver.DriverSubscriber)
+  func subscribeToDriverProvider(_ subscriber: any OnfleetDriver.DriverSubscriber)
+  func removeSubscriberFrom(ownWorkerProvider subscriber: any OnfleetDriver.DriverSubscriber)
 }
 public protocol DriverSubscriber : AnyObject {
-  var driverProvider: OnfleetDriver.DriverProvider? { get set }
-  func driverProvider(_ provider: OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
-  func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: OnfleetDriver.DutyStatusError)
-  func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: OnfleetDriver.Driver)
-  func driverProviderDriverDidNotBecomeAvailable(_ provider: OnfleetDriver.DriverProvider)
-  func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidUpdate driver: OnfleetDriver.Driver)
-  func driverProviderDidUpdateProfile(_ provider: OnfleetDriver.DriverProvider)
-  func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailUpdatingProfileWith error: OnfleetDriver.UpdateProfileError)
+  var driverProvider: (any OnfleetDriver.DriverProvider)? { get set }
+  func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
+  func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: OnfleetDriver.DutyStatusError)
+  func driverProvider(_ provider: any OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: any OnfleetDriver.Driver)
+  func driverProviderDriverDidNotBecomeAvailable(_ provider: any OnfleetDriver.DriverProvider)
+  func driverProvider(_ provider: any OnfleetDriver.DriverProvider, driverDidUpdate driver: any OnfleetDriver.Driver)
+  func driverProviderDidUpdateProfile(_ provider: any OnfleetDriver.DriverProvider)
+  func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didFailUpdatingProfileWith error: OnfleetDriver.UpdateProfileError)
 }
 extension OnfleetDriver.DriverSubscriber {
-  public func driverProvider(_ provider: OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
-  public func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: OnfleetDriver.DutyStatusError)
-  public func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: OnfleetDriver.Driver)
-  public func driverProviderDriverDidNotBecomeAvailable(_ provider: OnfleetDriver.DriverProvider)
-  public func driverProvider(_ provider: OnfleetDriver.DriverProvider, driverDidUpdate driver: OnfleetDriver.Driver)
-  public func driverProviderDidUpdateProfile(_ provider: OnfleetDriver.DriverProvider)
-  public func driverProvider(_ provider: OnfleetDriver.DriverProvider, didFailUpdatingProfileWith error: OnfleetDriver.UpdateProfileError)
+  public func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didChangeDutyStatus onDuty: Swift.Bool, context: Swift.String)
+  public func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didFailChangingDutyStatusTo onDuty: Swift.Bool, with error: OnfleetDriver.DutyStatusError)
+  public func driverProvider(_ provider: any OnfleetDriver.DriverProvider, driverDidBecomeAvailable driver: any OnfleetDriver.Driver)
+  public func driverProviderDriverDidNotBecomeAvailable(_ provider: any OnfleetDriver.DriverProvider)
+  public func driverProvider(_ provider: any OnfleetDriver.DriverProvider, driverDidUpdate driver: any OnfleetDriver.Driver)
+  public func driverProviderDidUpdateProfile(_ provider: any OnfleetDriver.DriverProvider)
+  public func driverProvider(_ provider: any OnfleetDriver.DriverProvider, didFailUpdatingProfileWith error: OnfleetDriver.UpdateProfileError)
 }
 public protocol ActiveTaskProvider : AnyObject {
   var activeTask: OnfleetDriver.Task? { get }
-  func subscribeTo(activeTaskProvider subscriber: OnfleetDriver.ActiveTaskSubscriber)
-  func removeSubscriberFrom(activeTaskProvider subscriber: OnfleetDriver.ActiveTaskSubscriber)
+  func subscribeTo(activeTaskProvider subscriber: any OnfleetDriver.ActiveTaskSubscriber)
+  func removeSubscriberFrom(activeTaskProvider subscriber: any OnfleetDriver.ActiveTaskSubscriber)
 }
 public protocol ActiveTaskSubscriber : AnyObject {
-  var activeTaskProvider: OnfleetDriver.ActiveTaskProvider? { get set }
-  func activeTaskProvider(_ provider: OnfleetDriver.ActiveTaskProvider, didStartTask taskId: Swift.String)
-  func activeTaskProvider(_ provider: OnfleetDriver.ActiveTaskProvider, didCompleteTask taskId: Swift.String)
+  var activeTaskProvider: (any OnfleetDriver.ActiveTaskProvider)? { get set }
+  func activeTaskProvider(_ provider: any OnfleetDriver.ActiveTaskProvider, didStartTask taskId: Swift.String)
+  func activeTaskProvider(_ provider: any OnfleetDriver.ActiveTaskProvider, didCompleteTask taskId: Swift.String)
 }
 extension OnfleetDriver.ActiveTaskSubscriber {
-  public func activeTaskProvider(_ provider: OnfleetDriver.ActiveTaskProvider, didStartTask taskId: Swift.String)
-  public func activeTaskProvider(_ provider: OnfleetDriver.ActiveTaskProvider, didCompleteTask taskId: Swift.String)
+  public func activeTaskProvider(_ provider: any OnfleetDriver.ActiveTaskProvider, didStartTask taskId: Swift.String)
+  public func activeTaskProvider(_ provider: any OnfleetDriver.ActiveTaskProvider, didCompleteTask taskId: Swift.String)
 }
 @_hasMissingDesignatedInitializers final public class CoreOutput {
   @objc deinit
@@ -1725,28 +1780,28 @@ extension OnfleetDriver.CoreOutput : OnfleetDriver.AccountsProvider {
   final public var preferred: OnfleetDriver.Account? {
     get
   }
-  final public func subscribeTo(accountsProvider subscriber: OnfleetDriver.AccountsSubscriber)
-  final public func removeSubscriberFrom(accountsProvider subscriber: OnfleetDriver.AccountsSubscriber)
+  final public func subscribeTo(accountsProvider subscriber: any OnfleetDriver.AccountsSubscriber)
+  final public func removeSubscriberFrom(accountsProvider subscriber: any OnfleetDriver.AccountsSubscriber)
 }
 extension OnfleetDriver.CoreOutput : OnfleetDriver.DriverProvider {
-  final public var driver: OnfleetDriver.Driver? {
+  final public var driver: (any OnfleetDriver.Driver)? {
     get
   }
   final public var isOnDuty: Swift.Bool {
     get
   }
-  final public func subscribeToDriverProvider(_ subscriber: OnfleetDriver.DriverSubscriber)
-  final public func removeSubscriberFrom(ownWorkerProvider subscriber: OnfleetDriver.DriverSubscriber)
+  final public func subscribeToDriverProvider(_ subscriber: any OnfleetDriver.DriverSubscriber)
+  final public func removeSubscriberFrom(ownWorkerProvider subscriber: any OnfleetDriver.DriverSubscriber)
 }
 extension OnfleetDriver.CoreOutput : OnfleetDriver.ActiveTaskProvider {
   final public var activeTask: OnfleetDriver.Task? {
     get
   }
-  final public func subscribeTo(activeTaskProvider subscriber: OnfleetDriver.ActiveTaskSubscriber)
-  final public func removeSubscriberFrom(activeTaskProvider subscriber: OnfleetDriver.ActiveTaskSubscriber)
+  final public func subscribeTo(activeTaskProvider subscriber: any OnfleetDriver.ActiveTaskSubscriber)
+  final public func removeSubscriberFrom(activeTaskProvider subscriber: any OnfleetDriver.ActiveTaskSubscriber)
 }
 final public class DirectoryOrFileRemover {
-  public init(url: Foundation.URL)
+  public init(url: Foundation.URL, fileManager: Foundation.FileManager)
   final public func remove()
   @objc deinit
 }
@@ -1767,18 +1822,18 @@ extension Swift.Array : OnfleetDriver.ObservableConvertibleType where Element : 
   public func asObservable() -> OnfleetDriver.Observable<Element>
 }
 extension Swift.Array : OnfleetDriver.ObservableType where Element : OnfleetDriver.ObservableType {
-  public func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
 }
 extension Swift.Optional : OnfleetDriver.ObservableConvertibleType where Wrapped : OnfleetDriver.ObservableType {
   public typealias Element = Wrapped.Element
   public func asObservable() -> OnfleetDriver.Observable<Swift.Optional<Wrapped>.Element>
 }
 extension Swift.Optional : OnfleetDriver.ObservableType where Wrapped : OnfleetDriver.ObservableType {
-  public func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where Observer : OnfleetDriver.ObserverType, Wrapped.Element == Observer.Element
+  public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Observer : OnfleetDriver.ObserverType, Wrapped.Element == Observer.Element
 }
 extension OnfleetDriver.ModelProperty : OnfleetDriver.ObservableType {
   public typealias Element = T
-  final public func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where T == Observer.Element, Observer : OnfleetDriver.ObserverType
+  final public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where T == Observer.Element, Observer : OnfleetDriver.ObserverType
   final public func asObservable() -> OnfleetDriver.Observable<T>
 }
 extension OnfleetDriver.ModelProperty : OnfleetDriver.Disposable {
@@ -1803,14 +1858,14 @@ extension OnfleetDriver.ModelProperty : OnfleetDriver.Disposable {
   final public var isFinished: OnfleetDriver.Observable<Swift.Bool> {
     get
   }
-  final public var error: Swift.Error?
+  final public var error: (any Swift.Error)?
   final public func resume()
   final public func cancel()
   @objc deinit
 }
 final public class TimeoutCondition : OnfleetDriver.WorkTaskCondition {
   public init(timeout: Foundation.TimeInterval = 3, willFail: Swift.Bool = false)
-  final public func beforeWork(completion: @escaping (OnfleetDriver.WorkTaskConditionResult) -> Swift.Void) -> OnfleetDriver.WorkTask
+  final public func beforeWork(completion: @escaping (OnfleetDriver.WorkTaskConditionResult) -> Swift.Void) -> any OnfleetDriver.WorkTask
   final public func afterWork(result: OnfleetDriver.WorkTaskResult)
   final public var debugDescription: Swift.String {
     get
@@ -1841,17 +1896,20 @@ public protocol DriverManaging : AnyObject {
   var isOnDuty: Swift.Bool { get }
   var onDuty$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
   func setDutyStatus(goOnDuty: Swift.Bool, completion: @escaping OnfleetDriver.DutyStatusHandler)
-  var driver: OnfleetDriver.Driver? { get }
+  var driver: (any OnfleetDriver.Driver)? { get }
   var driverAvailable$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
   var isDriverCommunicationEnabled: Swift.Bool { get }
-  func uploadProfileImage(imageUrl: Foundation.URL, progress: @escaping (Swift.Float) -> Swift.Void, completion: @escaping (Swift.Result<Swift.String, Swift.Error>) -> Swift.Void)
+  func uploadProfileImage(imageUrl: Foundation.URL, progress: @escaping (Swift.Float) -> Swift.Void, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
   func urlForTemporaryProfileImage(for uploadId: Swift.String) -> Foundation.URL
-  func updateProfile(details: OnfleetDriver.DriverProfileDetails, completion: @escaping OnfleetDriver.UpdateProfileHandler) -> OnfleetDriver.WorkTask
+  func updateProfile(details: OnfleetDriver.DriverProfileDetails, completion: @escaping OnfleetDriver.UpdateProfileHandler) -> any OnfleetDriver.WorkTask
   var activeTask: OnfleetDriver.Task? { get }
   func start(task: OnfleetDriver.Task, completion: @escaping OnfleetDriver.StartTaskHandler)
+  @available(*, deprecated, renamed: "shouldRespectTasksOrder")
   var isTaskOrderEnforced: Swift.Bool { get }
+  var shouldRespectTasksOrder: Swift.Bool { get }
+  var haveToRespectTasksOrder: Swift.Bool { get }
   func shouldWarnIfTaskStartedBeforeCompleteAfter(for task: OnfleetDriver.Task) -> Swift.Bool
-  var completedTasks: OnfleetDriver.CompletedTasksProviding { get }
+  var completedTasks: any OnfleetDriver.CompletedTasksProviding { get }
   func complete(task: OnfleetDriver.Task, completionDetails: OnfleetDriver.TaskCompletionDetails, completion: @escaping OnfleetDriver.CompleteTaskHandler)
   func isBarcodeScanningRequired(for task: OnfleetDriver.Task) -> Swift.Bool
   var isBarcodeScanningEnabled: Swift.Bool { get }
@@ -1871,11 +1929,17 @@ public protocol DriverManaging : AnyObject {
   var isSelfAssignmentEnabled: Swift.Bool { get }
   var selfAssignableTasks: [OnfleetDriver.Task] { get }
   func selfAssign(task: OnfleetDriver.Task, completion: @escaping OnfleetDriver.SelfAssignTaskHandler)
+  func selfAssign(tasks: [OnfleetDriver.Task], _ completion: @escaping OnfleetDriver.SelfAssignTaskHandler)
   var tasksTouched$: OnfleetDriver.Subject.Publish<Swift.Void> { get set }
   var isChatEnabled: Swift.Bool { get }
   var isZendriveEnabled: Swift.Bool { get }
   var zendriveKey: Swift.String? { get }
   var scanditKey: Swift.String? { get }
+}
+public enum ImageURLBuilder {
+  public static func makeMedium(_ imageId: Swift.String) -> Foundation.URL
+  public static func makeSmall(_ imageId: Swift.String) -> Foundation.URL
+  public static func makeExtraSmall(_ imageId: Swift.String) -> Foundation.URL
 }
 extension Foundation.NSNotification.Name {
   public static let locationAuthorizationDenied: Foundation.Notification.Name
@@ -1892,11 +1956,11 @@ public protocol LocationManaging : AnyObject {
   var isAuthorizedAlways$: OnfleetDriver.ModelProperty<Swift.Bool> { get }
 }
 @frozen public enum VehicleType : Swift.String, Swift.Encodable {
-  case None
-  case Car
-  case Bicycle
-  case Motorcycle
-  case Truck
+  case none
+  case car
+  case bicycle
+  case motorcycle
+  case truck
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1904,14 +1968,22 @@ public protocol LocationManaging : AnyObject {
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Vehicle : OnfleetDriver.Model {
-  final public let vehicleDescription: OnfleetDriver.ModelProperty<Swift.String>
-  final public let licensePlate: OnfleetDriver.ModelProperty<Swift.String>
-  final public let color: OnfleetDriver.ModelProperty<Swift.String>
-  final public let vehicleType: OnfleetDriver.ModelProperty<OnfleetDriver.VehicleType>
-  public func getDescription() -> Swift.String
-  public func getLicensePlate() -> Swift.String
-  public func getColor() -> Swift.String
-  public func getVehicleType() -> OnfleetDriver.VehicleType
+  final public let vehicleDescription$: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let licensePlate$: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let color$: OnfleetDriver.ModelProperty<Swift.String?>
+  final public let type$: OnfleetDriver.ModelProperty<OnfleetDriver.VehicleType>
+  public var vehicleDescription: Swift.String? {
+    get
+  }
+  public var licensePlate: Swift.String? {
+    get
+  }
+  public var color: Swift.String? {
+    get
+  }
+  public var type: OnfleetDriver.VehicleType {
+    get
+  }
   @objc deinit
 }
 extension OnfleetDriver.ObservableType {
@@ -1920,19 +1992,32 @@ extension OnfleetDriver.ObservableType {
 @frozen public enum Subject {
 }
 extension OnfleetDriver.Subject {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Base<Element> : OnfleetDriver.Observable<Element>, OnfleetDriver.ObserverType {
+  @_inheritsConvenienceInitializers public class Base<Element> : OnfleetDriver.Observable<Element>, OnfleetDriver.ObserverType {
     public var isDisposed: Swift.Bool {
       get
     }
+    public init()
     public func on(_ element: Element)
-    override public func subscribe<Observer>(_ observer: Observer) -> OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
+    override public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
     public func dispose()
     @objc deinit
   }
 }
 extension OnfleetDriver.Subject {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Publish<Element> : OnfleetDriver.Subject.Base<Element> {
+  @_inheritsConvenienceInitializers final public class Publish<Element> : OnfleetDriver.Subject.Base<Element> {
     override final public func on(_ element: Element)
+    override public init()
+    @objc deinit
+  }
+}
+extension OnfleetDriver.Subject {
+  final public class Behavior<Element> : OnfleetDriver.Subject.Base<Element> {
+    final public var value: Element {
+      get
+    }
+    public init(_ element: Element)
+    override final public func on(_ element: Element)
+    override final public func subscribe<Observer>(_ observer: Observer) -> any OnfleetDriver.Disposable where Element == Observer.Element, Observer : OnfleetDriver.ObserverType
     @objc deinit
   }
 }
@@ -1950,7 +2035,7 @@ final public class DataStorage {
   @objc deinit
   final public var pathExtension: Swift.String
   final public var excludeFromBackup: Swift.Bool
-  public init(destinationDirectoryURL: Foundation.URL, fileManager: Foundation.FileManager = FileManager.default)
+  public init(destinationDirectoryURL: Foundation.URL, fileManager: Foundation.FileManager)
   final public func store(data: Foundation.Data, for identifier: Swift.String) throws
   final public func loadData(for identifier: Swift.String) throws -> Foundation.Data?
   final public func remove(for identifier: Swift.String) throws
@@ -2020,10 +2105,9 @@ extension OnfleetDriver.ObservableType {
 public struct ImageAttachment : Swift.Codable {
   public let id: Swift.String
   public let location: OnfleetDriver.FileLocation
-  public let phAssetLocalIdentifier: Swift.String?
-  public init(id: Swift.String, location: OnfleetDriver.FileLocation, phAssetLocalIdentifier: Swift.String? = nil)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public init(id: Swift.String, location: OnfleetDriver.FileLocation)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct PhotoAttachments : Swift.Codable {
   public var images: [OnfleetDriver.ImageAttachment]
@@ -2031,8 +2115,8 @@ public struct PhotoAttachments : Swift.Codable {
     get
   }
   public init(_ images: [OnfleetDriver.ImageAttachment])
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignatureAttachment : Swift.Codable {
   public let name: Swift.String
@@ -2041,8 +2125,8 @@ public struct SignatureAttachment : Swift.Codable {
     get
   }
   public init(name: Swift.String, image: OnfleetDriver.ImageAttachment)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct TaskCompletionDetails {
   @frozen public enum AgeVerification {
@@ -2050,7 +2134,7 @@ public struct TaskCompletionDetails {
     case driverLicense(OnfleetDriver.DriverLicense)
   }
   @frozen public enum Result {
-    case success(_: Swift.String?)
+    case success(_: Swift.String?, _: Swift.String?)
     case failure(_: Swift.String?, _: Swift.String?)
     public var isSuccess: Swift.Bool {
       get
@@ -2059,6 +2143,9 @@ public struct TaskCompletionDetails {
       get
     }
     public var failureReason: Swift.String? {
+      get
+    }
+    public var successNotes: Swift.String? {
       get
     }
     public var failureNotes: Swift.String? {
@@ -2082,8 +2169,8 @@ public struct Barcode : Swift.Equatable {
   public static func == (a: OnfleetDriver.Barcode, b: OnfleetDriver.Barcode) -> Swift.Bool
 }
 extension OnfleetDriver.Barcode : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol ResultWorkTask : OnfleetDriver.WorkTask {
   associatedtype Model
@@ -2096,7 +2183,7 @@ public protocol ResultWorkTask : OnfleetDriver.WorkTask {
   final public var isResumed: OnfleetDriver.Observable<Swift.Bool>
   final public var isCancelled: OnfleetDriver.Observable<Swift.Bool>
   final public var isFinished: OnfleetDriver.Observable<Swift.Bool>
-  final public var error: Swift.Error? {
+  final public var error: (any Swift.Error)? {
     get
   }
   final public var result: Swift.Result<Model, Error>? {
@@ -2138,19 +2225,15 @@ public protocol ResultWorkTask : OnfleetDriver.WorkTask {
   @objc override dynamic public init()
   @objc deinit
 }
-public class UserDefaultsPreferredOrgIdStorage {
-  public init(defaults: Foundation.UserDefaults)
-  public var preferredOrgId: Swift.String? {
-    get
-    set
-  }
-  @objc deinit
-}
 public struct ErrorFactory {
-  public static func error(_ code: Swift.Int, _ description: Swift.String?, _ underlaying: Swift.Error? = nil) -> Swift.Error
+  public static func error(_ code: Swift.Int, _ description: Swift.String?, _ underlaying: (any Swift.Error)? = nil) -> any Swift.Error
 }
 public protocol SensitiveFilesManaging : AnyObject {
   func removeAllSensitiveFiles()
+}
+@_hasMissingDesignatedInitializers final public class KeychainMigrator {
+  final public func migrate(from keychain1: OnfleetDriver.Keychain, to keychain2: OnfleetDriver.Keychain) throws
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Model : Swift.Hashable {
   @objc deinit
@@ -2166,15 +2249,15 @@ public protocol SensitiveFilesManaging : AnyObject {
   public var changeObservable: OnfleetDriver.Observable<Swift.String> {
     get
   }
-  public func subscribeOnChange(_ change: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
+  public func subscribeOnChange(_ change: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
   public var changeObservableWithChildren: OnfleetDriver.Observable<Swift.String> {
     get
   }
-  public func subscribeOnChangeWithChildren(_ change: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
+  public func subscribeOnChangeWithChildren(_ change: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
   public var deleteObservable: OnfleetDriver.Observable<Swift.Void> {
     get
   }
-  public func subscribeOnDelete(_ delete: @escaping () -> Swift.Void) -> OnfleetDriver.Disposable
+  public func subscribeOnDelete(_ delete: @escaping () -> Swift.Void) -> any OnfleetDriver.Disposable
   public static func == (lhs: OnfleetDriver.Model, rhs: OnfleetDriver.Model) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -2279,20 +2362,20 @@ public struct CompletedTask : Swift.Hashable {
   case failure(_: Foundation.NSError)
 }
 public protocol AttachmentsDelegate : AnyObject {
-  func attachmentsDidStartUploading(_ attachments: OnfleetDriver.AttachmentsManaging)
-  func attachments(_ attachments: OnfleetDriver.AttachmentsManaging, didUpdateProgress progress: Swift.Float)
-  func attachmentsDidFinishUploading(_ attachments: OnfleetDriver.AttachmentsManaging)
+  func attachmentsDidStartUploading(_ attachments: any OnfleetDriver.AttachmentsManaging)
+  func attachments(_ attachments: any OnfleetDriver.AttachmentsManaging, didUpdateProgress progress: Swift.Float)
+  func attachmentsDidFinishUploading(_ attachments: any OnfleetDriver.AttachmentsManaging)
 }
 public protocol AttachmentsManaging : AnyObject {
   var isUploadingInProgress: Swift.Bool { get }
-  var delegate: OnfleetDriver.AttachmentsDelegate? { get set }
+  var delegate: (any OnfleetDriver.AttachmentsDelegate)? { get set }
   func preparePhotoAttachment(imageUrl: Foundation.URL, taskShortId: Swift.String) -> OnfleetDriver.ImagePreparationResult
   func prepareSignatureAttachment(imageUrl: Foundation.URL, taskShortId: Swift.String) -> OnfleetDriver.ImagePreparationResult
 }
 public protocol KeychainStoreProtocol {
   func setString(_ value: Swift.String?, for key: Swift.String) throws
   func string(for key: Swift.String) throws -> Swift.String?
-  func removeAllStrings() throws
+  func removeAll() throws
 }
 extension OnfleetDriver.FetchingState : Swift.Sendable {}
 extension OnfleetDriver.LogoutReason : Swift.Equatable {}

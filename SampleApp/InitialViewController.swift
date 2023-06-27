@@ -40,13 +40,13 @@ final class InitialViewController : UIViewController, ActivityShowing {
     
     private func verifyAuthentication() {
         
-        guard session.isAuthenticated else {
+        guard self.session.isAuthenticated else {
             return
         }
         
         print("driver is logged in")
         
-        guard let pendingAccount = session.accounts.first(where: { $0.isPending }) else {
+        guard let pendingAccount = DriverContext.shared.session.accounts.first(where: { $0.isPending }) else {
             print("no pending account found, moving to main application flow...")
             showMainApplicationFlow()
             return
@@ -54,7 +54,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
         
         print("pending account found, prompting for invitation response...")
         showAlertPrompt(title: "Pending Invitation", message: "You were invited to join \(pendingAccount.organizationName) as a driver.", action: UIAlertAction(title: "Accept", style: .default, handler: { [weak self] _ in
-            self?.session.respondToInvitation(account: pendingAccount, response: .accept, completion: { result in
+            DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .accept, completion: { result in
                 switch result {
                 case .success:
                     //there might be more pending accounts
@@ -64,7 +64,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
                 }
             })
         }), cancel: UIAlertAction(title: "Reject", style: .destructive, handler: { [weak self] _ in
-            self?.session.respondToInvitation(account: pendingAccount, response: .reject, completion: { result in
+            DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .reject, completion: { result in
                 if case AccountInvitationResult.failure(let error) = result {
                     self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
                 }
@@ -92,7 +92,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
         }
         
         let credentials = Credentials(phoneNumber: PhoneNumber(E164: phoneNumber), password: password, usedAutoFill: false)
-        session.login(credentials: credentials, newPasswordProvider: { [weak self] provider in
+        self.session.login(credentials: credentials, newPasswordProvider: { [weak self] provider in
             print("prompting user for new password")
             self?.showNewPasswordPrompt(username: phoneNumber) { text, isCancelled in
                 if let text = text, text.isEmpty == false {
@@ -154,7 +154,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
     
     private func logOut(force: Bool) {
         print("logging out\(force == true ? " (by force)" : "")...")
-        session.logout(force: force) {
+        self.session.logout(force: force) {
             print("Logging out...")
         } completion: { [weak self] (result) in
             print("logout result: \(result)")
@@ -173,7 +173,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
             return
         }
         showActivity("Resetting Password...", animated: true)
-        session.resetPassword(for: PhoneNumber(E164: phoneNumber)) { [weak self] result in
+        self.session.resetPassword(for: PhoneNumber(E164: phoneNumber)) { [weak self] result in
             print("reset password result: \(result)")
             switch result {
             case .success:

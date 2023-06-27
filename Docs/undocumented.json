@@ -1,6 +1,2833 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 12,
+      "symbol": "HTTPError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 13,
+      "symbol": "HTTPError.api(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 14,
+      "symbol": "HTTPError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 15,
+      "symbol": "HTTPError.parsing(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 23,
+      "symbol": "HTTPError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 25,
+      "symbol": "HTTPError.apiError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 35,
+      "symbol": "HTTPError.isInvalidAuthError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 43,
+      "symbol": "HTTPError.isBadRequestError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 51,
+      "symbol": "HTTPError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 53,
+      "symbol": "HTTPError.isConnectionError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 75,
+      "symbol": "HTTPError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 76,
+      "symbol": "HTTPError.errorDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 90,
+      "symbol": "HTTPError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApi.swift",
+      "line": 11,
+      "symbol": "HttpApi",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApi.swift",
+      "line": 12,
+      "symbol": "HttpApi",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
+      "line": 14,
+      "symbol": "HttpApi.ApiError",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
+      "line": 56,
+      "symbol": "HttpApi.ApiError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
+      "line": 97,
+      "symbol": "AnalyticsPeriod.defaultPeriod",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
+      "line": 101,
+      "symbol": "AnalyticsPeriod.allSortedChronologically",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
+      "line": 105,
+      "symbol": "AnalyticsPeriod.upToMonthSortedChronologically",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
+      "line": 109,
+      "symbol": "AnalyticsPeriod.upToWeekSortedChronologically",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsPeriod.swift",
+      "line": 113,
+      "symbol": "AnalyticsPeriod.daySortedChronologically",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 12,
+      "symbol": "AnalyticsStorgateFileName",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 18,
+      "symbol": "AnalyticsStorgateFileName.init(period:sandboxId:appendPathExtension:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "line": 24,
+      "symbol": "AnalyticsStorgateFileName.createFileName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
+      "line": 10,
+      "symbol": "AnalyticsError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
+      "line": 14,
+      "symbol": "AnalyticsError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsTask.swift",
+      "line": 26,
+      "symbol": "AnalyticsError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Attachments/Image Upload/FileLocation.swift",
+      "line": 22,
+      "symbol": "FileLocation.prepared(path:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Loader/CompletedTasksRemoteLoaderTask.swift",
+      "line": 11,
+      "symbol": "CompletedTasksError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Loader/CompletedTasksRemoteLoaderTask.swift",
+      "line": 12,
+      "symbol": "CompletedTasksError.other(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 12,
+      "symbol": "CompletedTask",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 15,
+      "symbol": "CompletedTask",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 25,
+      "symbol": "CompletedTask.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 26,
+      "symbol": "CompletedTask.shortId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 27,
+      "symbol": "CompletedTask.pickupTask",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 28,
+      "symbol": "CompletedTask.completeAfter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 29,
+      "symbol": "CompletedTask.completeBefore",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 30,
+      "symbol": "CompletedTask.completionDetails",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 31,
+      "symbol": "CompletedTask.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 32,
+      "symbol": "CompletedTask.locationCoordinate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 33,
+      "symbol": "CompletedTask.destinationNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 35,
+      "symbol": "CompletedTask.destinationMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 45,
+      "symbol": "CompletedTask.address",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 46,
+      "symbol": "CompletedTask.wasGeocoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 47,
+      "symbol": "CompletedTask.useGps",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 48,
+      "symbol": "CompletedTask.recipient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 49,
+      "symbol": "CompletedTask.computed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 50,
+      "symbol": "CompletedTask.timeCreated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 51,
+      "symbol": "CompletedTask.startTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 52,
+      "symbol": "CompletedTask.timeLastModified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 53,
+      "symbol": "CompletedTask.attachments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 54,
+      "symbol": "CompletedTask.requestedBarcodes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 55,
+      "symbol": "CompletedTask.capturedBarcodes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 56,
+      "symbol": "CompletedTask.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 57,
+      "symbol": "CompletedTask.requirements",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 58,
+      "symbol": "CompletedTask.metadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 59,
+      "symbol": "CompletedTask.isSelfAssigned",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 60,
+      "symbol": "CompletedTask.isIdentityVerified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 73,
+      "symbol": "CompletedTask.Requirements",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 74,
+      "symbol": "CompletedTask.Requirements.signature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 75,
+      "symbol": "CompletedTask.Requirements.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 76,
+      "symbol": "CompletedTask.Requirements.photo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 77,
+      "symbol": "CompletedTask.Requirements.minimumAge",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 80,
+      "symbol": "CompletedTask.CompletionDetails",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 82,
+      "symbol": "CompletedTask.CompletionDetails.Event",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 83,
+      "symbol": "CompletedTask.CompletionDetails.Event.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 84,
+      "symbol": "CompletedTask.CompletionDetails.Event.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 87,
+      "symbol": "CompletedTask.CompletionDetails.success",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 88,
+      "symbol": "CompletedTask.CompletionDetails.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 89,
+      "symbol": "CompletedTask.CompletionDetails.failureReason",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 90,
+      "symbol": "CompletedTask.CompletionDetails.successReason",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 91,
+      "symbol": "CompletedTask.CompletionDetails.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 92,
+      "symbol": "CompletedTask.CompletionDetails.events",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 94,
+      "symbol": "CompletedTask.CompletionDetails.hasFailureReason",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 98,
+      "symbol": "CompletedTask.CompletionDetails.hasNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 102,
+      "symbol": "CompletedTask.CompletionDetails.completedByAdmin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 107,
+      "symbol": "CompletedTask.RecipientContainer",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 112,
+      "symbol": "CompletedTask.RecipientContainer.recipientName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 113,
+      "symbol": "CompletedTask.RecipientContainer.hasRecipients",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 114,
+      "symbol": "CompletedTask.RecipientContainer.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 116,
+      "symbol": "CompletedTask.RecipientContainer.metadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 119,
+      "symbol": "CompletedTask.Requirements",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 137,
+      "symbol": "CompletedTask.CompletionDetails",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 153,
+      "symbol": "CompletedTask.ComputedContainer",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 155,
+      "symbol": "CompletedTask.ComputedContainer.isAvailable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 158,
+      "symbol": "CompletedTask.ComputedContainer.distance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 159,
+      "symbol": "CompletedTask.ComputedContainer.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 162,
+      "symbol": "CompletedTask.Attachment",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 163,
+      "symbol": "CompletedTask.Attachment.attachmentType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 164,
+      "symbol": "CompletedTask.Attachment.attachmentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 164,
+      "symbol": "CompletedTask.CompletionDetails.Event",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 165,
+      "symbol": "CompletedTask.Attachment.status",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 178,
+      "symbol": "CompletedTask.RecipientContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 193,
+      "symbol": "CompletedTask.ComputedContainer",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 210,
+      "symbol": "CompletedTask.Attachment",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 11,
+      "symbol": "CompleteTaskError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 13,
+      "symbol": "CompleteTaskError.taskNotActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 14,
+      "symbol": "CompleteTaskError.taskAlreadyCompleted(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 15,
+      "symbol": "CompleteTaskError.missingProperties(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 16,
+      "symbol": "CompleteTaskError.invalidValues(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 17,
+      "symbol": "CompleteTaskError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 19,
+      "symbol": "CompleteTaskError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 29,
+      "symbol": "CompleteTaskError.isTaskAlreadyCompletedError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 36,
+      "symbol": "CompleteTaskError.httpError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 43,
+      "symbol": "CompleteTaskError.apiError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/CompleteTaskWorkTaskFactory.swift",
+      "line": 54,
+      "symbol": "CompleteTaskError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 30,
+      "symbol": "DriverLicense.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 31,
+      "symbol": "DriverLicense.documentType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 32,
+      "symbol": "DriverLicense.issuingCountry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 33,
+      "symbol": "DriverLicense.dob",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 34,
+      "symbol": "DriverLicense.dateIssued",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 35,
+      "symbol": "DriverLicense.expirationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 36,
+      "symbol": "DriverLicense.firstName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 37,
+      "symbol": "DriverLicense.middleName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 38,
+      "symbol": "DriverLicense.lastName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 40,
+      "symbol": "DriverLicense.init(id:documentType:issuingCountry:dob:dateIssued:expirationDate:firstName:middleName:lastName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 52,
+      "symbol": "DriverLicense.dateOfBirth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "line": 56,
+      "symbol": "DriverLicense.stringToDate(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 23,
+      "symbol": "ImageAttachment.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 24,
+      "symbol": "ImageAttachment.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 25,
+      "symbol": "ImageAttachment.init(id:location:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 38,
+      "symbol": "PhotoAttachments.images",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 39,
+      "symbol": "PhotoAttachments.urls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 43,
+      "symbol": "PhotoAttachments.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 55,
+      "symbol": "SignatureAttachment.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 56,
+      "symbol": "SignatureAttachment.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 57,
+      "symbol": "SignatureAttachment.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 60,
+      "symbol": "SignatureAttachment.init(name:image:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 77,
+      "symbol": "TaskCompletionDetails.AgeVerification.dateOfBirth(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 78,
+      "symbol": "TaskCompletionDetails.AgeVerification.driverLicense(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 202,
+      "symbol": "TaskCompletionDetails.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/DriverManaging.swift",
+      "line": 262,
+      "symbol": "DriverManaging.isTaskOrderEnforced",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 11,
+      "symbol": "DutyStatusError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 13,
+      "symbol": "DutyStatusError.locationPermissionsDenied(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 14,
+      "symbol": "DutyStatusError.activeTaskInOtherAccount(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 15,
+      "symbol": "DutyStatusError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 16,
+      "symbol": "DutyStatusError.other(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 18,
+      "symbol": "DutyStatusError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 27,
+      "symbol": "DutyStatusError.apiError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 35,
+      "symbol": "DutyStatusError.httpError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 43,
+      "symbol": "DutyStatusError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Duty Status/DutyStutusWorkTaskFactory.swift",
+      "line": 65,
+      "symbol": "DutyStatusError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 11,
+      "symbol": "SelfAssignError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 13,
+      "symbol": "SelfAssignError.taskAlreadySelfAssigned(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 14,
+      "symbol": "SelfAssignError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 16,
+      "symbol": "SelfAssignError.isTaskAlreadySelfAssignedError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 30,
+      "symbol": "SelfAssignError.apiError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 37,
+      "symbol": "SelfAssignError.httpError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Self-assign Task/SelfAssignWorkTaskFactory.swift",
+      "line": 45,
+      "symbol": "SelfAssignError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 12,
+      "symbol": "StartTaskError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 14,
+      "symbol": "StartTaskError.serviceNotAvailable(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 15,
+      "symbol": "StartTaskError.requirementsNotMet(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 16,
+      "symbol": "StartTaskError.taskCannotBeStarted(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 17,
+      "symbol": "StartTaskError.taskAlreadyStarted(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 18,
+      "symbol": "StartTaskError.driverOffDuty(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 19,
+      "symbol": "StartTaskError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 21,
+      "symbol": "StartTaskError.isTaskAlreadyStartedError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 28,
+      "symbol": "StartTaskError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 39,
+      "symbol": "StartTaskError.apiError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 50,
+      "symbol": "StartTaskError.httpError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Start Task/StartTaskWorkTaskFactory.swift",
+      "line": 58,
+      "symbol": "StartTaskError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 19,
+      "symbol": "DriverProfileDetails.Vehicle",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 20,
+      "symbol": "DriverProfileDetails.Vehicle.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 21,
+      "symbol": "DriverProfileDetails.Vehicle.licensePlate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 22,
+      "symbol": "DriverProfileDetails.Vehicle.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 23,
+      "symbol": "DriverProfileDetails.Vehicle.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 25,
+      "symbol": "DriverProfileDetails.Vehicle.none",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 26,
+      "symbol": "DriverProfileDetails.Vehicle.bicycle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 27,
+      "symbol": "DriverProfileDetails.Vehicle.car(description:plate:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 30,
+      "symbol": "DriverProfileDetails.Vehicle.truck(description:plate:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 33,
+      "symbol": "DriverProfileDetails.Vehicle.motorcycle(description:plate:color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 60,
+      "symbol": "DriverProfileDetails.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 61,
+      "symbol": "DriverProfileDetails.displayName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 62,
+      "symbol": "DriverProfileDetails.phone",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 63,
+      "symbol": "DriverProfileDetails.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 64,
+      "symbol": "DriverProfileDetails.capacity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 65,
+      "symbol": "DriverProfileDetails.vehicle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 67,
+      "symbol": "DriverProfileDetails.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 11,
+      "symbol": "UpdateProfileError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 13,
+      "symbol": "UpdateProfileError.phoneNumberInUse(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 14,
+      "symbol": "UpdateProfileError.missingProperties(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 15,
+      "symbol": "UpdateProfileError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 17,
+      "symbol": "UpdateProfileError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 25,
+      "symbol": "UpdateProfileError.isPhoneNumberInUseError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/UpdateProfileTask.swift",
+      "line": 32,
+      "symbol": "UpdateProfileError.httpError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Controller/Location.Tracker.swift",
+      "line": 18,
+      "symbol": "Location.TrackingMode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Controller/Location.Tracker.swift",
+      "line": 242,
+      "symbol": "Location.Tracker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 31,
+      "symbol": "LocationService.registeredRegions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 32,
+      "symbol": "LocationService.locationTracker(_:didUpdate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 33,
+      "symbol": "LocationService.locationTracker(_:didChangeMode:activeTaskId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 34,
+      "symbol": "LocationService.locationTracker(_:didExit:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 35,
+      "symbol": "LocationService.locationTrackerDidChangeAuthorization(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Location.Service.swift",
+      "line": 36,
+      "symbol": "LocationService.performPeriodicalHousekeeping()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Location/Services/Travel Monitoring/TravelMonitoringService.swift",
+      "line": 14,
+      "symbol": "Location.travelMonitoringLocationServiceId",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 15,
+      "symbol": "Address",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 17,
+      "symbol": "Address.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 18,
+      "symbol": "Address.apartment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 19,
+      "symbol": "Address.number",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 20,
+      "symbol": "Address.street",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 21,
+      "symbol": "Address.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 22,
+      "symbol": "Address.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 23,
+      "symbol": "Address.postalCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 24,
+      "symbol": "Address.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Address.swift",
+      "line": 40,
+      "symbol": "Address",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 13,
+      "symbol": "Destination",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 19,
+      "symbol": "Destination.location$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 20,
+      "symbol": "Destination.address$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 21,
+      "symbol": "Destination.notes$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 22,
+      "symbol": "Destination.wasGeocoded$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 23,
+      "symbol": "Destination.useGps$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 24,
+      "symbol": "Destination.metadata$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 25,
+      "symbol": "Destination.googlePlaceId$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 27,
+      "symbol": "Destination.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 31,
+      "symbol": "Destination.address",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 35,
+      "symbol": "Destination.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 39,
+      "symbol": "Destination.wasGeocoded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 43,
+      "symbol": "Destination.useGps",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 47,
+      "symbol": "Destination.metadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Destination.swift",
+      "line": 51,
+      "symbol": "Destination.googlePlaceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 11,
+      "symbol": "Metadata",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 13,
+      "symbol": "Metadata.ValueType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.array",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.boolean",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.number",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.object",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.other",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 14,
+      "symbol": "Metadata.ValueType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 17,
+      "symbol": "Metadata.Visibility",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 18,
+      "symbol": "Metadata.Visibility.api",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 18,
+      "symbol": "Metadata.Visibility.dashboard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 18,
+      "symbol": "Metadata.Visibility.other",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 18,
+      "symbol": "Metadata.Visibility.worker",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 21,
+      "symbol": "Metadata.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 22,
+      "symbol": "Metadata.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 23,
+      "symbol": "Metadata.subtype",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 24,
+      "symbol": "Metadata.visibility",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 25,
+      "symbol": "Metadata.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 26,
+      "symbol": "Metadata.valueHash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Metadata.swift",
+      "line": 44,
+      "symbol": "Metadata",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 13,
+      "symbol": "Model",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 31,
+      "symbol": "Model.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 32,
+      "symbol": "Model.timeLastModified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 33,
+      "symbol": "Model.timeCreated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 110,
+      "symbol": "Model.changeObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 114,
+      "symbol": "Model.subscribeOnChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 118,
+      "symbol": "Model.changeObservableWithChildren",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 122,
+      "symbol": "Model.subscribeOnChangeWithChildren(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 126,
+      "symbol": "Model.deleteObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Model.swift",
+      "line": 130,
+      "symbol": "Model.subscribeOnDelete(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 50,
+      "symbol": "ModelProperty",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 52,
+      "symbol": "ModelProperty.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 57,
+      "symbol": "ModelProperty.projectedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 68,
+      "symbol": "ModelProperty.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 232,
+      "symbol": "ModelProperty",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ModelProperty.swift",
+      "line": 247,
+      "symbol": "ModelProperty",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 20,
+      "symbol": "ObservableModel.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 21,
+      "symbol": "ObservableModel.timeLastModified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 22,
+      "symbol": "ObservableModel.timeCreated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 24,
+      "symbol": "ObservableModel.changeObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 25,
+      "symbol": "ObservableModel.changeObservableWithChildren",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/ObservableModel.swift",
+      "line": 26,
+      "symbol": "ObservableModel.deleteObservable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 28,
+      "symbol": "Organization.Billing",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 30,
+      "symbol": "Organization.Billing.legacyPlan",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 31,
+      "symbol": "Organization.Billing.testMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 32,
+      "symbol": "Organization.Billing.analyticsPeriodDuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 54,
+      "symbol": "Organization.CompletionReason",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 56,
+      "symbol": "Organization.CompletionReason.Status",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 57,
+      "symbol": "Organization.CompletionReason.Status.failure",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 57,
+      "symbol": "Organization.CompletionReason.Status.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 60,
+      "symbol": "Organization.CompletionReason.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 61,
+      "symbol": "Organization.CompletionReason.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 62,
+      "symbol": "Organization.CompletionReason.displayText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 63,
+      "symbol": "Organization.CompletionReason.completionStatus",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 64,
+      "symbol": "Organization.CompletionReason.requiresNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 98,
+      "symbol": "Organization.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 99,
+      "symbol": "Organization.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 100,
+      "symbol": "Organization.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 101,
+      "symbol": "Organization.config",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 102,
+      "symbol": "Organization.driverAppConfig",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 103,
+      "symbol": "Organization.enabledFeatures",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 104,
+      "symbol": "Organization.billing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 105,
+      "symbol": "Organization.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 106,
+      "symbol": "Organization.driverSupportEmail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 107,
+      "symbol": "Organization.taskCompletionReasons",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 166,
+      "symbol": "Organization.getName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 170,
+      "symbol": "Organization.getCountry()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 174,
+      "symbol": "Organization.getImage()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 178,
+      "symbol": "Organization.getImageUrlExtraSmall()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 183,
+      "symbol": "Organization.getImageUrlSmall()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 188,
+      "symbol": "Organization.getImageUrlMedium()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 193,
+      "symbol": "Organization.getOrgConfig()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 197,
+      "symbol": "Organization.getAppConfig()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 201,
+      "symbol": "Organization.getEnabledFeatures()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 205,
+      "symbol": "Organization.getBilling()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 209,
+      "symbol": "Organization.getEmail()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 213,
+      "symbol": "Organization.getDriverSupportEmail()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 217,
+      "symbol": "Organization.getTaskCompletionReasons()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 387,
+      "symbol": "UnitSystem",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 388,
+      "symbol": "UnitSystem.metric",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 389,
+      "symbol": "UnitSystem.imperial",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 391,
+      "symbol": "UnitSystem.isMetric",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 401,
+      "symbol": "Organization.getOrgConfigProperty(_:key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Organization.swift",
+      "line": 408,
+      "symbol": "Organization.getOrgConfigPreferredUnitType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 12,
+      "symbol": "Recipient",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 14,
+      "symbol": "Recipient.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 15,
+      "symbol": "Recipient.phone",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 16,
+      "symbol": "Recipient.notes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 17,
+      "symbol": "Recipient.skipSMSNotifications",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 18,
+      "symbol": "Recipient.metadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 51,
+      "symbol": "Recipient.getName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 55,
+      "symbol": "Recipient.getPhone()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 59,
+      "symbol": "Recipient.getNotes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 63,
+      "symbol": "Recipient.getSkipSMSNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Recipient.swift",
+      "line": 67,
+      "symbol": "Recipient.getMatadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 13,
+      "symbol": "RecipientContactMode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 14,
+      "symbol": "RecipientContactMode.VoiceCall",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 15,
+      "symbol": "RecipientContactMode.SMS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 60,
+      "symbol": "Task.Requirements.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 126,
+      "symbol": "Task.isFulfilled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 183,
+      "symbol": "Task.empty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 269,
+      "symbol": "Task.getDependencies()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 273,
+      "symbol": "Task.getDestination()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 277,
+      "symbol": "Task.getRecipients()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 281,
+      "symbol": "Task.hasRecipients",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 285,
+      "symbol": "Task.getNotes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 289,
+      "symbol": "Task.getShortId()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 293,
+      "symbol": "Task.getCompleteBefore()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 297,
+      "symbol": "Task.getCompleteAfter()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 301,
+      "symbol": "Task.getIsActive()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 305,
+      "symbol": "Task.getPickupTask()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 309,
+      "symbol": "Task.getCommConfig()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 313,
+      "symbol": "Task.getOverrides()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 317,
+      "symbol": "Task.getRequestedBarcodes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 321,
+      "symbol": "Task.hasAttachedBarcodes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 325,
+      "symbol": "Task.attachedBarcodesCount()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 329,
+      "symbol": "Task.getIsFulfilled()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 333,
+      "symbol": "Task.getScanOnlyRequiredBarcodes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 337,
+      "symbol": "Task.getIsSameOrgAsCreator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 341,
+      "symbol": "Task.getQuantity()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 345,
+      "symbol": "Task.getRequirements()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 349,
+      "symbol": "Task.getMetadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 353,
+      "symbol": "Task.getIsSelfAssignable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 357,
+      "symbol": "Task.getIsSelfAssigned()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 400,
+      "symbol": "Task.getPhoneNumberForPreferredRecipient(mode:onlyProxy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 404,
+      "symbol": "Task.getPhoneNumberForRecipient(index:mode:onlyProxy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 429,
+      "symbol": "Task.getMetadataForPreferredRecipient()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 433,
+      "symbol": "Task.getHasRecipientSignature()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Task.swift",
+      "line": 437,
+      "symbol": "Task.beginVoiceCallForRecipient(index:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 12,
+      "symbol": "VehicleType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 13,
+      "symbol": "VehicleType.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 14,
+      "symbol": "VehicleType.car",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 15,
+      "symbol": "VehicleType.bicycle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 16,
+      "symbol": "VehicleType.motorcycle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 17,
+      "symbol": "VehicleType.truck",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 34,
+      "symbol": "Vehicle.vehicleDescription$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 35,
+      "symbol": "Vehicle.licensePlate$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 36,
+      "symbol": "Vehicle.color$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 37,
+      "symbol": "Vehicle.type$",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 39,
+      "symbol": "Vehicle.vehicleDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 43,
+      "symbol": "Vehicle.licensePlate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 47,
+      "symbol": "Vehicle.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Model Data Manager/Model Manager/Model/Vehicle.swift",
+      "line": 51,
+      "symbol": "Vehicle.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Container/PreferredOrgIdStorage/Keychain/KeychainPreferredOrgIdStorage.swift",
+      "line": 23,
+      "symbol": "KeychainPreferredOrgIdStorage.preferredOrgId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Container/PreferredOrgIdStorage/Keychain/KeychainPreferredOrgIdStorage.swift",
+      "line": 44,
+      "symbol": "KeychainPreferredOrgIdStorage.init(keychain:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Controller/Account.swift",
+      "line": 36,
+      "symbol": "Account.organizationId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Controller/Account.swift",
+      "line": 37,
+      "symbol": "Account.organizationName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Controller/Account.swift",
+      "line": 40,
+      "symbol": "Account.userId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Accounting/Controller/Account.swift",
+      "line": 41,
+      "symbol": "Account.userPhoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 11,
+      "symbol": "LoginError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 12,
+      "symbol": "LoginError.accountUnaccessible(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 13,
+      "symbol": "LoginError.invalidCredentials(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 14,
+      "symbol": "LoginError.noAccountsAvailable(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 15,
+      "symbol": "LoginError.noOrganizations(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 16,
+      "symbol": "LoginError.invalidVerificationCode(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 17,
+      "symbol": "LoginError.tooManyAttempts(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 18,
+      "symbol": "LoginError.badDeviceTime(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 19,
+      "symbol": "LoginError.passwordUpdate(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 20,
+      "symbol": "LoginError.other(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Auth.swift",
+      "line": 22,
+      "symbol": "LoginError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Provision/Provision.swift",
+      "line": 11,
+      "symbol": "SMSCode",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/NewPasswordValueProvider.swift",
+      "line": 11,
+      "symbol": "NewPasswordResult",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
+      "line": 11,
+      "symbol": "SMSCodeVerificationResult",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
+      "line": 12,
+      "symbol": "SMSCodeVerificationResult.code(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
+      "line": 13,
+      "symbol": "SMSCodeVerificationResult.cancel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "line": 11,
+      "symbol": "ValueProvidingResult",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "line": 12,
+      "symbol": "ValueProvidingResult.success(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "line": 13,
+      "symbol": "ValueProvidingResult.failure(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "line": 14,
+      "symbol": "ValueProvidingResult.cancelled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Deauth/Logout/LogoutTask.swift",
+      "line": 11,
+      "symbol": "LogoutError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Deauth/Logout/LogoutTask.swift",
+      "line": 13,
+      "symbol": "LogoutError.dutyStatusFailed(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Deauth/Logout/LogoutTask.swift",
+      "line": 14,
+      "symbol": "LogoutError.other(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Deauth/Logout/LogoutTask.swift",
+      "line": 16,
+      "symbol": "LogoutError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Reset Password/ResetPasswordTask.swift",
+      "line": 11,
+      "symbol": "ResetPasswordError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Reset Password/ResetPasswordTask.swift",
+      "line": 13,
+      "symbol": "ResetPasswordError.invalidPhoneNumber(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Reset Password/ResetPasswordTask.swift",
+      "line": 14,
+      "symbol": "ResetPasswordError.http(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Reset Password/ResetPasswordTask.swift",
+      "line": 16,
+      "symbol": "ResetPasswordError.isInvalidPhoneNumberError",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/Authentication/Reset Password/ResetPasswordTask.swift",
+      "line": 23,
+      "symbol": "ResetPasswordError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 55,
+      "symbol": "Credentials.phoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 56,
+      "symbol": "Credentials.password",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 58,
+      "symbol": "Credentials.usedAutoFill",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 60,
+      "symbol": "Credentials.init(phoneNumber:password:usedAutoFill:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/Core/Session/SessionManaging.swift",
+      "line": 95,
+      "symbol": "PhoneNumber.init(E164:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver/OnfleetDriverSDK/Classes/DriverContext.swift",
+      "line": 38,
+      "symbol": "AppConfig.init(appKey:appVersion:appName:appGroup:keychainSharing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/peterstajger/git/onfleet/onfleet-driver"
+  "source_directory": "/Users/milanhorvatovic/Repositories/CodeReview/ios-driver"
 }

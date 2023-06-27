@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,6 +375,13 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>Task</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Task</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Model.html">Model</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/ObservableModel.html">ObservableModel</a></span></code></pre>
+
+                </div>
+              </div>
             <p>An observable model object representing an assigned or active task.</p>
 
 <p>See <code><a href="../Structs/CompletedTask.html">CompletedTask</a></code> for completed task model object.</p>
@@ -432,7 +396,7 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC12RequirementsC"></a>
                     <a name="//apple_ref/swift/Class/Requirements" class="dashAnchor"></a>
                     <a class="direct-link" href="../Classes/Task/Requirements.html">Requirements</a>
                     </code>
@@ -441,9 +405,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC5notesAA13ModelPropertyCySSSgGvp"></a>
                     <a name="//apple_ref/swift/Property/notes" class="dashAnchor"></a>
-                    <a class="token" href="#/">notes</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC5notesAA13ModelPropertyCySSSgGvp">notes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -454,15 +418,23 @@
                         <p>Notes for the task. Field length should not exceed 10,000 characters.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">notes</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC7shortIdAA13ModelPropertyCySSGvp"></a>
                     <a name="//apple_ref/swift/Property/shortId" class="dashAnchor"></a>
-                    <a class="token" href="#/">shortId</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC7shortIdAA13ModelPropertyCySSGvp">shortId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -473,15 +445,23 @@
                         <p>A short human readable ID of the task. Use this to refer task&rsquo;s id in UI.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shortId</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC13completeAfterAA13ModelPropertyCy10Foundation4DateVSgGvp"></a>
                     <a name="//apple_ref/swift/Property/completeAfter" class="dashAnchor"></a>
-                    <a class="token" href="#/">completeAfter</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC13completeAfterAA13ModelPropertyCy10Foundation4DateVSgGvp">completeAfter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -492,15 +472,23 @@
                         <p>A date for the earliest time the task should be completed.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">completeAfter</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Date</span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC14completeBeforeAA13ModelPropertyCy10Foundation4DateVSgGvp"></a>
                     <a name="//apple_ref/swift/Property/completeBefore" class="dashAnchor"></a>
-                    <a class="token" href="#/">completeBefore</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC14completeBeforeAA13ModelPropertyCy10Foundation4DateVSgGvp">completeBefore</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -511,15 +499,23 @@
                         <p>A date for the latest time the task should be completed.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">completeBefore</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Date</span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC11destinationAA13ModelPropertyCyAA11DestinationCGvp"></a>
                     <a name="//apple_ref/swift/Property/destination" class="dashAnchor"></a>
-                    <a class="token" href="#/">destination</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC11destinationAA13ModelPropertyCyAA11DestinationCGvp">destination</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -530,15 +526,23 @@
                         <p>Task&rsquo;s destination.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Destination.html">Destination</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC10recipientsAA13ModelPropertyCyAA0E5ArrayCyAA9RecipientCGGvp"></a>
                     <a name="//apple_ref/swift/Property/recipients" class="dashAnchor"></a>
-                    <a class="token" href="#/">recipients</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC10recipientsAA13ModelPropertyCyAA0E5ArrayCyAA9RecipientCGGvp">recipients</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -548,10 +552,18 @@
                       <div class="abstract">
                         <p>List of task&rsquo;s recipients.</p>
 
-<p>Note, that displayable recipient&rsquo;s name can be overriden by <code><a href="../Classes/Task.html#/overrides">overrides</a></code>. See
-<code><a href="../Classes/Task.html#/getNameForPreferredRecipient()">getNameForPreferredRecipient()</a></code> to conveniently get printable name of a recipient including
+<p>Note, that displayable recipient&rsquo;s name can be overriden by <code><a href="../Classes/Task.html#/s:13OnfleetDriver4TaskC9overridesAA13ModelPropertyCySDyS2SGGvp">overrides</a></code>. See
+<code><a href="../Classes/Task.html#/s:13OnfleetDriver4TaskC28getNameForPreferredRecipientSSSgyF">getNameForPreferredRecipient()</a></code> to conveniently get printable name of a recipient including
 overrides.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">recipients</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">ModelArray</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Recipient.html">Recipient</a></span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -559,9 +571,9 @@ overrides.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC8isActiveAA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isActive" class="dashAnchor"></a>
-                    <a class="token" href="#/">isActive</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC8isActiveAA13ModelPropertyCySbGvp">isActive</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -572,15 +584,23 @@ overrides.</p>
                         <p>Returns true if the task is active (started); false otherwise.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC06pickupC0AA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/pickupTask" class="dashAnchor"></a>
-                    <a class="token" href="#/">pickupTask</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC06pickupC0AA13ModelPropertyCySbGvp">pickupTask</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -591,15 +611,23 @@ overrides.</p>
                         <p>Returns true if the task is for pickup; false for drop off.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pickupTask</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC12requirementsAA13ModelPropertyCyAC12RequirementsCGvp"></a>
                     <a name="//apple_ref/swift/Property/requirements" class="dashAnchor"></a>
-                    <a class="token" href="#/">requirements</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC12requirementsAA13ModelPropertyCyAC12RequirementsCGvp">requirements</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -610,15 +638,23 @@ overrides.</p>
                         <p>Shows what kind of attachments must be provided prior to completing the task.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">requirements</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Task/Requirements.html">Requirements</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC9overridesAA13ModelPropertyCySDyS2SGGvp"></a>
                     <a name="//apple_ref/swift/Property/overrides" class="dashAnchor"></a>
-                    <a class="token" href="#/">overrides</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC9overridesAA13ModelPropertyCySDyS2SGGvp">overrides</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -633,15 +669,23 @@ recipientNotes and recipientSkipSMSNotifications. Please refer to our API docs f
 <a href="https://docs.onfleet.com/reference#create-task">https://docs.onfleet.com/reference#create-task</a></p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">overrides</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC17requestedBarcodesAA13ModelPropertyCySayAA14BarcodeRequestVGSgGvp"></a>
                     <a name="//apple_ref/swift/Property/requestedBarcodes" class="dashAnchor"></a>
-                    <a class="token" href="#/">requestedBarcodes</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC17requestedBarcodesAA13ModelPropertyCySayAA14BarcodeRequestVGSgGvp">requestedBarcodes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -653,23 +697,13 @@ recipientNotes and recipientSkipSMSNotifications. Please refer to our API docs f
 are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a></code> when completing a task.</p>
 
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/isFulfilled" class="dashAnchor"></a>
-                    <a class="token" href="#/">isFulfilled</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">requestedBarcodes</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/BarcodeRequest.html">BarcodeRequest</a></span><span class="p">]?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -677,9 +711,36 @@ are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskComple
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC11isFulfilledAA13ModelPropertyCySbGvp"></a>
+                    <a name="//apple_ref/swift/Property/isFulfilled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC11isFulfilledAA13ModelPropertyCySbGvp">isFulfilled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isFulfilled</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver4TaskC12organizationAA13ModelPropertyCySSGvp"></a>
                     <a name="//apple_ref/swift/Property/organization" class="dashAnchor"></a>
-                    <a class="token" href="#/">organization</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC12organizationAA13ModelPropertyCySSGvp">organization</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -690,15 +751,23 @@ are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskComple
                         <p>This task&rsquo;s creator&rsquo;s organization id</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">organization</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC8executorAA13ModelPropertyCySSGvp"></a>
                     <a name="//apple_ref/swift/Property/executor" class="dashAnchor"></a>
-                    <a class="token" href="#/">executor</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC8executorAA13ModelPropertyCySSGvp">executor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -709,15 +778,23 @@ are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskComple
                         <p>The id of the organization in charge of executing this task (creator delegates to executor)</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">executor</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC8quantityAA13ModelPropertyCySfSgGvp"></a>
                     <a name="//apple_ref/swift/Property/quantity" class="dashAnchor"></a>
-                    <a class="token" href="#/">quantity</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC8quantityAA13ModelPropertyCySfSgGvp">quantity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -728,15 +805,23 @@ are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskComple
                         <p>Number of items for the task</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Float</span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC8metadataAA13ModelPropertyCySayAA8MetadataVGGvp"></a>
                     <a name="//apple_ref/swift/Property/metadata" class="dashAnchor"></a>
-                    <a class="token" href="#/">metadata</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC8metadataAA13ModelPropertyCySayAA8MetadataVGGvp">metadata</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -748,15 +833,23 @@ are appended in <code><a href="../Structs/TaskCompletionDetails.html">TaskComple
 with them.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">metadata</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Metadata.html">Metadata</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC16isSelfAssignableAA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isSelfAssignable" class="dashAnchor"></a>
-                    <a class="token" href="#/">isSelfAssignable</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC16isSelfAssignableAA13ModelPropertyCySbGvp">isSelfAssignable</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,15 +860,23 @@ with them.</p>
                         <p>Boolean which is true if a task can be self-assigned</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isSelfAssignable</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC14isSelfAssignedAA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/isSelfAssigned" class="dashAnchor"></a>
-                    <a class="token" href="#/">isSelfAssigned</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC14isSelfAssignedAA13ModelPropertyCySbGvp">isSelfAssigned</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -786,15 +887,23 @@ with them.</p>
                         <p>Boolean which is true if a task has been self-assigned</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isSelfAssigned</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC24scanOnlyRequiredBarcodesAA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/scanOnlyRequiredBarcodes" class="dashAnchor"></a>
-                    <a class="token" href="#/">scanOnlyRequiredBarcodes</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC24scanOnlyRequiredBarcodesAA13ModelPropertyCySbGvp">scanOnlyRequiredBarcodes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -805,15 +914,23 @@ with them.</p>
                         <p>if true, only required barcodes can be scanned, additional must be ignored</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">scanOnlyRequiredBarcodes</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC21hasRecipientSignatureAA13ModelPropertyCySbGvp"></a>
                     <a name="//apple_ref/swift/Property/hasRecipientSignature" class="dashAnchor"></a>
-                    <a class="token" href="#/">hasRecipientSignature</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC21hasRecipientSignatureAA13ModelPropertyCySbGvp">hasRecipientSignature</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -824,15 +941,50 @@ with them.</p>
                         <p>if true, recipient signed task remotely and app does not need to send a signature</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hasRecipientSignature</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC12dependenciesAA13ModelPropertyCySaySSGGvp"></a>
+                    <a name="//apple_ref/swift/Property/dependencies" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC12dependenciesAA13ModelPropertyCySaySSGGvp">dependencies</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of dependencies, that represets Linked tasks</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt">String</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver4TaskC5emptyACyFZ"></a>
                     <a name="//apple_ref/swift/Method/empty()" class="dashAnchor"></a>
-                    <a class="token" href="#/">empty()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC5emptyACyFZ">empty()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -840,7 +992,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">empty</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Task</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -848,9 +1009,36 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC15getDependenciesSaySSGyF"></a>
+                    <a name="//apple_ref/swift/Method/getDependencies()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC15getDependenciesSaySSGyF">getDependencies()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDependencies</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver4TaskC14getDestinationAA0E0CyF"></a>
                     <a name="//apple_ref/swift/Method/getDestination()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getDestination()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC14getDestinationAA0E0CyF">getDestination()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -858,7 +1046,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDestination</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Destination.html">Destination</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -866,9 +1063,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC13getRecipientsSayAA9RecipientCGyF"></a>
                     <a name="//apple_ref/swift/Method/getRecipients()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getRecipients()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC13getRecipientsSayAA9RecipientCGyF">getRecipients()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -876,7 +1073,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRecipients</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Recipient.html">Recipient</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -884,9 +1090,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC13hasRecipientsSbvp"></a>
                     <a name="//apple_ref/swift/Property/hasRecipients" class="dashAnchor"></a>
-                    <a class="token" href="#/">hasRecipients</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC13hasRecipientsSbvp">hasRecipients</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -894,7 +1100,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasRecipients</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -902,9 +1117,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC8getNotesSSSgyF"></a>
                     <a name="//apple_ref/swift/Method/getNotes()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getNotes()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC8getNotesSSSgyF">getNotes()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -912,7 +1127,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNotes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -920,9 +1144,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC10getShortIdSSyF"></a>
                     <a name="//apple_ref/swift/Method/getShortId()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getShortId()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC10getShortIdSSyF">getShortId()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,7 +1154,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getShortId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -938,9 +1171,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC17getCompleteBefore10Foundation4DateVSgyF"></a>
                     <a name="//apple_ref/swift/Method/getCompleteBefore()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getCompleteBefore()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC17getCompleteBefore10Foundation4DateVSgyF">getCompleteBefore()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -948,7 +1181,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCompleteBefore</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -956,9 +1198,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC16getCompleteAfter10Foundation4DateVSgyF"></a>
                     <a name="//apple_ref/swift/Method/getCompleteAfter()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getCompleteAfter()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC16getCompleteAfter10Foundation4DateVSgyF">getCompleteAfter()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -966,7 +1208,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCompleteAfter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1225,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC11getIsActiveSbyF"></a>
                     <a name="//apple_ref/swift/Method/getIsActive()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getIsActive()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC11getIsActiveSbyF">getIsActive()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -984,7 +1235,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIsActive</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -992,9 +1252,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC09getPickupC0SbyF"></a>
                     <a name="//apple_ref/swift/Method/getPickupTask()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getPickupTask()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC09getPickupC0SbyF">getPickupTask()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1002,7 +1262,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPickupTask</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1010,9 +1279,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC13getCommConfigSDyS2SGyF"></a>
                     <a name="//apple_ref/swift/Method/getCommConfig()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getCommConfig()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC13getCommConfigSDyS2SGyF">getCommConfig()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1020,7 +1289,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCommConfig</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1306,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC12getOverridesSDyS2SGyF"></a>
                     <a name="//apple_ref/swift/Method/getOverrides()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getOverrides()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC12getOverridesSDyS2SGyF">getOverrides()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1038,7 +1316,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOverrides</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1046,9 +1333,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC20getRequestedBarcodesSayAA14BarcodeRequestVGSgyF"></a>
                     <a name="//apple_ref/swift/Method/getRequestedBarcodes()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getRequestedBarcodes()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC20getRequestedBarcodesSayAA14BarcodeRequestVGSgyF">getRequestedBarcodes()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1056,7 +1343,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRequestedBarcodes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/BarcodeRequest.html">BarcodeRequest</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1064,9 +1360,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC19hasAttachedBarcodesSbyF"></a>
                     <a name="//apple_ref/swift/Method/hasAttachedBarcodes()" class="dashAnchor"></a>
-                    <a class="token" href="#/">hasAttachedBarcodes()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC19hasAttachedBarcodesSbyF">hasAttachedBarcodes()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1074,7 +1370,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hasAttachedBarcodes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1387,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC21attachedBarcodesCountSiyF"></a>
                     <a name="//apple_ref/swift/Method/attachedBarcodesCount()" class="dashAnchor"></a>
-                    <a class="token" href="#/">attachedBarcodesCount()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC21attachedBarcodesCountSiyF">attachedBarcodesCount()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1092,7 +1397,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attachedBarcodesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1100,9 +1414,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC14getIsFulfilledSbyF"></a>
                     <a name="//apple_ref/swift/Method/getIsFulfilled()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getIsFulfilled()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC14getIsFulfilledSbyF">getIsFulfilled()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1110,7 +1424,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIsFulfilled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1118,9 +1441,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC27getScanOnlyRequiredBarcodesSbyF"></a>
                     <a name="//apple_ref/swift/Method/getScanOnlyRequiredBarcodes()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getScanOnlyRequiredBarcodes()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC27getScanOnlyRequiredBarcodesSbyF">getScanOnlyRequiredBarcodes()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1128,7 +1451,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getScanOnlyRequiredBarcodes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1136,9 +1468,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC21getIsSameOrgAsCreatorSbyF"></a>
                     <a name="//apple_ref/swift/Method/getIsSameOrgAsCreator()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getIsSameOrgAsCreator()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC21getIsSameOrgAsCreatorSbyF">getIsSameOrgAsCreator()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1146,7 +1478,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIsSameOrgAsCreator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1154,9 +1495,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC11getQuantitySfSgyF"></a>
                     <a name="//apple_ref/swift/Method/getQuantity()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getQuantity()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC11getQuantitySfSgyF">getQuantity()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1164,7 +1505,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getQuantity</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1172,9 +1522,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC15getRequirementsAC0E0CyF"></a>
                     <a name="//apple_ref/swift/Method/getRequirements()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getRequirements()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC15getRequirementsAC0E0CyF">getRequirements()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1182,7 +1532,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRequirements</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Task/Requirements.html">Requirements</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1190,9 +1549,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC11getMetadataSayAA0E0VGyF"></a>
                     <a name="//apple_ref/swift/Method/getMetadata()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getMetadata()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC11getMetadataSayAA0E0VGyF">getMetadata()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1200,7 +1559,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMetadata</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Metadata.html">Metadata</a></span><span class="p">]</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1208,9 +1576,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC19getIsSelfAssignableSbyF"></a>
                     <a name="//apple_ref/swift/Method/getIsSelfAssignable()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getIsSelfAssignable()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC19getIsSelfAssignableSbyF">getIsSelfAssignable()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1218,7 +1586,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIsSelfAssignable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1226,9 +1603,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC17getIsSelfAssignedSbyF"></a>
                     <a name="//apple_ref/swift/Method/getIsSelfAssigned()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getIsSelfAssigned()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC17getIsSelfAssignedSbyF">getIsSelfAssigned()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1236,7 +1613,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIsSelfAssigned</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1244,9 +1630,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC19getNameForRecipient5indexSSSgSi_tF"></a>
                     <a name="//apple_ref/swift/Method/getNameForRecipient(index:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">getNameForRecipient(index:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC19getNameForRecipient5indexSSSgSi_tF">getNameForRecipient(index:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1257,15 +1643,23 @@ with them.</p>
                         <p>does not include overrides</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNameForRecipient</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC28getNameForPreferredRecipientSSSgyF"></a>
                     <a name="//apple_ref/swift/Method/getNameForPreferredRecipient()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getNameForPreferredRecipient()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC28getNameForPreferredRecipientSSSgyF">getNameForPreferredRecipient()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1276,15 +1670,23 @@ with them.</p>
                         <p>includes also overrides</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNameForPreferredRecipient</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC20getNotesForRecipient5indexSSSgSi_tF"></a>
                     <a name="//apple_ref/swift/Method/getNotesForRecipient(index:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">getNotesForRecipient(index:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC20getNotesForRecipient5indexSSSgSi_tF">getNotesForRecipient(index:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1295,15 +1697,23 @@ with them.</p>
                         <p>this method implements logic for recipient override</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNotesForRecipient</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC29getNotesForPreferredRecipientSSSgyF"></a>
                     <a name="//apple_ref/swift/Method/getNotesForPreferredRecipient()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getNotesForPreferredRecipient()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC29getNotesForPreferredRecipientSSSgyF">getNotesForPreferredRecipient()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1314,15 +1724,23 @@ with them.</p>
                         <p>this method implements logic for recipient notes override</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNotesForPreferredRecipient</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC35getPhoneNumberForPreferredRecipient4mode9onlyProxySSSgAA0I11ContactModeO_SbtF"></a>
                     <a name="//apple_ref/swift/Method/getPhoneNumberForPreferredRecipient(mode:onlyProxy:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">getPhoneNumberForPreferredRecipient(mode:<wbr>onlyProxy:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC35getPhoneNumberForPreferredRecipient4mode9onlyProxySSSgAA0I11ContactModeO_SbtF">getPhoneNumberForPreferredRecipient(mode:<wbr>onlyProxy:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1330,7 +1748,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPhoneNumberForPreferredRecipient</span><span class="p">(</span><span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecipientContactMode.html">RecipientContactMode</a></span><span class="p">,</span> <span class="nv">onlyProxy</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1338,9 +1765,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC26getPhoneNumberForRecipient5index4mode9onlyProxySSSgSi_AA0H11ContactModeOSbtF"></a>
                     <a name="//apple_ref/swift/Method/getPhoneNumberForRecipient(index:mode:onlyProxy:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">getPhoneNumberForRecipient(index:<wbr>mode:<wbr>onlyProxy:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC26getPhoneNumberForRecipient5index4mode9onlyProxySSSgSi_AA0H11ContactModeOSbtF">getPhoneNumberForRecipient(index:<wbr>mode:<wbr>onlyProxy:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1348,7 +1775,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPhoneNumberForRecipient</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RecipientContactMode.html">RecipientContactMode</a></span><span class="p">,</span> <span class="nv">onlyProxy</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1356,9 +1792,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC32getMetadataForPreferredRecipientSayAA0E0VGyF"></a>
                     <a name="//apple_ref/swift/Method/getMetadataForPreferredRecipient()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getMetadataForPreferredRecipient()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC32getMetadataForPreferredRecipientSayAA0E0VGyF">getMetadataForPreferredRecipient()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1366,7 +1802,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMetadataForPreferredRecipient</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Metadata.html">Metadata</a></span><span class="p">]</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1374,9 +1819,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC24getHasRecipientSignatureSbyF"></a>
                     <a name="//apple_ref/swift/Method/getHasRecipientSignature()" class="dashAnchor"></a>
-                    <a class="token" href="#/">getHasRecipientSignature()</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC24getHasRecipientSignatureSbyF">getHasRecipientSignature()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1384,7 +1829,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getHasRecipientSignature</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1392,9 +1846,9 @@ with them.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver4TaskC26beginVoiceCallForRecipient5indexySi_tKF"></a>
                     <a name="//apple_ref/swift/Method/beginVoiceCallForRecipient(index:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">beginVoiceCallForRecipient(index:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver4TaskC26beginVoiceCallForRecipient5indexySi_tKF">beginVoiceCallForRecipient(index:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1402,7 +1856,16 @@ with them.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">beginVoiceCallForRecipient</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1416,7 +1879,7 @@ with them.</p>
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

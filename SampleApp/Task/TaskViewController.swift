@@ -142,14 +142,14 @@ class TaskViewController : UITableViewController, ActivityShowing {
         
         // destination address
         task.destination
-            .map({ $0.getAddress().formattedShortAddress })
+            .map({ $0.address.formattedShortAddress })
             .observe(on: .main)
             .subscribe({ [weak self] value in self?.destinationAddressLabel.text = value })
             .disposed(by: bag)
         
         // destination address
         task.destination
-            .map({ String(describing: $0.getLocation().formattedLocation) })
+            .map({ String(describing: $0.location.formattedLocation) })
             .observe(on: .main)
             .subscribe({ [weak self] value in self?.destinationLocationLabel.text = value })
             .disposed(by: bag)

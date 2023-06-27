@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           Onfleet Driver SDK for iOS
         </a>
-         (0% documented)
+         (46% documented)
       </p>
     
     
@@ -49,7 +49,7 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Config.html">Config</a>
+                <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
           </li>
@@ -137,9 +137,6 @@
                 <a class="nav-group-task-link" href="../Structs/CompletedTask/Attachment.html">– Attachment</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/CompletedTask/Identity.html">– Identity</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/TaskCompletionDetails.html">TaskCompletionDetails</a>
               </li>
               <li class="nav-group-task">
@@ -203,6 +200,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../installation.html">Installation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainPreferredOrgIdStorage.html">KeychainPreferredOrgIdStorage</a>
               </li>
             </ul>
           </li>
@@ -298,58 +303,10 @@
             <a class="nav-group-name-link" href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AccountsController.html">AccountsController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ActiveTaskStatistics.html">ActiveTaskStatistics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Analytics.html">Analytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AnalyticsPeriod.html">AnalyticsPeriod</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/AuthRefresher.html">AuthRefresher</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/DriverManager.html">DriverManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/FetchOptions.html">FetchOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpAnyEndpoint.html">HttpAnyEndpoint</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/HttpHeader.html">HttpHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/TrackingMode.html">– TrackingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/Tracker.html">– Tracker</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Location/RegionsMonitoringService.html">– RegionsMonitoringService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationData.html">LocationData</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/LocationService.html">LocationService</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/ModelDataFetcher.html">ModelDataFetcher</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
@@ -360,9 +317,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/Scheme.html">Scheme</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -370,6 +324,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AnalyticsStorgateFileName.html">AnalyticsStorgateFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppConfig.html">AppConfig</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BarcodeRequest.html">BarcodeRequest</a>
@@ -418,18 +375,25 @@
         <section class="section">
           <div class="section-content top-matter">
             <h1>DriverContext</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DriverContext</span></code></pre>
+
+                </div>
+              </div>
             <p>Main SDK object that provides access to all services.</p>
 
-<p>Access shared instance using <code><a href="../Classes/DriverContext.html#/shared">DriverContext.shared</a></code>. Before host app starts using <code>shared</code> it
+<p>Access shared instance using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC6sharedACvpZ">DriverContext.shared</a></code>. Before host app starts using <code>shared</code> it
 must intitate SDK early at application launching sequence. See
-<code><a href="../Classes/DriverContext.html#/initSDK(with:environment:app:loggers:)">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
-check <code><a href="../Classes/DriverContext.html#/isInitialized">DriverContext.isInitialized</a></code> property.</p>
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA9AppConfigV_AA11EnvironmentOSo13UIApplicationCSayAA19ONLoggerDestination_pGtF">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
+check <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC13isInitializedSbvp">DriverContext.isInitialized</a></code> property.</p>
 
 <p>DriverContext provides access to following core services:</p>
 
 <ol>
 <li><strong>authentication and accounts</strong> -
-After the SDK is initialized it is a good practice to check if <code><a href="../Protocols/SessionManaging.html#/isAuthenticated">SessionManaging.isAuthenticated</a></code>
+After the SDK is initialized it is a good practice to check if <code><a href="../Protocols/SessionManaging.html#/s:13OnfleetDriver15SessionManagingP15isAuthenticatedSbvp">SessionManaging.isAuthenticated</a></code>
 returns true. In that case the UI may show main driver/tasks flow, otherwise a login UI should be shown.
 See <code><a href="../Protocols/SessionManaging.html">SessionManaging</a></code> for more info.</li>
 <li><strong>driver and tasks</strong> -
@@ -447,14 +411,14 @@ and update UI accordingly. See <code><a href="../Protocols/AttachmentsManaging.h
 <li><strong>data fetching and observing</strong> -
 While SDK synchronizes data automatically on the background, sometimes there is a need to allow users
 to refetch data, for example if there is an error or lost of connection. Also data fetching event can be observed
-and updated UI accordingly. See <code><a href="../Classes/DriverContext.html#/refetchData(completion:)">DriverContext.refetchData(completion:)</a></code> and methods
+and updated UI accordingly. See <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF">DriverContext.refetchData(completion:)</a></code> and methods
 in dedicated section below for more info.</li>
 <li><strong>push notifications</strong> -
 Onfleet SDK uses push notfications to present important events in UI such as new tasks assigned or to
 sync some data on the background. It is responsibility of host app to check in app delegate if incoming
 push notification is owned by Onfleet using <code>DriverContext.canHandleRemoteNotification(_:)</code> and if yes it
-must be forwarded to the SDK using <code><a href="../Classes/DriverContext.html#/handleRemoteNotification(userInfo:)">DriverContext.handleRemoteNotification(userInfo:)</a></code>. Please don&rsquo;t forget to forward
-also APN device token using <code><a href="../Classes/DriverContext.html#/setRemoteNotificationsDeviceToken(_:)">DriverContext.setRemoteNotificationsDeviceToken(_:)</a></code>
+must be forwarded to the SDK using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF">DriverContext.handleRemoteNotification(userInfo:)</a></code>. Please don&rsquo;t forget to forward
+also APN device token using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF">DriverContext.setRemoteNotificationsDeviceToken(_:)</a></code>
 See methods in dedicated section below for more info.</li>
 </ol>
 
@@ -469,8 +433,17 @@ See methods in dedicated section below for more info.</li>
                   <div>
                     <code>
                     <a name="/"></a>
+                    <a name="//apple_ref/swift/Struct/Preconditions" class="dashAnchor"></a>
+                    <a class="direct-link" href="../Classes/DriverContext/Preconditions.html">Preconditions</a>
+                    </code>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver0B7ContextC6sharedACvpZ"></a>
                     <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
-                    <a class="token" href="#/">shared</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -481,6 +454,14 @@ See methods in dedicated section below for more info.</li>
                         <p>Shared instance of DriverContext.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">DriverContext</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -488,8 +469,8 @@ See methods in dedicated section below for more info.</li>
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/environment" class="dashAnchor"></a>
-                    <a class="token" href="#/">environment</a>
+                    <a name="//apple_ref/swift/Property/preconditions" class="dashAnchor"></a>
+                    <a class="token" href="#/">preconditions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -505,28 +486,9 @@ See methods in dedicated section below for more info.</li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
-                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
-                    <a class="token" href="#/">config</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Current SDK configuration.</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC13isInitializedSbvp"></a>
                     <a name="//apple_ref/swift/Property/isInitialized" class="dashAnchor"></a>
-                    <a class="token" href="#/">isInitialized</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC13isInitializedSbvp">isInitialized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -537,15 +499,23 @@ See methods in dedicated section below for more info.</li>
                         <p>Returns true if SDK has been already initialized; false otherwise.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isInitialized</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA9AppConfigV_AA11EnvironmentOSo13UIApplicationCSayAA19ONLoggerDestination_pGtF"></a>
                     <a name="//apple_ref/swift/Method/initSDK(with:environment:app:loggers:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA9AppConfigV_AA11EnvironmentOSo13UIApplicationCSayAA19ONLoggerDestination_pGtF">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -559,6 +529,76 @@ See methods in dedicated section below for more info.</li>
 first time. Ideal place is somewhere between application will/did finish launching. Subsequential
 initializing does nothing.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initSDK</span><span class="p">(</span><span class="n">with</span> <span class="nv">appConfig</span><span class="p">:</span> <span class="kt"><a href="../Structs/AppConfig.html">AppConfig</a></span><span class="p">,</span>
+                    <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span><span class="p">,</span>
+                    <span class="nv">app</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+                    <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">ONLoggerDestination</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appConfig</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A config object that provides information about host application.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An environment that will be used. Please note that supported environment
+is currently <code>Environment.production</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>app</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIApplication instance</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>loggers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>list of loggers that you can pass to SDK for logging. If you don&rsquo;t pass any loggers
+SDK will not log anything. You can use your own logger that must adopt <code>LoggerDestination</code>
+protocol or alternativelly you can simply pass <code>OSLogDestination</code> instance to use default
+logger.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -579,9 +619,9 @@ initializing does nothing.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC7sessionAA15SessionManaging_pvp"></a>
                     <a name="//apple_ref/swift/Property/session" class="dashAnchor"></a>
-                    <a class="token" href="#/">session</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC7sessionAA15SessionManaging_pvp">session</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -592,15 +632,23 @@ initializing does nothing.</p>
                         <p>Getter for <code><a href="../Protocols/SessionManaging.html">SessionManaging</a></code>. It is used for authentication and accounting.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SessionManaging.html">SessionManaging</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC13driverManagerAA0B8Managing_pvp"></a>
                     <a name="//apple_ref/swift/Property/driverManager" class="dashAnchor"></a>
-                    <a class="token" href="#/">driverManager</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC13driverManagerAA0B8Managing_pvp">driverManager</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -611,15 +659,23 @@ initializing does nothing.</p>
                         <p>Getter for <code><a href="../Protocols/DriverManaging.html">DriverManaging</a></code>. It is used for managing driver and tasks.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">driverManager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DriverManaging.html">DriverManaging</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC8locationAA16LocationManaging_pvp"></a>
                     <a name="//apple_ref/swift/Property/location" class="dashAnchor"></a>
-                    <a class="token" href="#/">location</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC8locationAA16LocationManaging_pvp">location</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -630,15 +686,23 @@ initializing does nothing.</p>
                         <p>Getter for <code><a href="../Protocols/LocationManaging.html">LocationManaging</a></code>. It is used for observing last location and permissions.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt"><a href="../Protocols/LocationManaging.html">LocationManaging</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC11attachmentsAA19AttachmentsManaging_pvp"></a>
                     <a name="//apple_ref/swift/Property/attachments" class="dashAnchor"></a>
-                    <a class="token" href="#/">attachments</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11attachmentsAA19AttachmentsManaging_pvp">attachments</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -649,15 +713,23 @@ initializing does nothing.</p>
                         <p>Getter for <code><a href="../Protocols/AttachmentsManaging.html">AttachmentsManaging</a></code>. It is used for observing background uploads of attachments.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">attachments</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AttachmentsManaging.html">AttachmentsManaging</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC8deviceIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/deviceId" class="dashAnchor"></a>
-                    <a class="token" href="#/">deviceId</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC8deviceIdSSvp">deviceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -665,8 +737,17 @@ initializing does nothing.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Getter for <code>deviceId</code> that is generated by SDK.</p>
+                        <p>Getter for <code>deviceId</code> that is generated by the SDK. It is guaranteed to return valid value once
+SDK is initialised. Otherwise it will return nil.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -687,9 +768,9 @@ initializing does nothing.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF"></a>
                     <a name="//apple_ref/swift/Method/setRemoteNotificationsDeviceToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">setRemoteNotificationsDeviceToken(_:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC33setRemoteNotificationsDeviceTokenyy10Foundation4DataVF">setRemoteNotificationsDeviceToken(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -700,15 +781,23 @@ initializing does nothing.</p>
                         <p>Pass device token once obtained from app delegate</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setRemoteNotificationsDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF"></a>
                     <a name="//apple_ref/swift/Method/canHandleRemoteNotification(userInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">canHandleRemoteNotification(userInfo:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">canHandleRemoteNotification(userInfo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -722,15 +811,46 @@ initializing does nothing.</p>
 passed to SDK using dedicated functions.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">canHandleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification&rsquo;s userInfo dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>false if SDK does not handle the push notification&rsquo;s <code>userInfo</code>.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF"></a>
                     <a name="//apple_ref/swift/Method/handleRemoteNotification(userInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">handleRemoteNotification(userInfo:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification8userInfoySDys11AnyHashableVypG_tF">handleRemoteNotification(userInfo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -741,9 +861,17 @@ passed to SDK using dedicated functions.</p>
                         <p>Handle remote notifications passed from app delegate.</p>
 
 <p>You can verify if SDK is capable of handling a push notification using
-<code><a href="../Classes/DriverContext.html#/canHandleRemoteNotification(userInfo:)">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
 don&rsquo;t have to pass push notification to the SDK.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -751,9 +879,9 @@ don&rsquo;t have to pass push notification to the SDK.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC24handleRemoteNotification_17completionHandlerySo14UNNotificationC_ySo0I19PresentationOptionsVctF"></a>
                     <a name="//apple_ref/swift/Method/handleRemoteNotification(_:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">handleRemoteNotification(_:<wbr>completionHandler:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC24handleRemoteNotification_17completionHandlerySo14UNNotificationC_ySo0I19PresentationOptionsVctF">handleRemoteNotification(_:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -766,9 +894,17 @@ don&rsquo;t have to pass push notification to the SDK.</p>
 <p>SDK must for certain notifications determine whether the banner/alert should be shown or hidden.</p>
 
 <p>You can verify if SDK is capable of handling a push notification using
-<code><a href="../Classes/DriverContext.html#/canHandleRemoteNotification(userInfo:)">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC27canHandleRemoteNotification8userInfoSbSDys11AnyHashableVypG_tF">DriverContext.canHandleRemoteNotification(userInfo:)</a></code>. If that method returns true you
 don&rsquo;t have to pass remote notification to the SDK.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleRemoteNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -789,9 +925,9 @@ don&rsquo;t have to pass remote notification to the SDK.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp"></a>
                     <a name="//apple_ref/swift/Property/isDataStale" class="dashAnchor"></a>
-                    <a class="token" href="#/">isDataStale</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp">isDataStale</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -802,15 +938,23 @@ don&rsquo;t have to pass remote notification to the SDK.</p>
                         <p>Returns true if data is stale. This can happen if there is no connection to remote server for some time.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isDataStale</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC9dataStateAA13ModelPropertyCyAA04DataE0OGvp"></a>
                     <a name="//apple_ref/swift/Property/dataState" class="dashAnchor"></a>
-                    <a class="token" href="#/">dataState</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC9dataStateAA13ModelPropertyCyAA04DataE0OGvp">dataState</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -821,15 +965,23 @@ don&rsquo;t have to pass remote notification to the SDK.</p>
                         <p>Reports state of current data.</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dataState</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/DataState.html">DataState</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC13fetchingStateAA13ModelPropertyCyAA08FetchingE0OGvp"></a>
                     <a name="//apple_ref/swift/Property/fetchingState" class="dashAnchor"></a>
-                    <a class="token" href="#/">fetchingState</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC13fetchingStateAA13ModelPropertyCyAA08FetchingE0OGvp">fetchingState</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -840,15 +992,23 @@ don&rsquo;t have to pass remote notification to the SDK.</p>
                         <p>Reporsts state of fetching operation</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fetchingState</span><span class="p">:</span> <span class="kt"><a href="../Classes/ModelProperty.html">ModelProperty</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/FetchingState.html">FetchingState</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF"></a>
                     <a name="//apple_ref/swift/Method/refetchData(completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">refetchData(completion:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC11refetchData10completionyys6ResultOyytAA05FetchE5ErrorOGcSg_tF">refetchData(completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -863,14 +1023,22 @@ to do any custom data fetching logic except when there is an error or data becom
 implement manual fetching mechanism like pull to refresh or similar, see
 <code>DriverContext.refetchData(completion:)</code> to refetch data any time .</p>
 
-<p>After some time data can become stale, for example if there is no internet for a while. See <code><a href="../Classes/DriverContext.html#/isDataStale">isDataStale</a></code>
-or observe <code><a href="../Classes/DriverContext.html#/dataState">dataState</a></code> for changes. SDK can fetch data any time and if you wish to observe this event
-you can subscribe to <code><a href="../Classes/DriverContext.html#/fetchingState">fetchingState</a></code>. It is a good practice to show in UI that data is stale, failed
+<p>After some time data can become stale, for example if there is no internet for a while. See <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC11isDataStaleSbvp">isDataStale</a></code>
+or observe <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC9dataStateAA13ModelPropertyCyAA04DataE0OGvp">dataState</a></code> for changes. SDK can fetch data any time and if you wish to observe this event
+you can subscribe to <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC13fetchingStateAA13ModelPropertyCyAA08FetchingE0OGvp">fetchingState</a></code>. It is a good practice to show in UI that data is stale, failed
 fetching or being fetched.</p>
 
 <p>Calling this method multiple times does not trigger multiple data fetch operations. Instead, completion
 block will be captured and called once the operation is complete.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refetchData</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">FetchDataHandler</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -884,7 +1052,7 @@ block will be captured and called once the operation is complete.</p>
     </div>
     <section class="footer">
       <p>© 2022 Onfleet, Inc.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>
