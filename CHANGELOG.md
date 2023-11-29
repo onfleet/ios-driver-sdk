@@ -1,6 +1,12 @@
 # Change Log
 Breaking changes and additions to to Onfleet SDK will be documented in this file.
 
+## [0.17.2] - 2023-11-29
+
+### Fixed
+
+- driverAvailable provides correct value when drive has got logged out
+
 ## [0.16] - 2023-04-26
 
 ### Added

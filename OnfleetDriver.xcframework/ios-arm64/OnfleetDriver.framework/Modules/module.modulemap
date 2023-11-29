@@ -1,5 +1,0 @@
-framework module OnfleetDriver {
-  umbrella header "OnfleetDriver.h"
-  export *
-  module * { export * }
-}
