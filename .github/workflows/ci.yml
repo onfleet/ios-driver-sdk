@@ -19,6 +19,13 @@ jobs:
     steps:
       - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
+      - name: Disable #error app-id gate (CI build only)
+        run: |
+          # SampleApp may ship `#error("insert your application_id here")` to force
+          # SDK consumers to set a real app id. Comment it out so CI can build.
+          # No-op when the directive is not present.
+          sed -i '' -E 's@^([[:space:]]*)#error@\1// #error@' SampleApp/AppDelegate.swift
+
       - name: Install pods
         run: pod install
 
