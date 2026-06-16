@@ -227,7 +227,3 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 5. in target's Signing & Capabilities update bundle identifier and team, please make sure that push notifications work
 6. build and run using `SampleApp` scheme
 7. when logging in for the first time please perform the [Device Provision](#Provision).
-
-### Continuous integration
-
-Every pull request to `master` builds the Sample App via GitHub Actions (see `.github/workflows/ci.yml`).
