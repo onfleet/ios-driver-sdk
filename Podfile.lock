@@ -1,0 +1,16 @@
+PODS:
+  - OnfleetDriver (0.17.2)
+
+DEPENDENCIES:
+  - OnfleetDriver (from `.`)
+
+EXTERNAL SOURCES:
+  OnfleetDriver:
+    :path: "."
+
+SPEC CHECKSUMS:
+  OnfleetDriver: 037810c6b7803fe3e2ec235239f9771236dfb95f
+
+PODFILE CHECKSUM: 5e3f8d838e94af12935f88a6deabda82e4cca230
+
+COCOAPODS: 1.16.2
