@@ -1,5 +1,5 @@
-platform :ios, '13.0' 
+platform :ios, '16.0'
 
-target 'SampleApp' do 
-  pod 'OnfleetDriver', :path => '.' 
+target 'SampleApp' do
+  pod 'OnfleetDriver', :path => '.'
 end

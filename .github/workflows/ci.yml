@@ -15,12 +15,34 @@ concurrency:
 jobs:
   build:
     name: build
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
+      - name: Disable #error app-id gate (CI build only)
+        run: |
+          # SampleApp may ship `#error("insert your application_id here")` to force
+          # SDK consumers to set a real app id. Comment it out so CI can build.
+          # No-op when the directive is not present.
+          sed -i '' -E 's@^([[:space:]]*)#error@\1// #error@' SampleApp/AppDelegate.swift
+
+      - name: Cache CocoaPods
+        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
+        with:
+          path: |
+            Pods
+            ~/Library/Caches/CocoaPods
+          key: ${{ runner.os }}-pods-${{ hashFiles('Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+
       - name: Install pods
-        run: pod install
+        # Always run: pod install integrates the local OnfleetDriver path pod and
+        # regenerates the gitignored SampleApp.xcworkspace the build needs. The
+        # cache only speeds up the dependency download; a cached Pods/ alone is
+        # not enough to build (skipping install yields "no such module
+        # 'OnfleetDriver'"). --deployment fails fast if Podfile.lock drifts.
+        run: pod install --deployment
 
       - name: Build (simulator, no signing)
         run: |
