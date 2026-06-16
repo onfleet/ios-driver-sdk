@@ -27,24 +27,21 @@ jobs:
           sed -i '' -E 's@^([[:space:]]*)#error@\1// #error@' SampleApp/AppDelegate.swift
 
       - name: Cache CocoaPods
-        id: cocoapods-cache
         uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
           path: |
             Pods
-            SampleApp.xcworkspace
             ~/Library/Caches/CocoaPods
-          key: ${{ runner.os }}-pods-${{ hashFiles('Podfile.lock', 'SampleApp.xcodeproj/project.pbxproj') }}
+          key: ${{ runner.os }}-pods-${{ hashFiles('Podfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-pods-
 
       - name: Install pods
-        # Skipped on an exact cache hit, where Pods/ and the gitignored
-        # SampleApp.xcworkspace are restored from the cache. On a miss or a
-        # restore-keys partial restore this runs and regenerates the workspace
-        # the build step needs. --deployment keeps CI reproducible: it errors if
-        # Podfile.lock is out of sync with Podfile and never mutates the lock.
-        if: steps.cocoapods-cache.outputs.cache-hit != 'true'
+        # Always run: pod install integrates the local OnfleetDriver path pod and
+        # regenerates the gitignored SampleApp.xcworkspace the build needs. The
+        # cache only speeds up the dependency download; a cached Pods/ alone is
+        # not enough to build (skipping install yields "no such module
+        # 'OnfleetDriver'"). --deployment fails fast if Podfile.lock drifts.
         run: pod install --deployment
 
       - name: Build (simulator, no signing)
