@@ -15,22 +15,9 @@ concurrency:
 jobs:
   build:
     name: build
-    runs-on: macos-26
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
-
-      - name: Select Xcode (from .xcode-version)
-        run: |
-          # macos-26 defaults to Xcode 26.5, which fails to resolve the prebuilt
-          # OnfleetDriver.xcframework under explicit module builds. Pin to the
-          # version in .xcode-version, resolving a partial (26.4) to the newest
-          # installed patch (26.4.1).
-          version="$(tr -d '[:space:]' < .xcode-version)"
-          app="/Applications/Xcode_${version}.app"
-          [ -d "$app" ] || app="$(ls -d /Applications/Xcode_${version}*.app | sort -V | tail -1)"
-          echo "Using $app"
-          sudo xcode-select -s "$app/Contents/Developer"
-          xcodebuild -version
 
       - name: Disable #error app-id gate (CI build only)
         run: |
