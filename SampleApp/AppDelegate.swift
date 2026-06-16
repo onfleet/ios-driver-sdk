@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let useApnSandbox = false
 #endif
         
-        #error("insert your application_id here")
+        //Replace with your Onfleet application id. The sample compiles with the
+        //placeholder but will not authenticate against Onfleet until you set a real id.
         let applicationId = "YOUR_APP_ID_HERE"
         let logLevel = ONLogger.LogLevel.warning
         let environment = Environment.production(useApnSandbox: useApnSandbox)

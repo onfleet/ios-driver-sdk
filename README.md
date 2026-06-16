@@ -223,7 +223,11 @@ This repository contains `Sample App` project that integrates Driver SDK. It pro
 1. clone `onfleet/ios-driver-sdk` repository using  `git clone git@github.com:onfleet/ios-driver-sdk.git`
 2. open root directory and install pods using `pod install`
 3. open `SampleApp.xcworkspace` in Xcode
-4. in `AppDelegate.swift` file add your Onfleet **application_id**
+4. in `AppDelegate.swift` file replace the `applicationId` placeholder with your Onfleet **application_id** (the project compiles with the placeholder, but a real id is required to log in and run against Onfleet)
 5. in target's Signing & Capabilities update bundle identifier and team, please make sure that push notifications work
 6. build and run using `SampleApp` scheme
 7. when logging in for the first time please perform the [Device Provision](#Provision).
+
+### Continuous integration
+
+Every pull request to `master` builds the Sample App via GitHub Actions (see `.github/workflows/ci.yml`).
