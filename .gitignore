@@ -1,10 +1,20 @@
 # Mac OS
 .DS_Store
 
-# Cocoapods
+# CocoaPods — restored by `pod install`
 Pods
 
-# Project
+# Build output (regenerated)
+DerivedData
+.derived-data-log-*
+
+# CocoaPods generates the workspace on `pod install`
 SampleApp.xcworkspace
+
+# User-specific Xcode state
 SampleApp.xcodeproj/project.xcworkspace/xcuserdata
 SampleApp.xcodeproj/xcuserdata
+
+# NOTE: SampleApp.xcodeproj and Derived/ are intentionally committed. They are produced
+# by `tuist generate` at deploy time so integrators can open and build the sample with
+# just `pod install` — no Tuist required. Regenerate them from Project.swift if needed.
