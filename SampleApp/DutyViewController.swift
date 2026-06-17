@@ -2,127 +2,157 @@
 //  DutyViewController.swift
 //  SampleApp
 //
-//  Created by Peter Stajger on 14/01/2021.
-//
 
 import UIKit
-import CoreLocation
-
 import OnfleetDriver
 
-protocol DutyViewControllerDelegate {
-    func dutyViewController(_ controller: DutyViewController, shouldLogOut sender: Any)
-}
+final class DutyViewController: UIViewController, ActivityShowing {
 
-final class DutyViewController : UIViewController, ActivityShowing {
-    
     var activityAlert: UIAlertController?
-    @IBOutlet private weak var dutySwitch: UISwitch!
-    
-    private let session = DriverContext.shared.session
-    private let driverManager = DriverContext.shared.driverManager
-    private let location = DriverContext.shared.location
-    private let bag = OnfleetDriver.DisposeBag()
-    
+
+    private let dutyStatusManager: any DutyStatusManagerProtocol
+    private let tasksManager: any TasksManagerProtocol
+    private let driverManager: DriverManagerProtocol
+    private let organizationManager: OrganizationManagerProtocol
+
+    private let dutySwitch = UISwitch()
+    private var observationTask: Task<Void, Never>?
+
+    private let onDutyChild: TasksViewController
+    private let offDutyChild = OffDutyViewController()
+
+    // MARK: - Init
+
+    init(
+        dutyStatusManager: any DutyStatusManagerProtocol,
+        tasksManager: any TasksManagerProtocol,
+        driverManager: DriverManagerProtocol,
+        organizationManager: OrganizationManagerProtocol
+    ) {
+        self.dutyStatusManager = dutyStatusManager
+        self.tasksManager = tasksManager
+        self.driverManager = driverManager
+        self.organizationManager = organizationManager
+        self.onDutyChild = TasksViewController(tasksManager: tasksManager)
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { fatalError() }
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = driverManager.driver?.organization.getName()
-        dutySwitch.addTarget(self, action: #selector(dutySwitchValueChanged(sender:)), for: .valueChanged)
-        
-        let dutyStatusDriver = driverManager.onDuty$.observe(on: .main)
-        
-        dutyStatusDriver.filter({ $0 == true }).subscribe({ [weak self] _ in
-            self?.updateInterfaceOnDuty()
-        }).disposed(by: bag)
-        
-        dutyStatusDriver.filter({ $0 == false }).subscribe({ [weak self] _ in
-            self?.updateInterfaceOffDuty()
-        }).disposed(by: bag)
-        
-        driverManager.onDuty$
-            .observe(on: .main)
-            .subscribe({ [weak self] value in self?.dutySwitch.isOn = value })
-            .disposed(by: bag)
-        
-        location.isFullyAuthorized$
-            .filter({ $0 == false })
-            .subscribe({ [weak self] _ in
-                guard let self = self else { return }
-                guard self.driverManager.isOnDuty else { return }
-                print("going off duty due to insufficient location permissions...")
-                self.driverManager.setDutyStatus(goOnDuty: false) { result in
-                    print("duty status result: \(result)")
-                    self.hideActivityIfNeeded() {
-                        if case Result.failure(let error) = result {
-                            self.dutySwitch.isOn = false
-                            self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
-                        } else {
-                            self.showAlert(title: "Off Duty", message: "You went off duty due to insufficient location permissions", animated: true)
-                        }
-                    }
-                }
-            }).disposed(by: bag)
+        view.backgroundColor = .systemBackground
+        title = "New API"
+        setupNavigationBar()
+        setupDutySwitch()
+        setupChildViewControllers()
     }
-    
-    @objc private func dutySwitchValueChanged(sender: UISwitch) {
-        
-        if location.isFullyAuthorized == false && sender.isOn {
-            CLLocationManager().requestAlwaysAuthorization()
-        }
-        
-        print("chaning duty status due to user action...")
-        self.showActivity("Going \(sender.isOn ? "on" : "off") duty...", animated: true)
-        self.driverManager.setDutyStatus(goOnDuty: self.dutySwitch.isOn) { result in
-            print("duty status result: \(result)")
-            self.hideActivityIfNeeded() {
-                if case Result.failure(let error) = result {
-                    sender.isOn = !sender.isOn
-                    switch error {
-                    case .locationPermissionsDenied:
-                        self.showAlert(title: "Insufficient Location Access", message: "Our app requires Location Access 'Always' and Precise Location 'On' in order to work properly.", animated: true, okTitle: "Open Settings") { _ in
-                            let settingsUrl = URL(string: UIApplication.openSettingsURLString)!
-                            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
-                        }
-                    default:
-                        self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
-                    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        startObserving()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        observationTask?.cancel()
+        observationTask = nil
+    }
+
+    // MARK: - Setup
+
+    private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Driver Info",
+            style: .plain,
+            target: self,
+            action: #selector(showDriverInfo)
+        )
+    }
+
+    private func setupDutySwitch() {
+        dutySwitch.addTarget(self, action: #selector(dutySwitchChanged), for: .valueChanged)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: dutySwitch)
+    }
+
+    private func setupChildViewControllers() {
+        addChild(onDutyChild)
+        view.addSubview(onDutyChild.view)
+        onDutyChild.view.frame = view.bounds
+        onDutyChild.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        onDutyChild.didMove(toParent: self)
+
+        addChild(offDutyChild)
+        view.addSubview(offDutyChild.view)
+        offDutyChild.view.frame = view.bounds
+        offDutyChild.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        offDutyChild.didMove(toParent: self)
+
+        // start with off-duty visible until we get real state
+        showOffDuty()
+    }
+
+    // MARK: - Observation
+
+    private func startObserving() {
+        observationTask = Task { [weak self, dutyStatusManager] in
+            for await state in dutyStatusManager.dutyStatusState {
+                guard !Task.isCancelled else { return }
+                await MainActor.run { [weak self] in
+                    self?.apply(dutyStatusState: state)
                 }
             }
         }
     }
-    
-    @IBAction private func logOut(sender: Any) {
-        
-        guard driverManager.activeTask == nil else {
-            showAlert(title: "Can't log out while there is an active task", message: nil, animated: true)
-            return
-        }
-        
-        NotificationCenter.default.post(name: Notification.Name("DutyViewControllerDidLogOutNotification"), object: self)
-    }
-}
 
-extension DutyViewController {
-    
-    private var tasksViewController: TasksViewController {
-        return children[0] as! TasksViewController
+    private func apply(dutyStatusState state: Onfleet.DutyStatusState) {
+        let isOnDuty = state.status?.isOnDuty ?? false
+        dutySwitch.setOn(isOnDuty, animated: true)
+        if isOnDuty {
+            showOnDuty()
+        } else {
+            showOffDuty()
+        }
     }
-    
-    private var offDutyViewController: OffDutyViewController {
-        return children[1] as! OffDutyViewController
+
+    private func showOnDuty() {
+        view.bringSubviewToFront(onDutyChild.view)
+        onDutyChild.view.isHidden = false
+        offDutyChild.view.isHidden = true
     }
-    
-    private func updateInterfaceOnDuty() {
-        offDutyViewController.view.isHidden = true
-        tasksViewController.view.isHidden = false
-        tasksViewController.view.frame = view.bounds
-        view.insertSubview(tasksViewController.view, aboveSubview: offDutyViewController.view)
+
+    private func showOffDuty() {
+        view.bringSubviewToFront(offDutyChild.view)
+        offDutyChild.view.isHidden = false
+        onDutyChild.view.isHidden = true
     }
-    
-    private func updateInterfaceOffDuty() {
-        tasksViewController.view.isHidden = true
-        offDutyViewController.view.isHidden = false
-        offDutyViewController.view.frame = view.bounds
-        view.insertSubview(offDutyViewController.view, aboveSubview: tasksViewController.view)
+
+    // MARK: - Actions
+
+    @objc private func dutySwitchChanged() {
+        let goOnDuty = dutySwitch.isOn
+        showActivity("Going \(goOnDuty ? "on" : "off") duty...", animated: true)
+        Task { @MainActor [weak self, dutyStatusManager] in
+            guard let self else { return }
+            do {
+                try await dutyStatusManager.setDutyStatus(goOnDuty: goOnDuty)
+                self.hideActivityIfNeeded()
+            } catch {
+                self.hideActivityIfNeeded()
+                self.dutySwitch.setOn(!goOnDuty, animated: true)
+                self.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+            }
+        }
+    }
+
+    @objc private func showDriverInfo() {
+        let vc = DriverInfoViewController(
+            driverManager: driverManager,
+            organizationManager: organizationManager
+        )
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

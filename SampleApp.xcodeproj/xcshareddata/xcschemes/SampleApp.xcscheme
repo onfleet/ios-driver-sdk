@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1400"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "615D6EED258B86BC00D11038"
+               BlueprintIdentifier = "69D3C2A73C3237C27B28F505"
                BuildableName = "SampleApp.app"
                BlueprintName = "SampleApp"
                ReferencedContainer = "container:SampleApp.xcodeproj">
@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      disableMainThreadChecker = "YES">
       <Testables>
       </Testables>
    </TestAction>
@@ -44,7 +45,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "615D6EED258B86BC00D11038"
+            BlueprintIdentifier = "69D3C2A73C3237C27B28F505"
             BuildableName = "SampleApp.app"
             BlueprintName = "SampleApp"
             ReferencedContainer = "container:SampleApp.xcodeproj">
@@ -61,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "615D6EED258B86BC00D11038"
+            BlueprintIdentifier = "69D3C2A73C3237C27B28F505"
             BuildableName = "SampleApp.app"
             BlueprintName = "SampleApp"
             ReferencedContainer = "container:SampleApp.xcodeproj">

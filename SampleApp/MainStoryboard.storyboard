@@ -83,7 +83,7 @@
         <!--Title-->
         <scene sceneID="F7g-Ln-o6E">
             <objects>
-                <viewController id="YE5-ga-8Em" customClass="DutyViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YE5-ga-8Em" customClass="LegacyDutyViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tfs-5r-sXl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,13 +138,13 @@
         <!--Tasks View Controller-->
         <scene sceneID="o65-lH-njG">
             <objects>
-                <tableViewController id="QE6-vD-k1P" customClass="TasksViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QE6-vD-k1P" customClass="LegacyTasksViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ro5-bE-A2a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TaskCellId" rowHeight="77" id="JFo-hH-SKS" customClass="TaskTableViewCell" customModule="SampleApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TaskCellId" rowHeight="77" id="JFo-hH-SKS" customClass="LegacyTaskTableViewCell" customModule="SampleApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="375" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JFo-hH-SKS" id="dwz-5Y-1Cs">
@@ -216,7 +216,7 @@
         <!--Off Duty View Controller-->
         <scene sceneID="dgx-MG-rXX">
             <objects>
-                <viewController id="IfG-GR-kQ0" customClass="OffDutyViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IfG-GR-kQ0" customClass="LegacyOffDutyViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a8A-cY-XiY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
         <!--Navigation Controller-->
         <scene sceneID="PsO-6o-ivy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2pI-q0-gSp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2pI-q0-gSp" storyboardIdentifier="LegacyDutyNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhP-9O-cpb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -380,7 +380,7 @@
         <!--Task View Controller-->
         <scene sceneID="zj6-Eb-G4h">
             <objects>
-                <tableViewController id="QZ2-q0-0RE" customClass="TaskViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QZ2-q0-0RE" customClass="LegacyTaskViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3bV-qg-19j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1180"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

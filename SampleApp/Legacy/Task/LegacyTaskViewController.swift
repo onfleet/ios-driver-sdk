@@ -1,5 +1,5 @@
 //
-//  TaskViewController.swift
+//  LegacyTaskViewController.swift
 //  SampleApp
 //
 //  Created by Peter Stajger on 29/04/2021.
@@ -9,10 +9,10 @@ import UIKit
 
 import OnfleetDriver
 
-class TaskViewController : UITableViewController, ActivityShowing {
+class LegacyTaskViewController : UITableViewController, ActivityShowing {
     
     var driverManager: DriverManaging!
-    var task: Task!
+    var task: Legacy.Task!
     
     private var bag = OnfleetDriver.DisposeBag()
     
@@ -91,11 +91,11 @@ class TaskViewController : UITableViewController, ActivityShowing {
                 let eligibleForSelfAssignment = isSelfAssignable && !isActive
                 let eligibleForCompletion = isActive
                 if eligibleForActivation {
-                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .done, target: self, action: #selector(TaskViewController.startTask(sender:)))
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .done, target: self, action: #selector(LegacyTaskViewController.startTask(sender:)))
                 } else if eligibleForSelfAssignment {
-                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Claim", style: .done, target: self, action: #selector(TaskViewController.selfAssignTask(sender:)))
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Claim", style: .done, target: self, action: #selector(LegacyTaskViewController.selfAssignTask(sender:)))
                 } else if eligibleForCompletion {
-                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Complete", style: .done, target: self, action: #selector(TaskViewController.completeTask(sender:)))
+                    self?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Complete", style: .done, target: self, action: #selector(LegacyTaskViewController.completeTask(sender:)))
                 }
             }).disposed(by: bag)
         
@@ -176,9 +176,9 @@ class TaskViewController : UITableViewController, ActivityShowing {
         task.requirements
             .observe(on: .main)
             .subscribe({ [weak self] requirements in
-            self?.requirementsSigntureLabel.text = requirements.signature ? "required" : "optional"
-            self?.requirementsPhotoLabel.text = requirements.photo ? "required" : "optional"
-            self?.requirementsNotesLabel.text = requirements.notes ? "required" : "optional"
+            self?.requirementsSigntureLabel.text = requirements.signature == true ? "required" : (requirements.signature == false ? "optional" : "hidden")
+            self?.requirementsPhotoLabel.text = requirements.photo == true ? "required" : (requirements.photo == false ? "optional" : "hidden")
+            self?.requirementsNotesLabel.text = requirements.notes == true ? "required" : (requirements.notes == false ? "optional" : "hidden")
             self?.requirementsMinimumAgeLabel.text = requirements.minimumAge != nil ? "\(requirements.minimumAge!)+" : "none"
         }).disposed(by: bag)
         
@@ -197,17 +197,8 @@ class TaskViewController : UITableViewController, ActivityShowing {
         }).disposed(by: bag)
         
         // pickup or dropoff task type
-        task.pickupTask
-            .map({ $0 == true ? "Pickup" : "Dropoff" })
-            .subscribe({ [weak self] value in self?.detailsTaskTypeLabel.text = value })
-            .disposed(by: bag)
-        
-        // highlight cell on change
-        task.pickupTask
-            .skip(1)
-            .observe(on: .main)
-            .subscribe({ [weak self] _ in self?.highlightView(self!.detailsTaskTypeLabel, animated: true)
-        }).disposed(by: bag)
+        // task.type is Onfleet.TaskType (not a ModelProperty); read it directly
+        detailsTaskTypeLabel.text = task.type.isPickUp ? "Pickup" : "Dropoff"
         
         // complete before
         task.completeBefore
@@ -321,7 +312,7 @@ extension BinaryFloatingPoint {
     }
 }
 
-private extension Optional where Wrapped == Float {
+private extension Optional where Wrapped == Double {
     
     func formattedDecimal(default: String = "-") -> String {
         switch self {

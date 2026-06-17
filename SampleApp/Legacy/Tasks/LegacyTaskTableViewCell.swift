@@ -1,5 +1,5 @@
 //
-//  TaskTableViewCell.swift
+//  LegacyTaskTableViewCell.swift
 //  SampleApp
 //
 //  Created by Peter Stajger on 29/04/2021.
@@ -16,14 +16,14 @@ class CircleView : UIView {
     }
 }
 
-class TaskTableViewCell : UITableViewCell {
+class LegacyTaskTableViewCell : UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var circleView: UIView!
 }
 
-extension TaskTableViewCell {
-    func update(with task: Task?) {
+extension LegacyTaskTableViewCell {
+    func update(with task: Legacy.Task?) {
         if let task = task {
             self.titleLabel.text = task.getDestination().address.formattedShortAddress
             self.subtitleLabel.text = task.getNameForPreferredRecipient() ?? "No recipient"
@@ -31,7 +31,7 @@ extension TaskTableViewCell {
         }
     }
     
-    private func colorForTaskState(of task: Task) -> UIColor {
+    private func colorForTaskState(of task: Legacy.Task) -> UIColor {
         if task.getIsFulfilled() {
             return .systemGreen
         } else if task.getIsActive() {

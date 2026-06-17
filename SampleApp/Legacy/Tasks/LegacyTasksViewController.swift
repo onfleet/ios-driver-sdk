@@ -1,5 +1,5 @@
 //
-//  TasksViewController.swift
+//  LegacyTasksViewController.swift
 //  SampleApp
 //
 //  Created by Peter Stajger on 14/01/2021.
@@ -9,7 +9,7 @@ import UIKit
 
 import OnfleetDriver
 
-final class TasksViewController : UITableViewController, ActivityShowing {
+final class LegacyTasksViewController : UITableViewController, ActivityShowing {
     
     enum Section : Int, CaseIterable {
         case activeTask
@@ -20,7 +20,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     var activityAlert: UIAlertController?
     
     private let driverContext = DriverContext.shared
-    private let driverManager = DriverContext.shared.driverManager
+    private let driverManager = DriverContext.shared.legacyDriverManager
     private var bag: DisposeBag?
     
     override func viewDidLoad() {
@@ -68,7 +68,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     private func observeDataState(disposeBy bag: OnfleetDriver.DisposeBag) {
         driverContext.dataState.subscribe({ [weak self] (dataState) in
             print("data state: \(dataState)")
-            if case .failed(let error) = dataState {
+            if case .failed(let error, _) = dataState {
                 self?.showAlertPrompt(title: "Data Fetch Failed", message: error.localizedDescription, action: UIAlertAction(title: "Refetch", style: .default, handler: { (_) in
                     self?.refetchData()
                 }), animated: true)
@@ -79,13 +79,15 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     private func observeDriverChanges(disposeBy bag: OnfleetDriver.DisposeBag) {
         
         func observeDriver() {
-            driverManager.driver?.subscribeOnChangeWithChildren({ [weak self] in
-                print("driver object graph changed, reloading UI")
-                self?.tableView.reloadData()
+            driverManager.legacyDriver?.subscribeOnChangeWithChildren({ [weak self] in
+                DispatchQueue.main.async(execute: {
+                    print("driver object graph changed, reloading UI")
+                    self?.tableView.reloadData()
+                })
             }).disposed(by: bag)
         }
         
-        if driverManager.driver != nil {
+        if driverManager.legacyDriver != nil {
             observeDriver()
         }
         else {
@@ -109,24 +111,24 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch Section(rawValue: section)! {
-        case .activeTask: return driverManager.driver?.activeTask != nil ? 1 : 0
-        case .assignedTasks: return driverManager.driver?.tasks.count ?? 0
+        case .activeTask: return driverManager.legacyDriver?.activeTask != nil ? 1 : 0
+        case .assignedTasks: return driverManager.legacyDriver?.tasks.count ?? 0
         case .selfAssignableTasks: return driverManager.selfAssignableTasks.count
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCellId", for: indexPath) as! TaskTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCellId", for: indexPath) as! LegacyTaskTableViewCell
         cell.update(with: task(at: indexPath))
         return cell
     }
     
-    private func task(at indexPath: IndexPath) -> Task? {
+    private func task(at indexPath: IndexPath) -> Legacy.Task? {
         switch Section(rawValue: indexPath.section)! {
         case .activeTask:
-            return driverManager.driver?.activeTask
+            return driverManager.legacyDriver?.activeTask
         case .assignedTasks:
-            return driverManager.driver?.tasks[indexPath.row]
+            return driverManager.legacyDriver?.tasks[indexPath.row]
         case .selfAssignableTasks:
             return driverManager.selfAssignableTasks[indexPath.row]
         }
@@ -137,7 +139,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "TaskDetailSegueId", let taskViewController = segue.destination as? TaskViewController {
+        if segue.identifier == "TaskDetailSegueId", let taskViewController = segue.destination as? LegacyTaskViewController {
             if let selectedPath = tableView.indexPathForSelectedRow, let task = self.task(at: selectedPath) {
                 taskViewController.task = task
                 taskViewController.driverManager = driverManager
@@ -147,7 +149,7 @@ final class TasksViewController : UITableViewController, ActivityShowing {
     }
 }
 
-extension Address {
+extension Legacy.Address {
     
     var formattedShortAddress: String {
         return (name ?? formattedLine1) ?? city
