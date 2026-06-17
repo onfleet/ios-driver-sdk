@@ -83,7 +83,7 @@ For example in your app delegate file:
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //initiate SDK
-        let config = AppConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
+        let config = ApplicationConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
         driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
         
         return true
