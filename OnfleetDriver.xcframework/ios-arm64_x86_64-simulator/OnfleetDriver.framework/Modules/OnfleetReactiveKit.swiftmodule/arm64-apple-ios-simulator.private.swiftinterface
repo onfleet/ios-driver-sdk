@@ -1,0 +1,272 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature AccessLevelOnImport -enable-experimental-feature InternalImportsByDefault -enable-upcoming-feature InternalImportsByDefault -enable-experimental-feature DebugDescriptionMacro -module-name OnfleetReactiveKit -package-name onfleetreactive
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+public import Foundation
+public import Swift
+public import _Concurrency
+public import _StringProcessing
+public import _SwiftConcurrencyShims
+extension OnfleetReactiveKit.Disposables {
+  public static func create(_ action: @escaping () -> Swift.Void) -> any OnfleetReactiveKit.Disposable
+}
+final public class CompositeDisposable : OnfleetReactiveKit.Disposable {
+  public struct DisposeKey {
+  }
+  final public var isDisposed: Swift.Bool {
+    get
+  }
+  public init(disposables: [any OnfleetReactiveKit.Disposable])
+  final public func insert(_ disposable: any OnfleetReactiveKit.Disposable) -> OnfleetReactiveKit.CompositeDisposable.DisposeKey?
+  final public func remove(for disposeKey: OnfleetReactiveKit.CompositeDisposable.DisposeKey)
+  final public func dispose()
+  @objc deinit
+}
+extension OnfleetReactiveKit.Disposables {
+  public static func create(_ disposables: any OnfleetReactiveKit.Disposable...) -> any OnfleetReactiveKit.Disposable
+  public static func create(_ disposables: [any OnfleetReactiveKit.Disposable]) -> any OnfleetReactiveKit.Disposable
+}
+extension OnfleetReactiveKit.Disposable {
+  public func disposed(by composite: OnfleetReactiveKit.CompositeDisposable) -> OnfleetReactiveKit.CompositeDisposable.DisposeKey?
+}
+public protocol Disposable {
+  var isDisposed: Swift.Bool { get }
+  func dispose()
+}
+public enum Disposables {
+}
+final public class DisposeBag : OnfleetReactiveKit.Disposable {
+  final public var isDisposed: Swift.Bool {
+    get
+  }
+  public init()
+  @objc deinit
+  final public func insert(_ disposable: any OnfleetReactiveKit.Disposable)
+  final public func dispose()
+}
+extension OnfleetReactiveKit.DisposeBag {
+  convenience public init(disposing disposables: any OnfleetReactiveKit.Disposable...)
+  convenience public init(disposing disposables: [any OnfleetReactiveKit.Disposable])
+  final public func insert(_ disposables: any OnfleetReactiveKit.Disposable...)
+  final public func insert(_ disposables: [any OnfleetReactiveKit.Disposable])
+}
+extension OnfleetReactiveKit.Disposable {
+  public func disposed(by bag: OnfleetReactiveKit.DisposeBag)
+}
+extension OnfleetReactiveKit.Disposables {
+  public static func create() -> any OnfleetReactiveKit.Disposable
+}
+final public class SingleAssignmentDisposable : OnfleetReactiveKit.Disposable {
+  final public var isDisposed: Swift.Bool {
+    get
+  }
+  public init()
+  final public func set(disposable: any OnfleetReactiveKit.Disposable)
+  final public func dispose()
+  @objc deinit
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func create(_ subscribe: @escaping (OnfleetReactiveKit.Observer.`Any`<Self.Element>) -> any OnfleetReactiveKit.Disposable) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+public protocol ObservableConvertibleType {
+  associatedtype Element
+  func asObservable() -> OnfleetReactiveKit.Observable<Self.Element>
+}
+public protocol ObservableType : OnfleetReactiveKit.ObservableConvertibleType {
+  func subscribe<Observer>(_ observer: Observer) -> any OnfleetReactiveKit.Disposable where Observer : OnfleetReactiveKit.ObserverType, Self.Element == Observer.Element
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func asObservable() -> OnfleetReactiveKit.Observable<Self.Element>
+}
+open class Observable<Element> : OnfleetReactiveKit.ObservableType {
+  public init()
+  open func subscribe<Observer>(_ observer: Observer) -> any OnfleetReactiveKit.Disposable where Element == Observer.Element, Observer : OnfleetReactiveKit.ObserverType
+  public func asObservable() -> OnfleetReactiveKit.Observable<Element>
+  @objc deinit
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func subscribe(_ on: @escaping (Self.Element) -> Swift.Void) -> any OnfleetReactiveKit.Disposable
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func combineLatest<O2, Result>(with source2: O2, resultSelector: @escaping (Self.Element, O2.Element) -> Result) -> OnfleetReactiveKit.Observable<Result> where O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public func combineLatest<O2>(with source2: O2) -> OnfleetReactiveKit.Observable<(Self.Element, O2.Element)> where O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func combineLatest<O1, O2>(_ source1: O1, _ source2: O2, resultSelector: @escaping (O1.Element, O2.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func combineLatest<O1, O2>(_ source1: O1, _ source2: O2) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func combineLatest<O1, O2, O3>(_ source1: O1, _ source2: O2, _ source3: O3, resultSelector: @escaping (O1.Element, O2.Element, O3.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func combineLatest<O1, O2, O3>(_ source1: O1, _ source2: O2, _ source3: O3) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element, O3.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func combineLatest<O1, O2, O3, O4>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4, resultSelector: @escaping (O1.Element, O2.Element, O3.Element, O4.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType, O4 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func combineLatest<O1, O2, O3, O4>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element, O3.Element, O4.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType, O4 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func combineLatest<Collection>(_ collection: Collection, resultSelector: @escaping ([Collection.Element.Element]) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where Collection : Swift.Collection, Collection.Element : OnfleetReactiveKit.ObservableType
+  public static func combineLatest<Collection>(_ collection: Collection) -> OnfleetReactiveKit.Observable<[Self.Element]> where Collection : Swift.Collection, Self.Element == Collection.Element.Element, Collection.Element : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func debounce(_ dueTime: Foundation.TimeInterval, on queue: Dispatch.DispatchQueue) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element : Swift.Equatable {
+  public func distinctUntilChanged() -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func distinctUntilChanged<Key>(_ keySelector: @escaping (Self.Element) -> Key) -> OnfleetReactiveKit.Observable<Self.Element> where Key : Swift.Equatable
+  public func distinctUntilChanged(_ comparer: @escaping (Self.Element, Self.Element) -> Swift.Bool) -> OnfleetReactiveKit.Observable<Self.Element>
+  public func distinctUntilChanged<K>(_ keySelector: @escaping (Self.Element) -> K, comparer: @escaping (K, K) -> Swift.Bool) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func filter(_ predicate: @escaping (Self.Element) -> Swift.Bool) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func map<Result>(_ transform: @escaping (Self.Element) -> Result) -> OnfleetReactiveKit.Observable<Result>
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element : OnfleetReactiveKit.ObservableConvertibleType {
+  public func merge() -> OnfleetReactiveKit.Observable<Self.Element.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func merge<Collection>(_ sources: Collection) -> OnfleetReactiveKit.Observable<Self.Element> where Collection : Swift.Collection, Collection.Element == OnfleetReactiveKit.Observable<Self.Element>
+  public static func merge(_ sources: [OnfleetReactiveKit.Observable<Self.Element>]) -> OnfleetReactiveKit.Observable<Self.Element>
+  public static func merge(_ sources: OnfleetReactiveKit.Observable<Self.Element>...) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func observe(on queue: Dispatch.DispatchQueue) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func of(_ elements: Self.Element...) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func from(_ array: [Self.Element]) -> OnfleetReactiveKit.Observable<Self.Element>
+  public static func from<Sequence>(_ sequence: Sequence) -> OnfleetReactiveKit.Observable<Self.Element> where Sequence : Swift.Sequence, Self.Element == Sequence.Element
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func skip(_ count: Swift.Int) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func take(_ count: Swift.Int) -> OnfleetReactiveKit.Observable<Self.Element>
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func withLatest<Source, ResultType>(from second: Source, resultSelector: @escaping (Self.Element, Source.Element) -> ResultType) -> OnfleetReactiveKit.Observable<ResultType> where Source : OnfleetReactiveKit.ObservableConvertibleType
+  public func withLatest<Source>(from second: Source) -> OnfleetReactiveKit.Observable<Source.Element> where Source : OnfleetReactiveKit.ObservableConvertibleType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func zip<O2, Result>(with source2: O2, resultSelector: @escaping (Self.Element, O2.Element) -> Result) -> OnfleetReactiveKit.Observable<Result> where O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public func zip<O2>(with source2: O2) -> OnfleetReactiveKit.Observable<(Self.Element, O2.Element)> where O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func zip<O1, O2>(_ source1: O1, _ source2: O2, resultSelector: @escaping (O1.Element, O2.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func zip<O1, O2>(_ source1: O1, _ source2: O2) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func zip<O1, O2, O3>(_ source1: O1, _ source2: O2, _ source3: O3, resultSelector: @escaping (O1.Element, O2.Element, O3.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func zip<O1, O2, O3>(_ source1: O1, _ source2: O2, _ source3: O3) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element, O3.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func zip<O1, O2, O3, O4>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4, resultSelector: @escaping (O1.Element, O2.Element, O3.Element, O4.Element) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType, O4 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType where Self.Element == Any {
+  public static func zip<O1, O2, O3, O4>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4) -> OnfleetReactiveKit.Observable<(O1.Element, O2.Element, O3.Element, O4.Element)> where O1 : OnfleetReactiveKit.ObservableType, O2 : OnfleetReactiveKit.ObservableType, O3 : OnfleetReactiveKit.ObservableType, O4 : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public static func zip<C>(_ collection: C, resultSelector: @escaping ([C.Element.Element]) -> Self.Element) -> OnfleetReactiveKit.Observable<Self.Element> where C : Swift.Collection, C.Element : OnfleetReactiveKit.ObservableType
+  public static func zip<C>(_ collection: C) -> OnfleetReactiveKit.Observable<[Self.Element]> where C : Swift.Collection, Self.Element == C.Element.Element, C.Element : OnfleetReactiveKit.ObservableType
+}
+extension OnfleetReactiveKit.ObservableType {
+  public func nwise(_ n: Swift.Int) -> OnfleetReactiveKit.Observable<[Self.Element]>
+  public func pairwise() -> OnfleetReactiveKit.Observable<(Self.Element, Self.Element)>
+}
+public class Observation : Swift.Hashable {
+  public init(invalidationBlock: @escaping (OnfleetReactiveKit.Observation) -> Swift.Void)
+  @objc deinit
+  public func invalidate()
+  public static func == (lhs: OnfleetReactiveKit.Observation, rhs: OnfleetReactiveKit.Observation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OnfleetReactiveKit.Observation {
+  public class var empty: OnfleetReactiveKit.Observation {
+    get
+  }
+}
+extension OnfleetReactiveKit.Observation : OnfleetReactiveKit.Disposable {
+}
+extension OnfleetReactiveKit.Observation {
+  public var isDisposed: Swift.Bool {
+    get
+  }
+  public func dispose()
+}
+final public class GroupedObservation : OnfleetReactiveKit.Observation {
+  public init(_ observations: [OnfleetReactiveKit.Observation] = [])
+  final public func appendObservation(_ observation: OnfleetReactiveKit.Observation)
+  override final public func invalidate()
+  @objc deinit
+}
+extension OnfleetReactiveKit.Disposable {
+  public func disposed(by observations: inout [OnfleetReactiveKit.Observation])
+}
+public protocol ObserverType {
+  associatedtype Element
+  func on(_ element: Self.Element)
+}
+public enum Observer {
+}
+extension OnfleetReactiveKit.Observer {
+  public struct `Any`<Element> : OnfleetReactiveKit.ObserverType {
+    public func on(_ element: Element)
+    public func asObserver() -> OnfleetReactiveKit.Observer.`Any`<Element>
+  }
+}
+@frozen public enum Subject {
+}
+extension OnfleetReactiveKit.Subject {
+  @_inheritsConvenienceInitializers public class Base<Element> : OnfleetReactiveKit.Observable<Element>, OnfleetReactiveKit.ObserverType {
+    public var isDisposed: Swift.Bool {
+      get
+    }
+    override public init()
+    public func on(_ element: Element)
+    override public func subscribe<Observer>(_ observer: Observer) -> any OnfleetReactiveKit.Disposable where Element == Observer.Element, Observer : OnfleetReactiveKit.ObserverType
+    public func dispose()
+    @objc deinit
+  }
+}
+extension OnfleetReactiveKit.Subject {
+  @_inheritsConvenienceInitializers final public class Publish<Element> : OnfleetReactiveKit.Subject.Base<Element> {
+    override final public func on(_ element: Element)
+    override public init()
+    @objc deinit
+  }
+}
+extension OnfleetReactiveKit.Subject {
+  final public class Behavior<Element> : OnfleetReactiveKit.Subject.Base<Element> {
+    final public var value: Element {
+      get
+    }
+    public init(_ element: Element)
+    override final public func on(_ element: Element)
+    override final public func subscribe<Observer>(_ observer: Observer) -> any OnfleetReactiveKit.Disposable where Element == Observer.Element, Observer : OnfleetReactiveKit.ObserverType
+    @objc deinit
+  }
+}
+extension OnfleetReactiveKit.Subject : Swift.Sendable {}
+extension OnfleetReactiveKit.Subject : Swift.BitwiseCopyable {}

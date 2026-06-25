@@ -25,7 +25,7 @@ final class InitialViewController : UIViewController, ActivityShowing {
         super.viewWillAppear(animated)
         verifyAuthentication()
         
-        sdkLogoutToken = NotificationCenter.default.addObserver(forName: .sessionDidLogOut, object: nil, queue: nil) { [weak self] notification in
+        sdkLogoutToken = NotificationCenter.default.addObserver(forName: .sessionDidLogOut, object: nil, queue: .main) { [weak self] notification in
             if let reason = notification.userInfo?[SessionDidLogOutReasonKey] as? LogoutReason {
                 self?.showAuthenticationFlow()
                 self?.showAlert(title: "Logged Out", message: "You have been logged out (\(reason.description))", animated: true, okHandler: nil)
@@ -46,38 +46,54 @@ final class InitialViewController : UIViewController, ActivityShowing {
         
         print("driver is logged in")
         
-        guard let pendingAccount = DriverContext.shared.session.accounts.first(where: { $0.isPending }) else {
-            print("no pending account found, moving to main application flow...")
-            showMainApplicationFlow()
-            return
+        // accounts is now an AnyAsyncSequence — fetch the first snapshot via Task
+        Task { @MainActor [weak self] in
+            guard let self = self else { return }
+            var snapshot: [Onfleet.Account] = []
+            for await accounts in self.session.accounts {
+                snapshot = accounts
+                break
+            }
+            guard let pendingAccount = snapshot.first(where: { $0.invitationStatus.isInvited }) else {
+                print("no pending account found, moving to main application flow...")
+                self.showMainApplicationFlow()
+                return
+            }
+            print("pending account found, prompting for invitation response...")
+            self.showAlertPrompt(
+                title: "Pending Invitation",
+                message: "You were invited to join \(pendingAccount.organizationInfo.name) as a driver.",
+                action: UIAlertAction(title: "Accept", style: .default, handler: { [weak self] _ in
+                    DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .accept, completion: { result in
+                        switch result {
+                        case .success:
+                            self?.verifyAuthentication()
+                        case .failure(let error):
+                            self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                        }
+                    })
+                }),
+                cancel: UIAlertAction(title: "Reject", style: .destructive, handler: { [weak self] _ in
+                    DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .reject, completion: { result in
+                        if case AccountInvitationResult.failure(let error) = result {
+                            self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
+                        }
+                    })
+                }),
+                animated: true
+            )
         }
-        
-        print("pending account found, prompting for invitation response...")
-        showAlertPrompt(title: "Pending Invitation", message: "You were invited to join \(pendingAccount.organizationName) as a driver.", action: UIAlertAction(title: "Accept", style: .default, handler: { [weak self] _ in
-            DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .accept, completion: { result in
-                switch result {
-                case .success:
-                    //there might be more pending accounts
-                    self?.verifyAuthentication()
-                case .failure(let error):
-                    self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
-                }
-            })
-        }), cancel: UIAlertAction(title: "Reject", style: .destructive, handler: { [weak self] _ in
-            DriverContext.shared.session.respondToInvitation(account: pendingAccount, response: .reject, completion: { result in
-                if case AccountInvitationResult.failure(let error) = result {
-                    self?.showAlert(title: "Failed", message: error.localizedDescription, animated: true)
-                }
-            })
-        }), animated: true)
     }
     
     private func showMainApplicationFlow() {
         hideActivityIfNeeded { [weak self] in
-            self?.performSegue(withIdentifier: "DutyViewControllerSegueId", sender: self)
+            guard let self else { return }
+            let tabBar = MainTabBarController(context: DriverContext.shared)
+            tabBar.modalPresentationStyle = .fullScreen
+            self.present(tabBar, animated: false)
         }
     }
-    
+
     private func showAuthenticationFlow() {
         hideActivityIfNeeded { [weak self] in
             self?.presentedViewController?.dismiss(animated: true, completion: nil)

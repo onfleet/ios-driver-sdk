@@ -29,14 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let useApnSandbox = false
 #endif
         
-        //Replace with your Onfleet application id. The sample compiles with the
-        //placeholder but will not authenticate against Onfleet until you set a real id.
+//        #error("insert your application_id here")
         let applicationId = "YOUR_APP_ID_HERE"
-        let logLevel = ONLogger.LogLevel.warning
+        let logLevel = Onfleet.LogLevel.warning
+        // staging environment is not available in PUBLIC_BUILD mode; use production for integration testing
         let environment = Environment.production(useApnSandbox: useApnSandbox)
         
-        let config = AppConfig(appKey: applicationId, appVersion: "1.0", appName: "Sample App", appGroup: nil)
-        driver.initSDK(with: config, environment: environment, app: application, loggers: [OSLogDestination(logSeverity: logLevel)])
+        guard let config = try? ApplicationConfig(appKey: applicationId, appVersion: "1.0", appName: "Sample App") else {
+            return false
+        }
+        driver.initSDK(with: config, environment: environment, app: application, loggers: [Onfleet.OSLogDestination(logSeverity: logLevel)])
         
         center.delegate = self
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
