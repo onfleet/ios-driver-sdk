@@ -1,2042 +1,2112 @@
 {
   "warnings": [
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
       "line": 23,
       "symbol": "HTTPError.api(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
       "line": 24,
       "symbol": "HTTPError.http(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
       "line": 25,
       "symbol": "HTTPError.parsing(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 39,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 40,
       "symbol": "HTTPError.apiError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 57,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 58,
       "symbol": "HTTPError.isBadRequestError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 67,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 68,
       "symbol": "HTTPError.urlError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 79,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 80,
       "symbol": "HTTPError.isConnectionError",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
-      "line": 185,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HTTP/HTTPError.swift",
+      "line": 186,
       "symbol": "HTTPError.==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
       "line": 18,
       "symbol": "HttpApi.ApiError",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/API/HttpApi/HttpApiApiError.swift",
       "line": 65,
       "symbol": "HttpApi.ApiError",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
       "line": 17,
       "symbol": "AnalyticsStorgateFileName.init(period:sandboxId:appendPathExtension:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Analytics/AnalyticsStorageFileName.swift",
       "line": 23,
       "symbol": "AnalyticsStorgateFileName.createFileName()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Attachments/Image Upload/FileLocation.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Attachments/Image Upload/FileLocation.swift",
       "line": 29,
       "symbol": "FileLocation.prepared(path:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Attachments/Image Upload/Operation/ImageUploadOperation.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Attachments/Image Upload/Operation/ImageUploadOperation.swift",
       "line": 97,
       "symbol": "ImageUploadFailureReason.invalidUploadType(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 101,
       "symbol": "CompletedTask.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 102,
       "symbol": "CompletedTask.shortId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 103,
       "symbol": "CompletedTask.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 105,
       "symbol": "CompletedTask.completeAfter",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 107,
       "symbol": "CompletedTask.completeBefore",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 108,
       "symbol": "CompletedTask.completionDetails",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 110,
       "symbol": "CompletedTask.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 111,
       "symbol": "CompletedTask.locationCoordinate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 112,
       "symbol": "CompletedTask.destinationNotes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 114,
       "symbol": "CompletedTask.destinationMetadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 124,
       "symbol": "CompletedTask.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 125,
       "symbol": "CompletedTask.wasGeocoded",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 126,
       "symbol": "CompletedTask.useGps",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 127,
       "symbol": "CompletedTask.recipient",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 128,
       "symbol": "CompletedTask.computed",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 129,
       "symbol": "CompletedTask.timeCreated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 130,
       "symbol": "CompletedTask.startTime",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 131,
       "symbol": "CompletedTask.timeLastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 133,
       "symbol": "CompletedTask.attachments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 134,
       "symbol": "CompletedTask.requestedBarcodes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 135,
       "symbol": "CompletedTask.capturedBarcodes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 137,
       "symbol": "CompletedTask.quantity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 139,
       "symbol": "CompletedTask.requirements",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 142,
       "symbol": "CompletedTask.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 143,
       "symbol": "CompletedTask.isSelfAssigned",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 144,
       "symbol": "CompletedTask.isIdentityVerified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 151,
       "symbol": "CompletedTask.customFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 153,
       "symbol": "CompletedTask.merchantName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 155,
       "symbol": "CompletedTask.customRequirements",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 166,
       "symbol": "CompletedTask.Requirements.signature",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 167,
       "symbol": "CompletedTask.Requirements.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 168,
       "symbol": "CompletedTask.Requirements.photo",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 169,
       "symbol": "CompletedTask.Requirements.minimumAge",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 177,
       "symbol": "CompletedTask.CompletionDetails.Event.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 178,
       "symbol": "CompletedTask.CompletionDetails.Event.time",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
       "line": 181,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 182,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 183,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType.warn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 184,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType.block",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 187,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 188,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 189,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 192,
       "symbol": "CompletedTask.CompletionDetails.success",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 183,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 194,
       "symbol": "CompletedTask.CompletionDetails.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 185,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 196,
       "symbol": "CompletedTask.CompletionDetails.failureReason",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 186,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 197,
       "symbol": "CompletedTask.CompletionDetails.successReason",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 187,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 198,
       "symbol": "CompletedTask.CompletionDetails.time",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 188,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 199,
       "symbol": "CompletedTask.CompletionDetails.events",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 190,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 200,
+      "symbol": "CompletedTask.CompletionDetails.geofenceAttempts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 201,
+      "symbol": "CompletedTask.CompletionDetails.completedWithGeofenceWarning",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 202,
+      "symbol": "CompletedTask.CompletionDetails.pinVerified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 204,
       "symbol": "CompletedTask.CompletionDetails.hasFailureReason",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 194,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 208,
       "symbol": "CompletedTask.CompletionDetails.hasNotes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 198,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 212,
       "symbol": "CompletedTask.CompletionDetails.completedByAdmin",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 209,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 218,
+      "symbol": "CompletedTask.CompletionDetails.GeofenceAttempt",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 223,
       "symbol": "CompletedTask.RecipientContainer.recipientName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 210,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 224,
       "symbol": "CompletedTask.RecipientContainer.hasRecipients",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 211,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 225,
       "symbol": "CompletedTask.RecipientContainer.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 213,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 227,
       "symbol": "CompletedTask.RecipientContainer.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 253,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 267,
       "symbol": "CompletedTask.ComputedContainer.isAvailable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 257,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 271,
       "symbol": "CompletedTask.ComputedContainer.distance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 259,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 273,
       "symbol": "CompletedTask.ComputedContainer.duration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 264,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 278,
       "symbol": "CompletedTask.Attachment.attachmentType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 265,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 279,
       "symbol": "CompletedTask.Attachment.attachmentId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 267,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 281,
       "symbol": "CompletedTask.Attachment.status",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 275,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 289,
       "symbol": "CompletedTask.TaskType.init(rawValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 294,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 308,
       "symbol": "CompletedTask.TaskType.rawValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
-      "line": 317,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Completed Tasks/Model/CompletedTask.swift",
+      "line": 331,
       "symbol": "CompletedTask.TaskType.isPickUp",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 22,
       "symbol": "DriverLicense.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 23,
       "symbol": "DriverLicense.documentType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 25,
       "symbol": "DriverLicense.issuingCountry",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 27,
       "symbol": "DriverLicense.dateOfBirth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 28,
       "symbol": "DriverLicense.dateIssued",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 29,
       "symbol": "DriverLicense.expirationDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/DriverLicense.swift",
       "line": 31,
       "symbol": "DriverLicense.init(id:documentType:issuingCountry:dateOfBirth:dateIssued:expirationDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
-      "line": 566,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Complete Task/TaskCompletionDetails.swift",
+      "line": 626,
       "symbol": "TaskCompletionDetails.CustomRequirement.init(key:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 25,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 23,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 26,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 24,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.licensePlate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 27,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 25,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.color",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 28,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 26,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 30,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 28,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.none",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 34,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 32,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.bicycle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 39,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 37,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.car(description:plate:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 48,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 46,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.truck(description:plate:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 57,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 55,
       "symbol": "Legacy.DriverProfileDetails.Vehicle.motorcycle(description:plate:color:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 92,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 79,
       "symbol": "Legacy.DriverProfileDetails.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 93,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 80,
       "symbol": "Legacy.DriverProfileDetails.displayName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 94,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 81,
       "symbol": "Legacy.DriverProfileDetails.phone",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 95,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 82,
       "symbol": "Legacy.DriverProfileDetails.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 96,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 83,
       "symbol": "Legacy.DriverProfileDetails.capacity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 97,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 84,
       "symbol": "Legacy.DriverProfileDetails.vehicle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
-      "line": 99,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Driver/Update Profile/DriverProfileDetails.swift",
+      "line": 86,
       "symbol": "Legacy.DriverProfileDetails.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Data/Fetcher/FetchingState.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Data/Fetcher/FetchingState.swift",
       "line": 66,
       "symbol": "FetchingState.isFetching",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 24,
       "symbol": "Legacy.Address.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 25,
       "symbol": "Legacy.Address.apartment",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 26,
       "symbol": "Legacy.Address.number",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 27,
       "symbol": "Legacy.Address.street",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 28,
       "symbol": "Legacy.Address.city",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 29,
       "symbol": "Legacy.Address.country",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 30,
       "symbol": "Legacy.Address.postalCode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Address.swift",
       "line": 31,
       "symbol": "Legacy.Address.state",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/BarcodeRequest.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/BarcodeRequest.swift",
       "line": 19,
       "symbol": "Legacy.BarcodeRequest.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/BarcodeRequest.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/BarcodeRequest.swift",
       "line": 27,
       "symbol": "Legacy.BarcodeRequest.dropOffTask",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/BarcodeRequest.swift",
+      "line": 29,
+      "symbol": "Legacy.BarcodeRequest.pickUpTask",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 16,
       "symbol": "Legacy.CustomField",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 21,
       "symbol": "Legacy.CustomField.Context.isRequired",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 31,
       "symbol": "Legacy.CustomField.Value.ChecklistItem.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 32,
       "symbol": "Legacy.CustomField.Value.ChecklistItem.isSelected",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 34,
       "symbol": "Legacy.CustomField.Value.ChecklistItem.init(name:isSelected:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 44,
       "symbol": "Legacy.CustomField.Value.boolean(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 45,
       "symbol": "Legacy.CustomField.Value.integer(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 46,
       "symbol": "Legacy.CustomField.Value.decimal(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 47,
       "symbol": "Legacy.CustomField.Value.date(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 48,
       "symbol": "Legacy.CustomField.Value.url(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 49,
       "symbol": "Legacy.CustomField.Value.singleLineText(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 50,
       "symbol": "Legacy.CustomField.Value.multiLineText(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 51,
       "symbol": "Legacy.CustomField.Value.checklist(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 55,
       "symbol": "Legacy.CustomField.key",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 56,
       "symbol": "Legacy.CustomField.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 57,
       "symbol": "Legacy.CustomField.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 59,
       "symbol": "Legacy.CustomField.contexts",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
       "line": 61,
       "symbol": "Legacy.CustomField.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
-      "line": 280,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/CustomField.swift",
+      "line": 321,
       "symbol": "Legacy.CustomField",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 25,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 24,
       "symbol": "Legacy.Destination.location$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 26,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 25,
       "symbol": "Legacy.Destination.address$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 27,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 26,
       "symbol": "Legacy.Destination.notes$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 28,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 27,
       "symbol": "Legacy.Destination.wasGeocoded$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 29,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 28,
       "symbol": "Legacy.Destination.useGps$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 30,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 29,
       "symbol": "Legacy.Destination.metadata$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 31,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 30,
       "symbol": "Legacy.Destination.googlePlaceId$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 33,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 32,
       "symbol": "Legacy.Destination.location",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 37,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 36,
       "symbol": "Legacy.Destination.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 41,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 40,
       "symbol": "Legacy.Destination.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 45,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 44,
       "symbol": "Legacy.Destination.wasGeocoded",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 49,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 48,
       "symbol": "Legacy.Destination.useGps",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 53,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 52,
       "symbol": "Legacy.Destination.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
-      "line": 57,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Destination.swift",
+      "line": 56,
       "symbol": "Legacy.Destination.googlePlaceId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 17,
       "symbol": "Legacy.Metadata",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.array",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.boolean",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.number",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.object",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.other",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 21,
       "symbol": "Legacy.Metadata.ValueType.string",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 26,
       "symbol": "Legacy.Metadata.Visibility.api",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 26,
       "symbol": "Legacy.Metadata.Visibility.dashboard",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 26,
       "symbol": "Legacy.Metadata.Visibility.other",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 26,
       "symbol": "Legacy.Metadata.Visibility.worker",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 29,
       "symbol": "Legacy.Metadata.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 30,
       "symbol": "Legacy.Metadata.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 31,
       "symbol": "Legacy.Metadata.subtype",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 32,
       "symbol": "Legacy.Metadata.visibility",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 33,
       "symbol": "Legacy.Metadata.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 34,
       "symbol": "Legacy.Metadata.valueHash",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Metadata.swift",
       "line": 56,
       "symbol": "Legacy.Metadata",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 39,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 27,
       "symbol": "Model.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 40,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 28,
       "symbol": "Model.timeLastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 41,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 29,
       "symbol": "Model.timeCreated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 118,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 59,
       "symbol": "Model.changeObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 122,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 63,
       "symbol": "Model.subscribeOnChange(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 126,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 67,
       "symbol": "Model.changeObservableWithChildren",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 130,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 71,
       "symbol": "Model.subscribeOnChangeWithChildren(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 134,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 75,
       "symbol": "Model.deleteObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
-      "line": 138,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Model.swift",
+      "line": 79,
       "symbol": "Model.subscribeOnDelete(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 50,
       "symbol": "ModelProperty",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 52,
       "symbol": "ModelProperty.wrappedValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 57,
       "symbol": "ModelProperty.projectedValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 68,
       "symbol": "ModelProperty.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 232,
       "symbol": "ModelProperty",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ModelProperty.swift",
       "line": 247,
       "symbol": "ModelProperty",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 27,
       "symbol": "ObservableModel.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 28,
       "symbol": "ObservableModel.timeLastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 29,
       "symbol": "ObservableModel.timeCreated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 31,
       "symbol": "ObservableModel.changeObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 32,
       "symbol": "ObservableModel.changeObservableWithChildren",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/ObservableModel.swift",
       "line": 33,
       "symbol": "ObservableModel.deleteObservable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 41,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 39,
       "symbol": "Legacy.Organization.Billing.legacyPlan",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 42,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 40,
       "symbol": "Legacy.Organization.Billing.testMode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 43,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 41,
       "symbol": "Legacy.Organization.Billing.analyticsPeriodDuration",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 78,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 76,
       "symbol": "Legacy.Organization.CompletionReason.Status.failure",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 78,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 76,
       "symbol": "Legacy.Organization.CompletionReason.Status.success",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 81,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 79,
       "symbol": "Legacy.Organization.CompletionReason.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 82,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 80,
       "symbol": "Legacy.Organization.CompletionReason.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 83,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 81,
       "symbol": "Legacy.Organization.CompletionReason.displayText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 84,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 82,
       "symbol": "Legacy.Organization.CompletionReason.completionStatus",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 85,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 83,
       "symbol": "Legacy.Organization.CompletionReason.requiresNotes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 142,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 140,
       "symbol": "Legacy.Organization.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 143,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 141,
       "symbol": "Legacy.Organization.country",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 144,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 142,
       "symbol": "Legacy.Organization.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 145,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 143,
       "symbol": "Legacy.Organization.config",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 146,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 144,
       "symbol": "Legacy.Organization.driverAppConfig",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 147,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 145,
       "symbol": "Legacy.Organization.enabledFeatures",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 148,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 146,
       "symbol": "Legacy.Organization.billing",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 149,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 147,
       "symbol": "Legacy.Organization.email",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 150,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 148,
       "symbol": "Legacy.Organization.driverSupportEmail",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 151,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 149,
       "symbol": "Legacy.Organization.taskCompletionReasons",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 152,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 150,
       "symbol": "Legacy.Organization.packageCompletionReasons",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 245,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 213,
       "symbol": "Legacy.Organization.getName()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 249,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 217,
       "symbol": "Legacy.Organization.getCountry()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 253,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 221,
       "symbol": "Legacy.Organization.getImage()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 257,
-      "symbol": "Legacy.Organization.getImageUrlExtraSmall()",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 225,
+      "symbol": "Legacy.Organization.getImageResourceURL()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 262,
-      "symbol": "Legacy.Organization.getImageUrlSmall()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 267,
-      "symbol": "Legacy.Organization.getImageUrlMedium()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 272,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 230,
       "symbol": "Legacy.Organization.getOrgConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 276,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 234,
       "symbol": "Legacy.Organization.getAppConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 280,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 238,
       "symbol": "Legacy.Organization.getEnabledFeatures()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 284,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 242,
       "symbol": "Legacy.Organization.getBilling()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 288,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 246,
       "symbol": "Legacy.Organization.getEmail()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 292,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 250,
       "symbol": "Legacy.Organization.getDriverSupportEmail()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 296,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 254,
       "symbol": "Legacy.Organization.getTaskCompletionReasons()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 300,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 258,
       "symbol": "Legacy.Organization.getPackageCompletionReasons()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 534,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 492,
       "symbol": "UnitSystem.metric",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 535,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 493,
       "symbol": "UnitSystem.imperial",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 537,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 495,
       "symbol": "UnitSystem.isMetric",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 547,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 505,
       "symbol": "Legacy.Organization.getOrgConfigProperty(_:key:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
-      "line": 554,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Organization.swift",
+      "line": 512,
       "symbol": "Legacy.Organization.getOrgConfigPreferredUnitType()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 20,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 18,
       "symbol": "Legacy.Recipient.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 21,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 19,
       "symbol": "Legacy.Recipient.phone",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 22,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 20,
       "symbol": "Legacy.Recipient.notes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 23,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 21,
       "symbol": "Legacy.Recipient.skipSMSNotifications",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 24,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 22,
       "symbol": "Legacy.Recipient.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 70,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 54,
       "symbol": "Legacy.Recipient.getName()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 74,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 58,
       "symbol": "Legacy.Recipient.getPhone()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 78,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 62,
       "symbol": "Legacy.Recipient.getNotes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 82,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 66,
       "symbol": "Legacy.Recipient.getSkipSMSNotifications()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
-      "line": 86,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Recipient.swift",
+      "line": 70,
       "symbol": "Legacy.Recipient.getMatadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 24,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 23,
       "symbol": "RecipientContactMode.VoiceCall",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 25,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 24,
       "symbol": "RecipientContactMode.SMS",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 106,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 113,
       "symbol": "Legacy.Task.Requirements.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 176,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 184,
       "symbol": "Legacy.Task.isFulfilled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 363,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 376,
       "symbol": "Legacy.Task.empty()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 400,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 382,
       "symbol": "Legacy.Task.getCompleteBefore()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 404,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 386,
       "symbol": "Legacy.Task.getIsActive()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 414,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 396,
       "symbol": "Legacy.Task.getDependencies()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 418,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 400,
       "symbol": "Legacy.Task.getDestination()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 422,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 404,
       "symbol": "Legacy.Task.getRecipients()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 426,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 408,
       "symbol": "Legacy.Task.hasRecipients",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 430,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 412,
       "symbol": "Legacy.Task.getNotes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 434,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 416,
       "symbol": "Legacy.Task.getShortId()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 438,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 420,
       "symbol": "Legacy.Task.getCompleteAfter()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 442,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 424,
       "symbol": "Legacy.Task.getPickupTask()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 446,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 428,
       "symbol": "Legacy.Task.getCommConfig()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 450,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 432,
       "symbol": "Legacy.Task.getOverrides()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 454,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 436,
       "symbol": "Legacy.Task.getRequestedBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 458,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 440,
       "symbol": "Legacy.Task.hasAttachedBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 462,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 444,
       "symbol": "Legacy.Task.attachedBarcodesCount()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 466,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 448,
       "symbol": "Legacy.Task.getIsFulfilled()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 470,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 452,
       "symbol": "Legacy.Task.getScanOnlyRequiredBarcodes()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 474,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 456,
       "symbol": "Legacy.Task.getIsSameOrgAsCreator()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 478,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 460,
       "symbol": "Legacy.Task.getQuantity()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 482,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 464,
       "symbol": "Legacy.Task.getServiceTime()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 486,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 468,
       "symbol": "Legacy.Task.getRequirements()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 490,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 472,
       "symbol": "Legacy.Task.getMetadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 494,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 476,
       "symbol": "Legacy.Task.getCustomFields()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 498,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 480,
       "symbol": "Legacy.Task.getIsSelfAssignable()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 502,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 484,
       "symbol": "Legacy.Task.getIsSelfAssigned()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 544,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 526,
       "symbol": "Legacy.Task.getPhoneNumberForPreferredRecipient(mode:onlyProxy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 551,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 533,
       "symbol": "Legacy.Task.getPhoneNumberForRecipient(index:mode:onlyProxy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 573,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 555,
       "symbol": "Legacy.Task.getMetadataForPreferredRecipient()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 577,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 559,
       "symbol": "Legacy.Task.getHasRecipientSignature()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 581,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 563,
       "symbol": "Legacy.Task.getOrderShortId()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 585,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 567,
       "symbol": "Legacy.Task.getMerchantName()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 592,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 574,
       "symbol": "Legacy.Task.beginVoiceCallForRecipient(index:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 615,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 597,
       "symbol": "Legacy.Task.shouldUseCommunicationProxy()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
-      "line": 619,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Task.swift",
+      "line": 601,
       "symbol": "Legacy.Task.communicationProxy(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 19,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 23,
       "symbol": "Legacy.VehicleType.none",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 20,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 24,
       "symbol": "Legacy.VehicleType.car",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 21,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 25,
       "symbol": "Legacy.VehicleType.bicycle",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 22,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 26,
       "symbol": "Legacy.VehicleType.motorcycle",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 23,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 27,
       "symbol": "Legacy.VehicleType.truck",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 46,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 50,
       "symbol": "Legacy.Vehicle.vehicleDescription$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 47,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 51,
       "symbol": "Legacy.Vehicle.licensePlate$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 48,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 52,
       "symbol": "Legacy.Vehicle.color$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 49,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 53,
       "symbol": "Legacy.Vehicle.type$",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 51,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 55,
       "symbol": "Legacy.Vehicle.vehicleDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 55,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 59,
       "symbol": "Legacy.Vehicle.licensePlate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 59,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 63,
       "symbol": "Legacy.Vehicle.color",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
-      "line": 63,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/Model/Vehicle.swift",
+      "line": 67,
       "symbol": "Legacy.Vehicle.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
       "line": 64,
       "symbol": "DataStats.Success.when",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
       "line": 71,
       "symbol": "DataStats.Failure.error",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Model Manager/ModelManagingModels.swift",
       "line": 72,
       "symbol": "DataStats.Failure.when",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
       "line": 19,
       "symbol": "SMSCodeVerificationResult.code(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/SMSCodeValueProvider.swift",
       "line": 20,
       "symbol": "SMSCodeVerificationResult.cancel",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
       "line": 11,
       "symbol": "ValueProvidingResult.success(value:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
       "line": 12,
       "symbol": "ValueProvidingResult.failure(error:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/Core/Session/Authentication/Auth/Value Providers/ValueProviding.swift",
       "line": 13,
       "symbol": "ValueProvidingResult.cancelled",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 165,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/DriverContext.swift",
+      "line": 220,
       "symbol": "DriverContext.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 356,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/DriverContext.swift",
+      "line": 467,
       "symbol": "DriverContext.initSDK(with:environment:app:loggers:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder/OnfleetDriverSDK/Classes/DriverContext.swift",
-      "line": 751,
+      "file": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release/OnfleetDriverSDK/Classes/DriverContext.swift",
+      "line": 902,
       "symbol": "DriverContext.processPendingAttachments()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/milanhorvatovic/Repositories/onfleet-ios/onfleet-driver/Builder"
+  "source_directory": "/Users/dilerbarbosa/Development/worktrees/ios-driver-1.48-sdk-release"
 }

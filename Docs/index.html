@@ -46,6 +46,9 @@
                 <a class="nav-group-task-link" href="Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DriverContext/InitializationError.html">– InitializationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
@@ -388,6 +391,12 @@
                 <a class="nav-group-task-link" href="Structs/DriverLicense.html">DriverLicense</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GeofenceAttempt.html">GeofenceAttempt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GeofenceAttempt/AttemptType.html">– AttemptType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PhotoAttachmentMetadata.html">PhotoAttachmentMetadata</a>
               </li>
               <li class="nav-group-task">
@@ -512,6 +521,14 @@
 <h3 id='spm-amp-carthage' class='heading'>SPM &amp; Carthage</h3>
 
 <p>Unfortunatelly we don&rsquo;t currently support SPM or Carthage, but we will do so in the near future.</p>
+<h3 id='required-linker-flag-code-objc-code' class='heading'>Required linker flag (<code>-ObjC</code>)</h3>
+
+<p><code>OnfleetDriver.xcframework</code> statically links Objective-C components that rely on runtime class and category registration. The integrating <strong>app target</strong> must therefore link with the <code>-ObjC</code> flag so those symbols are loaded. Without it, the app can crash at runtime with missing-selector or unregistered-class errors.</p>
+
+<ul>
+<li><strong>CocoaPods:</strong> handled automatically — the podspec adds <code>-ObjC</code> to your app target&rsquo;s <code>OTHER_LDFLAGS</code>.</li>
+<li><strong>Manual integration:</strong> add <code>-ObjC</code> to your app target&rsquo;s <strong>Build Settings → Other Linker Flags</strong>.</li>
+</ul>
 
 <p><a name='Integration'></a></p>
 <h2 id='integration' class='heading'>Integration</h2>
