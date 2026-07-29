@@ -61,6 +61,13 @@ Simply drag and drop `OnfleetDriver.xcframework` into your project and make sure
 
 Unfortunatelly we don't currently support SPM or Carthage, but we will do so in the near future.
 
+### Required linker flag (`-ObjC`)
+
+`OnfleetDriver.xcframework` statically links Objective-C components that rely on runtime class and category registration. The integrating **app target** must therefore link with the `-ObjC` flag so those symbols are loaded. Without it, the app can crash at runtime with missing-selector or unregistered-class errors.
+
+* **CocoaPods:** handled automatically — the podspec adds `-ObjC` to your app target's `OTHER_LDFLAGS`.
+* **Manual integration:** add `-ObjC` to your app target's **Build Settings → Other Linker Flags**.
+
 <a name='Integration'></a>
 
 ## Integration
@@ -83,8 +90,12 @@ For example in your app delegate file:
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //initiate SDK
-        let config = ApplicationConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
-        driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
+        do {
+            let config = try ApplicationConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
+            try driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
+        } catch {
+            //handle ApplicationConfigError / DriverContext.InitializationError
+        }
         
         return true
     }
