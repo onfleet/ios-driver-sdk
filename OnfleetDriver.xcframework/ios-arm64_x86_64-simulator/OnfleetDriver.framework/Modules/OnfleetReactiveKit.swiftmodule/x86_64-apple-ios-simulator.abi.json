@@ -5359,1323 +5359,1323 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
       "kind": "BooleanLiteral",
       "offset": 442,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
       "kind": "BooleanLiteral",
       "offset": 1178,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/AnonymousDisposable.swift",
       "kind": "BooleanLiteral",
       "offset": 1378,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/Bag+Disposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/Bag+Disposable.swift",
       "kind": "IntegerLiteral",
       "offset": 433,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/CompositeDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/CompositeDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 997,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
       "kind": "BooleanLiteral",
       "offset": 1942,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/DisposeBag.swift",
       "kind": "BooleanLiteral",
       "offset": 1981,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/NopDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/NopDisposable.swift",
       "kind": "BooleanLiteral",
       "offset": 383,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Disposable\/SingleAssignmentDisposable.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "BooleanLiteral",
       "offset": 1234,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 1591,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "BooleanLiteral",
       "offset": 1733,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 2193,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 2228,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 2232,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "BooleanLiteral",
       "offset": 2455,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "BooleanLiteral",
       "offset": 2510,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 3086,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "StringLiteral",
       "offset": 3406,
       "length": 31,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "StringLiteral",
       "offset": 3420,
       "length": 8,
       "value": "\" elements in Bag\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 3901,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 4001,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Foundation\/Bag.swift",
       "kind": "IntegerLiteral",
       "offset": 4005,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Observable+Create.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Observable+Create.swift",
       "kind": "StringLiteral",
       "offset": 797,
       "length": 6,
       "value": "\"OnfleetReactiveKit.Create\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 1204,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "BooleanLiteral",
       "offset": 1320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "BooleanLiteral",
       "offset": 1519,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "BooleanLiteral",
       "offset": 1561,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 1605,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 5784,
       "length": 14,
       "value": "\"OnfleetReactiveKit.CombineLatest2\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 6796,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 6953,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 7005,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 7118,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 7170,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 7519,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 7545,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 6481,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 9448,
       "length": 14,
       "value": "\"OnfleetReactiveKit.CombineLatest3\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 10564,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 10721,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 10773,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 10886,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 10938,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 11051,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 11103,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 11510,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 11536,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 11562,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 10241,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 13638,
       "length": 14,
       "value": "\"OnfleetReactiveKit.CombineLatest4\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 14858,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15015,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15067,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15180,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15232,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15345,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15397,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15510,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 15562,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 16027,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 16053,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 16079,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "IntegerLiteral",
       "offset": 16105,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatest.swift",
       "kind": "StringLiteral",
       "offset": 14527,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
       "kind": "StringLiteral",
       "offset": 1792,
       "length": 23,
       "value": "\"OnfleetReactiveKit.CombineLatestCollection\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 2879,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 3201,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+CombineLatestCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4133,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 8,
       "value": "\"OnfleetReactiveKit.Debounce\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
       "kind": "IntegerLiteral",
       "offset": 2240,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
       "kind": "IntegerLiteral",
       "offset": 2742,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Debounce.swift",
       "kind": "BooleanLiteral",
       "offset": 3363,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
       "kind": "StringLiteral",
       "offset": 2972,
       "length": 20,
       "value": "\"OnfleetReactiveKit.DistinctUntilChanged\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
       "kind": "BooleanLiteral",
       "offset": 4483,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+DistinctUntilChanged.swift",
       "kind": "BooleanLiteral",
       "offset": 4533,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Filter.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Filter.swift",
       "kind": "StringLiteral",
       "offset": 790,
       "length": 6,
       "value": "\"OnfleetReactiveKit.Filter\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Filter.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Filter.swift",
       "kind": "BooleanLiteral",
       "offset": 1842,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Map.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Map.swift",
       "kind": "StringLiteral",
       "offset": 792,
       "length": 3,
       "value": "\"OnfleetReactiveKit.Map\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
       "kind": "StringLiteral",
       "offset": 2393,
       "length": 11,
       "value": "\"OnfleetReactiveKit.MergeSimple\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
       "kind": "StringLiteral",
       "offset": 3420,
       "length": 10,
       "value": "\"OnfleetReactiveKit.MergeArray\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+MergeArray.swift",
       "kind": "Array",
       "offset": 4911,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ObserveOn.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ObserveOn.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 9,
       "value": "\"OnfleetReactiveKit.ObserveOn\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Scan.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Scan.swift",
       "kind": "StringLiteral",
       "offset": 1690,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Scan\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
       "kind": "StringLiteral",
       "offset": 1625,
       "length": 18,
       "value": "\"OnfleetReactiveKit.ObservableSequence\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
       "kind": "BooleanLiteral",
       "offset": 2584,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
       "kind": "BooleanLiteral",
       "offset": 3051,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Sequence.swift",
       "kind": "BooleanLiteral",
       "offset": 3217,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
       "kind": "StringLiteral",
       "offset": 754,
       "length": 9,
       "value": "\"OnfleetReactiveKit.SkipCount\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
       "kind": "IntegerLiteral",
       "offset": 1617,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Skip.swift",
       "kind": "IntegerLiteral",
       "offset": 1714,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
       "kind": "StringLiteral",
       "offset": 748,
       "length": 9,
       "value": "\"OnfleetReactiveKit.TakeCount\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Take.swift",
       "kind": "IntegerLiteral",
       "offset": 1713,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+WithLatestFrom.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+WithLatestFrom.swift",
       "kind": "StringLiteral",
       "offset": 2036,
       "length": 14,
       "value": "\"OnfleetReactiveKit.WithLatestFrom\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 1125,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "BooleanLiteral",
       "offset": 1344,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "BooleanLiteral",
       "offset": 1412,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 1439,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "BooleanLiteral",
       "offset": 1506,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "BooleanLiteral",
       "offset": 1584,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "BooleanLiteral",
       "offset": 1630,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 5711,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Zip2\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 6683,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 6830,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 6882,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 6992,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 7044,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 7423,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 7459,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 6388,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 9388,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Zip3\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10464,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10611,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10663,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10773,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10825,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10935,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 10987,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 11424,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 11460,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 11496,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 10161,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 13597,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Zip4\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 14777,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 14924,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 14976,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15086,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15138,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15248,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15300,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15410,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15462,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15957,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 15993,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 16029,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "IntegerLiteral",
       "offset": 16065,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+Zip.swift",
       "kind": "StringLiteral",
       "offset": 14466,
       "length": 4,
       "value": "\"OnfleetReactiveKit.Sink\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "StringLiteral",
       "offset": 1718,
       "length": 13,
       "value": "\"OnfleetReactiveKit.ZipCollection\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 3104,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 3172,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4051,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4098,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4516,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4548,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "BooleanLiteral",
       "offset": 4680,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+ZipCollection.swift",
       "kind": "IntegerLiteral",
       "offset": 4735,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "StringLiteral",
       "offset": 819,
       "length": 26,
       "value": "\"n must be greater than 1\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "Array",
       "offset": 872,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "IntegerLiteral",
       "offset": 1610,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "IntegerLiteral",
       "offset": 1623,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observable\/Operators\/Observable+nwise.swift",
       "kind": "IntegerLiteral",
       "offset": 1630,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "BooleanLiteral",
       "offset": 619,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "BooleanLiteral",
       "offset": 688,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "BooleanLiteral",
       "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "BooleanLiteral",
       "offset": 1127,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "BooleanLiteral",
       "offset": 1201,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "Array",
       "offset": 2069,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observation\/Observation.swift",
       "kind": "StringLiteral",
       "offset": 1933,
       "length": 18,
       "value": "\"OnfleetReactiveKit.GroupedObservation\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observer\/Observer.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Observer\/Observer.swift",
       "kind": "StringLiteral",
       "offset": 1068,
       "length": 9,
       "value": "\"OnfleetReactiveKit.Anonymous\""
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 452,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 585,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 619,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 1016,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 1144,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 1277,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 1955,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 2189,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 2571,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 2695,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 2719,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 2946,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 3077,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 3311,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 3905,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 3996,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Queue\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 4019,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
       "kind": "BooleanLiteral",
       "offset": 911,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
       "kind": "BooleanLiteral",
       "offset": 2383,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/milanhorvatovic\/Repositories\/onfleet-ios\/onfleet-driver\/Builder\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
+      "filePath": "\/Users\/dilerbarbosa\/Development\/worktrees\/ios-driver-1.48-sdk-release\/OnfleetDriverSDK\/Modules\/OnfleetReactive\/Sources\/OnfleetReactiveKit\/Subject\/Subject.swift",
       "kind": "StringLiteral",
       "offset": 3013,
       "length": 8,

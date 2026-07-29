@@ -8,6 +8,11 @@ Pods
 DerivedData
 .derived-data-log-*
 
+# Debug symbols emitted into the xcframework by -create-xcframework. Not published:
+# 0.43 and earlier shipped without them, and they are large. Keep in sync with
+# Deploy/SampleApp/gitignore in the monorepo, which overwrites this file on deploy.
+dSYMs/
+
 # CocoaPods generates the workspace on `pod install`
 SampleApp.xcworkspace
 

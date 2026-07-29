@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature AccessLevelOnImport -enable-experimental-feature InternalImportsByDefault -enable-upcoming-feature InternalImportsByDefault -enable-experimental-feature DebugDescriptionMacro -module-name OnfleetDriver -package-name onfleetdriversdk
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 public import CoreLocation
 public import Foundation
 @_exported @preconcurrency public import OnfleetReactiveKit
@@ -600,6 +600,7 @@ public protocol AttachmentsManaging : AnyObject {
   func prepareSignatureAttachment(at url: Foundation.URL, with metadata: OnfleetDriver.PhotoAttachmentMetadata, taskID: Swift.String, and taskShortID: Swift.String) async throws -> OnfleetDriver.PreparedPhotoAttachment
   func unregister(preparedPhotoAttachment: OnfleetDriver.PreparedPhotoAttachment, taskID: Swift.String, and taskShortID: Swift.String) async throws
   func unregister(preparedPhotoAttachmentByID id: Swift.String, taskID: Swift.String, and taskShortID: Swift.String) async throws
+  func loadImageData(at imageLocation: OnfleetDriver.FileLocation) async throws -> Foundation.Data
 }
 public enum AttachmentsPrepareError : Foundation.LocalizedError {
   public enum FileOperationReason : Swift.Sendable {
@@ -768,12 +769,29 @@ public struct CompletedTask : Swift.Hashable {
       public var name: Swift.String
       public var time: Foundation.TimeInterval
     }
+    public struct GeofenceAttempt {
+      public enum AttemptType : Swift.Int {
+        case warn
+        case block
+        public init?(rawValue: Swift.Int)
+        public typealias RawValue = Swift.Int
+        public var rawValue: Swift.Int {
+          get
+        }
+      }
+      public var type: OnfleetDriver.CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType?
+      public var location: _LocationEssentials.CLLocationCoordinate2D?
+      public var timestamp: Foundation.TimeInterval
+    }
     public var success: Swift.Bool
     public var notes: Swift.String
     public var failureReason: Swift.String
     public var successReason: Swift.String?
     public var time: Foundation.TimeInterval
     public var events: [OnfleetDriver.CompletedTask.CompletionDetails.Event]
+    public var geofenceAttempts: [OnfleetDriver.CompletedTask.CompletionDetails.GeofenceAttempt]
+    public var completedWithGeofenceWarning: Swift.Bool?
+    public var pinVerified: Swift.Bool?
     public var hasFailureReason: Swift.Bool {
       get
     }
@@ -835,6 +853,7 @@ extension OnfleetDriver.CompletedTask.TaskType {
       }
     }
     case customRequirement(OnfleetDriver.CompleteTaskError.ValidationFailure.CustomRequirementReason)
+    case pinNotVerified
     public var errorDescription: Swift.String? {
       get
     }
@@ -935,6 +954,26 @@ public struct SignatureAttachment : Swift.Hashable, Swift.Codable, Swift.Sendabl
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct GeofenceAttempt : Swift.Hashable, Swift.Sendable {
+  @frozen public enum AttemptType : Swift.Int, Swift.Sendable {
+    case warn
+    case block
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public let type: OnfleetDriver.GeofenceAttempt.AttemptType
+  public let location: OnfleetDriver.Onfleet.Location.Coordinate2D?
+  public let timestampMs: Swift.Int64
+  public init(type: OnfleetDriver.GeofenceAttempt.AttemptType, location: OnfleetDriver.Onfleet.Location.Coordinate2D?, timestampMs: Swift.Int64)
+  public static func == (a: OnfleetDriver.GeofenceAttempt, b: OnfleetDriver.GeofenceAttempt) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct TaskCompletionDetails : Swift.Hashable, Swift.Sendable {
   @frozen public enum Result : Swift.Hashable, Swift.Sendable {
     case success(reason: Swift.String?, notes: Swift.String?)
@@ -1028,6 +1067,9 @@ public struct TaskCompletionDetails : Swift.Hashable, Swift.Sendable {
   public var ageVerification: OnfleetDriver.TaskCompletionDetails.AgeVerification?
   public var attestationAge: Swift.Int?
   public var customRequirements: [OnfleetDriver.TaskCompletionDetails.CustomRequirement]?
+  public var geofenceAttempts: [OnfleetDriver.GeofenceAttempt]
+  public var completedWithGeofenceWarning: Swift.Bool?
+  public var pinVerified: Swift.Bool?
   public init()
   public static func == (a: OnfleetDriver.TaskCompletionDetails, b: OnfleetDriver.TaskCompletionDetails) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -1084,7 +1126,7 @@ public protocol DriverManaging : AnyObject {
   var isDriverCommunicationEnabled: Swift.Bool { get }
   var shouldHideCompletedTaskPII: Swift.Bool { get }
   func uploadProfileImage(imageUrl: Foundation.URL, progress: @escaping (Swift.Float) -> Swift.Void, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
-  func urlForTemporaryProfileImage(for uploadId: Swift.String) -> Foundation.URL
+  func urlForTemporaryProfileImage(for uploadId: Swift.String) -> Foundation.URL?
   func updateProfile(details: OnfleetDriver.Legacy.DriverProfileDetails, completion: @escaping OnfleetDriver.UpdateProfileHandler)
   var activeTask: OnfleetDriver.Legacy.Task? { get }
   func start(task: OnfleetDriver.Legacy.Task, completion: @escaping OnfleetDriver.StartTaskHandler)
@@ -1277,8 +1319,8 @@ extension OnfleetDriver.TaskDetailError {
   public static func == (lhs: OnfleetDriver.TaskDetailError, rhs: OnfleetDriver.TaskDetailError) -> Swift.Bool
 }
 extension OnfleetDriver.Legacy {
-  public struct DriverProfileDetails : Swift.Equatable, Swift.Codable, Swift.Sendable {
-    public struct Vehicle : Swift.Equatable, Swift.Codable, Swift.Sendable {
+  public struct DriverProfileDetails : Swift.Equatable, Swift.Sendable {
+    public struct Vehicle : Swift.Equatable, Swift.Sendable {
       public var description: Swift.String?
       public var licensePlate: Swift.String?
       public var color: Swift.String?
@@ -1289,14 +1331,10 @@ extension OnfleetDriver.Legacy {
       public static func truck(description: Swift.String?, plate: Swift.String?, color: Swift.String?) -> OnfleetDriver.Legacy.DriverProfileDetails.Vehicle
       public static func motorcycle(description: Swift.String?, plate: Swift.String?, color: Swift.String?) -> OnfleetDriver.Legacy.DriverProfileDetails.Vehicle
       public static func == (a: OnfleetDriver.Legacy.DriverProfileDetails.Vehicle, b: OnfleetDriver.Legacy.DriverProfileDetails.Vehicle) -> Swift.Bool
-      public func encode(to encoder: any Swift.Encoder) throws
-      public init(from decoder: any Swift.Decoder) throws
     }
-    @frozen public enum Value<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+    @frozen public enum Value<T> {
       case update(_: T)
       case ignore
-      public func encode(to encoder: any Swift.Encoder) throws
-      public init(from decoder: any Swift.Decoder) throws
     }
     public var name: OnfleetDriver.Legacy.DriverProfileDetails.Value<Swift.String>
     public var displayName: OnfleetDriver.Legacy.DriverProfileDetails.Value<Swift.String?>
@@ -1305,9 +1343,7 @@ extension OnfleetDriver.Legacy {
     public var capacity: OnfleetDriver.Legacy.DriverProfileDetails.Value<Swift.Int?>
     public var vehicle: OnfleetDriver.Legacy.DriverProfileDetails.Value<OnfleetDriver.Legacy.DriverProfileDetails.Vehicle>
     public init()
-    public func encode(to encoder: any Swift.Encoder) throws
     public static func == (a: OnfleetDriver.Legacy.DriverProfileDetails, b: OnfleetDriver.Legacy.DriverProfileDetails) -> Swift.Bool
-    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension OnfleetDriver.Legacy.DriverProfileDetails.Value : Swift.Equatable where T : Swift.Equatable {
@@ -1429,6 +1465,7 @@ extension OnfleetDriver.Legacy {
     public var data: Swift.String?
     public var blockCompletion: Swift.Bool?
     public var dropOffTask: Swift.String?
+    public var pickUpTask: Swift.String?
     public var noBarcode: Swift.Bool?
     public static func == (a: OnfleetDriver.Legacy.BarcodeRequest, b: OnfleetDriver.Legacy.BarcodeRequest) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -1672,9 +1709,7 @@ extension OnfleetDriver.Legacy {
     public func getName() -> Swift.String
     public func getCountry() -> Swift.String
     public func getImage() -> Swift.String?
-    public func getImageUrlExtraSmall() -> Foundation.URL?
-    public func getImageUrlSmall() -> Foundation.URL?
-    public func getImageUrlMedium() -> Foundation.URL?
+    public func getImageResourceURL() -> OnfleetDriver.Onfleet.ResourceURL?
     public func getOrgConfig() -> Swift.Dictionary<Swift.String, Swift.String>
     public func getAppConfig() -> Swift.Dictionary<Swift.String, Swift.String>
     public func getEnabledFeatures() -> Swift.Dictionary<Swift.String, Swift.String>
@@ -1744,6 +1779,9 @@ extension OnfleetDriver.Legacy {
       final public var attestationAge: Swift.Int? {
         get
       }
+      final public var pin: Swift.Bool? {
+        get
+      }
       @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
       @objc deinit
     }
@@ -1775,6 +1813,7 @@ extension OnfleetDriver.Legacy {
     final public let customFields: OnfleetDriver.ModelProperty<[OnfleetDriver.Legacy.CustomField]>
     final public let orderShortId: OnfleetDriver.ModelProperty<Swift.String?>
     final public let merchantName: OnfleetDriver.ModelProperty<Swift.String?>
+    final public let bulkTasks: OnfleetDriver.ModelProperty<[OnfleetDriver.Onfleet.BulkTask]?>
     public var routePlan: OnfleetDriver.Onfleet.RoutePlan? {
       get
     }
@@ -2493,6 +2532,7 @@ extension OnfleetDriver.Onfleet {
     public let data: Swift.String?
     public let blockCompletion: Swift.Bool
     public let dropOffTask: Swift.String?
+    public let pickUpTask: Swift.String?
     public let noBarcode: Swift.Bool
     public static func == (a: OnfleetDriver.Onfleet.RequiredBarcode, b: OnfleetDriver.Onfleet.RequiredBarcode) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -2806,7 +2846,34 @@ extension OnfleetDriver.Onfleet.Organization {
     public let photoOnCompletion: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.TaskCompletionRequirements
     public let signatureOnCompletion: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.TaskCompletionRequirements
     public let notesOnCompletion: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.TaskCompletionRequirements
+    public let geofence: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence
     public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet.Organization.ApplicationConfiguration {
+  public struct Geofence : OnfleetDriver.OnfleetModelRepresentable {
+    public static let `default`: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence
+    public let requirementLevel: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel
+    public let radiusMeters: Swift.Double
+    public let taskTypes: [OnfleetDriver.Onfleet.TaskType]
+    public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence {
+  public enum RequirementLevel : OnfleetDriver.OnfleetModelRepresentable {
+    case off
+    case warn
+    case block
+    case unknown(Swift.Int)
+    public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
@@ -3025,6 +3092,22 @@ extension OnfleetDriver.Onfleet.RoutePlanTaskState {
   }
 }
 extension OnfleetDriver.Onfleet {
+  public struct BulkTask : OnfleetDriver.OnfleetIdentifiableModelRepresentable {
+    public let id: Swift.String
+    public let type: OnfleetDriver.Onfleet.TaskType
+    public let shortId: Swift.String
+    public let orderId: Swift.String?
+    public let linkedTaskDestination: OnfleetDriver.Onfleet.Destination?
+    public let linkedTaskRecipient: OnfleetDriver.Onfleet.Recipient?
+    public static func == (a: OnfleetDriver.Onfleet.BulkTask, b: OnfleetDriver.Onfleet.BulkTask) -> Swift.Bool
+    public typealias ID = Swift.String
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet {
   public struct Task : OnfleetDriver.OnfleetContentModelRepresentable {
     public let id: Swift.String
     public let timeCreated: Foundation.Date
@@ -3041,6 +3124,7 @@ extension OnfleetDriver.Onfleet {
     public let requirements: OnfleetDriver.Onfleet.Task.Requirements
     public let overrides: OnfleetDriver.Onfleet.StructuredValue
     public let requiredBarcodes: [OnfleetDriver.Onfleet.RequiredBarcode]?
+    public let pinVerification: OnfleetDriver.Onfleet.Task.PinVerification?
     public let isFulfilled: Swift.Bool
     public let organization: Swift.String
     public let executor: Swift.String
@@ -3057,6 +3141,7 @@ extension OnfleetDriver.Onfleet {
     public let orderShortId: Swift.String?
     public let merchantName: Swift.String?
     public let routePlan: Swift.String?
+    public let bulkTasks: [OnfleetDriver.Onfleet.BulkTask]?
     public static func == (a: OnfleetDriver.Onfleet.Task, b: OnfleetDriver.Onfleet.Task) -> Swift.Bool
     public typealias ID = Swift.String
     public func hash(into hasher: inout Swift.Hasher)
@@ -3102,7 +3187,20 @@ extension OnfleetDriver.Onfleet.Task {
     public let barcodes: OnfleetDriver.Onfleet.Task.CompletionRequirement
     public let ageVerification: OnfleetDriver.Onfleet.Task.CompletionRequirement
     public let notes: OnfleetDriver.Onfleet.Task.CompletionRequirement
+    public let pin: OnfleetDriver.Onfleet.Task.CompletionRequirement
     public static func == (a: OnfleetDriver.Onfleet.Task.CompletionRequirements, b: OnfleetDriver.Onfleet.Task.CompletionRequirements) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet.Task {
+  public struct PinVerification : OnfleetDriver.OnfleetModelRepresentable {
+    public let hash: Swift.String
+    public let salt: Swift.String
+    public init(hash: Swift.String, salt: Swift.String)
+    public static func == (a: OnfleetDriver.Onfleet.Task.PinVerification, b: OnfleetDriver.Onfleet.Task.PinVerification) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
@@ -3116,6 +3214,7 @@ extension OnfleetDriver.Onfleet.Task {
     public let photo: Swift.Bool?
     public let minimumAge: Swift.Int?
     public let attestationAge: Swift.Int?
+    public let pin: Swift.Bool?
     public static func == (a: OnfleetDriver.Onfleet.Task.Requirements, b: OnfleetDriver.Onfleet.Task.Requirements) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -3312,12 +3411,21 @@ extension OnfleetDriver.Onfleet {
   }
 }
 final public class DriverContext {
+  public enum InitializationError : Swift.Error {
+    case alreadyInitialized
+    case protectedDataUnavailable
+    public static func == (a: OnfleetDriver.DriverContext.InitializationError, b: OnfleetDriver.DriverContext.InitializationError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
   public static let shared: OnfleetDriver.DriverContext
   final public var isInitialized: Swift.Bool {
     get
   }
   public init()
-  final public func initSDK(with applicationConfig: OnfleetDriver.ApplicationConfig, environment: OnfleetDriver.Environment, app: UIKit.UIApplication, loggers: [any OnfleetDriver.LoggerDestination])
+  final public func initSDK(with applicationConfig: OnfleetDriver.ApplicationConfig, environment: OnfleetDriver.Environment, app: UIKit.UIApplication, loggers: [any OnfleetDriver.LoggerDestination]) throws
   @objc deinit
 }
 extension OnfleetDriver.DriverContext {
@@ -3655,7 +3763,14 @@ public protocol KeychainDataStoreSettable : Swift.Sendable {
 }
 public protocol KeychainDataStoreRepresentable : OnfleetDriver.KeychainDataStoreAccessible, OnfleetDriver.KeychainDataStoreSettable {
 }
-final public class GenericPasswordKeychain {
+public protocol KeychainDataStoreAtomicAddProtocol : Swift.Sendable {
+  func addIfAbsent(_ value: Foundation.Data, for key: Swift.String) throws
+}
+@frozen public enum KeychainDataStoreAtomicAddError : Swift.Error {
+  case duplicateItem
+  case operationFailed(status: Darwin.OSStatus)
+}
+final public class GenericPasswordKeychain : Swift.Sendable {
   @frozen public enum Errors : Foundation.LocalizedError {
     case operationFailed
     case missingEntitlement
@@ -3697,6 +3812,7 @@ final public class GenericPasswordKeychain {
   final public func value(for key: Swift.String) throws -> Foundation.Data?
   final public func set(value: Swift.String, for key: Swift.String) throws
   final public func set(value: Foundation.Data, for key: Swift.String) throws
+  final public func addIfAbsent(value: Foundation.Data, for key: Swift.String) throws
   @objc deinit
 }
 final public class Keychain : OnfleetDriver.KeychainStoreProtocol {
@@ -3719,6 +3835,9 @@ extension OnfleetDriver.Keychain {
 extension OnfleetDriver.Keychain {
   final public func string(for key: Swift.String) throws -> Swift.String?
   final public func set(_ value: Swift.String?, for forKey: Swift.String) throws
+}
+extension OnfleetDriver.Keychain : OnfleetDriver.KeychainDataStoreAtomicAddProtocol {
+  final public func addIfAbsent(_ value: Foundation.Data, for key: Swift.String) throws
 }
 extension OnfleetDriver.Keychain {
   final public func remove(for key: Swift.String) throws
@@ -4000,9 +4119,8 @@ public protocol WorkTask : AnyObject, Swift.CustomDebugStringConvertible, Swift.
   func cancel()
 }
 public enum ImageURLBuilder {
-  public static func makeMedium(_ imageId: Swift.String) -> Foundation.URL
-  public static func makeSmall(_ imageId: Swift.String) -> Foundation.URL
-  public static func makeExtraSmall(_ imageId: Swift.String) -> Foundation.URL
+  public static func makeWorkerImage(_ imageId: Swift.String) -> OnfleetDriver.Onfleet.ResourceURL?
+  public static func makeOrganizationImage(_ imageId: Swift.String) -> OnfleetDriver.Onfleet.ResourceURL?
 }
 @frozen public enum IntegrationStatus : Swift.Equatable {
   case initiated
@@ -4220,12 +4338,8 @@ public enum Onfleet {
 public enum OrganizationImageURLBuilder {
 }
 extension OnfleetDriver.OrganizationImageURLBuilder {
-  public static func makeExtraSmall(from organization: OnfleetDriver.Onfleet.Organization) -> Foundation.URL?
-  public static func makeExtraSmall(from organization: OnfleetDriver.Onfleet.OrganizationInfo) -> Foundation.URL?
-  public static func makeSmall(from organization: OnfleetDriver.Onfleet.Organization) -> Foundation.URL?
-  public static func makeSmall(from organization: OnfleetDriver.Onfleet.OrganizationInfo) -> Foundation.URL?
-  public static func makeMedium(from organization: OnfleetDriver.Onfleet.Organization) -> Foundation.URL?
-  public static func makeMedium(from organization: OnfleetDriver.Onfleet.OrganizationInfo) -> Foundation.URL?
+  public static func makeResourceURL(from organization: OnfleetDriver.Onfleet.Organization) -> OnfleetDriver.Onfleet.ResourceURL?
+  public static func makeResourceURL(from organization: OnfleetDriver.Onfleet.OrganizationInfo) -> OnfleetDriver.Onfleet.ResourceURL?
 }
 public protocol OrganizationManagerProtocol : Swift.Sendable {
   var organization: OnfleetDriver.Onfleet.AnyAsyncSequence<OnfleetDriver.Onfleet.Organization?> { get }
@@ -4605,6 +4719,13 @@ extension OnfleetDriver.AnalyticsPeriodDuration : Swift.RawRepresentable {}
 extension OnfleetDriver.AnalyticsPeriodDuration : Swift.Sendable {}
 extension OnfleetDriver.AnalyticsPeriodDuration : Swift.BitwiseCopyable {}
 extension OnfleetDriver.ImagePreparationResult : Swift.Sendable {}
+extension OnfleetDriver.CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType : Swift.Equatable {}
+extension OnfleetDriver.CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType : Swift.Hashable {}
+extension OnfleetDriver.CompletedTask.CompletionDetails.GeofenceAttempt.AttemptType : Swift.RawRepresentable {}
+extension OnfleetDriver.GeofenceAttempt.AttemptType : Swift.Equatable {}
+extension OnfleetDriver.GeofenceAttempt.AttemptType : Swift.Hashable {}
+extension OnfleetDriver.GeofenceAttempt.AttemptType : Swift.RawRepresentable {}
+extension OnfleetDriver.GeofenceAttempt.AttemptType : Swift.BitwiseCopyable {}
 extension OnfleetDriver.FetchingState : Swift.Sendable {}
 extension OnfleetDriver.Legacy.Metadata.ValueType : Swift.RawRepresentable {}
 extension OnfleetDriver.Legacy.Metadata.ValueType : Swift.Sendable {}
@@ -4647,6 +4768,8 @@ extension OnfleetDriver.InvitationResponse : Swift.Hashable {}
 extension OnfleetDriver.InvitationResponse : Swift.Sendable {}
 extension OnfleetDriver.InvitationResponse : Swift.BitwiseCopyable {}
 extension OnfleetDriver.DriverContext : Swift.Sendable {}
+extension OnfleetDriver.DriverContext.InitializationError : Swift.Equatable {}
+extension OnfleetDriver.DriverContext.InitializationError : Swift.Hashable {}
 extension OnfleetDriver.HmacSignature.Algorithm : Swift.Equatable {}
 extension OnfleetDriver.HmacSignature.Algorithm : Swift.Hashable {}
 extension OnfleetDriver.HmacSignature.Algorithm : Swift.Sendable {}
@@ -4656,6 +4779,7 @@ extension OnfleetDriver.HmacSignature.Error : Swift.Hashable {}
 extension OnfleetDriver.HmacSignature.Error : Swift.BitwiseCopyable {}
 extension OnfleetDriver.Environment : Swift.Sendable {}
 extension OnfleetDriver.Environment : Swift.BitwiseCopyable {}
+extension OnfleetDriver.KeychainDataStoreAtomicAddError : Swift.BitwiseCopyable {}
 extension OnfleetDriver.GenericPasswordKeychain.Errors : Swift.Equatable {}
 extension OnfleetDriver.GenericPasswordKeychain.Errors : Swift.Hashable {}
 extension OnfleetDriver.GenericPasswordKeychain.Errors : Swift.BitwiseCopyable {}
