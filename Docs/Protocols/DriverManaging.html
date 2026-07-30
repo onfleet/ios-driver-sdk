@@ -51,6 +51,9 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DriverContext/InitializationError.html">– InitializationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
@@ -393,6 +396,12 @@
                 <a class="nav-group-task-link" href="../Structs/DriverLicense.html">DriverLicense</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt.html">GeofenceAttempt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt/AttemptType.html">– AttemptType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PhotoAttachmentMetadata.html">PhotoAttachmentMetadata</a>
               </li>
               <li class="nav-group-task">
@@ -514,11 +523,11 @@ tasks, and assigned tasks. Many operations post notifications (e.g.,
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/new%20section"></a>
-                <a name="//apple_ref/swift/Section/new section" class="dashAnchor"></a>
+                <a name="/New%20section"></a>
+                <a name="//apple_ref/swift/Section/New section" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/new%20section"></a>
-                  <h3 class="section-name"><span>new section</span>
+                  <a class="section-name-link" href="#/New%20section"></a>
+                  <h3 class="section-name"><span>New section</span>
 </h3>
                 </div>
               </div>
@@ -918,7 +927,7 @@ the task is completed.</p>
 <ol>
 <li>Call this method to upload the image and receive an upload identifier.</li>
 <li>Optionally, use the upload identifier with
-<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF">urlForTemporaryProfileImage(for:)</a></code> to display the image before the
+<code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSgSS_tF">urlForTemporaryProfileImage(for:)</a></code> to display the image before the
 profile update is confirmed.</li>
 <li>Set the upload identifier on the profile details and call
 <code><a href="../Protocols/DriverManaging.html#/s:13OnfleetDriver0B8ManagingP13updateProfile7details10completionyAA6LegacyO0bE7DetailsV_ys6ResultOyytAA06UpdateE5ErrorOGctF">updateProfile(details:completion:)</a></code> to finalize the change.</li>
@@ -984,9 +993,9 @@ upload identifier string to use with the profile update.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF"></a>
+                    <a name="/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSgSS_tF"></a>
                     <a name="//apple_ref/swift/Method/urlForTemporaryProfileImage(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSS_tF">urlForTemporaryProfileImage(for:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B8ManagingP27urlForTemporaryProfileImage3for10Foundation3URLVSgSS_tF">urlForTemporaryProfileImage(for:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1005,7 +1014,7 @@ is sent to the server.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">urlForTemporaryProfileImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">uploadId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">urlForTemporaryProfileImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">uploadId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1031,7 +1040,8 @@ is sent to the server.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A URL for downloading the temporary profile image.</p>
+                        <p>A URL for downloading the temporary profile image, or <code>nil</code>
+when no authenticated session is available.</p>
                       </div>
                     </section>
                   </div>

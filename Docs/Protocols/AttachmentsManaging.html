@@ -51,6 +51,9 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DriverContext/InitializationError.html">– InitializationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
@@ -393,6 +396,12 @@
                 <a class="nav-group-task-link" href="../Structs/DriverLicense.html">DriverLicense</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt.html">GeofenceAttempt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt/AttemptType.html">– AttemptType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PhotoAttachmentMetadata.html">PhotoAttachmentMetadata</a>
               </li>
               <li class="nav-group-task">
@@ -601,6 +610,42 @@ This unregister function take care about the cleaning up.</p>
     <p class="aside-title">Warning</p>
     <p>Do not manuallty remove the prepared attachment.
 This unregister function take care about the cleaning up.</p>
+
+</div>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/loadImageData(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">loadImageData(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the plaintext bytes of a prepared image at the given location.</p>
+
+<p>Prepared attachments are encrypted at rest. Use this method to read the
+decrypted bytes when a host UI surface needs to render the prepared image
+(for example, an inline preview on the task completion screen).</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Implementations MUST perform the synchronous file-handle
+read and AES-GCM open on a non-main executor. Callers may invoke this
+from a <code>@MainActor</code>-isolated <code>Task { ... }</code> without blocking the main
+thread.</p>
+
+</div><div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>An error if the file is missing, the path is not a
+prepared SDK image, or decryption fails.</p>
 
 </div>
 

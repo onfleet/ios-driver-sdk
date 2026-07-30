@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let useApnSandbox = false
 #endif
         
-//        #error("insert your application_id here")
+        #error("insert your application_id here")
         let applicationId = "YOUR_APP_ID_HERE"
         let logLevel = Onfleet.LogLevel.warning
         // staging environment is not available in PUBLIC_BUILD mode; use production for integration testing
@@ -38,7 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let config = try? ApplicationConfig(appKey: applicationId, appVersion: "1.0", appName: "Sample App") else {
             return false
         }
-        driver.initSDK(with: config, environment: environment, app: application, loggers: [Onfleet.OSLogDestination(logSeverity: logLevel)])
+        do {
+            try driver.initSDK(
+                with: config,
+                environment: environment,
+                app: application,
+                loggers: [Onfleet.OSLogDestination(logSeverity: logLevel)]
+            )
+        }
+        catch {
+            return false
+        }
         
         center.delegate = self
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in

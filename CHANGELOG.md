@@ -1,6 +1,46 @@
 # Change Log
 Breaking changes and additions to to Onfleet SDK will be documented in this file.
 
+## [0.47] - 2026-07-16
+
+### Breaking Changes
+
+- **Local storage moved from Core Data to Realm, and existing on-device data is NOT migrated — it is deleted.** On the first launch after upgrading from 0.43, each per-module store opens as a new, empty Realm and the legacy Core Data `.sqlite*` files in the same directory are removed once the first UI has been presented. Nothing is read from them first; there is no migration path.
+
+  Most of what is lost is a server-backed cache and is restored by one sync. **Two stores are not**, and their contents never reached the Onfleet backend:
+
+  - **Queued offline task operations.** Task starts and completions a driver performed while offline are held only in this store. Each queued completion carries the full proof-of-delivery record captured at the door — signature, photo references, scanned barcodes, age verification, PIN verification, completion reason and notes, geofence attempts and location. These are discarded, the task re-materializes from the server in its pre-action state, and the driver must redo the work. The loss is silent: an empty queue is indistinguishable from a drained one.
+  - **Pending photo and signature uploads.** The upload index is wiped while the image files themselves remain on disk, orphaned — so the uploads never complete and the bytes are never reclaimed. A proof-of-delivery photo cannot be recaptured after the driver has left the drop-off.
+
+  Also unrecoverable but low impact: up to 8192 un-uploaded GPS points, and active-task statistics feeding one completion payload.
+
+  **Before shipping an app built against 0.47, drain the queue on 0.43:** get drivers online and fully synced, and confirm no pending uploads remain, before they take the update. Consider gating the upgrade on a synced state.
+
+- `DriverContext.initSDK(with:environment:app:loggers:)` now `throws`. Add `try` at the call site and handle the new `DriverContext.InitializationError` — `.alreadyInitialized` (the SDK was already initialized) and `.protectedDataUnavailable` (the device is locked and protected storage cannot be opened, so initialization must be retried once the device is unlocked).
+- The organization and worker image URL builders were replaced by `Onfleet.ResourceURL`-returning accessors. Removed: `makeSmall(_:)`, `makeMedium(_:)`, `makeExtraSmall(_:)`, their `from: Onfleet.Organization` / `from: Onfleet.OrganizationInfo` overloads, and `getImageUrlSmall()` / `getImageUrlMedium()` / `getImageUrlExtraSmall()`. Use `makeWorkerImage(_:)`, `makeOrganizationImage(_:)`, `makeResourceURL(from:)`, and `getImageResourceURL()` instead — each returns an optional `Onfleet.ResourceURL` rather than a size-specific `URL`, and the size is selected when the resource is resolved.
+- `CompleteTaskError.ValidationFailure` gained a `.pinNotVerified` case. Because that enum is `@frozen`, an exhaustive `switch` over it will no longer compile — add a branch for `.pinNotVerified`.
+- `Legacy.DriverProfileDetails`, its nested `Vehicle`, and its nested `Value<T>` no longer conform to `Codable`, and `Value<T>` no longer carries the `where T: Codable` constraint. Encode or decode these types through your own representation if you were persisting them directly.
+- `urlForTemporaryProfileImage(for:)` now returns an optional `URL?` instead of a non-optional `URL`; unwrap at the call site.
+
+### Added Features
+
+- **Task completion geofence**
+- **PIN verification on task completion**
+
+### Added
+
+- Geofence configuration on `Onfleet.Organization.ApplicationConfiguration.Geofence`: `radiusMeters`, `taskTypes`, `requirementLevel`, and a `.default` configuration. `RequirementLevel` is `off`, `warn`, `block`, or `unknown(Int)` for forward compatibility.
+- `GeofenceAttempt` (`type`, `location`, `timestampMs`, and an `AttemptType`) records where and when a completion was attempted. Completion details expose `geofenceAttempts` and `completedWithGeofenceWarning`, and completed-task history carries its own `CompletedTask.CompletionDetails.GeofenceAttempt` with a `location` / `timestamp` / `type` triple.
+- PIN support: `Onfleet.Task.PinVerification` (`hash`, `salt`) for local verification without sending the PIN, a `pin` completion requirement on `Onfleet.Task.CompletionRequirement`, a tri-state `pin: Bool?` on the requirement models, and `pinVerified: Bool?` on completion details and completed-task history.
+- `Onfleet.BulkTask` model, exposed both as `bulkTasks: [Onfleet.BulkTask]?` and as an observable `ModelProperty<[Onfleet.BulkTask]?>`, with `linkedTaskDestination`, `linkedTaskRecipient`, `orderId`, and `pickUpTask` for grouping orders collected together.
+- `loadImageData(at:)` — an `async throws` accessor returning image `Data` for a `FileLocation`.
+- Atomic keychain insertion: `KeychainDataStoreAtomicAddProtocol` with `addIfAbsent(_:for:)`, which writes only when the key is absent and otherwise throws `KeychainDataStoreAtomicAddError.duplicateItem` or `.operationFailed(status:)`.
+
+### Changed
+
+- The shipped framework no longer bundles Core Data model resources for the content, location, attachments, statistics, and synchronization stores, following the move to Realm (see Breaking Changes for the on-device data consequences).
+- `GenericPasswordKeychain` now conforms to `Sendable`, and `Onfleet.Keychain` conforms to the new `KeychainDataStoreAtomicAddProtocol`.
+
 ## [0.43] - 2026-03-12
 
 ### Breaking Changes

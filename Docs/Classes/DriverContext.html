@@ -51,6 +51,9 @@
                 <a class="nav-group-task-link" href="../Classes/DriverContext.html">DriverContext</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DriverContext/InitializationError.html">– InitializationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/DriverContext/Preconditions.html">– Preconditions</a>
               </li>
             </ul>
@@ -393,6 +396,12 @@
                 <a class="nav-group-task-link" href="../Structs/DriverLicense.html">DriverLicense</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt.html">GeofenceAttempt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GeofenceAttempt/AttemptType.html">– AttemptType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/PhotoAttachmentMetadata.html">PhotoAttachmentMetadata</a>
               </li>
               <li class="nav-group-task">
@@ -468,7 +477,7 @@
 
 <p>Access shared instance using <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC6sharedACvpZ">DriverContext.shared</a></code>. Before host app starts using <code>shared</code> it
 must intitate SDK early at application launching sequence. See
-<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtF">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
+<code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtKF">DriverContext.initSDK(with:environment:app:loggers:)</a></code>. To check if SDK has been already initialized you can
 check <code><a href="../Classes/DriverContext.html#/s:13OnfleetDriver0B7ContextC13isInitializedSbvp">DriverContext.isInitialized</a></code> property.</p>
 
 <p>DriverContext provides access to following core services:</p>
@@ -511,6 +520,15 @@ See methods in dedicated section below for more info.</li>
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OnfleetDriver0B7ContextC19InitializationErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/InitializationError" class="dashAnchor"></a>
+                    <a class="direct-link" href="../Classes/DriverContext/InitializationError.html">InitializationError</a>
+                    </code>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -623,8 +641,8 @@ See methods in dedicated section below for more info.</li>
                   <div>
                     <code>
                     <a name="/"></a>
-                    <a name="//apple_ref/swift/Method/initialize(applicationStateManager:applicationStateManagerCombine:locationPermissionManager:)" class="dashAnchor"></a>
-                    <a class="token" href="#/">initialize(applicationStateManager:<wbr>applicationStateManagerCombine:<wbr>locationPermissionManager:<wbr>)</a>
+                    <a name="//apple_ref/swift/Method/initialize(applicationStateManager:applicationStateManagerCombine:locationPermissionManager:protectedDataAvailabilityDataSource:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">initialize(applicationStateManager:<wbr>applicationStateManagerCombine:<wbr>locationPermissionManager:<wbr>protectedDataAvailabilityDataSource:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -663,9 +681,9 @@ initializing does nothing.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtF"></a>
+                    <a name="/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtKF"></a>
                     <a name="//apple_ref/swift/Method/initSDK(with:environment:app:loggers:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtF">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
+                    <a class="token" href="#/s:13OnfleetDriver0B7ContextC7initSDK4with11environment3app7loggersyAA17ApplicationConfigV_AA11EnvironmentOSo13UIApplicationCSayAA17LoggerDestination_pGtKF">initSDK(with:<wbr>environment:<wbr>app:<wbr>loggers:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -683,7 +701,7 @@ initializing does nothing.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initSDK</span><span class="p">(</span><span class="n">with</span> <span class="nv">applicationConfig</span><span class="p">:</span> <span class="kt">ApplicationConfig</span><span class="p">,</span>
                     <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span><span class="p">,</span>
                     <span class="nv">app</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
-                    <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">LoggerDestination</span><span class="p">])</span></code></pre>
+                    <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">LoggerDestination</span><span class="p">])</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -906,6 +924,25 @@ initializing does nothing.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/geofenceRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/">geofenceRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Getter for the active-task geofence repository.</p>
+
                       </div>
                     </section>
                   </div>
