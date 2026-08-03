@@ -36,13 +36,40 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pods-
 
+      - name: Select the CocoaPods version Podfile.lock was written with
+        # --deployment below compares Podfile.lock's own COCOAPODS: stamp against the
+        # running pod and fails when they differ, even when the resolved pods are
+        # byte-identical. The runner image's CocoaPods version moves on GitHub's
+        # schedule -- it went from 1.16.2 to 1.17.0 between the 0.43 and 0.47 releases
+        # and failed #5 in 13 seconds -- so taking whatever the image ships makes CI
+        # depend on a version nobody declared.
+        #
+        # Read the version out of the lockfile rather than pinning it separately. The
+        # stamp is the only value --deployment accepts, so the two cannot disagree,
+        # and regenerating the lock with a newer pod is followed automatically with
+        # nothing to bump by hand. The trade is that a lock committed from an
+        # unintended pod version is reproduced rather than questioned -- but
+        # --deployment never checked that either; it only ever enforced agreement.
+        run: |
+          version="$(awk '$1 == "COCOAPODS:" { print $2; found = 1; exit } END { if (!found) exit 1 }' Podfile.lock)" || {
+              echo "::error::Podfile.lock has no COCOAPODS: stamp, so the CocoaPods version to install cannot be determined." >&2
+              exit 1
+          }
+          if [[ "$(pod --version 2>/dev/null)" == "$version" ]]; then
+              echo "Runner already provides CocoaPods $version; nothing to install."
+          else
+              echo "Installing CocoaPods $version to match Podfile.lock."
+              gem install cocoapods -v "$version" --no-document
+          fi
+          echo "COCOAPODS_VERSION=$version" >>"$GITHUB_ENV"
+
       - name: Install pods
         # Always run: pod install integrates the local OnfleetDriver path pod and
         # regenerates the gitignored SampleApp.xcworkspace the build needs. The
         # cache only speeds up the dependency download; a cached Pods/ alone is
         # not enough to build (skipping install yields "no such module
         # 'OnfleetDriver'"). --deployment fails fast if Podfile.lock drifts.
-        run: pod install --deployment
+        run: pod _"${COCOAPODS_VERSION}"_ install --deployment
 
       - name: Build (simulator, no signing)
         run: |
