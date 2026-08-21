@@ -28,7 +28,7 @@ Onfleet Driver SDK allows you to use Onfleet services directly in your iOS app.
 <a name='Requirements'></a>
 
 ## Requirements
-* iOS 13+
+* iOS 16+
 * Swift 5
 * Xcode 12.5+
 * Onfleet application key
@@ -55,11 +55,11 @@ pod 'OnfleetDriver', :git => 'https://github.com/onfleet/ios-driver-sdk.git'
 
 ### Manually
 
-Simply drag and drop `OnfleetDriver.xcframework` into your project and make sure it's linked and embeded with signing into your application's target.
+Simply drag and drop `OnfleetDriver.xcframework` into your project and make sure it's linked and embedded with signing into your application's target.
 
 ### SPM & Carthage
 
-Unfortunatelly we don't currently support SPM or Carthage, but we will do so in the near future.
+Unfortunately we don't currently support SPM or Carthage, but we will do so in the near future.
 
 ### Required linker flag (`-ObjC`)
 
@@ -94,7 +94,13 @@ For example in your app delegate file:
             let config = try ApplicationConfig(appKey: "<#app key here#>", appVersion: "<#App version here#>", appName: "<#App name here#>")
             try driver.initSDK(with: config, environment: .production(useApnSandbox: true), app: application, loggers: [OSLogDestination(logSeverity: .warning)])
         } catch {
-            //handle ApplicationConfigError / DriverContext.InitializationError
+            //do not ignore this - the SDK is unusable until initialization succeeds
+            print("Onfleet Driver SDK initialization failed: \(error)")
+
+            //ApplicationConfigError means the configuration is wrong and retrying will
+            //not help. DriverContext.InitializationError.protectedDataUnavailable means
+            //the device is locked, so retry once it is unlocked. Otherwise disable your
+            //Onfleet-dependent features rather than leaving them in a broken state.
         }
         
         return true
@@ -178,7 +184,7 @@ Following privacy description must be set in `Info.plist`
 <string>Onfleet only tracks your location when on-duty in order to provide analytics and dispatch work to you.</string>
 ```
 
-Unfortunatelly, current iOS permissions policy does not open apps in the background if location access is set to **While in Use** or **Once**. This requires apps to ask _full location permissions_. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. 
+Unfortunately, current iOS permissions policy does not open apps in the background if location access is set to **While in Use** or **Once**. This requires apps to ask _full location permissions_. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. 
 
 Please follow these rules when implementing your own flow:
 1. enforce "Always" no sooner than when going on duty. Don't allow going on duty unless _full location permissions_ are granted. 
