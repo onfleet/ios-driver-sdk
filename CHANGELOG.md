@@ -1,6 +1,28 @@
 # Change Log
 Breaking changes and additions to to Onfleet SDK will be documented in this file.
 
+## [0.48] - 2026-08-11
+
+### Breaking Changes
+
+- `Onfleet.Task.CompletionRequirement.photos` changed type from `CompletionRequirement` to the new `CompletionRequirementByOutcome`, which carries a separate requirement per completion outcome. Any call site reading the photo requirement directly must go through the outcome it means — `requirements.photos.onSuccess` for the existing behaviour, `requirements.photos.onFailure` for the new failure path. Reading `requirements.photos` as a `CompletionRequirement` no longer compiles.
+- `CompleteTaskError.ValidationFailure` gained a `.failurePhotoNotProvided` case, raised when a task is completed as a failure while a photo is required for that outcome. Because that enum is `@frozen`, an exhaustive `switch` over it will no longer compile — add a branch for `.failurePhotoNotProvided`.
+
+### Added Features
+
+- **Go-on-duty geofence**
+- **Photo requirement on failed task completion**
+
+### Added
+
+- Go-on-duty geofence configuration on `Onfleet.Organization.ApplicationConfiguration.OnDutyGeofence`, exposed as `onDutyGeofence`, with a `.default` configuration. It is a distinct configuration from the existing task-completion `Geofence` and carries its own radius, so the two are configured independently.
+- `Onfleet.Task.CompletionRequirementByOutcome`, pairing an `onSuccess` and an `onFailure` `CompletionRequirement`, so a requirement can differ between a successful and a failed completion.
+
+### Changed
+
+- `DriverContext.InitializationError` and `KeychainDataStoreAtomicAddError` now conform to `Foundation.LocalizedError` and provide `errorDescription`, so `error.localizedDescription` returns an explanation rather than a generic Foundation-synthesised string. Both were previously plain `Swift.Error`. This is an additive conformance; no existing declaration changed.
+- The shipped xcframework no longer bundles debug symbols. Its `Info.plist` no longer carries a `DebugSymbolsPath` key, which previously named a `dSYMs` directory that was never actually published. The published artifact drops from roughly 444 MB to 96 MB. No integrator-facing behaviour changes: CocoaPods never read that key, and symbolication of SDK frames was never available through this channel.
+
 ## [0.47] - 2026-07-16
 
 ### Breaking Changes
