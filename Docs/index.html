@@ -495,7 +495,7 @@
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
-<li>iOS 13+</li>
+<li>iOS 16+</li>
 <li>Swift 5</li>
 <li>Xcode 12.5+</li>
 <li>Onfleet application key</li>
@@ -517,10 +517,10 @@
 </code></pre>
 <h3 id='manually' class='heading'>Manually</h3>
 
-<p>Simply drag and drop <code>OnfleetDriver.xcframework</code> into your project and make sure it&rsquo;s linked and embeded with signing into your application&rsquo;s target.</p>
+<p>Simply drag and drop <code>OnfleetDriver.xcframework</code> into your project and make sure it&rsquo;s linked and embedded with signing into your application&rsquo;s target.</p>
 <h3 id='spm-amp-carthage' class='heading'>SPM &amp; Carthage</h3>
 
-<p>Unfortunatelly we don&rsquo;t currently support SPM or Carthage, but we will do so in the near future.</p>
+<p>Unfortunately we don&rsquo;t currently support SPM or Carthage, but we will do so in the near future.</p>
 <h3 id='required-linker-flag-code-objc-code' class='heading'>Required linker flag (<code>-ObjC</code>)</h3>
 
 <p><code>OnfleetDriver.xcframework</code> statically links Objective-C components that rely on runtime class and category registration. The integrating <strong>app target</strong> must therefore link with the <code>-ObjC</code> flag so those symbols are loaded. Without it, the app can crash at runtime with missing-selector or unregistered-class errors.</p>
@@ -546,8 +546,18 @@
 <pre class="highlight swift"><code>    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
 
         <span class="c1">//initiate SDK</span>
-        <span class="k">let</span> <span class="nv">config</span> <span class="o">=</span> <span class="kt">Config</span><span class="p">(</span><span class="nv">appKey</span><span class="p">:</span> <span class="s">"&lt;#app key here#&gt;"</span><span class="p">,</span> <span class="nv">appVersion</span><span class="p">:</span> <span class="s">"&lt;#App version here#&gt;"</span><span class="p">,</span> <span class="nv">appName</span><span class="p">:</span> <span class="s">"&lt;#App name here#&gt;"</span><span class="p">)</span>
-        <span class="n">driver</span><span class="o">.</span><span class="nf">initSDK</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">config</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="nf">production</span><span class="p">(</span><span class="nv">useApnSandbox</span><span class="p">:</span> <span class="kc">true</span><span class="p">),</span> <span class="nv">app</span><span class="p">:</span> <span class="n">application</span><span class="p">,</span> <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">OSLogDestination</span><span class="p">(</span><span class="nv">logSeverity</span><span class="p">:</span> <span class="o">.</span><span class="n">warning</span><span class="p">)])</span>
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">config</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">ApplicationConfig</span><span class="p">(</span><span class="nv">appKey</span><span class="p">:</span> <span class="s">"&lt;#app key here#&gt;"</span><span class="p">,</span> <span class="nv">appVersion</span><span class="p">:</span> <span class="s">"&lt;#App version here#&gt;"</span><span class="p">,</span> <span class="nv">appName</span><span class="p">:</span> <span class="s">"&lt;#App name here#&gt;"</span><span class="p">)</span>
+            <span class="k">try</span> <span class="n">driver</span><span class="o">.</span><span class="nf">initSDK</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">config</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="nf">production</span><span class="p">(</span><span class="nv">useApnSandbox</span><span class="p">:</span> <span class="kc">true</span><span class="p">),</span> <span class="nv">app</span><span class="p">:</span> <span class="n">application</span><span class="p">,</span> <span class="nv">loggers</span><span class="p">:</span> <span class="p">[</span><span class="kt">OSLogDestination</span><span class="p">(</span><span class="nv">logSeverity</span><span class="p">:</span> <span class="o">.</span><span class="n">warning</span><span class="p">)])</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+            <span class="c1">//do not ignore this - the SDK is unusable until initialization succeeds</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"Onfleet Driver SDK initialization failed: </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+            <span class="c1">//ApplicationConfigError means the configuration is wrong and retrying will</span>
+            <span class="c1">//not help. DriverContext.InitializationError.protectedDataUnavailable means</span>
+            <span class="c1">//the device is locked, so retry once it is unlocked. Otherwise disable your</span>
+            <span class="c1">//Onfleet-dependent features rather than leaving them in a broken state.</span>
+        <span class="p">}</span>
 
         <span class="k">return</span> <span class="kc">true</span>
     <span class="p">}</span>
@@ -629,7 +639,7 @@ This will be referred as <em>full location permissions</em> going forward.</li>
 &lt;string&gt;Onfleet only tracks your location when on-duty in order to provide analytics and dispatch work to you.&lt;/string&gt;
 </code></pre>
 
-<p>Unfortunatelly, current iOS permissions policy does not open apps in the background if location access is set to <strong>While in Use</strong> or <strong>Once</strong>. This requires apps to ask <em>full location permissions</em>. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. </p>
+<p>Unfortunately, current iOS permissions policy does not open apps in the background if location access is set to <strong>While in Use</strong> or <strong>Once</strong>. This requires apps to ask <em>full location permissions</em>. Asking this is sensitive and it is up to SDK integrator to design a flow that is suitable for their users. </p>
 
 <p>Please follow these rules when implementing your own flow:</p>
 
