@@ -1,5 +1,5 @@
 PODS:
-  - OnfleetDriver (0.47)
+  - OnfleetDriver (0.48)
 
 DEPENDENCIES:
   - OnfleetDriver (from `.`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  OnfleetDriver: 7fa591ce290193b30bafc7719802ceb5e8d4dda6
+  OnfleetDriver: a36526aeddb92b4dc90698cffbb7ba26bada604b
 
 PODFILE CHECKSUM: 5e3f8d838e94af12935f88a6deabda82e4cca230
 
