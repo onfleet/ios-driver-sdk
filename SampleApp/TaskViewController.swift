@@ -331,7 +331,7 @@ final class TaskViewController: UITableViewController, ActivityShowing {
             switch indexPath.row {
             case 0:
                 config.text = "Photos"
-                config.secondaryText = reqs?.photos.displayName ?? "—"
+                config.secondaryText = reqs?.photos.onSuccess.displayName ?? "—"
             case 1:
                 config.text = "Signature"
                 config.secondaryText = reqs?.signature.displayName ?? "—"

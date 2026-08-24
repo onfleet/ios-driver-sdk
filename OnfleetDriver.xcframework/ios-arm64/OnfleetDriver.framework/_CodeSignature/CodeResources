@@ -6,31 +6,31 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		kkQjzlRUIdfz8lsat7Gr4gMZtTM=
+		yrDtUCreXna4JjjdI0lAx6zLpVs=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7ZwS3p+8UQwCmQzVo5EIwkzuzgA=
+		IBd91R00nzKAAnd0o0oX9K8lsE4=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		J3u+J4vXVXGJ6K+ZBHNzTdxo6I0=
+		+fJbgCnBI/ZC5t9YStfUKP8XToA=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		J3u+J4vXVXGJ6K+ZBHNzTdxo6I0=
+		+fJbgCnBI/ZC5t9YStfUKP8XToA=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/8LLHH6bL/JTssCAgKSn/DikJ+8=
+		45n8vnrPDMOQoa50ti8MbC8J7XI=
 		</data>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		J3u+J4vXVXGJ6K+ZBHNzTdxo6I0=
+		+fJbgCnBI/ZC5t9YStfUKP8XToA=
 		</data>
 		<key>Modules/OnfleetReactiveKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		tORh/yk75u8l5DyKqWweORfisy4=
+		s/l/8BusOl8/lnAEzaee80kta+E=
 		</data>
 		<key>Modules/OnfleetReactiveKit.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/Info.plist</key>
 		<data>
-		ifDiqJkQouumAiBLbwiFvolRzng=
+		hGzeZU7YGg4YdaVa2oeKQsM3J2g=
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		n8qZpEmvF2XwJRrmAM6ZWo5iFPQ=
+		ZVYJwZmAEUAp3SDg5YqXFzenxZw=
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		8aapfgeR6yJa7Dr9miYdAmhwsU8=
+		Fj0qLwIJUtrz9pwtxSeJjw8ht/k=
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>OnfleetDriver_OnfleetDriver.bundle/configuration.plist</key>
 		<data>
-		MgOnX51p+O20jDNHivuiGQOhW48=
+		MzrWKEH2XKO8efaq1qRV/158hLo=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -83,42 +83,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dkhv0JPs8tPP0+rQXyO2JGnx+1LFaO7TI0nc9EGmyHg=
+			cfTpVW7ucUX5/IkLUZs4AseFlcyKFFTaXJc3BHEJdDI=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vv9Ec1yHro0AcMc0EIKHJrZQNjWK3rMZKz3+IHPHYyw=
+			FCpgyPnzjAUMBPivliXuOL301tTrNZPkei/PXTMEVYA=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vv9Ec1yHro0AcMc0EIKHJrZQNjWK3rMZKz3+IHPHYyw=
+			FCpgyPnzjAUMBPivliXuOL301tTrNZPkei/PXTMEVYA=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qphKwB3j+Z2coaknwLWaF+JxDt4ywyOAd8tBDPo3UOk=
+			H1X7ubWJE6z2b/XxpOvC93qR7Vq3/nM9Nf6PKINy32A=
 			</data>
 		</dict>
 		<key>Modules/OnfleetDriver.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vv9Ec1yHro0AcMc0EIKHJrZQNjWK3rMZKz3+IHPHYyw=
+			FCpgyPnzjAUMBPivliXuOL301tTrNZPkei/PXTMEVYA=
 			</data>
 		</dict>
 		<key>Modules/OnfleetReactiveKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i7W2L73PDnfvppF+4KQrhL+jlZd3e9ucEM54i1Aanzo=
+			gGoq/BJHrQX2XchuyUMNnl68yjLty8YH8hnyUz0/2iA=
 			</data>
 		</dict>
 		<key>Modules/OnfleetReactiveKit.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d5Zfy9TcfVtgwz4f+IvxPt22zgD4WGRf1rLuLDUsiFU=
+			uhXWwqOEmqw01pzv6Nx17ijH4ogCFBrAdVMGdpMnZi0=
 			</data>
 		</dict>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3YkW2+s6ZQghme+OzAE+TL6gxhBtkGwsAyy0sL4cxj4=
+			J7T9WAC+HoRBD6nUswABMk91xebLsqolrIK9OkyR9h8=
 			</data>
 		</dict>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeRequirements</key>
@@ -174,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oqh0e8ViiE+N6noTT/JHM8a0JuD3JvW/r15deVJUeUM=
+			emQWBks4smDiA452TrYmjv80sGkeLJXDP4Ps/ZYdryE=
 			</data>
 		</dict>
 		<key>OnfleetDriver_OnfleetDriver.bundle/_CodeSignature/CodeSignature</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6ZWT7e/SWTLfJj09fZOEaTJNpyfkaRJEH4Smi4xTok=
+			4d4XbrKszVAfyp1XvkX1carXjkOMwFheB9+a80iOmMA=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

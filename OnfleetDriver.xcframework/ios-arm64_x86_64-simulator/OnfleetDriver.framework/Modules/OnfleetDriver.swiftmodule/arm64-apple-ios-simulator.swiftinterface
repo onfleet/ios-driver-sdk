@@ -854,6 +854,7 @@ extension OnfleetDriver.CompletedTask.TaskType {
     }
     case customRequirement(OnfleetDriver.CompleteTaskError.ValidationFailure.CustomRequirementReason)
     case pinNotVerified
+    case failurePhotoNotProvided
     public var errorDescription: Swift.String? {
       get
     }
@@ -2847,6 +2848,7 @@ extension OnfleetDriver.Onfleet.Organization {
     public let signatureOnCompletion: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.TaskCompletionRequirements
     public let notesOnCompletion: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.TaskCompletionRequirements
     public let geofence: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence
+    public let onDutyGeofence: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.OnDutyGeofence
     public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -2874,6 +2876,18 @@ extension OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence {
     case block
     case unknown(Swift.Int)
     public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet.Organization.ApplicationConfiguration {
+  public struct OnDutyGeofence : OnfleetDriver.OnfleetModelRepresentable {
+    public static let `default`: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.OnDutyGeofence
+    public let requirementLevel: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.Geofence.RequirementLevel
+    public let radiusMeters: Swift.Double
+    public static func == (a: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.OnDutyGeofence, b: OnfleetDriver.Onfleet.Organization.ApplicationConfiguration.OnDutyGeofence) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
@@ -3181,8 +3195,19 @@ extension OnfleetDriver.Onfleet.Task.CompletionRequirement {
   }
 }
 extension OnfleetDriver.Onfleet.Task {
+  public struct CompletionRequirementByOutcome : OnfleetDriver.OnfleetModelRepresentable {
+    public let onSuccess: OnfleetDriver.Onfleet.Task.CompletionRequirement
+    public let onFailure: OnfleetDriver.Onfleet.Task.CompletionRequirement
+    public static func == (a: OnfleetDriver.Onfleet.Task.CompletionRequirementByOutcome, b: OnfleetDriver.Onfleet.Task.CompletionRequirementByOutcome) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension OnfleetDriver.Onfleet.Task {
   public struct CompletionRequirements : OnfleetDriver.OnfleetModelRepresentable {
-    public let photos: OnfleetDriver.Onfleet.Task.CompletionRequirement
+    public let photos: OnfleetDriver.Onfleet.Task.CompletionRequirementByOutcome
     public let signature: OnfleetDriver.Onfleet.Task.CompletionRequirement
     public let barcodes: OnfleetDriver.Onfleet.Task.CompletionRequirement
     public let ageVerification: OnfleetDriver.Onfleet.Task.CompletionRequirement
@@ -3411,9 +3436,12 @@ extension OnfleetDriver.Onfleet {
   }
 }
 final public class DriverContext {
-  public enum InitializationError : Swift.Error {
+  public enum InitializationError : Foundation.LocalizedError {
     case alreadyInitialized
     case protectedDataUnavailable
+    public var errorDescription: Swift.String? {
+      get
+    }
     public static func == (a: OnfleetDriver.DriverContext.InitializationError, b: OnfleetDriver.DriverContext.InitializationError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -3766,9 +3794,12 @@ public protocol KeychainDataStoreRepresentable : OnfleetDriver.KeychainDataStore
 public protocol KeychainDataStoreAtomicAddProtocol : Swift.Sendable {
   func addIfAbsent(_ value: Foundation.Data, for key: Swift.String) throws
 }
-@frozen public enum KeychainDataStoreAtomicAddError : Swift.Error {
+@frozen public enum KeychainDataStoreAtomicAddError : Foundation.LocalizedError {
   case duplicateItem
   case operationFailed(status: Darwin.OSStatus)
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 final public class GenericPasswordKeychain : Swift.Sendable {
   @frozen public enum Errors : Foundation.LocalizedError {
